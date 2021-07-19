@@ -1,4 +1,4 @@
-baseURL = "https://dangaiden.github.io/dangaiden.github.io"
+baseURL = "https://dangaiden/dangaiden.github.io"
 languageCode = "en-us"
 theme = "hugo-papermod"
 title = "IT Gaiden"
