@@ -1,7 +1,3 @@
-[submodule "public"]
-	path = public
-	url = https://github.com/dangaiden/dangaiden.github.io
-	branch = main
 [submodule "themes/hugo-papermod"]
 	path = themes/hugo-papermod
 	url = https://github.com/adityatelange/hugo-PaperMod

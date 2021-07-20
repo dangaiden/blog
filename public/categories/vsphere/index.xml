@@ -68,14 +68,5 @@ How does it work? As you probably know a full clone is an exact copy of a source
 Due to the large content that can be discussed about each clone’s type, I decided to make a short series of posts talking about cloning VMs!</description>
     </item>
     
-    <item>
-      <title>Scheduled actions in vSphere Web Client (Flash)</title>
-      <link>https://dangaiden.github.io/?p=380/</link>
-      <pubDate>Mon, 15 Oct 2018 09:29:18 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=380/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

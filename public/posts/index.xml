@@ -414,24 +414,6 @@ I thought about making a huge post about the VCAP6-DCV experience (resources, no
     </item>
     
     <item>
-      <title>Dealing with a Bachelor’s degree and certifications</title>
-      <link>https://dangaiden.github.io/?p=384/</link>
-      <pubDate>Thu, 18 Oct 2018 08:36:38 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=384/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scheduled actions in vSphere Web Client (Flash)</title>
-      <link>https://dangaiden.github.io/?p=380/</link>
-      <pubDate>Mon, 15 Oct 2018 09:29:18 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=380/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>VM showing disk size is 0 MB</title>
       <link>https://dangaiden.github.io/?p=348/</link>
       <pubDate>Wed, 03 Oct 2018 11:15:37 +0000</pubDate>
@@ -510,78 +492,6 @@ There you can check a path to achieve VCP6-DCV (there is a newer version VCP6.5-
 
 Later, I took one official training course, VMware vSphere: Install, Configure, Manage [V6].
 Next, I passed the vSphere 6 Foundations Exam (2V0-620) months ago and finally I did VMware Certified Professional 6 – Data Center Virtualization Exam (2V0-621).</description>
-    </item>
-    
-    <item>
-      <title>Hello World, IT Gaiden coming soon!</title>
-      <link>https://dangaiden.github.io/?p=1915/</link>
-      <pubDate>Sat, 12 Aug 2017 21:36:44 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=1915/</guid>
-      <description>Welcome to IT Gaiden.
-This site is under construction.</description>
-    </item>
-    
-    <item>
-      <title>Azure: Clone VM without disruption</title>
-      <link>https://dangaiden.github.io/?p=469/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=469/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Certificate renewal on Windows ADFS and WAP</title>
-      <link>https://dangaiden.github.io/?p=1490/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=1490/</guid>
-      <description>ADFS SERVER (EZINADADFS01-EC) Prerequisites:
- After importing the certificate go to your local certificate store and check the permissions of the current (old) certificate:   The adfssrv is the service that was used before, in my case I have a new account using the ADFS Service:
- I will proceed to grant permissions to that service account:
-  Change Service communications certificate  Now, we will change the certificate used by the Service Communications.</description>
-    </item>
-    
-    <item>
-      <title>Cloning virtual machines in vSphere series – Part 4: Instant Clones</title>
-      <link>https://dangaiden.github.io/?p=589/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=589/</guid>
-      <description>Instant clones Since this post from William Lam https://www.virtuallyghetto.com/2018/04/new-instant-clone-architecture-in-vsphere-6-7-part-1.htm, I discovered that technology and I found it amazing. Instant clone or VMFork (project that later on was delivered through a Fling) was created some years ago and was able since vSphere 6.0 (in Horizon View).
-With the new release of vSphere 6.7 , VMware made it available using a public vSphere API and now we can use it with PowerCLI</description>
-    </item>
-    
-    <item>
-      <title>NAS TS-473 (4-Bay)</title>
-      <link>https://dangaiden.github.io/?p=515/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=515/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Post VMworld Europe 2019: Days 3 and 4</title>
-      <link>https://dangaiden.github.io/?p=1427/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=1427/</guid>
-      <description>https://www.vmworld.com/en/europe/agenda.html
-Solutions Exchange  General session Day 2 General Session (November 6th)
-  vStreet fighter and more I presented as well!
-So happy to be able to present a session in the vBrownbag booth at #VMworld https://t.co/H9bwnqsqkJ  &amp;mdash; Dan Belmonte (@DanGaiden) November 6, 2019   Playing with some amigos 😉
- Playing Street fighter and now Marvel VS Capcom #vStreetfighter@vWilmo @mrtommyberry @JoshMilenthal @georgelazos_ #VMworld pic.twitter.com/mxdlvL6TTK  &amp;mdash; Dan Belmonte (@DanGaiden) November 7, 2019  </description>
-    </item>
-    
-    <item>
-      <title>Site Recovery Manager 8.2</title>
-      <link>https://dangaiden.github.io/?p=1308/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://dangaiden.github.io/?p=1308/</guid>
-      <description>Site Recovery Manager (SRM) can be setup as Active-Passive or Active-Active SRM does NOT perform replication. It only manages the failover of VMs between sites SRM needs to be used in conjunction with a replication software like vSphere Replication or array based replication If array based replication is used then a Storage Replication Adapter (SRA) needs to be installed at each SRM site to communicate with the array SRM can help create a Stretch Cluster and perform long distance vMotion between separate vCenter Servers SRM and vCenter need to be running in both the protected and recovery sites SRM uses Protection Groups to identify what VMs are being replicated SRM uses Priority Groups to prioritize what VMs are recovered first SRM IP customization is used to translate a VM’s subnet from the one used at the protected site to the one used at the recovery site SRM license is purchased separately from vSphere or ESX SRM license is per-VM  https://trends.</description>
     </item>
     
   </channel>
