@@ -10,7 +10,7 @@ paginate = 500 #frontpage pagination
       unsafe = true
 
 [params]
-  header_image = "images/main_go_wideandtall_darklayer.jpeg"
+  # header_image = "images/main_go_wideandtall_darklayer.jpeg"
   title = "Cloud SRE"
   slogan = "$ grep -rni \"The how's and why's\" ."
   SEOTitle = "IT Gaiden"
@@ -24,8 +24,8 @@ paginate = 500 #frontpage pagination
   featured_tags = true 
   featured_condition_size = 2 # How many posts have to have a given tag to be featured (greater-than)
 
-  image_404 = "images/404-bg.jpg"
-  title_404 = "We couldn't find what you were looking for..."
+  #image_404 = "images/404-bg.jpg"
+  #title_404 = "We couldn't find what you were looking for..."
 
   omit_categories = false
 
