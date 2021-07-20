@@ -1,6 +1,0 @@
-baseURL = "https://dangaiden.github.io"
-languageCode = "en-us"
-theme = "hugo-PaperMod"
-title = "IT Gaiden"
-paginate = 500 #frontpage pagination
-
