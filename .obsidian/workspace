@@ -1,0 +1,97 @@
+{
+  "main": {
+    "id": "c02b2dd4165f50d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "f16846662830706c",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3d9bd9cb1cc4e8f0",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0000475ddb4807c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26ee6cf725d7191f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f7c0224e7918d987",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c2936bd4181d260e",
+    "type": "split",
+    "children": [
+      {
+        "id": "a187096d6b317786",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b46d0c53a11a67b7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f16846662830706c",
+  "lastOpenFiles": [
+    "content/wp-content/uploads/2017/12/123117_1550_AzureErrorw1.png",
+    "content/wp-content/uploads/2017/12/123117_1550_AzureErrorw1-150x130.png",
+    "content/post/2021-03-22-new-role-moving-to-the-cloud.md",
+    "content/post/2020-01-31-post-vmworld-europe-2019-days-1-and-2.md",
+    "content/post/2019-01-31-it-skills-which-gap-to-fill.md",
+    "content/post/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks.md",
+    "content/post/2018-10-19-vcap6-dcv-deploy-exam-experience.md",
+    "content/post/2018-12-13-vmworld-18-eu-day2.md",
+    "content/post/2018-11-21-.md"
+  ]
+}
