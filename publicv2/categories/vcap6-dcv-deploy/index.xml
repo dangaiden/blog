@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VCAP6-DCV Deploy on IT Gaiden</title>
+    <link>https://dangaiden/dangaiden.github.io/categories/vcap6-dcv-deploy/</link>
+    <description>Recent content in VCAP6-DCV Deploy on IT Gaiden</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Oct 2018 07:45:03 +0000</lastBuildDate><atom:link href="https://dangaiden/dangaiden.github.io/categories/vcap6-dcv-deploy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCAP6-DCV Deploy exam experience</title>
+      <link>https://dangaiden/dangaiden.github.io/?p=350/</link>
+      <pubDate>Fri, 19 Oct 2018 07:45:03 +0000</pubDate>
+      
+      <guid>https://dangaiden/dangaiden.github.io/?p=350/</guid>
+      <description>Hi! I am going to talk about my VCAP6-DCV Deploy exam experience.
+I thought about making a huge post about the VCAP6-DCV experience (resources, notes, etc.) but, I don’t want to overwhelm you know. Hence, I am going to make another post for that, hence this post will be shorter and more readable.
+1st attempt (Java error at the beginning) At September, 21st I sat down to take my first attempt in a VCAP exam.</description>
+    </item>
+    
+  </channel>
+</rss>
