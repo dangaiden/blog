@@ -15,7 +15,7 @@ fi
 echo ""
 echo ""
 echo "Committing changes to $(pwd)"
-hugo -D
+hugo --theme=hugo-PaperMod
 
 # Go To Public folder
 cd public
