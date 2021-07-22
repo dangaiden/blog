@@ -7,8 +7,11 @@
         "id": "f16846662830706c",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "content/post/2020/2020-01-31-post-vmworld-europe-2019-days-1-and-2.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -49,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 636
   },
   "right": {
     "id": "c2936bd4181d260e",
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/post/2020/2020-01-31-post-vmworld-europe-2019-days-1-and-2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,14 +88,15 @@
   },
   "active": "f16846662830706c",
   "lastOpenFiles": [
-    "content/wp-content/uploads/2017/12/123117_1550_AzureErrorw1.png",
-    "content/wp-content/uploads/2017/12/123117_1550_AzureErrorw1-150x130.png",
-    "content/post/2021-03-22-new-role-moving-to-the-cloud.md",
-    "content/post/2020-01-31-post-vmworld-europe-2019-days-1-and-2.md",
-    "content/post/2019-01-31-it-skills-which-gap-to-fill.md",
-    "content/post/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks.md",
-    "content/post/2018-10-19-vcap6-dcv-deploy-exam-experience.md",
-    "content/post/2018-12-13-vmworld-18-eu-day2.md",
-    "content/post/2018-11-21-.md"
+    "content/post/2020/2020-01-31-post-vmworld-europe-2019-days-1-and-2.md",
+    "content/post/2020/2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services.md",
+    "content/post/2020/2020-10-31-applications-future-containerd.md",
+    "content/post/2020/2020-10-19-finishing-a-computer-engineering-degree-with-devops-stuff.md",
+    "content/post/2020/2020-06-29-wsfc-validate-configuration-wizard-error.md",
+    "content/post/2020/2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1.md",
+    "content/post/2020/2020-04-28-vcenter-server-7-0-fresh-install.md",
+    "content/post/2020/2020-04-21-vforum-online-spring-2020.md",
+    "content/post/2020/2020-03-05-.md",
+    "content/post/2020/2020-04-08-vexpert-pro-announcement.md"
   ]
 }

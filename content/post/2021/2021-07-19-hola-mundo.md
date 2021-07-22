@@ -3,7 +3,7 @@ title: ¡Hola, mundo!
 author: dangaiden
 type: post
 date: 2021-07-19T23:39:42+00:00
-url: /?p=1
+url: /hola-mundo
 categories:
   - Sin categoría
 

@@ -3,7 +3,7 @@ title: Finishing a Computer Engineering degree with DevOps stuff
 author: itgaiden
 type: post
 date: 2020-10-19T12:55:26+00:00
-url: /?p=1837
+url: 2020-10-19-finishing-a-computer-engineering-degree-with-devops-stuff
 categories:
   - DevOps
 tags:

@@ -3,7 +3,7 @@ title: 'Post VMworld Europe 2019: Days 1 and 2'
 author: itgaiden
 type: post
 date: 2020-01-31T22:51:46+00:00
-url: /?p=1297
+url: 2020-01-31-post-vmworld-europe-2019-days-1-and-2
 rank_math_primary_category:
   - 36
 rank_math_description:

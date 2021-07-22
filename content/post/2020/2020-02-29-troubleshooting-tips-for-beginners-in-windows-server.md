@@ -3,7 +3,7 @@ title: Troubleshooting tips for beginners in Windows Server
 author: itgaiden
 type: post
 date: 2020-02-29T22:58:35+00:00
-url: /?p=1467
+url: 2020-02-29-troubleshooting-tips-for-beginners-in-windows-server
 rank_math_primary_category:
   - 40
 rank_math_description:

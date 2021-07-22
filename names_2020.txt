@@ -1,0 +1,12 @@
+2020-01-31-post-vmworld-europe-2019-days-1-and-2
+2020-02-09-
+2020-02-29-troubleshooting-tips-for-beginners-in-windows-server
+2020-03-05-
+2020-04-08-vexpert-pro-announcement
+2020-04-21-vforum-online-spring-2020
+2020-04-28-vcenter-server-7-0-fresh-install
+2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1
+2020-06-29-wsfc-validate-configuration-wizard-error
+2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services
+2020-10-19-finishing-a-computer-engineering-degree-with-devops-stuff
+2020-10-31-applications-future-containerd

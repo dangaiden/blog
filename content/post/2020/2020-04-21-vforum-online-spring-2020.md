@@ -3,7 +3,7 @@ title: vForum Online Spring 2020
 author: itgaiden
 type: post
 date: 2020-04-21T12:26:33+00:00
-url: /?p=1664
+url: 2020-04-21-vforum-online-spring-2020
 featured_image: /wp-content/uploads/2020/04/vFORUM-Online-1568x455.png
 rank_math_primary_category:
   - 36

@@ -3,7 +3,7 @@ title: vCenter Server 7.0 – Fresh install
 author: itgaiden
 type: post
 date: 2020-04-28T11:19:58+00:00
-url: /?p=1573
+url: 2020-04-28-vcenter-server-7-0-fresh-install
 rank_math_primary_category:
   - 11
 rank_math_description:

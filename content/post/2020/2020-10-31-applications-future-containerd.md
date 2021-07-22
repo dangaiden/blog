@@ -3,7 +3,7 @@ title: Is the applications’ future «containe(r)d»?
 author: itgaiden
 type: post
 date: 2020-10-31T20:32:17+00:00
-url: /?p=1866
+url: 2020-10-31-applications-future-containerd
 categories:
   - DevOps
   - VMware

@@ -1,0 +1,10 @@
+2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks
+2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth
+2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain
+2018-09-14-azure-backup-and-restore-sql-db-using-ssms
+2018-10-03-vm-showing-disk-size-is-0-mb
+2018-10-19-vcap6-dcv-deploy-exam-experience
+2018-10-29-pre-vmworld-2018-europe-expectations-and-information
+2018-11-19-vmworld-18-eu-day1
+2018-12-13-vmworld-18-eu-day2
+2018-12-31-vmworld-18-eu-day3-and-day4

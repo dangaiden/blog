@@ -3,7 +3,7 @@ title: Increasing the heap memory on vCSA 6.7 services
 author: itgaiden
 type: post
 date: 2020-08-31T09:00:11+00:00
-url: /?p=1817
+url: 2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services
 categories:
   - vCenter
   - VMware

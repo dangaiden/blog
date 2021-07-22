@@ -3,7 +3,7 @@ title: vExpert PRO announcement
 author: itgaiden
 type: post
 date: 2020-04-08T12:39:16+00:00
-url: /?p=1585
+url: 2020-04-08-vexpert-pro-announcement
 rank_math_primary_category:
   - 86
 rank_math_description:

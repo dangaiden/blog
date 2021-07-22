@@ -3,7 +3,7 @@ title: Upgrade vROps from 6.7.0 to 8.0.1
 author: itgaiden
 type: post
 date: 2020-05-21T20:00:52+00:00
-url: /?p=1580
+url: 2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1
 rank_math_focus_keyword:
   - vROps
 rank_math_robots:
