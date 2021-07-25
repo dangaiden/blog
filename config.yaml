@@ -55,7 +55,7 @@
 baseURL : "https://dangaiden.github.io"
 languageCode : "en-us"
 theme : "papermod"
-title : "Dan Belmonte"
+title : "IT Gaiden"
 paginate : 6
 
 
@@ -68,9 +68,9 @@ outputs:
 
 params:
     ##For HomeInfoMmode
-    #homeInfoParams:
-    #    Title: IT Gaiden
-    #    Content: Tips, stories and more about IT
+    homeInfoParams:
+    Title: IT Gaiden
+    Content: Tips, stories and more about IT
     ####
     relativeURLs : true
     defaultTheme: auto
