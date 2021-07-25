@@ -85,8 +85,8 @@ params:
     images: "/itgaiden.jpg"
     ##For HomeInfoMode##################################
     homeInfoParams:
-    Title: IT Gaiden
-    Content: Tips, stories and more about IT
+        Title: IT Gaiden
+        Content: Tips, stories and more about IT
     #####################################################
     ######################################################
     profileMode:
