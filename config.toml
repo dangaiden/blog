@@ -1,0 +1,111 @@
+baseURL = "https://dangaiden.github.io"
+languageCode = "en-us"
+theme = "cleanwhite"
+title = "Dan Belmonte"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  header_image = "/static/itgaiden.jpg"
+  title = "IT Gaiden"
+  slogan = "Tips. stories and more about the IT world"
+  #env = production    
+  paginate = 6
+  SEOTitle = "IT Gaiden"
+  keyword = "VMware, Windows, Kubernetes, Docker, SRE, DevOps, devops, Dan, Belmonte"
+ 
+  # Sidebar settings
+  sidebar_about_description = "Father, Husband, Skier, Cyclist, and, oh yeah, Software Developer"
+  sidebar_avatar = "static/profile.jpg"
+  about_me = true
+
+  featured_tags = true 
+  featured_condition_size = 2 # How many posts have to have a given tag to be featured (greater-than)
+
+  #image_404 = "images/404-bg.jpg"
+  title_404 = "We couldn't find what you were looking for..."
+
+  omit_categories = false
+
+  [[params.addtional_menus]]
+  title =  "ABOUT"
+  href =  "/content/about-me/"
+
+  [params.social]
+  twitter       = "https://twitter.com/DanGaiden"
+  github        = "https://github.com/dangaiden"
+  linkedin      = "https://www.linkedin.com/in/danielbelmonte/"
+
+
+
+
+
+
+
+######PAPER-MOD
+
+# outputs:
+#     home:
+#         - HTML
+#         - RSS
+#         - JSON # is necessary
+
+# params:
+#     relativeURLs : true
+#     env: production    
+#     paginate : 6
+#     SEOTitle : "IT Gaiden"
+#     keyword : "VMware, Windows, Kubernetes, Docker, SRE, DevOps, devops, Dan, Belmonte"
+#     ShowCodeCopyButtons: true 
+#     ShowReadingTime: true
+#     ShowToc: true
+#     profileMode:
+#         enabled: false
+#         subtitle: "Tips. stories and more about the IT world"
+#         imageUrl: "/static/itgaiden.jpg" # optional
+#         #imageTitle: "<title of image as alt>" # optional
+#         imageWidth: 120 # custom size
+#         imageHeight: 120 # custom size
+#         buttons:
+#             - name: Posts
+#               url: "/content/posts/"
+#             - name: About me
+#               url: "/content/about-me/"
+
+#     socialIcons: # optional
+#        - name: Twitter   
+#          url: "https://twitter.com/DanGaiden"
+#        - name: Linkedin
+#          url: "https://www.linkedin.com/in/danielbelmonte/"
+#        - name: Github    
+#          url: "https://github.com/dangaiden"
+
+
+
+
+#[params]
+#	[[params.addtional_menus]]
+#	title :  "ABOUT"
+#	href :  "/content/about-me/"
+
+#languages:
+#    en:
+#        languageName: "English"
+#        weight: 1
+#        menu:
+#            main:
+#                - name: Archive
+#                  url: archives
+#                  weight: 5
+#                - name: Search
+#                  url: search/
+#                  weight: 10
+#                - name: Tags
+#                  url: tags/
+#                  weight: 10
+#                - name: Categories
+#                  url: categories/
+#                  weight: 10
