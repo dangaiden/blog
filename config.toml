@@ -2,6 +2,7 @@ baseURL = "https://dangaiden.github.io"
 languageCode = "en-us"
 theme = "cleanwhite"
 title = "Dan Belmonte"
+paginate = 6
 
 [markup]
   [markup.goldmark]
@@ -9,17 +10,16 @@ title = "Dan Belmonte"
       unsafe = true
 
 [params]
-  header_image = "/static/itgaiden.jpg"
+  header_image = "images/itgaiden.jpg"
   title = "IT Gaiden"
-  slogan = "Tips. stories and more about the IT world"
+  slogan = "Tips. stories and more about the IT"
   #env = production    
-  paginate = 6
   SEOTitle = "IT Gaiden"
   keyword = "VMware, Windows, Kubernetes, Docker, SRE, DevOps, devops, Dan, Belmonte"
  
   # Sidebar settings
-  sidebar_about_description = "Father, Husband, Skier, Cyclist, and, oh yeah, Software Developer"
-  sidebar_avatar = "static/profile.jpg"
+  sidebar_about_description = "I like road bikes (cyclist), playing videogames (gamer) and, anything related to tech!"
+  sidebar_avatar = "images/profile.jpg"
   about_me = true
 
   featured_tags = true 
@@ -64,7 +64,7 @@ title = "Dan Belmonte"
 #     ShowToc: true
 #     profileMode:
 #         enabled: false
-#         subtitle: "Tips. stories and more about the IT world"
+#         subtitle: "Tips. stories and more about IT
 #         imageUrl: "/static/itgaiden.jpg" # optional
 #         #imageTitle: "<title of image as alt>" # optional
 #         imageWidth: 120 # custom size
