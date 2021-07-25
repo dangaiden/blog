@@ -3,6 +3,7 @@ title: About me
 author: itgaiden
 type: page
 date: 2019-04-07T08:22:33+00:00
+url: about-me
 rank_math_description:
   - This is a section where the author of IT Gaiden talks a bit about himself.
 rank_math_focus_keyword:
