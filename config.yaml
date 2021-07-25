@@ -27,9 +27,7 @@ params:
         imageHeight: 120 # custom size
         buttons:
             - name: Posts
-              url: "/content"
-            - name: Github
-              url: "https://github.com/"
+              url: "/content/posts/"
 
     socialIcons: # optional
        - name: Twitter   
