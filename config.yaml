@@ -28,6 +28,8 @@ params:
         buttons:
             - name: Posts
               url: "/content/posts/"
+            - name: About me
+              url: "/content/about-me/"
 
     socialIcons: # optional
        - name: Twitter   
