@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/post/2020/2020-01-31-post-vmworld-europe-2019-days-1-and-2.md",
+            "file": "content/post/2019/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2020/2020-01-31-post-vmworld-europe-2019-days-1-and-2.md",
+                "file": "content/post/2019/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "f16846662830706c",
   "lastOpenFiles": [
-    "content/post/2020/2020-01-31-post-vmworld-europe-2019-days-1-and-2.md",
-    "content/post/2020/2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services.md",
-    "content/post/2020/2020-10-31-applications-future-containerd.md",
-    "content/post/2020/2020-10-19-finishing-a-computer-engineering-degree-with-devops-stuff.md",
-    "content/post/2020/2020-06-29-wsfc-validate-configuration-wizard-error.md",
-    "content/post/2020/2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1.md",
-    "content/post/2020/2020-04-28-vcenter-server-7-0-fresh-install.md",
-    "content/post/2020/2020-04-21-vforum-online-spring-2020.md",
-    "content/post/2020/2020-03-05-.md",
-    "content/post/2020/2020-04-08-vexpert-pro-announcement.md"
+    "content/post/2019/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone.md",
+    "content/post/2019/2019-10-04-vfit-at-vmworld-2019-europe.md",
+    "content/post/2019/2019-10-30-runecast-analyzer-deploy-configure-and-quick-review.md",
+    "content/post/2019/2019-12-09-being-a-vexpert.md",
+    "content/post/2019/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones.md",
+    "content/post/2017/2017-12-31-azure-error-adding-new-rule-nsg_backup.md",
+    "content/post/2017/2017-12-31-azure-error-adding-new-rule-nsg.md",
+    "content/post/2017/2017-09-03-vcp6-dcv-achieved.md",
+    "content/post/2018/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks.md",
+    "content/post/2018/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth.md"
   ]
 }

@@ -3,7 +3,7 @@ title: VCAP-DCV Design exam notes
 author: itgaiden
 type: post
 date: 2019-10-31T22:47:39+00:00
-url: /?p=1269
+url: 2019-10-31-vcap-dcv-design-exam-notes
 rank_math_primary_category:
   - 4
 rank_math_description:

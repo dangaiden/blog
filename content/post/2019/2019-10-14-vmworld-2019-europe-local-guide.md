@@ -3,7 +3,7 @@ title: VMworld 2019 Europe local guide
 author: itgaiden
 type: post
 date: 2019-10-14T09:54:53+00:00
-url: /?p=1068
+url: 2019-10-14-vmworld-2019-europe-local-guide
 rank_math_primary_category:
   - 37
 rank_math_description:

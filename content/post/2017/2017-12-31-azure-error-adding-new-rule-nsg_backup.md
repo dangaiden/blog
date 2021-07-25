@@ -3,7 +3,7 @@ title: Azure – Error when adding new rule on NSG
 author: itgaiden
 type: post
 date: 2017-12-31T15:50:35+00:00
-url: /?p=113
+url: 2017-12-31-azure-error-adding-new-rule-nsg_backup
 featured_image: /wp-content/uploads/2017/12/123117_1550_AzureErrorw1.png
 rank_math_primary_category:
   - 6

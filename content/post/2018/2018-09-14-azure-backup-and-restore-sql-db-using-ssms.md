@@ -3,7 +3,7 @@ title: Azure – Backup and restore SQL DB using SSMS
 author: itgaiden
 type: post
 date: 2018-09-14T08:23:47+00:00
-url: /?p=246
+url: 2018-09-14-azure-backup-and-restore-sql-db-using-ssms
 rank_math_primary_category:
   - 22
 rank_math_description:

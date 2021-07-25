@@ -3,7 +3,7 @@ title: VM showing disk size is 0 MB
 author: itgaiden
 type: post
 date: 2018-10-03T11:15:37+00:00
-url: /?p=348
+url: 2018-10-03-vm-showing-disk-size-is-0-mb
 rank_math_primary_category:
   - 11
 rank_math_description:

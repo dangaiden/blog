@@ -3,7 +3,7 @@ title: VCP6-DCV achieved!
 author: itgaiden
 type: post
 date: 2017-09-03T16:20:45+00:00
-url: /2017-09-03-vcp6-dcv-achieved
+url: 2017-09-03-vcp6-dcv-achieved
 rank_math_primary_category:
   - 4
 rank_math_focus_keyword:

@@ -3,7 +3,7 @@ title: Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)
 author: itgaiden
 type: post
 date: 2019-07-31T21:12:50+00:00
-url: /?p=942
+url: 2019-07-31-migrating-adfs-from-2012-r2-to-2016
 rank_math_primary_category:
   - 40
 rank_math_description:

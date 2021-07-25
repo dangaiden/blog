@@ -3,7 +3,7 @@ title: Experience at VMworld 2018 Europe – Day 2
 author: itgaiden
 type: post
 date: 2018-12-13T09:30:22+00:00
-url: /?p=400
+url: 2018-12-13-vmworld-18-eu-day2
 featured_image: /wp-content/uploads/2018/10/gen_session_cloud-1568x1176.jpeg
 rank_math_description:
   - A personal experience at VMworld 2018 Europe in the second day. Time for networking, the first general session and to enjoy all the great things in this event.

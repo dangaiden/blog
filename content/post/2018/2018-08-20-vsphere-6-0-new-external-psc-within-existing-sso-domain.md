@@ -3,7 +3,7 @@ title: 'vSphere 6.0: New external PSC within existing SSO Domain'
 author: itgaiden
 type: post
 date: 2018-08-20T14:30:12+00:00
-url: /?p=190
+url: 2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain
 rank_math_primary_category:
   - 11
 rank_math_focus_keyword:

@@ -3,7 +3,7 @@ title: 'Runecast Analyzer: Deploy, configure and quick review'
 author: itgaiden
 type: post
 date: 2019-10-30T21:14:01+00:00
-url: /?p=1241
+url: 2019-10-30-runecast-analyzer-deploy-configure-and-quick-review
 featured_image: /wp-content/uploads/2019/10/Live_demo.png
 rank_math_primary_category:
   - 76

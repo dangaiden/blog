@@ -3,7 +3,7 @@ title: 'vCSA 6.x installer error: “No networks on the host. Cannot proceed wit
 author: itgaiden
 type: post
 date: 2019-04-30T08:00:57+00:00
-url: /?p=836
+url: 2019-04-30-vcsa-6-x-installer-error
 rank_math_primary_category:
   - 11
 rank_math_description:

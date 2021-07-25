@@ -2,7 +2,7 @@
 title: Experience at VMworld 2018 Europe – Day 1
 author: itgaiden
 type: post
-date: 2018-11-19T13:10:02+00:00
+date: 2018-11-19-vmworld-18-eu-day1
 url: /?p=398
 featured_image: /wp-content/uploads/2018/11/out-1568x1176.jpg
 rank_math_description:

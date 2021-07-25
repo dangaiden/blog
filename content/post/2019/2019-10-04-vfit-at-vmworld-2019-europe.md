@@ -3,7 +3,7 @@ title: vFit at VMworld 2019 Europe
 author: itgaiden
 type: post
 date: 2019-10-04T11:35:14+00:00
-url: /?p=1071
+url: 2019-10-04-vfit-at-vmworld-2019-europe
 rank_math_primary_category:
   - 37
 rank_math_description:

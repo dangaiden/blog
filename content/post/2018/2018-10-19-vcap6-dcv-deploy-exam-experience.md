@@ -3,7 +3,7 @@ title: VCAP6-DCV Deploy exam experience
 author: itgaiden
 type: post
 date: 2018-10-19T07:45:03+00:00
-url: /?p=350
+url: 2018-10-19-vcap6-dcv-deploy-exam-experience
 rank_math_primary_category:
   - 11
 rank_math_description:

@@ -3,7 +3,7 @@ title: WSFC – Validate Configuration wizard error
 author: itgaiden
 type: post
 date: 2020-06-29T09:30:08+00:00
-url: /?p=1789
+url: 2020-06-29-wsfc-validate-configuration-wizard-error
 categories:
   - Microsoft
   - Windows Server

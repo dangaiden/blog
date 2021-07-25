@@ -3,7 +3,7 @@ title: Pre-VMworld 2018 Europe – Expectations and information
 author: itgaiden
 type: post
 date: 2018-10-29T17:29:22+00:00
-url: /?p=408
+url: 2018-10-29-pre-vmworld-2018-europe-expectations-and-information
 rank_math_primary_category:
   - 36
 rank_math_focus_keyword:

@@ -3,7 +3,7 @@ title: 'Cloning virtual machines in vSphere series – Part 2: Full clone'
 author: itgaiden
 type: post
 date: 2019-03-06T11:00:54+00:00
-url: /?p=591
+url: 2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone
 rank_math_primary_category:
   - 11
 rank_math_description:

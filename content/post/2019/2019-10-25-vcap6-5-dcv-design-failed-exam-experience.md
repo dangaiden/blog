@@ -3,7 +3,7 @@ title: VCAP6.5-DCV Design failed exam experience
 author: itgaiden
 type: post
 date: 2019-10-25T21:44:50+00:00
-url: /?p=1206
+url: 2019-10-25-vcap6-5-dcv-design-failed-exam-experience
 featured_image: /wp-content/uploads/2019/10/ever-tried-ever-failed-no-matter-try-again-fail-again-fail-better-samuel-backett-e1572039644157.jpg
 rank_math_primary_category:
   - 75

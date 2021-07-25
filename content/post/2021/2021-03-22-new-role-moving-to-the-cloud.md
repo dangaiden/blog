@@ -3,7 +3,7 @@ title: New role, moving to the cloud!
 author: itgaiden
 type: post
 date: 2021-03-22T11:27:51+00:00
-url: /?p=1877
+url: 2021-03-22-new-role-moving-to-the-cloud
 categories:
   - Personal
 tags:

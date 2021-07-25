@@ -3,7 +3,7 @@ title: Want to be a vExpert?
 author: itgaiden
 type: post
 date: 2019-12-09T11:00:36+00:00
-url: /?p=1326
+url: 2019-12-09-being-a-vexpert
 rank_math_primary_category:
   - 53
 rank_math_description:

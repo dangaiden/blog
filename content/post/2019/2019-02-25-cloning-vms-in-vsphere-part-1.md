@@ -3,7 +3,7 @@ title: 'Cloning virtual machines in vSphere series – Part 1: Types of clone'
 author: itgaiden
 type: post
 date: 2019-02-25T10:22:37+00:00
-url: /?p=577
+url: 2019-02-25-cloning-vms-in-vsphere-part-1
 rank_math_primary_category:
   - 11
 rank_math_description:

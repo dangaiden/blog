@@ -3,7 +3,7 @@ title: 'IT skills: Which gap to fill?'
 author: itgaiden
 type: post
 date: 2019-01-31T09:00:52+00:00
-url: /?p=266
+url: 2019-01-31-it-skills-which-gap-to-fill
 featured_image: /wp-content/uploads/2019/01/LearningPaths-for-post.jpg
 rank_math_primary_category:
   - 4

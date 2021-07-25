@@ -3,7 +3,7 @@ title: 'VMkernel: vMotion and Provisioning in dedicated TCP/IP stacks'
 author: itgaiden
 type: post
 date: 2018-07-23T18:19:09+00:00
-url: /?p=125
+url: 2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks
 rank_math_primary_category:
   - 11
 rank_math_description:

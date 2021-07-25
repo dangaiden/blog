@@ -3,7 +3,7 @@ title: 'Cloning virtual machines in vSphere series – Part 3: Linked Clones'
 author: itgaiden
 type: post
 date: 2019-04-16T10:25:55+00:00
-url: /?p=593
+url: 2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones
 featured_image: /wp-content/uploads/2019/04/LinkedClone.png
 rank_math_primary_category:
   - 25
