@@ -67,6 +67,7 @@ outputs:
 
 params:
     relativeURLs : true
+    defaultTheme: auto
     env: production    
     paginate : 6
     title : "Dan Belmonte"
@@ -98,10 +99,16 @@ params:
 
 menu:
     main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
         - identifier: categories
           name: categories
           url: /categories/
-          weight: 10
+          weight: 15
         - identifier: tags
           name: tags
           url: /tags/

@@ -1,6 +1,6 @@
 ---
 title: "Posts"
 layout: "Content"
-url: "/content/"
+url: "/content/post"
 summary: Posts
 ---
