@@ -1,6 +1,6 @@
 ---
-title: "Posts"
-layout: "Content"
-url: "/content/post"
-summary: Posts
+title: "Archive"
+layout: "archives"
+url: "/archives/"
+summary: archives
 ---
