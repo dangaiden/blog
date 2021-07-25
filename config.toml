@@ -10,7 +10,7 @@ paginate = 6
       unsafe = true
 
 [params]
-  header_image = "images/itgaiden.jpg"
+  header_image = "/static/itgaiden.jpeg"
   title = "IT Gaiden"
   slogan = "Tips. stories and more about the IT"
   #env = production    
@@ -19,7 +19,7 @@ paginate = 6
  
   # Sidebar settings
   sidebar_about_description = "I like road bikes (cyclist), playing videogames (gamer) and, anything related to tech!"
-  sidebar_avatar = "/images/profile.jpg"
+  sidebar_avatar = "/static/profile.jpeg"
   about_me = true
 
   featured_tags = true 
