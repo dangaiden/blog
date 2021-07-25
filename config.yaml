@@ -69,6 +69,7 @@ params:
     relativeURLs : true
     env: production    
     paginate : 6
+    title : "Dan Belmonte"
     SEOTitle : "IT Gaiden"
     keyword : "VMware, Windows, Kubernetes, Docker, SRE, DevOps, devops, Dan, Belmonte"
     ShowCodeCopyButtons: true 
