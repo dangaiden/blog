@@ -57,7 +57,13 @@ languageCode : "en-us"
 theme : "papermod"
 title : "IT Gaiden"
 paginate : 6
+buildDrafts: false
+enableEmoji: true
 
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
 
 outputs:
     home:
@@ -65,13 +71,7 @@ outputs:
         - RSS
         - JSON # is necessary
 
-
 params:
-    ##For HomeInfoMmode
-    homeInfoParams:
-    Title: IT Gaiden
-    Content: Tips, stories and more about IT
-    ####
     relativeURLs : true
     defaultTheme: auto
     env: production    
@@ -83,6 +83,12 @@ params:
     ShowReadingTime: true
     ShowToc: true
     images: "/itgaiden.jpg"
+    ##For HomeInfoMode##################################
+    homeInfoParams:
+    Title: IT Gaiden
+    Content: Tips, stories and more about IT
+    #####################################################
+    ######################################################
     profileMode:
         enabled: false
         subtitle: "Tips. stories and more about IT"
@@ -95,7 +101,7 @@ params:
               url: "/content/posts/"
             - name: About me
               url: "/content/about-me/"
-
+    #######################################################
     socialIcons: # optional
        - name: Twitter   
          url: "https://twitter.com/DanGaiden"
