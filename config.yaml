@@ -75,7 +75,7 @@ params:
     ShowReadingTime: true
     ShowToc: true
     profileMode:
-        enabled: false
+        enabled: true
         subtitle: "Tips. stories and more about IT"
         imageUrl: "/static/itgaiden.jpg" # optional
         #imageTitle: "<title of image as alt>" # optional
