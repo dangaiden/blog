@@ -20,10 +20,9 @@ params:
     ShowToc: true
     profileMode:
         enabled: true
-        title: "<Title>" # optional default will be site title
-        subtitle: "This is subtitle"
-        imageUrl: "<image link>" # optional
-        imageTitle: "<title of image as alt>" # optional
+        subtitle: "Tips. stories and more about the IT world"
+        imageUrl: "/static/itgaiden.jpg" # optional
+        #imageTitle: "<title of image as alt>" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
