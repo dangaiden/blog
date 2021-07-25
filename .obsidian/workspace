@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/post/2019/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone.md",
+            "file": "content/about-me/index.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2019/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone.md",
+                "file": "content/about-me/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,7 @@
   },
   "active": "f16846662830706c",
   "lastOpenFiles": [
+    "content/about-me/index.md",
     "content/post/2019/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone.md",
     "content/post/2019/2019-10-04-vfit-at-vmworld-2019-europe.md",
     "content/post/2019/2019-10-30-runecast-analyzer-deploy-configure-and-quick-review.md",
@@ -96,7 +97,6 @@
     "content/post/2017/2017-12-31-azure-error-adding-new-rule-nsg_backup.md",
     "content/post/2017/2017-12-31-azure-error-adding-new-rule-nsg.md",
     "content/post/2017/2017-09-03-vcp6-dcv-achieved.md",
-    "content/post/2018/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks.md",
-    "content/post/2018/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth.md"
+    "content/post/2018/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks.md"
   ]
 }
