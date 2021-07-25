@@ -4,4 +4,16 @@ languageCode = "en-us"
 theme = "papermod"
 title = "IT Gaiden"
 paginate = 500 #frontpage pagination
+href =  "/content/about-me/"
+slogan = "Tips. stories and more about the IT world"
+SEOTitle = "IT Gaiden"
+keyword = "VMware, Windows, Kubernetes, Docker, SRE, DevOps, devops, Dan, Belmonte" 
 
+[params]
+	[[params.addtional_menus]]
+	title =  "ABOUT"
+
+ [params.social]
+	twitter        = "https://twitter.com/DanGaiden"
+	linkedin       = "https://www.linkedin.com/in/danielbelmonte/"
+	github         = "https://github.com/dangaiden"
