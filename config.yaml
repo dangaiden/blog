@@ -55,7 +55,7 @@
 baseURL : "https://dangaiden.github.io"
 languageCode : "en-us"
 theme : "papermod"
-title : "IT Gaiden"
+title : "Dan Belmonte"
 paginate : 6
 buildDrafts: false
 enableEmoji: true
@@ -76,7 +76,6 @@ params:
     defaultTheme: auto
     env: production    
     paginate : 6
-    title : "Dan Belmonte"
     SEOTitle : "IT Gaiden"
     keyword : "VMware, Windows, Kubernetes, Docker, SRE, DevOps, devops, Dan, Belmonte"
     ShowCodeCopyButtons: true 
