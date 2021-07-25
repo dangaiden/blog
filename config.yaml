@@ -70,7 +70,7 @@ params:
     ##For HomeInfoMmode
     #homeInfoParams:
     #    Title: IT Gaiden
-    #    Content: Can be Info, links, about...
+    #    Content: Tips, stories and more about IT
     ####
     relativeURLs : true
     defaultTheme: auto
@@ -84,7 +84,7 @@ params:
     ShowToc: true
     images: "/itgaiden.jpg"
     profileMode:
-        enabled: true
+        enabled: false
         subtitle: "Tips. stories and more about IT"
         imageUrl: "/itgaiden.jpg" # optional
         #imageTitle: "<title of image as alt>" # optional
