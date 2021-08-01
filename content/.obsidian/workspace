@@ -1,0 +1,96 @@
+{
+  "main": {
+    "id": "07f86270d8391e1b",
+    "type": "split",
+    "children": [
+      {
+        "id": "309e0040b22033fd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "post/2021/OSS-monitoring-series.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fbde6afda4943b71",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d0a02b76cca894d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0235ef6b8047bf59",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "748146e86752e697",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "51fb607ebb4c12f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa3d807d7cb4069a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09670b4fca602f87",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "post/2021/OSS-monitoring-series.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "309e0040b22033fd",
+  "lastOpenFiles": [
+    "post/2021/OSS-monitoring-series.md",
+    "post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
+    "post/2021/Untitled.md",
+    "Untitled.md"
+  ]
+}

@@ -15,7 +15,7 @@ tags:
 
 <span style="font-family: Nunito;">It&#8217;s being almost 5 months since I wrote my last blog post and it happened so fast but my final project kept me quite busy between November &#8217;20 and January &#8217;21.</span>
 
-<img loading="lazy" class="alignnone wp-image-1884 " src="http://wp.docker.localhost:8000/wp-content/uploads/2021/03/fallout-fallout-4-vault-boy-green-wallpaper-preview.jpg" alt="" width="580" height="326" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2021/03/fallout-fallout-4-vault-boy-green-wallpaper-preview.jpg 728w, http://wp.docker.localhost:8000/wp-content/uploads/2021/03/fallout-fallout-4-vault-boy-green-wallpaper-preview-300x169.jpg 300w" sizes="(max-width: 580px) 100vw, 580px" /> 
+<img loading="lazy" class="alignnone wp-image-1884 " src="/wp-content/uploads/2021/03/fallout-fallout-4-vault-boy-green-wallpaper-preview.jpg" alt="" width="580" height="326" srcset="/wp-content/uploads/2021/03/fallout-fallout-4-vault-boy-green-wallpaper-preview.jpg 728w, /wp-content/uploads/2021/03/fallout-fallout-4-vault-boy-green-wallpaper-preview-300x169.jpg 300w" sizes="(max-width: 580px) 100vw, 580px" /> 
 
 <span style="font-family: Nunito;">After finishing my bachelor&#8217;s degree final project in January, I&#8217;ve been enjoying some free time for myself and with that, I «forgot» about writing (a.k.a. procrastination) but not anymore as I plan to start again writing as I did in the past.</span>
 
@@ -33,7 +33,7 @@ tags:
 
 <span style="font-family: Nunito;">I know&#8230; it&#8217;s a weird name but it&#8217;s the official name for the position. Probably a better name would be Cloud Automation Engineer (or similar) as I am not going to work with developers in pipelines and helping them closely.</span>
 
-<img loading="lazy" class="alignnone wp-image-1886" src="http://wp.docker.localhost:8000/wp-content/uploads/2021/03/vault_boysearch.png" alt="" width="253" height="253" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2021/03/vault_boysearch.png 240w, http://wp.docker.localhost:8000/wp-content/uploads/2021/03/vault_boysearch-150x150.png 150w" sizes="(max-width: 253px) 100vw, 253px" /> 
+<img loading="lazy" class="alignnone wp-image-1886" src="/wp-content/uploads/2021/03/vault_boysearch.png" alt="" width="253" height="253" srcset="/wp-content/uploads/2021/03/vault_boysearch.png 240w, /wp-content/uploads/2021/03/vault_boysearch-150x150.png 150w" sizes="(max-width: 253px) 100vw, 253px" /> 
 
 <span style="font-family: Nunito;">I&#8217;ll be working with technologies and tools like Git, Ansible, Terraform, Packer, and more. </span>
 
