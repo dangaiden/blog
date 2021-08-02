@@ -66,7 +66,7 @@ What can you see here?
 
 ## 
 
-### <span style="font-family: Didact Gothic;"><span style="color: #000000;">General process</span><br /> </span>
+### <span >General process</span><br /> </span>
 
   1. <span style="">Use or prepare a VM (Parent VM) that will be used as a master/parent to deploy the linked clones</span>
   2. <span style="">Power-off the Parent VM (Recommended but not mandatory)</span>

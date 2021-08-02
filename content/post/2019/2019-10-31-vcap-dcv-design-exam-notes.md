@@ -35,7 +35,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">This information will be more helpful for people that have never taken this exam rather than those who are experienced in these advanced exams.<br /> </span>
 
-# <span style="color: #000000;"><strong><span style="font-family: Nunito; font-size: 32px;">Audience</span></strong></span>
+# ><strong><span style="font-family: Nunito; font-size: 32px;">Audience</span></strong></span>
 
 <span style="font-family: Nunito; font-size: 16px;">The Design exams (VCAP-XXX Design) are mainly for IT Architects (sounds cool?) but, why for architects? Well, if you check the <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmw-vcap65-dcv-design-3v0-624-guide.pdf">blueprint</a>, you will see a couple of sections and not many objectives. The truth is hidden inside each section, which is huge and covers many aspects.</span>
 
@@ -49,7 +49,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">You will have to develop a conceptual design given a set of customer requirements, determining which requirements needed to create a logical design and after that creating a physical design with these items.</span>
 
-# <span style="color: #000000;"><strong><span style="font-family: Nunito; font-size: 32px;">Technical background</span></strong></span>
+# ><strong><span style="font-family: Nunito; font-size: 32px;">Technical background</span></strong></span>
 
 <span style="font-family: Nunito; font-size: 16px;">As you are aiming for a VMware certification, you must think in all solutions, features, and elements from vSphere.</span>
 
@@ -84,7 +84,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">Advanced knowledge is desirable (and you will be tested) on each area would deserve more than post so, I am not going to explain anything right now about it 🙂</span>
 
-# <span style="color: #000000;"><strong><span style="font-family: Nunito; font-size: 32px;">Aiming for the exam</span></strong></span>
+# ><strong><span style="font-family: Nunito; font-size: 32px;">Aiming for the exam</span></strong></span>
 
 <span style="font-family: Nunito; font-size: 16px;">Your main guide must be the blueprint, no matter what other unofficial guides say (although they are very helpful). In the blueprint you will have all the sections and objectives that will be qualified.</span>
 

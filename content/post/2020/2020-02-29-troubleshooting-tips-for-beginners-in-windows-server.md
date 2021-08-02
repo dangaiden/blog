@@ -75,7 +75,7 @@ tags:
 
 &nbsp;
 
-## <span style="color: #000000;"><strong><span style="font-family: Nunito;">Check memory resources (RAM)</span></strong></span>
+## ><strong><span style="font-family: Nunito;">Check memory resources (RAM)</span></strong></span>
 
 #### **<span style=""><span style="color: #808080;">CMD (command prompt)</span><br /> </span>**
 
@@ -125,7 +125,7 @@ tags:
 
 ## 
 
-## <span style="font-family: Nunito;"><strong><span style="color: #000000;">Alternate access to RDP</span></strong><br /> </span>
+## <span style="font-family: Nunito;"><strong>>Alternate access to RDP</span></strong><br /> </span>
 
 <span style="font-family: Nunito; font-size: 16px;">A server can be physical or virtual then, you can probably access the virtual machine using Hyper-V Manager (if you use Hyper-V) or the vSphere Web Client (vSphere) tools in order to gain access to the virtual server.<br /> </span>
 

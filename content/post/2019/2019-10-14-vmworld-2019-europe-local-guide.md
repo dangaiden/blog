@@ -93,7 +93,7 @@ tags:
   <span style="font-size: 16px; font-family: Nunito;">The Aerobus will take you to «Plaça Catalunya» (Catalunya Plaza) but it costs a bit more than other services (<strong>5,90 €</strong> at the moment), you can review more information in this <a href="https://www.aeropuertobarcelona-elprat.com/ingl/accesos_aeropuerto_taxi_bus4030.htm#aerobus-A1-A2">link</a>.</span>
 </p>
 
-#### <span style="font-family: Nunito;"><span style="color: #000000;">T-10 card</span><br /> </span>
+#### <span style="font-family: Nunito;">>T-10 card</span><br /> </span>
 
 <span style="font-size: 16px; font-family: Nunito;">If you plan to visit Barcelona, consider buying a <a href="https://www.tmb.cat/en/barcelona-fares-metro-bus/single-and-integrated/t-10"><strong>T-10 ticket</strong></a> (which includes 10 single tickets or 10 journeys) as it will save you <span class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0">half the price of many single tickets. This T-10 card can be used for many people as you want so, consider it if you are a group.</span></span>
 
@@ -116,15 +116,15 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">The <strong>Metro</strong> (subway/underground) is your best choice whatever you stay in Barcelona if you want a cheaper, frequent and reliable service.</span>
 
-<span style="font-size: 16px;"><span style="font-family: Nunito;">With the metro (remember the name) you can travel through lines at the same cost</span><span style="font-family: Nunito;">. The main stops to consider will be <span style="color: #ff6600;">Fira in L9 Sud, <span style="color: #ff0000;">Plaça Espanya in L1</span><span style="color: #808080;">/</span><span style="color: #339966;">L3</span></span> and <span style="color: #000080;">Sants-Estacio in L5/<span style="color: #339966;">L3</span><span style="color: #000000;">.</span></span></span></span>
+<span style="font-size: 16px;"><span style="font-family: Nunito;">With the metro (remember the name) you can travel through lines at the same cost</span><span style="font-family: Nunito;">. The main stops to consider will be <span style="color: #ff6600;">Fira in L9 Sud, <span style="color: #ff0000;">Plaça Espanya in L1</span><span style="color: #808080;">/</span><span style="color: #339966;">L3</span></span> and <span style="color: #000080;">Sants-Estacio in L5/<span style="color: #339966;">L3</span>>.</span></span></span></span>
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1135" src="/wp-content/uploads/2019/10/post-metro_map-768x411.png" alt="" width="656" height="351" srcset="/wp-content/uploads/2019/10/post-metro_map-768x411.png 768w, /wp-content/uploads/2019/10/post-metro_map-300x161.png 300w, /wp-content/uploads/2019/10/post-metro_map-1024x549.png 1024w, /wp-content/uploads/2019/10/post-metro_map.png 1150w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 ### <span style="">The fastest way to VMworld?</span>
 
-<span style="font-family: Nunito; font-size: 16px;"><span style="color: #000000;"><span style="color: #808080;">The closest stop to the VMworld event is</span> </span><span style="color: #ff6600;"><strong>Fira</strong> in L9 Sud <span style="color: #808080;">or the</span> <strong>Europa-Fira</strong> <span style="color: #808080;">stop which is another stop from the</span> L9-Sud line<span style="color: #808080;"> that also combines with another train service</span> <span style="color: #808080;">(</span><a href="https://www.fgc.cat/wp-content/uploads/2018/12/planol_2019.pdf">FGC trains</a><span style="color: #808080;">) which is a different transport service than the metro and it has different stops.</span></span></span>
+<span style="font-family: Nunito; font-size: 16px;">><span style="color: #808080;">The closest stop to the VMworld event is</span> </span><span style="color: #ff6600;"><strong>Fira</strong> in L9 Sud <span style="color: #808080;">or the</span> <strong>Europa-Fira</strong> <span style="color: #808080;">stop which is another stop from the</span> L9-Sud line<span style="color: #808080;"> that also combines with another train service</span> <span style="color: #808080;">(</span><a href="https://www.fgc.cat/wp-content/uploads/2018/12/planol_2019.pdf">FGC trains</a><span style="color: #808080;">) which is a different transport service than the metro and it has different stops.</span></span></span>
 
-<span style="font-family: Nunito; font-size: 16px;"><span style="color: #ff6600;"><span style="color: #000000;"> <span style="color: #808080;">If you stay near Sants, the <span style="color: #000080;">Sants-Estacio stop in L5</span> will be your choice. Then, in <strong>Sants-Estacio</strong> station take the <span style="color: #000080;">L5 to Collblanc stop</span> and after that, change the line to</span> <span style="color: #ff6600;">L9 Sud</span> <span style="color: #808080;">until you arrive at <span style="color: #ff6600;">Fira</span> stop</span>.<br /> </span></span></span>
+<span style="font-family: Nunito; font-size: 16px;"><span style="color: #ff6600;">> <span style="color: #808080;">If you stay near Sants, the <span style="color: #000080;">Sants-Estacio stop in L5</span> will be your choice. Then, in <strong>Sants-Estacio</strong> station take the <span style="color: #000080;">L5 to Collblanc stop</span> and after that, change the line to</span> <span style="color: #ff6600;">L9 Sud</span> <span style="color: #808080;">until you arrive at <span style="color: #ff6600;">Fira</span> stop</span>.<br /> </span></span></span>
 
 <span style="font-family: Nunito; font-size: 16px;">You can see in the following map the VMworld precinct highlighted in yellow and the closest stops (marked in <span style="color: #0000ff;">blue</span>): <span style="color: #ff6600;">Europa-Fira</span> stop which combines <strong>FGC</strong> and <strong>Metro</strong> services and, Fira stop at <span style="color: #ff6600;">L9 Sud.</span></span>
 
@@ -134,7 +134,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito;"><span style="color: #000000;">Events around VMworld</span><br /> </span>
+## <span style="font-family: Nunito;">>Events around VMworld</span><br /> </span>
 
 <span style="font-size: 16px; font-family: Nunito;"><a href="https://twitter.com/Fred_vBrain">Fred Hofer</a> has a magnificent post where it summarizes all the events and parties that will happen on these dates, check it <a href="http://www.vbrain.info/2019/09/17/vmworld-emea-2019-parties-gatherings-events-and-more/"><span style="text-decoration: underline;"><strong>here</strong> </span></a></span>
 
@@ -144,7 +144,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito;"><span style="color: #000000;">Outside VMworld (Sightseeing)</span><br /> </span>
+## <span style="font-family: Nunito;">>Outside VMworld (Sightseeing)</span><br /> </span>
 
 <span style="font-family: Nunito;">Here is a summary of the places that you could visit if you come to Barcelona:</span>
 
