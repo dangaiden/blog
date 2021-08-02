@@ -3,7 +3,7 @@ title: Experience at VMworld 2018 Europe – Day 3 and Day 4
 author: itgaiden
 type: post
 date: 2018-12-31T09:00:49+00:00
-url: /?p=402
+url: 2018-12-31-vmworld-18-eu-day3-and-day4
 featured_image: /wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article.jpeg
 rank_math_description:
   - Personal experience in the last two days of the event. The second general session, vCommunity, vStreetfighter and more!

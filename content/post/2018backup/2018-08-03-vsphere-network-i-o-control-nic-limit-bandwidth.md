@@ -3,7 +3,7 @@ title: 'vSphere Network I/O Control: NIC Limit bandwidth'
 author: itgaiden
 type: post
 date: 2018-08-02T23:39:01+00:00
-url: /?p=156
+url: 2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth
 rank_math_primary_category:
   - 11
 rank_math_description:
