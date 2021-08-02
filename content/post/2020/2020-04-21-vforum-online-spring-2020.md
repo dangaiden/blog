@@ -31,13 +31,13 @@ tags:
 
 <span style="font-size: 16px;"><span style="font-family: Nunito;">So, why not attend a <strong>free mini-VMworld</strong> in less than a month?<br /> </span><span style="font-family: Nunito;">That&#8217;s vForum Online!</span></span>
 
-<span style="font-family: Nunito;"><img loading="lazy" class="alignnone wp-image-1679 size-full" src="http://wp.docker.localhost:8000/wp-content/uploads/2020/04/vFORUM-Online.png" alt="" width="1832" height="532" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2020/04/vFORUM-Online.png 1832w, http://wp.docker.localhost:8000/wp-content/uploads/2020/04/vFORUM-Online-300x87.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2020/04/vFORUM-Online-1024x297.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2020/04/vFORUM-Online-768x223.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2020/04/vFORUM-Online-1536x446.png 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2020/04/vFORUM-Online-1568x455.png 1568w" sizes="(max-width: 1832px) 100vw, 1832px" /></span>
+<span style="font-family: Nunito;"><img loading="lazy" class="alignnone wp-image-1679 size-full" src="/wp-content/uploads/2020/04/vFORUM-Online.png" alt="" width="1832" height="532" srcset="/wp-content/uploads/2020/04/vFORUM-Online.png 1832w, /wp-content/uploads/2020/04/vFORUM-Online-300x87.png 300w, /wp-content/uploads/2020/04/vFORUM-Online-1024x297.png 1024w, /wp-content/uploads/2020/04/vFORUM-Online-768x223.png 768w, /wp-content/uploads/2020/04/vFORUM-Online-1536x446.png 1536w, /wp-content/uploads/2020/04/vFORUM-Online-1568x455.png 1568w" sizes="(max-width: 1832px) 100vw, 1832px" /></span>
 
 <span style="font-family: Nunito; font-size: 16px;">vForum Online is a <strong>LIVE virtual event</strong> where you can access it directly from any device. Obviously there’s no travel required, so why not engage with more people and learn about new trends, features, and technologies?</span>
 
 ## 
 
-## **<span style="font-family: Nunito; color: #000000;">When is it?</span>**
+## **<span style="font-family: Nunito; ">When is it?</span>**
 
 <div class="title events-column__title">
   <span style="font-size: 16px;"><strong><span style="font-family: Nunito;">May 13th, 2020</span></strong></span>
@@ -61,7 +61,7 @@ tags:
 <div>
 </div>
 
-## <span style="font-family: Nunito; color: #000000;"><b>Why attend?</b></span>
+## <span style="font-family: Nunito; "><b>Why attend?</b></span>
 
   * <span style="font-family: Nunito; font-size: 16px;"><b>Lots of technical breakouts (+30) </b>delivering practical guidance about many different VMware technologies.</span>
 
@@ -71,7 +71,7 @@ tags:
 
 ## 
 
-## <span style="font-family: Nunito; color: #000000;"><b>Who Should Attend?</b></span>
+## <span style="font-family: Nunito; "><b>Who Should Attend?</b></span>
 
 <span style="font-size: 16px;"><span style="font-family: Nunito;">Anyone! From solutions/network/storage engineers to CxO should join this virtual event, a</span><span style="font-family: Nunito;">nd remember, <strong>it&#8217;s free</strong>.</span></span>
 
@@ -79,15 +79,15 @@ tags:
 
 ## 
 
-## **<span style="font-family: Nunito; color: #000000;">Agenda</span>**
+## **<span style="font-family: Nunito; ">Agenda</span>**
 
 <span style="font-family: Nunito; font-size: 16px;">Do you want to know the schedule? Check out the detailed agenda <span style="text-decoration: underline;"><strong><a href="https://content.onlinexperiences.com/FileLibrary/2138/33/VMware-VForum-Spring2020-Agenda.pdf">here</a></strong></span></span>
 
-<img loading="lazy" class="alignnone wp-image-1680 size-full" src="http://wp.docker.localhost:8000/wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf.png" alt="" width="1367" height="843" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf.png 1367w, http://wp.docker.localhost:8000/wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf-300x185.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf-1024x631.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf-768x474.png 768w" sizes="(max-width: 1367px) 100vw, 1367px" /> 
+<img loading="lazy" class="alignnone wp-image-1680 size-full" src="/wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf.png" alt="" width="1367" height="843" srcset="/wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf.png 1367w, /wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf-300x185.png 300w, /wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf-1024x631.png 1024w, /wp-content/uploads/2020/04/VMware-VForum-Spring2020-Agenda.pdf-768x474.png 768w" sizes="(max-width: 1367px) 100vw, 1367px" /> 
 
 ## 
 
-## **<span style="font-family: Nunito; color: #000000;">Featured attendees</span>**
+## **<span style="font-family: Nunito; ">Featured attendees</span>**
 
 <span style="font-family: Nunito; font-size: 16px;"><strong>Pat Gelsinger &#8211; CEO, VMware</strong>, will be speaking at the event and there will be a VMware Expert Panel Discussion with:</span>
 
@@ -98,7 +98,7 @@ tags:
 
 &nbsp;
 
-<span style="font-family: Nunito;"><span style="font-size: 28px; color: #000000;"><strong>Register </strong></span><a href="https://www.vmware.com/learn/462228_vFO_REG.html"><strong><span style="font-size: 20px;"><span style="color: #000000;"><span style="font-size: 28px;"><span style="text-decoration: underline; color: #008080;">here</span>!</span></span></span></strong></a></span>
+<span style="font-family: Nunito;"><span style="font-size: 28px; "><strong>Register </strong></span><a href="https://www.vmware.com/learn/462228_vFO_REG.html"><strong><span style="font-size: 20px;"><span style=""><span style="font-size: 28px;"><span style="text-decoration: underline; color: #008080;">here</span>!</span></span></span></strong></a></span>
 
 &nbsp;
 

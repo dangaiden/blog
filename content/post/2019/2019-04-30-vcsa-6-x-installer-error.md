@@ -29,7 +29,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Didact Gothic;">In my case, I was trying to install vCSA 6.5 without DNS (this is why the system name has an IP address and the DNS is itself). Also, notice that the <strong>network section is empty</strong>:</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-842 size-full" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/vcsa_installer_wonw.jpg" alt="" width="582" height="427" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/vcsa_installer_wonw.jpg 582w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/vcsa_installer_wonw-300x220.jpg 300w" sizes="(max-width: 582px) 100vw, 582px" /></span>
+<span style="font-size: 16px; font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-842 size-full" src="/wp-content/uploads/2019/04/vcsa_installer_wonw.jpg" alt="" width="582" height="427" srcset="/wp-content/uploads/2019/04/vcsa_installer_wonw.jpg 582w, /wp-content/uploads/2019/04/vcsa_installer_wonw-300x220.jpg 300w" sizes="(max-width: 582px) 100vw, 582px" /></span>
 
 <span style="font-family: Didact Gothic; font-size: 16px;">If you try to continue with the installation, it will show you an error:</span>
 
@@ -49,7 +49,7 @@ tags:
 
 <span style="font-family: Didact Gothic; font-size: 16px;">Hence, I decided to <strong>create a port group called «VM Network»</strong> in the host that I am trying to deploy the vCSA and&#8230;it worked!</span>
 
-<span style="font-family: Didact Gothic; font-size: 16px;"><img loading="lazy" class="alignnone size-full wp-image-843" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/vcsa_installer_wnw.jpg" alt="" width="598" height="290" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/vcsa_installer_wnw.jpg 598w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/vcsa_installer_wnw-300x145.jpg 300w" sizes="(max-width: 598px) 100vw, 598px" /></span>
+<span style="font-family: Didact Gothic; font-size: 16px;"><img loading="lazy" class="alignnone size-full wp-image-843" src="/wp-content/uploads/2019/04/vcsa_installer_wnw.jpg" alt="" width="598" height="290" srcset="/wp-content/uploads/2019/04/vcsa_installer_wnw.jpg 598w, /wp-content/uploads/2019/04/vcsa_installer_wnw-300x145.jpg 300w" sizes="(max-width: 598px) 100vw, 598px" /></span>
 
 <span style="font-family: Didact Gothic; font-size: 16px;">Now, as you can see, I can see that port group and I was able to <strong>continue the installation with success</strong>!</span>
 

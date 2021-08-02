@@ -21,7 +21,7 @@ tags:
 ---
 <span style="font-size: 16px; font-family: Nunito;">Some time ago, I was doing some clean up on VMs that have attached an image file, when I found a particular VM with strange behavior, each disk from the VM (local and RDM disks) was showing 0 MB of disk size:</span>
 
-<img loading="lazy" class="alignnone wp-image-360" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/10/error0MB_SQL08.png" alt="" width="663" height="283" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/10/error0MB_SQL08.png 640w, http://wp.docker.localhost:8000/wp-content/uploads/2018/10/error0MB_SQL08-300x128.png 300w" sizes="(max-width: 663px) 100vw, 663px" /> 
+<img loading="lazy" class="alignnone wp-image-360" src="/wp-content/uploads/2018/10/error0MB_SQL08.png" alt="" width="663" height="283" srcset="/wp-content/uploads/2018/10/error0MB_SQL08.png 640w, /wp-content/uploads/2018/10/error0MB_SQL08-300x128.png 300w" sizes="(max-width: 663px) 100vw, 663px" /> 
 
 <span style="font-family: Nunito; font-size: 16px;">So, what I did? </span>
 

@@ -41,7 +41,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">Could you pass this exam without being an IT architect? Of course!</span>
 
-<img loading="lazy" class="alignnone size-medium wp-image-1288" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/trustme_architect-300x300.jpg" alt="trust_me_architect" width="300" height="300" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/trustme_architect-300x300.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/trustme_architect-150x150.jpg 150w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/trustme_architect.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /> 
+<img loading="lazy" class="alignnone size-medium wp-image-1288" src="/wp-content/uploads/2019/10/trustme_architect-300x300.jpg" alt="trust_me_architect" width="300" height="300" srcset="/wp-content/uploads/2019/10/trustme_architect-300x300.jpg 300w, /wp-content/uploads/2019/10/trustme_architect-150x150.jpg 150w, /wp-content/uploads/2019/10/trustme_architect.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /> 
 
 <span style="font-family: Nunito; font-size: 16px;">Many did it (not in my case yet) by studying and having a lot of design experience, or also helped doing designs with other peers for example. Also, you can gain all the knowledge of all areas and study your main gaps.</span>
 

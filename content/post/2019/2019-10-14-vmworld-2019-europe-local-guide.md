@@ -25,7 +25,7 @@ tags:
 ---
 <span style="font-family: Nunito;"><span style="font-size: 16px;">VMworld 2019 Europe is almost here! And I made a local guide with tips about transport, restaurants, places to go, etc. to ensure you can enjoy more your experience in VMworld.</span></span>
 
-<img loading="lazy" class="alignnone size-medium_large wp-image-441" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/11/out-768x576.jpg" alt="" width="656" height="492" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/11/out-768x576.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2018/11/out-300x225.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2018/11/out-1024x768.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2018/11/out-1536x1152.jpg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2018/11/out-1568x1176.jpg 1568w, http://wp.docker.localhost:8000/wp-content/uploads/2018/11/out.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
+<img loading="lazy" class="alignnone size-medium_large wp-image-441" src="/wp-content/uploads/2018/11/out-768x576.jpg" alt="" width="656" height="492" srcset="/wp-content/uploads/2018/11/out-768x576.jpg 768w, /wp-content/uploads/2018/11/out-300x225.jpg 300w, /wp-content/uploads/2018/11/out-1024x768.jpg 1024w, /wp-content/uploads/2018/11/out-1536x1152.jpg 1536w, /wp-content/uploads/2018/11/out-1568x1176.jpg 1568w, /wp-content/uploads/2018/11/out.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 ## <span style="font-family: Nunito; color: #000000;">General information</span>
 
@@ -118,7 +118,7 @@ tags:
 
 <span style="font-size: 16px;"><span style="font-family: Nunito;">With the metro (remember the name) you can travel through lines at the same cost</span><span style="font-family: Nunito;">. The main stops to consider will be <span style="color: #ff6600;">Fira in L9 Sud, <span style="color: #ff0000;">Plaça Espanya in L1</span><span style="color: #808080;">/</span><span style="color: #339966;">L3</span></span> and <span style="color: #000080;">Sants-Estacio in L5/<span style="color: #339966;">L3</span><span style="color: #000000;">.</span></span></span></span>
 
-<img loading="lazy" class="alignnone size-medium_large wp-image-1135" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/post-metro_map-768x411.png" alt="" width="656" height="351" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/post-metro_map-768x411.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/post-metro_map-300x161.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/post-metro_map-1024x549.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/post-metro_map.png 1150w" sizes="(max-width: 656px) 100vw, 656px" /> 
+<img loading="lazy" class="alignnone size-medium_large wp-image-1135" src="/wp-content/uploads/2019/10/post-metro_map-768x411.png" alt="" width="656" height="351" srcset="/wp-content/uploads/2019/10/post-metro_map-768x411.png 768w, /wp-content/uploads/2019/10/post-metro_map-300x161.png 300w, /wp-content/uploads/2019/10/post-metro_map-1024x549.png 1024w, /wp-content/uploads/2019/10/post-metro_map.png 1150w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 ### <span style="font-family: Nunito; color: #000000;">The fastest way to VMworld?</span>
 
@@ -128,7 +128,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">You can see in the following map the VMworld precinct highlighted in yellow and the closest stops (marked in <span style="color: #0000ff;">blue</span>): <span style="color: #ff6600;">Europa-Fira</span> stop which combines <strong>FGC</strong> and <strong>Metro</strong> services and, Fira stop at <span style="color: #ff6600;">L9 Sud.</span></span>
 
-<img loading="lazy" class="alignnone size-full wp-image-1138" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FiraGranVia_highlight.png" alt="FiraGranVia-map" width="939" height="725" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FiraGranVia_highlight.png 939w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FiraGranVia_highlight-300x232.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FiraGranVia_highlight-768x593.png 768w" sizes="(max-width: 939px) 100vw, 939px" /> 
+<img loading="lazy" class="alignnone size-full wp-image-1138" src="/wp-content/uploads/2019/10/FiraGranVia_highlight.png" alt="FiraGranVia-map" width="939" height="725" srcset="/wp-content/uploads/2019/10/FiraGranVia_highlight.png 939w, /wp-content/uploads/2019/10/FiraGranVia_highlight-300x232.png 300w, /wp-content/uploads/2019/10/FiraGranVia_highlight-768x593.png 768w" sizes="(max-width: 939px) 100vw, 939px" /> 
 
 <span style="font-family: Nunito;"><span style="font-size: 16px;"><span style="font-family: Nunito;">Last year VMworld provided a free metro card; As I don&#8217;t know if it will be the same but if you are aiming to visit Barcelona and visit other places, consider to buy a</span> T-10 travel card (10 single <span style="font-family: Nunito;">rides) which is </span><span style="font-family: Nunito;">multi personal and quite cheaper than buying 10 single tickets<span style="color: #ff0000;">.</span></span></span><br /> </span>
 
@@ -151,7 +151,7 @@ tags:
 <table style="border-collapse: collapse; width: 101.315%; height: 240px;">
   <tr style="height: 30px;">
     <td style="width: 100%; height: 30px;">
-      <img loading="lazy" class="alignnone size-medium_large wp-image-1158" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg" alt="" width="656" height="369" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/sagrada-familia-300x169.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/sagrada-familia-1024x576.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/sagrada-familia-1536x864.jpg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/sagrada-familia-1568x882.jpg 1568w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/sagrada-familia.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
+      <img loading="lazy" class="alignnone size-medium_large wp-image-1158" src="/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg" alt="" width="656" height="369" srcset="/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg 768w, /wp-content/uploads/2019/10/sagrada-familia-300x169.jpg 300w, /wp-content/uploads/2019/10/sagrada-familia-1024x576.jpg 1024w, /wp-content/uploads/2019/10/sagrada-familia-1536x864.jpg 1536w, /wp-content/uploads/2019/10/sagrada-familia-1568x882.jpg 1568w, /wp-content/uploads/2019/10/sagrada-familia.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
       
       <p>
         <span style="font-family: Nunito; font-size: 16px;"><strong>La Sagrada Familia</strong><br /> </span>
@@ -166,7 +166,7 @@ tags:
         
         <tr style="height: 30px;">
           <td style="width: 100%; height: 30px;">
-            <img loading="lazy" class="alignnone size-medium_large wp-image-1157" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg" alt="" width="656" height="435" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Ramblas-de-Barcelona-300x199.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Ramblas-de-Barcelona-1024x679.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Ramblas-de-Barcelona.jpg 1500w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
+            <img loading="lazy" class="alignnone size-medium_large wp-image-1157" src="/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg" alt="" width="656" height="435" srcset="/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg 768w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona-300x199.jpg 300w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona-1024x679.jpg 1024w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona.jpg 1500w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
             
             <p>
               <strong><span style="font-family: Nunito; font-size: 16px;">Las Ramblas</span></strong>
@@ -181,7 +181,7 @@ tags:
               
               <tr style="height: 30px;">
                 <td style="width: 100%; height: 30px;">
-                  <img loading="lazy" class="alignnone size-medium_large wp-image-1165" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg" alt="font-montjuic" width="656" height="328" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FontMontjuic-300x150.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FontMontjuic-1024x512.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FontMontjuic-1536x768.jpg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FontMontjuic-2048x1024.jpg 2048w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/FontMontjuic-1568x784.jpg 1568w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
+                  <img loading="lazy" class="alignnone size-medium_large wp-image-1165" src="/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg" alt="font-montjuic" width="656" height="328" srcset="/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg 768w, /wp-content/uploads/2019/10/FontMontjuic-300x150.jpg 300w, /wp-content/uploads/2019/10/FontMontjuic-1024x512.jpg 1024w, /wp-content/uploads/2019/10/FontMontjuic-1536x768.jpg 1536w, /wp-content/uploads/2019/10/FontMontjuic-2048x1024.jpg 2048w, /wp-content/uploads/2019/10/FontMontjuic-1568x784.jpg 1568w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
                   
                   <p class="LC20lb">
                     <strong><span style="font-size: 16px; font-family: Nunito;">La Font Màgica de Montjuïc (Magic fountain of Montjuïc)</span></strong>
@@ -196,7 +196,7 @@ tags:
                     
                     <tr style="height: 30px;">
                       <td style="width: 100%; height: 30px;">
-                        <img loading="lazy" class="alignnone size-medium_large wp-image-1156" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Park-guell-768x418.jpg" alt="Park-guell" width="656" height="357" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Park-guell-768x418.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Park-guell-300x163.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Park-guell-1024x557.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Park-guell-1536x835.jpg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Park-guell-1568x853.jpg 1568w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Park-guell.jpg 1920w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
+                        <img loading="lazy" class="alignnone size-medium_large wp-image-1156" src="/wp-content/uploads/2019/10/Park-guell-768x418.jpg" alt="Park-guell" width="656" height="357" srcset="/wp-content/uploads/2019/10/Park-guell-768x418.jpg 768w, /wp-content/uploads/2019/10/Park-guell-300x163.jpg 300w, /wp-content/uploads/2019/10/Park-guell-1024x557.jpg 1024w, /wp-content/uploads/2019/10/Park-guell-1536x835.jpg 1536w, /wp-content/uploads/2019/10/Park-guell-1568x853.jpg 1568w, /wp-content/uploads/2019/10/Park-guell.jpg 1920w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
                         
                         <p>
                           <span style="font-size: 16px; font-family: Nunito;"><strong>Park Güell</strong></span>
@@ -211,7 +211,7 @@ tags:
                           
                           <tr style="height: 30px;">
                             <td style="width: 100%; height: 30px;">
-                              <img loading="lazy" class="alignnone wp-image-1162" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/casa-batllo-768x946.jpg" alt="casa-batllo" width="565" height="696" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/casa-batllo-768x946.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/casa-batllo-243x300.jpg 243w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/casa-batllo-831x1024.jpg 831w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/casa-batllo-1247x1536.jpg 1247w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/casa-batllo-1662x2048.jpg 1662w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/casa-batllo-1568x1932.jpg 1568w" sizes="(max-width: 565px) 100vw, 565px" /></p> 
+                              <img loading="lazy" class="alignnone wp-image-1162" src="/wp-content/uploads/2019/10/casa-batllo-768x946.jpg" alt="casa-batllo" width="565" height="696" srcset="/wp-content/uploads/2019/10/casa-batllo-768x946.jpg 768w, /wp-content/uploads/2019/10/casa-batllo-243x300.jpg 243w, /wp-content/uploads/2019/10/casa-batllo-831x1024.jpg 831w, /wp-content/uploads/2019/10/casa-batllo-1247x1536.jpg 1247w, /wp-content/uploads/2019/10/casa-batllo-1662x2048.jpg 1662w, /wp-content/uploads/2019/10/casa-batllo-1568x1932.jpg 1568w" sizes="(max-width: 565px) 100vw, 565px" /></p> 
                               
                               <p>
                                 <strong><span style="font-family: Nunito; font-size: 16px;">Casa Batlló</span></strong>
@@ -226,7 +226,7 @@ tags:
                                 
                                 <tr style="height: 30px;">
                                   <td style="width: 100%; height: 30px;">
-                                    <img loading="lazy" class="alignnone size-medium_large wp-image-1161" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg" alt="la-pedrera" width="656" height="437" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/la-pedrera-300x200.jpeg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/la-pedrera-1024x683.jpeg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/la-pedrera-1536x1024.jpeg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/la-pedrera-1568x1045.jpeg 1568w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/la-pedrera.jpeg 1920w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
+                                    <img loading="lazy" class="alignnone size-medium_large wp-image-1161" src="/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg" alt="la-pedrera" width="656" height="437" srcset="/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg 768w, /wp-content/uploads/2019/10/la-pedrera-300x200.jpeg 300w, /wp-content/uploads/2019/10/la-pedrera-1024x683.jpeg 1024w, /wp-content/uploads/2019/10/la-pedrera-1536x1024.jpeg 1536w, /wp-content/uploads/2019/10/la-pedrera-1568x1045.jpeg 1568w, /wp-content/uploads/2019/10/la-pedrera.jpeg 1920w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
                                     
                                     <p>
                                       <span style="font-size: 16px; font-family: Nunito;"><strong>Casa Milà &#8211; La Pedrera (The stone quarry)</strong><br /> </span>
@@ -241,7 +241,7 @@ tags:
                                       
                                       <tr style="height: 30px;">
                                         <td style="width: 100%; height: 30px;">
-                                          <img loading="lazy" class="alignnone size-medium_large wp-image-1160" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/port-olimpic-768x512.jpg" alt="port-olimpic" width="656" height="437" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/port-olimpic-768x512.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/port-olimpic-300x200.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/port-olimpic-1024x683.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/port-olimpic.jpg 1200w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
+                                          <img loading="lazy" class="alignnone size-medium_large wp-image-1160" src="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg" alt="port-olimpic" width="656" height="437" srcset="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg 768w, /wp-content/uploads/2019/10/port-olimpic-300x200.jpg 300w, /wp-content/uploads/2019/10/port-olimpic-1024x683.jpg 1024w, /wp-content/uploads/2019/10/port-olimpic.jpg 1200w" sizes="(max-width: 656px) 100vw, 656px" /></p> 
                                           
                                           <p>
                                             <span style="font-size: 16px; font-family: Nunito;"><strong>The Olympic port of Barcelona (since recent events in the past months, I will avoid going at night)</strong></span>
@@ -340,7 +340,7 @@ tags:
                                             </p>
                                             
                                             <p>
-                                              <span style="font-size: 16px; font-family: Nunito;"><strong>Bread with (spread) tomato</strong> can be found in almost any bar or restaurant so, just ask for it. They are also served at breakfast!</span><img loading="lazy" class="alignnone wp-image-1236 " src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg" alt="pa_amb_tomaquet" width="558" height="318" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg 700w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/pa_amb_tomaquet2-300x171.jpg 300w" sizes="(max-width: 558px) 100vw, 558px" />
+                                              <span style="font-size: 16px; font-family: Nunito;"><strong>Bread with (spread) tomato</strong> can be found in almost any bar or restaurant so, just ask for it. They are also served at breakfast!</span><img loading="lazy" class="alignnone wp-image-1236 " src="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg" alt="pa_amb_tomaquet" width="558" height="318" srcset="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg 700w, /wp-content/uploads/2019/10/pa_amb_tomaquet2-300x171.jpg 300w" sizes="(max-width: 558px) 100vw, 558px" />
                                             </p>
                                             
                                             <p>
@@ -360,7 +360,7 @@ tags:
                                             </p>
                                             
                                             <p>
-                                              <img loading="lazy" class="alignnone wp-image-1232" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Chestnuts.jpg" alt="chestnuts" width="549" height="305" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Chestnuts.jpg 630w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/Chestnuts-300x167.jpg 300w" sizes="(max-width: 549px) 100vw, 549px" />
+                                              <img loading="lazy" class="alignnone wp-image-1232" src="/wp-content/uploads/2019/10/Chestnuts.jpg" alt="chestnuts" width="549" height="305" srcset="/wp-content/uploads/2019/10/Chestnuts.jpg 630w, /wp-content/uploads/2019/10/Chestnuts-300x167.jpg 300w" sizes="(max-width: 549px) 100vw, 549px" />
                                             </p>
                                             
                                             <p>
@@ -368,7 +368,7 @@ tags:
                                             </p>
                                             
                                             <p>
-                                              <img loading="lazy" class="alignnone wp-image-1237" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/panellets-1024x644.png" alt="panellets" width="554" height="349" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/10/panellets-1024x644.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/panellets-300x189.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/panellets-768x483.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/10/panellets.png 1200w" sizes="(max-width: 554px) 100vw, 554px" />
+                                              <img loading="lazy" class="alignnone wp-image-1237" src="/wp-content/uploads/2019/10/panellets-1024x644.png" alt="panellets" width="554" height="349" srcset="/wp-content/uploads/2019/10/panellets-1024x644.png 1024w, /wp-content/uploads/2019/10/panellets-300x189.png 300w, /wp-content/uploads/2019/10/panellets-768x483.png 768w, /wp-content/uploads/2019/10/panellets.png 1200w" sizes="(max-width: 554px) 100vw, 554px" />
                                             </p>
                                             
                                             <p>

@@ -36,26 +36,26 @@ tags:
 
 <span style="font-size: 12pt; font-family: Didact Gothic;">Tried again and again, and this only happened in certain NSGs, so well I thought there was a problem with the command line, I tried the same with the GUI and… the same.</span>
 
-<span style="font-size: 12pt; font-family: Didact Gothic;"><img src="http://wp.docker.localhost:8000/wp-content/uploads/2017/12/123117_1550_AzureErrorw1.png" alt="" /></span>
+<span style="font-size: 12pt; font-family: Didact Gothic;"><img src="/wp-content/uploads/2017/12/123117_1550_AzureErrorw1.png" alt="" /></span>
 
 ## <span style="font-family: Didact Gothic;">Solution</span>
 
 <span style="font-family: Didact Gothic;"><span style="font-size: 12pt;">Investigating the error it didn&#8217;t match with any of the new rules I was trying to add. </span><span style="font-size: 12pt;">Address 193.23.120.<strong>230</strong>/30 seems correct but if we use a subnet calculator, you will see this:</span></span>
 
-<span style="font-size: 12pt;"><img loading="lazy" class="" src="http://wp.docker.localhost:8000/wp-content/uploads/2017/12/123117_1550_AzureErrorw2.png" alt="" width="554" height="236" /></span>
+<span style="font-size: 12pt;"><img loading="lazy" class="" src="/wp-content/uploads/2017/12/123117_1550_AzureErrorw2.png" alt="" width="554" height="236" /></span>
 
 <span style="font-size: 12pt; font-family: Didact Gothic;">The right address should be deleting all ones after the netmask because it doesn&#8217;t care about what is after the netmask bits.</span>
 
 <span style="font-size: 12pt; font-family: Didact Gothic;">This means that the new address is <strong>193.23.120.228/30 </strong>because we put zeros instead of ones after the netmask bits.</span>
 
-<span style="font-size: 12pt; font-family: Didact Gothic;"><img src="http://wp.docker.localhost:8000/wp-content/uploads/2017/12/123117_1550_AzureErrorw3.png" alt="" /></span>
+<span style="font-size: 12pt; font-family: Didact Gothic;"><img src="/wp-content/uploads/2017/12/123117_1550_AzureErrorw3.png" alt="" /></span>
 
 <span style="font-size: 12pt; font-family: Didact Gothic;">So, it seems a CIDN error! Seems that Azure let me add this rules in the past, but now it&#8217;s not accepting it so, if we change it the way that subnet calculator does, problem resolved!</span>
 
 <span style="font-family: Didact Gothic;"><span style="font-size: 12pt;">Solution? Had to delete the non-compliant CIDR rules and added the new ones CIDR compliant.</span> <span style="font-size: 12pt;">Executed the same in other NSGs and worked like a charm.</span></span>  
 <span style="font-size: 12pt; font-family: Didact Gothic;">All rules are finally shown in Azure Panel:</span>
 
-<span style="font-size: 12pt;"><img loading="lazy" class="" src="http://wp.docker.localhost:8000/wp-content/uploads/2017/12/123117_1550_AzureErrorw4.png" alt="" width="681" height="55" /></span>
+<span style="font-size: 12pt;"><img loading="lazy" class="" src="/wp-content/uploads/2017/12/123117_1550_AzureErrorw4.png" alt="" width="681" height="55" /></span>
 
 <span style="font-size: 12pt; font-family: Didact Gothic;">Well, seems that Azure didn&#8217;t comply with CIDR addresses in the past and now it&#8217;s mandatory if it founds any non-compliant CIDR rule. An easy mistake that we can avoid checking our addresses before we try to add them to Azure.</span>
 

@@ -26,11 +26,11 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">So, the first official day is on Monday (November 4th) where there aren&#8217;t many people like the next day (the second day, Tuesday 5th) but anyway there are many activities to do!</span>
 
-<span style="font-family: Nunito;"><img loading="lazy" class="alignnone wp-image-1445 " src="http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-768x768.jpg" alt="" width="428" height="428" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-768x768.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-300x300.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-1024x1024.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-150x150.jpg 150w, http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534.jpg 1370w" sizes="(max-width: 428px) 100vw, 428px" /></span>
+<span style="font-family: Nunito;"><img loading="lazy" class="alignnone wp-image-1445 " src="/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-768x768.jpg" alt="" width="428" height="428" srcset="/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-768x768.jpg 768w, /wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-300x300.jpg 300w, /wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-1024x1024.jpg 1024w, /wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-150x150.jpg 150w, /wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534.jpg 1370w" sizes="(max-width: 428px) 100vw, 428px" /></span>
 
 <span style="font-family: Nunito; font-size: 16px;">This time I was awarded a blogger pass, hence, I will have the honor to be with other bloggers at VMworld while enjoying some privileges like having a reserved seat in the general session, stay with other bloggers or join some special events.</span>
 
-# **<span style="font-family: Nunito; color: #000000; font-size: 32px;">The Community: vCommunity</span>**
+# **<span style="font-family: Nunito;  font-size: 32px;">The Community: vCommunity</span>**
 
 <span style="font-family: Nunito; font-size: 16px;">I think that for almost everyone that is involved in the vCommunity, VMworld means vCommunity but why?</span>
 
@@ -56,11 +56,11 @@ tags:
 
 &nbsp;
 
-# **<span style="font-family: Nunito; color: #000000; font-size: 32px;">1st general session</span>**
+# **<span style="font-family: Nunito;  font-size: 32px;">1st general session</span>**
 
 <span style="font-family: Nunito; font-size: 16px;">Although there weren&#8217;t bigger announcements like at the VMworld US, there were some new projects and features that were announced.</span>
 
-<span style="font-family: Nunito;"><img loading="lazy" class="alignnone wp-image-1436 size-medium_large" src="http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_gen_ses_1-768x432.jpg" alt="" width="656" height="369" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_gen_ses_1-768x432.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_gen_ses_1-300x169.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2020/01/VMworld_gen_ses_1.jpg 1000w" sizes="(max-width: 656px) 100vw, 656px" /></span>
+<span style="font-family: Nunito;"><img loading="lazy" class="alignnone wp-image-1436 size-medium_large" src="/wp-content/uploads/2020/01/VMworld_gen_ses_1-768x432.jpg" alt="" width="656" height="369" srcset="/wp-content/uploads/2020/01/VMworld_gen_ses_1-768x432.jpg 768w, /wp-content/uploads/2020/01/VMworld_gen_ses_1-300x169.jpg 300w, /wp-content/uploads/2020/01/VMworld_gen_ses_1.jpg 1000w" sizes="(max-width: 656px) 100vw, 656px" /></span>
 
 <span style="font-family: Nunito; font-size: 16px;">Day 1 (Now talking about November 5th) is more focused on announcements about new products, strategies and gives you a better vision of what VMware has to offer with new features, insights, etc.</span>
 
@@ -68,7 +68,7 @@ tags:
 
   * <span style="font-family: Nunito;"><a href="https://www.youtube.com/watch?v=UHlo7aS_8Mc"><span style="font-size: 16px;">Day 1 General Session (November 5th)</span></a></span>
 
-# <span style="font-size: 32px;"><strong><span style="font-family: Nunito; color: #000000;">vBrownbag Tech Talks</span></strong></span>
+# <span style="font-size: 32px;"><strong><span style="font-family: Nunito; ">vBrownbag Tech Talks</span></strong></span>
 
 <span style="font-family: Nunito; font-size: 16px;">On Day 1 there wasn&#8217;t much to do as we couldn&#8217;t record anything at the vBrownbag stage.</span>
 
@@ -110,13 +110,13 @@ tags:
 
 
 
-# <span style="font-size: 32px;"><strong><span style="font-family: Nunito; color: #000000;">Enjoying VMworld</span></strong></span>
+# <span style="font-size: 32px;"><strong><span style="font-family: Nunito; ">Enjoying VMworld</span></strong></span>
 
 <span style="font-family: Nunito; font-size: 16px;">And here I share with you some events, moments and things that couldn&#8217;t be possible without the vCommunity.</span>
 
 <span style="font-family: Nunito; font-size: 16px;">All these moments are perfect to meet new people, engage with them and have fun!</span>
 
-## <span style="font-size: 28px;"><strong><span style="font-family: Nunito; color: #000000;">vFit Run</span></strong></span>
+## <span style="font-size: 28px;"><strong><span style="font-family: Nunito; ">vFit Run</span></strong></span>
 
 <span style="font-family: Nunito; font-size: 16px;">In the early morning (6:45 AM) we did a run on the first day (November 4th) with some people from the community. It was so nice but at the same time painful to wake up at that time&#8230;</span>
 
@@ -134,7 +134,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">There was a second run scheduled for November 6th but I couldn&#8217;t attend so I assume that it wasn&#8217;t done.</span>
 
-## <span style="font-size: 28px;"><strong><span style="font-family: Nunito; color: #000000;">vSoccer</span></strong></span>
+## <span style="font-size: 28px;"><strong><span style="font-family: Nunito; ">vSoccer</span></strong></span>
 
 <span style="font-size: 16px; font-family: Nunito;">So, a run for me in the morning and at night&#8230;soccer, no, vSoccer!</span>
 
@@ -152,7 +152,7 @@ tags:
 
 
 
-## <span style="font-size: 28px;"><strong><span style="font-family: Nunito; color: #000000;">vStreetfighter</span></strong></span>
+## <span style="font-size: 28px;"><strong><span style="font-family: Nunito; ">vStreetfighter</span></strong></span>
 
 <span style="font-size: 16px; font-family: Nunito;">Well&#8230; this can happen at any hour&#8230; Gregg, Ariel and I love Street Fighter so, if you want to play with us at VMworld (or online) just let us know.</span>
 
@@ -170,7 +170,7 @@ tags:
 
 
 
-## <span style="font-family: Nunito;"><span style="font-size: 28px;"><strong><span style="color: #000000;">vBreakfast</span></strong></span><br /> </span>
+## <span style="font-family: Nunito;"><span style="font-size: 28px;"><strong><span style="">vBreakfast</span></strong></span><br /> </span>
 
 <span style="font-size: 16px; font-family: Nunito;">Another amazing event from the vCommunity (organized by Fred Hofer). This is always done on the second day (November 5th) before the general session. There is a special place where we have a great breakfast and if there is a sponsor (Runecast) you will have it for free 🙂</span>
 

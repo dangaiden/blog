@@ -25,7 +25,7 @@ tags:
 
 <span style="font-family: Didact Gothic; font-size: 16px;">There you can check a path to achieve VCP6-DCV (there is a newer version VCP6.5-DCV). I took path 1, as I wasn&#8217;t certified.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;"><img src="http://wp.docker.localhost:8000/wp-content/uploads/2017/09/090317_1620_VCP6DCVachi1.png" alt="" /></span>
+<span style="font-size: 16px; font-family: Didact Gothic;"><img src="/wp-content/uploads/2017/09/090317_1620_VCP6DCVachi1.png" alt="" /></span>
 
 <span style="font-family: Didact Gothic; font-size: 16px;">Later, I took <a name="&lpos=apps_scodevmw_:_270"></a>one official training course, <a href="http://mylearn.vmware.com/mgrreg/courses.cfm?ui=www_edu&a=one&id_subject=60901">VMware vSphere: Install, Configure, Manage [V6]</a>.</span>
 
@@ -33,7 +33,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Didact Gothic;">And finally, last week I passed!</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;"><img src="http://wp.docker.localhost:8000/wp-content/uploads/2017/09/090317_1620_VCP6DCVachi2.png" alt="" /></span>
+<span style="font-size: 16px; font-family: Didact Gothic;"><img src="/wp-content/uploads/2017/09/090317_1620_VCP6DCVachi2.png" alt="" /></span>
 
 <span style="font-size: 16px; font-family: Didact Gothic;">The first exam is an introduction of VMware and I didn&#8217;t find it difficult. The second one is more difficult and there is a lot of content to study..</span>
 

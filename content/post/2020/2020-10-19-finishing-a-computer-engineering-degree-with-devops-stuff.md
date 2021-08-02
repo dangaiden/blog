@@ -24,7 +24,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">In my case, I finally decided to get into the <strong>DevOps</strong> world and my assignment is <strong><em>Building a production CI/CD pipeline</em></strong>.</span>
 
-# <span style="font-family: Nunito; color: #000000; font-size: 32px;">Some sort of introduction&#8230;</span>
+# <span style="font-family: Nunito;  font-size: 32px;">Some sort of introduction&#8230;</span>
 
 <span style="font-family: Nunito;">I<span style="font-size: 16px;"> suppose you&#8217;re currently aware of the trending topic regarding <em>Containers</em> and <em>Container Orchestrators</em>, in particular (you know them), <strong>Docker</strong> and <strong>Kubernetes</strong>. </span></span>
 
@@ -32,11 +32,11 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">So regarding DevOps, you probably know is a culture and it follows a set of practices where the software development world and the IT operations are combined in order to speed up and improve the process of application delivery (a.k.a. SDLC).</span>
 
-<span style="font-family: Nunito; font-size: 16px;"><img loading="lazy" class="alignnone wp-image-1842 " src="http://wp.docker.localhost:8000/wp-content/uploads/2020/10/devops.png" alt="" width="550" height="275" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2020/10/devops.png 800w, http://wp.docker.localhost:8000/wp-content/uploads/2020/10/devops-300x150.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2020/10/devops-768x384.png 768w" sizes="(max-width: 550px) 100vw, 550px" /></span>
+<span style="font-family: Nunito; font-size: 16px;"><img loading="lazy" class="alignnone wp-image-1842 " src="/wp-content/uploads/2020/10/devops.png" alt="" width="550" height="275" srcset="/wp-content/uploads/2020/10/devops.png 800w, /wp-content/uploads/2020/10/devops-300x150.png 300w, /wp-content/uploads/2020/10/devops-768x384.png 768w" sizes="(max-width: 550px) 100vw, 550px" /></span>
 
 <span style="font-family: Nunito;"><span style="font-size: 16px;">Continuing with DevOps, there is a pipeline or process which combines the practices of CI (Continuos Integrity) and CD (Continuous Delivery) and that&#8217;s the process that I am going to describe and build for my final assignment.</span><br /> </span>
 
-# <span style="font-family: Nunito; color: #000000; font-size: 32px;">But&#8230;why this topic?</span>
+# <span style="font-family: Nunito;  font-size: 32px;">But&#8230;why this topic?</span>
 
 <span style="font-family: Nunito; font-size: 16px;">Good question&#8230; I know almost nothing about that world which is a good approach for many enterprises but not for all of them.</span>
 
@@ -52,9 +52,9 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">I believe that this will help me to gain knowledge in those areas and advance in my career, therefore, I will be sharing all the useful information I researched during the entire project.</span>
 
-<img loading="lazy" class="alignnone wp-image-1851 size-full" src="http://wp.docker.localhost:8000/wp-content/uploads/2020/10/could-devops-mean-using-all-the-tools-i-can-at-once.jpg" alt="" width="480" height="480" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2020/10/could-devops-mean-using-all-the-tools-i-can-at-once.jpg 480w, http://wp.docker.localhost:8000/wp-content/uploads/2020/10/could-devops-mean-using-all-the-tools-i-can-at-once-300x300.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2020/10/could-devops-mean-using-all-the-tools-i-can-at-once-150x150.jpg 150w" sizes="(max-width: 480px) 100vw, 480px" /> 
+<img loading="lazy" class="alignnone wp-image-1851 size-full" src="/wp-content/uploads/2020/10/could-devops-mean-using-all-the-tools-i-can-at-once.jpg" alt="" width="480" height="480" srcset="/wp-content/uploads/2020/10/could-devops-mean-using-all-the-tools-i-can-at-once.jpg 480w, /wp-content/uploads/2020/10/could-devops-mean-using-all-the-tools-i-can-at-once-300x300.jpg 300w, /wp-content/uploads/2020/10/could-devops-mean-using-all-the-tools-i-can-at-once-150x150.jpg 150w" sizes="(max-width: 480px) 100vw, 480px" /> 
 
-# <span style="font-family: Nunito; color: #000000; font-size: 32px;">How?</span>
+# <span style="font-family: Nunito;  font-size: 32px;">How?</span>
 
 <span style="font-family: Nunito; font-size: 16px;">It is known that there many ways to build a CI/CD pipeline and <strong>many</strong> tools that you can use for each phase but in this project, I will try to start with the «foundation» of the main tools used (Container runtime, Container Orchestrator, Configuration and provision management, etc.).</span>
 
@@ -62,7 +62,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">So basically, I am aiming to <strong>build everything on-premise</strong> except the service itself (which will be a web application) that would be hosted in the cloud, in order to achieve a better service in terms of availability, resiliency, etc.</span>
 
-<img loading="lazy" class="alignnone wp-image-1848 " src="http://wp.docker.localhost:8000/wp-content/uploads/2020/10/yoda_devops.jpg" alt="" width="398" height="398" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2020/10/yoda_devops.jpg 640w, http://wp.docker.localhost:8000/wp-content/uploads/2020/10/yoda_devops-300x300.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2020/10/yoda_devops-150x150.jpg 150w" sizes="(max-width: 398px) 100vw, 398px" /> 
+<img loading="lazy" class="alignnone wp-image-1848 " src="/wp-content/uploads/2020/10/yoda_devops.jpg" alt="" width="398" height="398" srcset="/wp-content/uploads/2020/10/yoda_devops.jpg 640w, /wp-content/uploads/2020/10/yoda_devops-300x300.jpg 300w, /wp-content/uploads/2020/10/yoda_devops-150x150.jpg 150w" sizes="(max-width: 398px) 100vw, 398px" /> 
 
 <span style="font-size: 16px;">Therefore,<strong> a mix of on-premise and cloud CI/CD pipeline is the objective</strong> with the main focus on the process and not the code of the application.</span>
 
@@ -70,9 +70,9 @@ tags:
 
 &nbsp;
 
-# <span style="font-family: Nunito; color: #000000; font-size: 32px;">Summary</span>
+# <span style="font-family: Nunito;  font-size: 32px;">Summary</span>
 
-<img loading="lazy" class="alignnone wp-image-1852 size-full" src="http://wp.docker.localhost:8000/wp-content/uploads/2020/10/i-know-devops-maybe-not.jpg" alt="" width="853" height="480" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2020/10/i-know-devops-maybe-not.jpg 853w, http://wp.docker.localhost:8000/wp-content/uploads/2020/10/i-know-devops-maybe-not-300x169.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2020/10/i-know-devops-maybe-not-768x432.jpg 768w" sizes="(max-width: 853px) 100vw, 853px" /> 
+<img loading="lazy" class="alignnone wp-image-1852 size-full" src="/wp-content/uploads/2020/10/i-know-devops-maybe-not.jpg" alt="" width="853" height="480" srcset="/wp-content/uploads/2020/10/i-know-devops-maybe-not.jpg 853w, /wp-content/uploads/2020/10/i-know-devops-maybe-not-300x169.jpg 300w, /wp-content/uploads/2020/10/i-know-devops-maybe-not-768x432.jpg 768w" sizes="(max-width: 853px) 100vw, 853px" /> 
 
 <span style="font-size: 16px; font-family: Nunito;">In short, I am aiming to gain knowledge about this new area where developers and operations meet, and «everything» is automated (or at least a great part of it).</span>
 

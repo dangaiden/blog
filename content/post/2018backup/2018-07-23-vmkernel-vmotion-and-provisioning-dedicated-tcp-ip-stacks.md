@@ -35,20 +35,20 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">A TCP/IP stack is a set of networking protocols (Do you remember the OSI Model?) used to provide networking support for the services that it handles. So you can use different stacks to support in different ways a service within the stack.</span>
 
-<span style="font-size: 16px; font-family: Nunito;">A quick look at the services you can choose when creating a VMkernel port:<img loading="lazy" class="alignnone size-full wp-image-137" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/07/services_vmk-1.png" alt="" width="400" height="203" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/07/services_vmk-1.png 400w, http://wp.docker.localhost:8000/wp-content/uploads/2018/07/services_vmk-1-300x152.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></span>
+<span style="font-size: 16px; font-family: Nunito;">A quick look at the services you can choose when creating a VMkernel port:<img loading="lazy" class="alignnone size-full wp-image-137" src="/wp-content/uploads/2018/07/services_vmk-1.png" alt="" width="400" height="203" srcset="/wp-content/uploads/2018/07/services_vmk-1.png 400w, /wp-content/uploads/2018/07/services_vmk-1-300x152.png 300w" sizes="(max-width: 400px) 100vw, 400px" /></span>
 
 <span style="font-size: 16px; font-family: Nunito;">I am not going to explain each one because we are going to focus on <strong>vMotion and Provisioning traffic</strong>.<br /> </span>
 
-<span style="font-size: 16px; font-family: Nunito;">Continuing with TCP/IP stacks, when you create a new VMkernel in an ESXi host, you can choose which services do you want to enable:  <img loading="lazy" class="alignnone wp-image-136" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/07/addNW-1.png" alt="" width="599" height="394" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/07/addNW-1.png 647w, http://wp.docker.localhost:8000/wp-content/uploads/2018/07/addNW-1-300x198.png 300w" sizes="(max-width: 599px) 100vw, 599px" /></span>
+<span style="font-size: 16px; font-family: Nunito;">Continuing with TCP/IP stacks, when you create a new VMkernel in an ESXi host, you can choose which services do you want to enable:  <img loading="lazy" class="alignnone wp-image-136" src="/wp-content/uploads/2018/07/addNW-1.png" alt="" width="599" height="394" srcset="/wp-content/uploads/2018/07/addNW-1.png 647w, /wp-content/uploads/2018/07/addNW-1-300x198.png 300w" sizes="(max-width: 599px) 100vw, 599px" /></span>
 
 <span style="font-size: 16px; font-family: Nunito;">Regarding vMotion and Provisioning TCP/IP stacks you could do it in two ways:</span>
 
 <ul style="list-style-type: square;">
   <li>
-    <span style="font-size: 16px; font-family: Nunito;">For vMotion, for example, you can do the following (this is the most common configuration, Default TCP/IP stack with a service Enabled):<img loading="lazy" class="alignnone size-full wp-image-138" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/07/vmkopt1-1.png" alt="" width="649" height="429" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/07/vmkopt1-1.png 649w, http://wp.docker.localhost:8000/wp-content/uploads/2018/07/vmkopt1-1-300x198.png 300w" sizes="(max-width: 649px) 100vw, 649px" /></span>
+    <span style="font-size: 16px; font-family: Nunito;">For vMotion, for example, you can do the following (this is the most common configuration, Default TCP/IP stack with a service Enabled):<img loading="lazy" class="alignnone size-full wp-image-138" src="/wp-content/uploads/2018/07/vmkopt1-1.png" alt="" width="649" height="429" srcset="/wp-content/uploads/2018/07/vmkopt1-1.png 649w, /wp-content/uploads/2018/07/vmkopt1-1-300x198.png 300w" sizes="(max-width: 649px) 100vw, 649px" /></span>
   </li>
   <li>
-    <span style="font-size: 16px; font-family: Nunito;">Or (Dedicated TCP/IP stack):<img loading="lazy" class="alignnone size-full wp-image-135" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/07/vmkopt2-1.png" alt="" width="654" height="431" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/07/vmkopt2-1.png 654w, http://wp.docker.localhost:8000/wp-content/uploads/2018/07/vmkopt2-1-300x198.png 300w" sizes="(max-width: 654px) 100vw, 654px" /></span>
+    <span style="font-size: 16px; font-family: Nunito;">Or (Dedicated TCP/IP stack):<img loading="lazy" class="alignnone size-full wp-image-135" src="/wp-content/uploads/2018/07/vmkopt2-1.png" alt="" width="654" height="431" srcset="/wp-content/uploads/2018/07/vmkopt2-1.png 654w, /wp-content/uploads/2018/07/vmkopt2-1-300x198.png 300w" sizes="(max-width: 654px) 100vw, 654px" /></span>
   </li>
 </ul>
 

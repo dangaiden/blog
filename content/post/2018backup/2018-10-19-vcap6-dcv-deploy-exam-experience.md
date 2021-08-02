@@ -83,7 +83,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Didact Gothic;">In 1 hour approximately I received the email and&#8230;a <strong>PASS</strong>! Couldn&#8217;t be happier! Finally, a full exam without issues made me <strong>pass the exam</strong>!</span>
 
-<img loading="lazy" class="alignnone wp-image-393 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/10/vcap6-dcv-1024x721.png" alt="" width="656" height="462" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/10/vcap6-dcv-1024x721.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2018/10/vcap6-dcv-300x211.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2018/10/vcap6-dcv-768x541.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2018/10/vcap6-dcv.png 1234w" sizes="(max-width: 656px) 100vw, 656px" /> 
+<img loading="lazy" class="alignnone wp-image-393 size-large" src="/wp-content/uploads/2018/10/vcap6-dcv-1024x721.png" alt="" width="656" height="462" srcset="/wp-content/uploads/2018/10/vcap6-dcv-1024x721.png 1024w, /wp-content/uploads/2018/10/vcap6-dcv-300x211.png 300w, /wp-content/uploads/2018/10/vcap6-dcv-768x541.png 768w, /wp-content/uploads/2018/10/vcap6-dcv.png 1234w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 ### <span style="font-family: Didact Gothic;">Conclusion</span>
 

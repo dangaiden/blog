@@ -28,7 +28,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Didact Gothic;">So, let&#8217;s talk about clones&#8230; but just full clones.</span>
 
-<img loading="lazy" class="alignnone wp-image-649 " src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/2clones_matrix_v2-1024x576.jpg" alt="clones_thematrix" width="636" height="358" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/2clones_matrix_v2-1024x576.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/2clones_matrix_v2-300x169.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/2clones_matrix_v2-768x432.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/2clones_matrix_v2-1536x864.jpg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/2clones_matrix_v2-1568x882.jpg 1568w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/2clones_matrix_v2.jpg 1920w" sizes="(max-width: 636px) 100vw, 636px" /> 
+<img loading="lazy" class="alignnone wp-image-649 " src="/wp-content/uploads/2019/03/2clones_matrix_v2-1024x576.jpg" alt="clones_thematrix" width="636" height="358" srcset="/wp-content/uploads/2019/03/2clones_matrix_v2-1024x576.jpg 1024w, /wp-content/uploads/2019/03/2clones_matrix_v2-300x169.jpg 300w, /wp-content/uploads/2019/03/2clones_matrix_v2-768x432.jpg 768w, /wp-content/uploads/2019/03/2clones_matrix_v2-1536x864.jpg 1536w, /wp-content/uploads/2019/03/2clones_matrix_v2-1568x882.jpg 1568w, /wp-content/uploads/2019/03/2clones_matrix_v2.jpg 1920w" sizes="(max-width: 636px) 100vw, 636px" /> 
 
 ### **<span style="font-size: 24px; font-family: Didact Gothic;">How does it work?</span>**
 
@@ -36,7 +36,7 @@ tags:
 
 <span style="font-size: 16px;">This action can be performed if the <strong>parent VM is powered off or powered on</strong> and, if it has snapshots it will consolidate them once the clone is done.</span>
 
-<img loading="lazy" class="alignnone wp-image-647" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/FullClone_process-768x739.png" alt="Fullclone_process" width="585" height="563" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/FullClone_process-768x739.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/FullClone_process-300x289.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/FullClone_process.png 1001w" sizes="(max-width: 585px) 100vw, 585px" /> 
+<img loading="lazy" class="alignnone wp-image-647" src="/wp-content/uploads/2019/03/FullClone_process-768x739.png" alt="Fullclone_process" width="585" height="563" srcset="/wp-content/uploads/2019/03/FullClone_process-768x739.png 768w, /wp-content/uploads/2019/03/FullClone_process-300x289.png 300w, /wp-content/uploads/2019/03/FullClone_process.png 1001w" sizes="(max-width: 585px) 100vw, 585px" /> 
 
 <span style="font-size: 16px; font-family: Didact Gothic;">When you clone a VM be aware that, all data will be identical so, if you power on the clone without performing any customization, probably you will have conflicts with IPs, MAC addresses, SIDs (Windows), etc.</span>
 
@@ -54,7 +54,7 @@ tags:
 
 <span style="font-size: 16px;">You can do it through vSphere Web Client, as simple as, right-click a VM -> «Clone to Virtual Machine&#8230;» :</span>
 
-<img loading="lazy" class="alignnone wp-image-638 " src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vSphereWebClient_clone.png" alt="vSphereWebClient_clone" width="637" height="309" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vSphereWebClient_clone.png 881w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vSphereWebClient_clone-300x145.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vSphereWebClient_clone-768x372.png 768w" sizes="(max-width: 637px) 100vw, 637px" /> 
+<img loading="lazy" class="alignnone wp-image-638 " src="/wp-content/uploads/2019/03/vSphereWebClient_clone.png" alt="vSphereWebClient_clone" width="637" height="309" srcset="/wp-content/uploads/2019/03/vSphereWebClient_clone.png 881w, /wp-content/uploads/2019/03/vSphereWebClient_clone-300x145.png 300w, /wp-content/uploads/2019/03/vSphereWebClient_clone-768x372.png 768w" sizes="(max-width: 637px) 100vw, 637px" /> 
 
 <span style="font-size: 16px;">Once it finishes, it takes some time (depends on the storage that the source VM has allocated) but in the end, you will have your new clone.</span>
 
@@ -64,7 +64,7 @@ tags:
 
 #### <span style="font-size: 20px; font-family: Didact Gothic;">PowerCLI</span>
 
-<span style="font-size: 16px;">Of course, you can do it with PowerCLI. These are the minimal parameters needed to perform it (<strong>Disk Storage Format</strong> parameter is optional but recommended because, by default, it will convert all disks to Thick Provision Eager Zeroed):</span><img loading="lazy" class="alignnone wp-image-637 " src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone-1024x348.png" alt="PowerCLIwithPercentatge_clone" width="641" height="218" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone-1024x348.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone-300x102.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone-768x261.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone.png 1228w" sizes="(max-width: 641px) 100vw, 641px" />
+<span style="font-size: 16px;">Of course, you can do it with PowerCLI. These are the minimal parameters needed to perform it (<strong>Disk Storage Format</strong> parameter is optional but recommended because, by default, it will convert all disks to Thick Provision Eager Zeroed):</span><img loading="lazy" class="alignnone wp-image-637 " src="/wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone-1024x348.png" alt="PowerCLIwithPercentatge_clone" width="641" height="218" srcset="/wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone-1024x348.png 1024w, /wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone-300x102.png 300w, /wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone-768x261.png 768w, /wp-content/uploads/2019/03/PowerCLIwithPercentatge_clone.png 1228w" sizes="(max-width: 641px) 100vw, 641px" />
 
 `<span style="font-size: 14px;"><span style="background-color: #999999;"><span style="background-color: #c7c7c7;"><span style="background-color: #e8e8e8;"><strong>New-VM -Name <CloneName> -VMHost <VMHost> -VM <VirtualMachineSourceVM> [-DiskStorageFormat <VirtualDiskStorageFormat>]</strong></span></span></span></span>`
 

@@ -45,7 +45,7 @@ tags:
 
 What can you see here?
 
-<figure id="attachment_786" aria-describedby="caption-attachment-786" style="width: 656px" class="wp-caption alignnone"><img loading="lazy" class="wp-image-786 size-medium_large" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/LinkedClone-768x294.png" alt="KR_linked" width="656" height="251" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/LinkedClone-768x294.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/LinkedClone-300x115.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/LinkedClone-1024x392.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/LinkedClone.png 1280w" sizes="(max-width: 656px) 100vw, 656px" /><figcaption id="caption-attachment-786" class="wp-caption-text">Keanu Reeves has been linked cloned!</figcaption></figure>
+<figure id="attachment_786" aria-describedby="caption-attachment-786" style="width: 656px" class="wp-caption alignnone"><img loading="lazy" class="wp-image-786 size-medium_large" src="/wp-content/uploads/2019/04/LinkedClone-768x294.png" alt="KR_linked" width="656" height="251" srcset="/wp-content/uploads/2019/04/LinkedClone-768x294.png 768w, /wp-content/uploads/2019/04/LinkedClone-300x115.png 300w, /wp-content/uploads/2019/04/LinkedClone-1024x392.png 1024w, /wp-content/uploads/2019/04/LinkedClone.png 1280w" sizes="(max-width: 656px) 100vw, 656px" /><figcaption id="caption-attachment-786" class="wp-caption-text">Keanu Reeves has been linked cloned!</figcaption></figure>
 
 <span style="font-size: 16px;">In the previous image, you can see 3 different characters but they share something in common&#8230;the actor!</span>
 
@@ -55,7 +55,7 @@ What can you see here?
 
 <span style="font-size: 16px;">The resulting linked clone will be <strong>created from the parent&#8217;s VM snapshot</strong> and because of being a <a href="https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/managing_virtual_machines/c_about_snapshots.html">snapshot</a>, it will have the same state that was the snapshot was taken.</span>
 
-<img loading="lazy" class="alignnone wp-image-605 size-medium_large" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/02/LinkedClone-768x730.png" alt="LinkedClone" width="656" height="624" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/02/LinkedClone-768x730.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/02/LinkedClone-300x285.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/02/LinkedClone.png 961w" sizes="(max-width: 656px) 100vw, 656px" /> 
+<img loading="lazy" class="alignnone wp-image-605 size-medium_large" src="/wp-content/uploads/2019/02/LinkedClone-768x730.png" alt="LinkedClone" width="656" height="624" srcset="/wp-content/uploads/2019/02/LinkedClone-768x730.png 768w, /wp-content/uploads/2019/02/LinkedClone-300x285.png 300w, /wp-content/uploads/2019/02/LinkedClone.png 961w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 <span style="font-size: 16px; font-family: Didact Gothic;">When the linked clone is created, it <strong>shares his own virtual disk</strong> (.vmdk file) with the <strong>snapshot from the parent VM</strong>, this leads to some unique features:</span>
 
@@ -94,13 +94,13 @@ What can you see here?
 
 <span style="font-family: Didact Gothic; font-size: 16px;">Inside the Guest OS:</span>
 
-<img loading="lazy" class="alignnone size-medium_large wp-image-814" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQLMasterVM-768x662.jpg" alt="" width="656" height="565" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQLMasterVM-768x662.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQLMasterVM-300x258.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQLMasterVM-1024x882.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQLMasterVM.jpg 1112w" sizes="(max-width: 656px) 100vw, 656px" /> 
+<img loading="lazy" class="alignnone size-medium_large wp-image-814" src="/wp-content/uploads/2019/04/SQLMasterVM-768x662.jpg" alt="" width="656" height="565" srcset="/wp-content/uploads/2019/04/SQLMasterVM-768x662.jpg 768w, /wp-content/uploads/2019/04/SQLMasterVM-300x258.jpg 300w, /wp-content/uploads/2019/04/SQLMasterVM-1024x882.jpg 1024w, /wp-content/uploads/2019/04/SQLMasterVM.jpg 1112w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 &nbsp;
 
 <span style="font-family: Didact Gothic; font-size: 16px;">Space allocated in DS:</span>
 
-<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-742 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQLMasterVM_disksinDS-1024x144.png" alt="" width="656" height="92" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQLMasterVM_disksinDS-1024x144.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQLMasterVM_disksinDS-300x42.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQLMasterVM_disksinDS-768x108.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQLMasterVM_disksinDS.png 1315w" sizes="(max-width: 656px) 100vw, 656px" /></span>
+<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-742 size-large" src="/wp-content/uploads/2019/03/SQLMasterVM_disksinDS-1024x144.png" alt="" width="656" height="92" srcset="/wp-content/uploads/2019/03/SQLMasterVM_disksinDS-1024x144.png 1024w, /wp-content/uploads/2019/03/SQLMasterVM_disksinDS-300x42.png 300w, /wp-content/uploads/2019/03/SQLMasterVM_disksinDS-768x108.png 768w, /wp-content/uploads/2019/03/SQLMasterVM_disksinDS.png 1315w" sizes="(max-width: 656px) 100vw, 656px" /></span>
 
 &nbsp;
 
@@ -141,11 +141,11 @@ What can you see here?
 
 &nbsp;
 
-<span style="font-family: Didact Gothic;"><span style="font-size: 16px;">We can see the amount of<strong> time</strong> that takes to create a Linked clone (<strong>5 seconds</strong>):</span><span style="font-size: 16px;"><img loading="lazy" class="alignnone wp-image-741 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png" alt="" width="656" height="111" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/LinkedClone_tasks-300x51.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/LinkedClone_tasks-768x130.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/LinkedClone_tasks-1536x260.png 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/LinkedClone_tasks.png 1552w" sizes="(max-width: 656px) 100vw, 656px" /></span></span>
+<span style="font-family: Didact Gothic;"><span style="font-size: 16px;">We can see the amount of<strong> time</strong> that takes to create a Linked clone (<strong>5 seconds</strong>):</span><span style="font-size: 16px;"><img loading="lazy" class="alignnone wp-image-741 size-large" src="/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png" alt="" width="656" height="111" srcset="/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png 1024w, /wp-content/uploads/2019/03/LinkedClone_tasks-300x51.png 300w, /wp-content/uploads/2019/03/LinkedClone_tasks-768x130.png 768w, /wp-content/uploads/2019/03/LinkedClone_tasks-1536x260.png 1536w, /wp-content/uploads/2019/03/LinkedClone_tasks.png 1552w" sizes="(max-width: 656px) 100vw, 656px" /></span></span>
 
 <span style="font-size: 16px; font-family: Didact Gothic;">And now look at the <strong>storage allocated</strong> by the Linked clone (powered off), <strong>750 MB</strong> approximately:</span>
 
-<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-740 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation-1024x246.png" alt="" width="656" height="158" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation-1024x246.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation-300x72.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation-768x185.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation.png 1147w" sizes="(max-width: 656px) 100vw, 656px" /></span>
+<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-740 size-large" src="/wp-content/uploads/2019/03/SQL_LC1_DSAllocation-1024x246.png" alt="" width="656" height="158" srcset="/wp-content/uploads/2019/03/SQL_LC1_DSAllocation-1024x246.png 1024w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation-300x72.png 300w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation-768x185.png 768w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation.png 1147w" sizes="(max-width: 656px) 100vw, 656px" /></span>
 
 &nbsp;
 
@@ -155,13 +155,13 @@ What can you see here?
 
 <span style="font-size: 16px; font-family: Didact Gothic;">Here is the «real» space allocated after the Linked clone has <strong>booted up and I logged in</strong> with a user, around <strong>4 GB</strong>:</span>
 
-<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-747 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-1024x242.png" alt="" width="656" height="155" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-1024x242.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-300x71.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-768x182.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2.png 1179w" sizes="(max-width: 656px) 100vw, 656px" /></span>
+<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-747 size-large" src="/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-1024x242.png" alt="" width="656" height="155" srcset="/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-1024x242.png 1024w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-300x71.png 300w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-768x182.png 768w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2.png 1179w" sizes="(max-width: 656px) 100vw, 656px" /></span>
 
 &nbsp;
 
 <span style="font-family: Didact Gothic; font-size: 16px;">A look inside the Guest OS of the <strong>linked clone</strong> (new hostname, IP and has the same storage as the Parent VM:</span>
 
-<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone size-medium_large wp-image-813" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQL-LC1-768x739.jpg" alt="" width="656" height="631" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQL-LC1-768x739.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQL-LC1-300x289.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQL-LC1-1024x985.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/04/SQL-LC1.jpg 1056w" sizes="(max-width: 656px) 100vw, 656px" /></span>
+<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone size-medium_large wp-image-813" src="/wp-content/uploads/2019/04/SQL-LC1-768x739.jpg" alt="" width="656" height="631" srcset="/wp-content/uploads/2019/04/SQL-LC1-768x739.jpg 768w, /wp-content/uploads/2019/04/SQL-LC1-300x289.jpg 300w, /wp-content/uploads/2019/04/SQL-LC1-1024x985.jpg 1024w, /wp-content/uploads/2019/04/SQL-LC1.jpg 1056w" sizes="(max-width: 656px) 100vw, 656px" /></span>
 
 ### 
 

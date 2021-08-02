@@ -23,7 +23,7 @@ tags:
 ---
 <span style="font-size: 16px; font-family: Nunito;">vExpert 2020 applications are <a href="https://blogs.vmware.com/vexpert/2019/11/25/vexpert-2020-applications-are-open/">open</a>!</span>
 
-<img loading="lazy" class="wp-image-1348 alignnone" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/12/vexpertlogo2020-1024x692.png" alt="vexpertlogo2020" width="501" height="338" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/12/vexpertlogo2020-1024x692.png 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/12/vexpertlogo2020-300x203.png 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/12/vexpertlogo2020-768x519.png 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/12/vexpertlogo2020.png 1061w" sizes="(max-width: 501px) 100vw, 501px" /> 
+<img loading="lazy" class="wp-image-1348 alignnone" src="/wp-content/uploads/2019/12/vexpertlogo2020-1024x692.png" alt="vexpertlogo2020" width="501" height="338" srcset="/wp-content/uploads/2019/12/vexpertlogo2020-1024x692.png 1024w, /wp-content/uploads/2019/12/vexpertlogo2020-300x203.png 300w, /wp-content/uploads/2019/12/vexpertlogo2020-768x519.png 768w, /wp-content/uploads/2019/12/vexpertlogo2020.png 1061w" sizes="(max-width: 501px) 100vw, 501px" /> 
 
 <span style="font-size: 16px; font-family: Nunito;">Fr</span><span style="font-size: 16px; font-family: Nunito;">om November 25th to January 10th, you can apply to be a vExpert 2020 through many </span><span style="font-size: 16px; font-family: Nunito;">different paths and you must do it if you think you contributed to the VMware community.</span>
 

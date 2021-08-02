@@ -22,7 +22,7 @@ tags:
 ---
 <span style="font-family: Didact Gothic;"><span style="font-size: 14px;">To finish these posts about VMworld  2018 Europe, I am going to summarize day 3 and day 4 together as day 4 is usually the less busy of all of them (people usually leave in the morning</span>).</span>
 
-<img loading="lazy" class="alignnone wp-image-523 size-medium_large" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article-768x404.jpeg" alt="" width="656" height="345" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article-768x404.jpeg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article-300x158.jpeg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article.jpeg 840w" sizes="(max-width: 656px) 100vw, 656px" /> 
+<img loading="lazy" class="alignnone wp-image-523 size-medium_large" src="/wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article-768x404.jpeg" alt="" width="656" height="345" srcset="/wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article-768x404.jpeg 768w, /wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article-300x158.jpeg 300w, /wp-content/uploads/2018/12/9588_VMworld_Barcelona_Article.jpeg 840w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 <span style="font-family: Didact Gothic; font-size: 14px;">On day 3 (Wednesday), I rest like 5-6 hours (pretty normal to me) after spending some part of the night at the Veeam Party. I made it to be at the enclosure at 8:30 AM because at 9:00 it will start the second general session.</span>
 
@@ -56,7 +56,7 @@ tags:
 
 &nbsp;
 
-<span style="font-family: Didact Gothic; font-size: 14px;">Another picture I took from him while been interviewed (Will we see this interview at any time?)</span><img loading="lazy" class="alignnone wp-image-451 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/10/techconfessions-1024x768.jpeg" alt="" width="656" height="492" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/10/techconfessions-1024x768.jpeg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2018/10/techconfessions-300x225.jpeg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2018/10/techconfessions-768x576.jpeg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2018/10/techconfessions.jpeg 1440w" sizes="(max-width: 656px) 100vw, 656px" />
+<span style="font-family: Didact Gothic; font-size: 14px;">Another picture I took from him while been interviewed (Will we see this interview at any time?)</span><img loading="lazy" class="alignnone wp-image-451 size-large" src="/wp-content/uploads/2018/10/techconfessions-1024x768.jpeg" alt="" width="656" height="492" srcset="/wp-content/uploads/2018/10/techconfessions-1024x768.jpeg 1024w, /wp-content/uploads/2018/10/techconfessions-300x225.jpeg 300w, /wp-content/uploads/2018/10/techconfessions-768x576.jpeg 768w, /wp-content/uploads/2018/10/techconfessions.jpeg 1440w" sizes="(max-width: 656px) 100vw, 656px" />
 
 &nbsp;
 
@@ -110,4 +110,4 @@ tags:
 
 <span style="font-family: Didact Gothic; font-size: 14px;">And that&#8217;s all! Last post of the year obviously because it&#8217;s the last day.</span>
 
-<span style="font-size: 14px; font-family: Didact Gothic;">P.S. : I forgot to mention I took a photo with someone&#8230; Rodney Mullen!</span><img loading="lazy" class="alignnone wp-image-444 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2018/11/dan_rodney-768x1024.jpeg" alt="" width="656" height="875" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2018/11/dan_rodney-768x1024.jpeg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2018/11/dan_rodney-225x300.jpeg 225w, http://wp.docker.localhost:8000/wp-content/uploads/2018/11/dan_rodney-1152x1536.jpeg 1152w, http://wp.docker.localhost:8000/wp-content/uploads/2018/11/dan_rodney.jpeg 1200w" sizes="(max-width: 656px) 100vw, 656px" />
+<span style="font-size: 14px; font-family: Didact Gothic;">P.S. : I forgot to mention I took a photo with someone&#8230; Rodney Mullen!</span><img loading="lazy" class="alignnone wp-image-444 size-large" src="/wp-content/uploads/2018/11/dan_rodney-768x1024.jpeg" alt="" width="656" height="875" srcset="/wp-content/uploads/2018/11/dan_rodney-768x1024.jpeg 768w, /wp-content/uploads/2018/11/dan_rodney-225x300.jpeg 225w, /wp-content/uploads/2018/11/dan_rodney-1152x1536.jpeg 1152w, /wp-content/uploads/2018/11/dan_rodney.jpeg 1200w" sizes="(max-width: 656px) 100vw, 656px" />

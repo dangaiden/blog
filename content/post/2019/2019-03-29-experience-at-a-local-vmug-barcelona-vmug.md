@@ -24,7 +24,7 @@ tags:
 ---
 <span style="font-family: Didact Gothic; font-size: 16px;">I am going to talk about my experience at a local VMUG, in my case the VMUG from Barcelona (BCN). It was my first time at a local VMUG event and this is why I decided to share my thoughts about it.</span>
 
-<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-710 size-full" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug-bcn.png" alt="" width="572" height="453" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug-bcn.png 572w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug-bcn-300x238.png 300w" sizes="(max-width: 572px) 100vw, 572px" /></span>
+<span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-710 size-full" src="/wp-content/uploads/2019/03/vmug-bcn.png" alt="" width="572" height="453" srcset="/wp-content/uploads/2019/03/vmug-bcn.png 572w, /wp-content/uploads/2019/03/vmug-bcn-300x238.png 300w" sizes="(max-width: 572px) 100vw, 572px" /></span>
 
 ### <span style="font-family: Didact Gothic;">VMUG &#8211; What is?</span>
 
@@ -34,7 +34,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Didact Gothic;">There are many communities around the world if you want to find your local VMUG go and register at <a href="https://www.vmug.com/">https://www.vmug.com/</a></span>
 
-<img loading="lazy" class="alignnone wp-image-698 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug_booth-1024x768.jpg" alt="vmug_booth" width="656" height="492" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug_booth-1024x768.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug_booth-300x225.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug_booth-768x576.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug_booth-1536x1152.jpg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug_booth-1568x1176.jpg 1568w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug_booth.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
+<img loading="lazy" class="alignnone wp-image-698 size-large" src="/wp-content/uploads/2019/03/vmug_booth-1024x768.jpg" alt="vmug_booth" width="656" height="492" srcset="/wp-content/uploads/2019/03/vmug_booth-1024x768.jpg 1024w, /wp-content/uploads/2019/03/vmug_booth-300x225.jpg 300w, /wp-content/uploads/2019/03/vmug_booth-768x576.jpg 768w, /wp-content/uploads/2019/03/vmug_booth-1536x1152.jpg 1536w, /wp-content/uploads/2019/03/vmug_booth-1568x1176.jpg 1568w, /wp-content/uploads/2019/03/vmug_booth.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 ### <span style="font-family: Didact Gothic;">VMUG &#8211; Why attend?</span>
 
@@ -48,7 +48,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Didact Gothic;">I&#8217;ve been involved in this local VMUG for a year approximately but, I never had the chance to attend any event. Since VMworld I didn&#8217;t hear anything about a new event so, I spoke with the VMUG forum about when would be a new event and finally, it ended with myself presenting my session.<br /> </span>
 
-<span style="font-family: Didact Gothic;"><span style="font-size: 16px;">In my case, I presented a session (in Spanish) about <strong>Clones in vSphere</strong> (I&#8217;ll do a post about presenting in the near future) on March, 15th.</span><img loading="lazy" class="alignnone wp-image-701 size-large" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug_sidevision-1024x578.jpg" alt="vmug_present_aboutme" width="656" height="370" /></span>
+<span style="font-family: Didact Gothic;"><span style="font-size: 16px;">In my case, I presented a session (in Spanish) about <strong>Clones in vSphere</strong> (I&#8217;ll do a post about presenting in the near future) on March, 15th.</span><img loading="lazy" class="alignnone wp-image-701 size-large" src="/wp-content/uploads/2019/03/vmug_sidevision-1024x578.jpg" alt="vmug_present_aboutme" width="656" height="370" /></span>
 
 <span style="font-size: 16px; font-family: Didact Gothic;">You didn&#8217;t expect something like my case, I was lucky to present at my first time in this event but, usually, it&#8217;s better to go there and meet the people before presenting and not in the other way.</span>
 
