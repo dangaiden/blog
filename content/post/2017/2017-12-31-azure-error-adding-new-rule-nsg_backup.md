@@ -20,17 +20,17 @@ tags:
   - nsg
 
 ---
-<span style="font-size: 16px; font-family: Didact Gothic;">Hello everyone!</span>
+<span style="">Hello everyone!</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">It&#8217;s been a while since I wrote something, but I was so busy with other things (University) and I wasn&#8217;t able to allocate time to write anything.</span>
+<span style="">It&#8217;s been a while since I wrote something, but I was so busy with other things (University) and I wasn&#8217;t able to allocate time to write anything.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Today I&#8217;m going to talk about an issue I found on Azure when trying to add new rules to some NSGs.</span>
+<span style="">Today I&#8217;m going to talk about an issue I found on Azure when trying to add new rules to some NSGs.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">To create rules in Azure I used this script from TechNet Gallery: <a href="https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332">https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332</a></span>
+<span style="">To create rules in Azure I used this script from TechNet Gallery: <a href="https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332">https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332</a></span>
 
 ## <span style="font-family: Didact Gothic;">Problem</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">I was trying to add some rules in an NSG with the address <strong>193.23.120.230/30</strong> and, when I execute the code, the output was:</span>
+<span style="">I was trying to add some rules in an NSG with the address <strong>193.23.120.230/30</strong> and, when I execute the code, the output was:</span>
 
 <span style="font-size: 12pt;"><span style="font-family: Courier New;">Set-AzureRmNetworkSecurityGroup : Security rule has invalid Address prefix. Value provided: 193.23.120.230/30.<br /> StatusCode: 400<br /> ReasonPhrase: Bad Request<br /> OperationID : &#8216;b2f7-b2f7-b2f7&#8217;<br /> At line:4 char:55<br /> + &#8230; efix 193.23.120.230/30 -SourcePortRange * | Set-AzureRmNetworkSecurityGroup<br /> +                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br /> + CategoryInfo          : CloseError: (:) [Set-AzureRmNetworkSecurityGroup], NetworkCloudException<br /> </span><span style="font-family: Courier New;"> + FullyQualifiedErrorId : Microsoft.Azure.Commands.Network.SetAzureNetworkSecurityGroupCommand</span></span><span style="font-family: Courier New; font-size: 12pt;"><br /> </span>
 
