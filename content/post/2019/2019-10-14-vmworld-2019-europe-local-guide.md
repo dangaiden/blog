@@ -39,7 +39,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">If you are interested in attending this amazing international event and enjoy many other advantages, you can register <a href="https://www.vmworld.com/en/europe/pricing.html"><strong>here</strong></a>.</span>
 
-### <span style="color: #000000; font-family: Nunito;">Some notes</span>
+### <span>Some notes</span>
 
 <span style="font-family: Nunito; font-size: 16px;">In Spain, <span class="ILfuVd"><span class="e24Kjd"><b>tipping</b> is entirely optional and it&#8217;s not very common so, it&#8217;s up to you if you want to leave a tip in case the service was exceptional or you think it deserves it.</span></span> </span>
 
@@ -93,7 +93,7 @@ tags:
   <span style="font-size: 16px; font-family: Nunito;">The Aerobus will take you to «Plaça Catalunya» (Catalunya Plaza) but it costs a bit more than other services (<strong>5,90 €</strong> at the moment), you can review more information in this <a href="https://www.aeropuertobarcelona-elprat.com/ingl/accesos_aeropuerto_taxi_bus4030.htm#aerobus-A1-A2">link</a>.</span>
 </p>
 
-#### <span style="font-family: Nunito;">>T-10 card</span><br /> </span>
+#### <span style="font-family: Nunito;">T-10 card</span><br /> </span>
 
 <span style="font-size: 16px; font-family: Nunito;">If you plan to visit Barcelona, consider buying a <a href="https://www.tmb.cat/en/barcelona-fares-metro-bus/single-and-integrated/t-10"><strong>T-10 ticket</strong></a> (which includes 10 single tickets or 10 journeys) as it will save you <span class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0">half the price of many single tickets. This T-10 card can be used for many people as you want so, consider it if you are a group.</span></span>
 
@@ -134,7 +134,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito;">>Events around VMworld</span><br /> </span>
+## <span style="font-family: Nunito;">Events around VMworld</span><br /> </span>
 
 <span style="font-size: 16px; font-family: Nunito;"><a href="https://twitter.com/Fred_vBrain">Fred Hofer</a> has a magnificent post where it summarizes all the events and parties that will happen on these dates, check it <a href="http://www.vbrain.info/2019/09/17/vmworld-emea-2019-parties-gatherings-events-and-more/"><span style="text-decoration: underline;"><strong>here</strong> </span></a></span>
 
@@ -144,7 +144,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito;">>Outside VMworld (Sightseeing)</span><br /> </span>
+## <span style="font-family: Nunito;">Outside VMworld (Sightseeing)</span><br /> </span>
 
 <span style="font-family: Nunito;">Here is a summary of the places that you could visit if you come to Barcelona:</span>
 

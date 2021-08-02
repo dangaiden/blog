@@ -156,7 +156,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito;">>Testing the new setup</span><br /> </span>
+## <span style="font-family: Nunito;">Testing the new setup</span><br /> </span>
 
 <span style="font-family: Nunito;">T<span style="font-size: 16px;">o check that it&#8217;s really working, try to log into your Office 365 portal and it must show you the portal from your federation service.</span></span>
 
