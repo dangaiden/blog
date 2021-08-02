@@ -24,9 +24,9 @@ tags:
   - vSphere
 
 ---
-<span style="font-size: 16px; font-family: Didact Gothic;">Continuing with the <strong>cloning virtual machines in vSphere</strong> series, today I am going to write about the full clone, how it works and some useful information about it.<br /> </span>
+<span style="">Continuing with the <strong>cloning virtual machines in vSphere</strong> series, today I am going to write about the full clone, how it works and some useful information about it.<br /> </span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">So, let&#8217;s talk about clones&#8230; but just full clones.</span>
+<span style="">So, let&#8217;s talk about clones&#8230; but just full clones.</span>
 
 <img loading="lazy" class="alignnone wp-image-649 " src="/wp-content/uploads/2019/03/2clones_matrix_v2-1024x576.jpg" alt="clones_thematrix" width="636" height="358" srcset="/wp-content/uploads/2019/03/2clones_matrix_v2-1024x576.jpg 1024w, /wp-content/uploads/2019/03/2clones_matrix_v2-300x169.jpg 300w, /wp-content/uploads/2019/03/2clones_matrix_v2-768x432.jpg 768w, /wp-content/uploads/2019/03/2clones_matrix_v2-1536x864.jpg 1536w, /wp-content/uploads/2019/03/2clones_matrix_v2-1568x882.jpg 1568w, /wp-content/uploads/2019/03/2clones_matrix_v2.jpg 1920w" sizes="(max-width: 636px) 100vw, 636px" /> 
 
@@ -38,15 +38,15 @@ tags:
 
 <img loading="lazy" class="alignnone wp-image-647" src="/wp-content/uploads/2019/03/FullClone_process-768x739.png" alt="Fullclone_process" width="585" height="563" srcset="/wp-content/uploads/2019/03/FullClone_process-768x739.png 768w, /wp-content/uploads/2019/03/FullClone_process-300x289.png 300w, /wp-content/uploads/2019/03/FullClone_process.png 1001w" sizes="(max-width: 585px) 100vw, 585px" /> 
 
-<span style="font-size: 16px; font-family: Didact Gothic;">When you clone a VM be aware that, all data will be identical so, if you power on the clone without performing any customization, probably you will have conflicts with IPs, MAC addresses, SIDs (Windows), etc.</span>
+<span style="">When you clone a VM be aware that, all data will be identical so, if you power on the clone without performing any customization, probably you will have conflicts with IPs, MAC addresses, SIDs (Windows), etc.</span>
 
 <span style="font-family: Didact Gothic;"><span style="font-size: 16px;">The great thing about a full clone is that, after the cloning operations are performed the clone will be an independent copy of a virtual machine that doesn&#8217;t share anything with the parent virtual machine (we are talking about from a </span></span><span style="font-size: 16px;">compute<span style="font-family: Didact Gothic;"> and storage perspective within vSphere).</span></span>
 
 ### <span style="font-family: Didact Gothic;"><strong>Ways to do it</strong></span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">First of all, you will need VMware vCenter to do it. </span>
+<span style="">First of all, you will need VMware vCenter to do it. </span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">There are other ways (not official) like copying all data related to the virtual machine (.vmdk and .vmx files) and then register the «new» VM with another name.</span>
+<span style="">There are other ways (not official) like copying all data related to the virtual machine (.vmdk and .vmx files) and then register the «new» VM with another name.</span>
 
 <span style="font-size: 16px;">Let&#8217;s continue with the usual ways:</span>
 
@@ -86,24 +86,24 @@ tags:
 
 ### <span style="font-family: Didact Gothic;"><strong>Benefits and limitations</strong><br /> </span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">The <strong>benefits</strong> of a full clone were mentioned before: </span>
+<span style="">The <strong>benefits</strong> of a full clone were mentioned before: </span>
 
-  * <span style="font-size: 16px; font-family: Didact Gothic;">If the cloning operation is executed when the source VM is powered off, it can be used as a rollback in many cases (there are better options like a VM backup but, it can help a lot).</span>
-  * <span style="font-size: 16px; font-family: Didact Gothic;">Creation of an independent VM that shares nothing with the source VM. </span>
-  * <span style="font-size: 16px; font-family: Didact Gothic;">Used in templates, so, they are very useful!</span>
+  * <span style="">If the cloning operation is executed when the source VM is powered off, it can be used as a rollback in many cases (there are better options like a VM backup but, it can help a lot).</span>
+  * <span style="">Creation of an independent VM that shares nothing with the source VM. </span>
+  * <span style="">Used in templates, so, they are very useful!</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">These are some <strong>limitations</strong> instead of disadvantages that we can find:</span>
+<span style="">These are some <strong>limitations</strong> instead of disadvantages that we can find:</span>
 
-  * <span style="font-size: 16px; font-family: Didact Gothic;">It takes some time to create a full clone (it depends on the allocated storage) as it has to copy all storage from the source VM.</span>
-  * <span style="font-size: 16px; font-family: Didact Gothic;">It can only be performed with VMware vCenter (there are other ways as I explained before but they are not official).</span>
-  * <span style="font-size: 16px; font-family: Didact Gothic;">If done when the VM is powered on, it has an impact on the source VM that can be noticed by the business so, isn&#8217;t the best option to do it while the virtual machine is in running.</span>
+  * <span style="">It takes some time to create a full clone (it depends on the allocated storage) as it has to copy all storage from the source VM.</span>
+  * <span style="">It can only be performed with VMware vCenter (there are other ways as I explained before but they are not official).</span>
+  * <span style="">If done when the VM is powered on, it has an impact on the source VM that can be noticed by the business so, isn&#8217;t the best option to do it while the virtual machine is in running.</span>
 
 ### 
 
 ### **<span style="font-family: Didact Gothic;">Conclusion</span>**
 
-<span style="font-size: 16px; font-family: Didact Gothic;">To sum up, a full clone is a great way to have an identical copy of another VM to use it as a permanent virtual machine once you configure it accordingly.</span>
+<span style="">To sum up, a full clone is a great way to have an identical copy of another VM to use it as a permanent virtual machine once you configure it accordingly.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">As said before, is the same as deploying a template because you are just cloning a VM (deploying a template) and then customizing it. </span>
+<span style="">As said before, is the same as deploying a template because you are just cloning a VM (deploying a template) and then customizing it. </span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">It usually takes some minutes to finish the clone (depending on the storage allocated in the parent VM), this is why there are other ways to deploy clones in a faster way (on the next posts!).</span>
+<span style="">It usually takes some minutes to finish the clone (depending on the storage allocated in the parent VM), this is why there are other ways to deploy clones in a faster way (on the next posts!).</span>

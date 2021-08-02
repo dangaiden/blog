@@ -19,13 +19,13 @@ tags:
   - VMware
 
 ---
-<span style="font-size: 16px; font-family: Didact Gothic;">Hello there!</span>
+<span style="">Hello there!</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">A quick post talking about a new external PSC in vSphere 6.0 environments.</span>
+<span style="">A quick post talking about a new external PSC in vSphere 6.0 environments.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">As you may now the <strong>vCenter product</strong> is composed by the PSC (Platform Services Controller) and the vCenter component.</span>
+<span style="">As you may now the <strong>vCenter product</strong> is composed by the PSC (Platform Services Controller) and the vCenter component.</span>
 
-### <span style="font-size: 16px; font-family: Didact Gothic;">Services provided by each component:</span>
+### <span style="">Services provided by each component:</span>
 
 <table style="height: 187px; width: 100.458%; border-collapse: collapse; border-style: solid;" border="1">
   <tr style="height: 10px;">
@@ -106,20 +106,20 @@ tags:
 </table>
 
 <p style="text-align: left;">
-  <span style="font-size: 16px; font-family: Didact Gothic;">Let&#8217;s go to the point. I am going to repoint a vCenter with an embedded PSC (a vCSA called «pokecenter») to an external PSC I created in a Windows server called «digicenter» (I know is kinda original). <span style="text-decoration: underline;">Digicenter</span> is already joined to the same SSO domain as <span style="text-decoration: underline;">pokecenter</span>.<br /> </span>
+  <span style="">Let&#8217;s go to the point. I am going to repoint a vCenter with an embedded PSC (a vCSA called «pokecenter») to an external PSC I created in a Windows server called «digicenter» (I know is kinda original). <span style="text-decoration: underline;">Digicenter</span> is already joined to the same SSO domain as <span style="text-decoration: underline;">pokecenter</span>.<br /> </span>
 </p>
 
 * * *
 
 <span style="font-family: Didact Gothic; font-size: 16px;"><strong>Note:</strong> If you have any problem when adding an external PSC to an existing SSO domain, check <strong>cmsso-util unregister </strong>command in the vCSA appliance. In my case, I had to re-install it three times and in the last one, I used the command. </span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">More information in KB: <a href="https://kb.vmware.com/s/article/2114233">https://kb.vmware.com/s/article/2114233</a></span>
+<span style="">More information in KB: <a href="https://kb.vmware.com/s/article/2114233">https://kb.vmware.com/s/article/2114233</a></span>
 
 * * *
 
-<span style="font-size: 16px; font-family: Didact Gothic;">In the vCenter with embedded PSC, I will connect through SSH and repoint my vCenter to the external Windows PSC «digicenter».</span>
+<span style="">In the vCenter with embedded PSC, I will connect through SSH and repoint my vCenter to the external Windows PSC «digicenter».</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">The command is: <strong>cmsso-util reconfigure –-repoint-psc digicenter.pokemon.jp &#8211;username administrator &#8211;domain-name vsphere</strong>.<strong>local &#8211;passwd VMware1!</strong></span>
+<span style="">The command is: <strong>cmsso-util reconfigure –-repoint-psc digicenter.pokemon.jp &#8211;username administrator &#8211;domain-name vsphere</strong>.<strong>local &#8211;passwd VMware1!</strong></span>
 
 <span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone size-full wp-image-197 alignleft" src="/wp-content/uploads/2018/08/cmsso_beforelaunch.png" alt="" width="803" height="106" srcset="/wp-content/uploads/2018/08/cmsso_beforelaunch.png 803w, /wp-content/uploads/2018/08/cmsso_beforelaunch-300x40.png 300w, /wp-content/uploads/2018/08/cmsso_beforelaunch-768x101.png 768w" sizes="(max-width: 803px) 100vw, 803px" /></span>
 
@@ -137,4 +137,4 @@ tags:
 
 <span style="font-family: Didact Gothic; font-size: 16px;">If found some problems when repointing to the external PSC,  make sure the time on both servers is the same (check NTP server), also DNS resolution of the external PSC. Give some time for the vSphere Client to initialize after the repointment.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Finally, be patient, I found some errors (SSO errors about the external PSC) when login to the vSphere Web Client but, after waiting about 10 minutes finally it initialized up successfully.</span>
+<span style="">Finally, be patient, I found some errors (SSO errors about the external PSC) when login to the vSphere Web Client but, after waiting about 10 minutes finally it initialized up successfully.</span>

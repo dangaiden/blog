@@ -38,7 +38,7 @@ tags:
   * <span style="font-family: Nunito; font-size: 16px;">1 x WAP Server (W2016) -> Not in this post<br /> </span>
   * <span style="font-size: 16px; font-family: Nunito;"><strong>1 x ADFS Server (W2016) -> In this post<br /> </strong></span>
 
-## <span style="font-family: Nunito; color: #000000;"><strong>Planning for your ADFS Migration</strong></span>
+## <span style=""><strong>Planning for your ADFS Migration</strong></span>
 
   1. <span style="font-family: Nunito; font-size: 16px;">Active Directory schema update using ‘ADPrep’ with the Windows Server 2016 additions (not necessary in my case)</span>
   2. <span style="font-family: Nunito; font-size: 16px;">Build a Windows Server 2016 server with ADFS and join into an existing farm.</span>
@@ -50,7 +50,7 @@ tags:
 
 ## 
 
-## <span style="font-family: Nunito; color: #000000;">Upgrading Schema</span>
+## <span style="">Upgrading Schema</span>
 
 <span style="font-family: Nunito; font-size: 16px;">Now, time to upgrade the schema of the AD:</span>
 
@@ -62,7 +62,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito; color: #000000;">Installing and configuring ADFS</span>
+## <span style="">Installing and configuring ADFS</span>
 
 <span style="font-size: 16px; font-family: Nunito;">Once we deployed a new Windows Server 2016 and it&#8217;s joined to our domain&#8230;</span>
 
@@ -104,7 +104,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito; color: #000000;">Configuring as a «PrimaryComputer» in the ADFS farm</span>
+## <span style="">Configuring as a «PrimaryComputer» in the ADFS farm</span>
 
 <span style="font-family: Nunito; font-size: 16px;">Once the machine has restarted, open the ADFS Management Console, and you’ll notice it’s not the primary federation server in the farm.</span>
 
@@ -128,7 +128,7 @@ tags:
 
 ### 
 
-### <span style="font-family: Nunito; color: #000000;">Details to bear in mind</span>
+### <span style="">Details to bear in mind</span>
 
 <span style="font-size: 16px; font-family: Nunito;">So, in my case, I have a DNS A record that points <strong>sts.teselia.com</strong> to an IP address (the ADFS server)</span>
 
@@ -140,7 +140,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito; color: #000000;">Error with 0365 relying party trust</span>
+## <span style="">Error with 0365 relying party trust</span>
 
 <span style="font-family: Nunito; font-size: 16px;">After migrating the service from ADFS 3.0 (W2012 R2) to ADFS 4.0 (W2016), I faced a  problem when updating the O365 relying party trust.</span>
 

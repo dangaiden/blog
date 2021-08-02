@@ -29,19 +29,19 @@ tags:
 
 # **<span style="font-family: Didact Gothic; font-size: 32px;">Types of clone</span>**
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Here I will summarize each type of clone that exists in vSphere, some of them are used in different products or interfaces but in the end, all of them are accessible through PowerCLI.<br /> </span>
+<span style="">Here I will summarize each type of clone that exists in vSphere, some of them are used in different products or interfaces but in the end, all of them are accessible through PowerCLI.<br /> </span>
 
 ### <span style="font-family: Didact Gothic;"><strong>Full clone</strong></span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">This is the «classic» clone you can perform in vSphere Web Client no matter which is the VM&#8217;s status (powered on or off), that you can perform a copy of the VM.<br /> </span>
+<span style="">This is the «classic» clone you can perform in vSphere Web Client no matter which is the VM&#8217;s status (powered on or off), that you can perform a copy of the VM.<br /> </span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">If you want to perform a consistent clone, it&#8217;s recommended that you power off the VM and then perform the clone.</span>
+<span style="">If you want to perform a consistent clone, it&#8217;s recommended that you power off the VM and then perform the clone.</span>
 
 <span style="font-family: Didact Gothic; font-size: 16px;">This is an <strong>independent</strong> copy and has no dependency from the parent virtual machine after the clone is complete (meaning that you can remove the parent VM if you need it).</span>
 
 <span style="font-family: Didact Gothic; font-size: 16px;">The <strong>main advantage</strong> is that you can have a reliable copy of the Parent VM (remember this is not a backup) if you want to replace it. As this is a full copy of the VM (it will copy the entire disk), this might take several minutes depending on the size of the VM.<br /> </span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">After you perform it, remember that everything will be the same then, all configuration (SID, network configuration, hostname, etc.) within the VM will be identical hance, it can lead to problems if both VMs co-exist at the same time without the proper configuration.</span>
+<span style="">After you perform it, remember that everything will be the same then, all configuration (SID, network configuration, hostname, etc.) within the VM will be identical hance, it can lead to problems if both VMs co-exist at the same time without the proper configuration.</span>
 
 <figure id="attachment_607" aria-describedby="caption-attachment-607" style="width: 549px" class="wp-caption alignleft"><img loading="lazy" class="wp-image-607" src="/wp-content/uploads/2019/02/FullClone-768x505.png" alt="FullClone" width="549" height="361" srcset="/wp-content/uploads/2019/02/FullClone-768x505.png 768w, /wp-content/uploads/2019/02/FullClone-300x197.png 300w, /wp-content/uploads/2019/02/FullClone.png 977w" sizes="(max-width: 549px) 100vw, 549px" /><figcaption id="caption-attachment-607" class="wp-caption-text">Full clone</figcaption></figure>
 
@@ -60,7 +60,7 @@ tags:
     <span style="font-family: Didact Gothic; font-size: 16px;">Saving disk space because only the differences between the origin snapshot and the linked clone are allocated and the fast.</span>
   </li>
   <li>
-    <span style="font-size: 16px; font-family: Didact Gothic;">Quickly deploy tens or hundreds of VMs in a fast way as it doesn&#8217;t need to copy the entire disk.</span>
+    <span style="">Quickly deploy tens or hundreds of VMs in a fast way as it doesn&#8217;t need to copy the entire disk.</span>
   </li>
 </ul>
 
@@ -72,7 +72,7 @@ tags:
 
 ### **<span style="font-family: Didact Gothic;">Instant clone</span>**
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Similar to the linked clone, Instant Clone is like an improved version of linked clone technology. This is something «new» in vSphere 6.7 as is available through the API.<br /> </span>
+<span style="">Similar to the linked clone, Instant Clone is like an improved version of linked clone technology. This is something «new» in vSphere 6.7 as is available through the API.<br /> </span>
 
 <span style="font-family: Didact Gothic; font-size: 16px;">Like the linked clone technology, there is a parent VM which will <strong>share the disk</strong> with the clone (Instant clone) but, in this case, it will <strong>share the memory</strong> too (even if TPS is disabled).</span>
 

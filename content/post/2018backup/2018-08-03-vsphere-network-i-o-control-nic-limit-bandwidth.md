@@ -21,7 +21,7 @@ tags:
   - VMware
 
 ---
-<span style="font-size: 16px; font-family: Didact Gothic;">Today let&#8217;s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it&#8217;s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus <span style="text-decoration: underline;">only in the network adapter bandwidth limit</span> for VMs.</span>
+<span style="">Today let&#8217;s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it&#8217;s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus <span style="text-decoration: underline;">only in the network adapter bandwidth limit</span> for VMs.</span>
 
 ### <span style="font-size: 24px; font-family: Didact Gothic;"><strong>Prerequisites:</strong></span>
 
@@ -78,7 +78,7 @@ tags:
 
 <span style="font-size: 12pt; font-family: Didact Gothic;">Now, we perform the same command with iperf on the client (KenshiroVM):<img loading="lazy" class="alignnone size-full wp-image-158" src="/wp-content/uploads/2018/08/10th_kenvm200MB.png" alt="" width="699" height="108" srcset="/wp-content/uploads/2018/08/10th_kenvm200MB.png 699w, /wp-content/uploads/2018/08/10th_kenvm200MB-300x46.png 300w" sizes="(max-width: 699px) 100vw, 699px" /></span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;"><strong>Even pushing 200 Mbits</strong> through the Data Netowork Adapter using iperf, NIOC will limit the traffic to 88 Mbits as set before. Here is the traffic seen by Win10Pro Data Network adapter:</span>
+<span style=""><strong>Even pushing 200 Mbits</strong> through the Data Netowork Adapter using iperf, NIOC will limit the traffic to 88 Mbits as set before. Here is the traffic seen by Win10Pro Data Network adapter:</span>
 
 <span style="font-size: 10pt; font-family: Didact Gothic;"><img loading="lazy" class="alignnone size-full wp-image-159" src="/wp-content/uploads/2018/08/11st_ethernet915mbps.png" alt="" width="432" height="420" srcset="/wp-content/uploads/2018/08/11st_ethernet915mbps.png 432w, /wp-content/uploads/2018/08/11st_ethernet915mbps-300x292.png 300w" sizes="(max-width: 432px) 100vw, 432px" /></span>
 
@@ -98,4 +98,4 @@ tags:
   </li>
 </ul>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">As a result of using vSphere NIOC,  we can granularly set limits in the bandwidth in a VM network adapter and it will obey the settings configured. <strong>It only works for outbound traffic</strong>, if you set a limit in a destination VM adapter, then, NIOC will not make any restrictions regarding the inbound traffic.</span>
+<span style="">As a result of using vSphere NIOC,  we can granularly set limits in the bandwidth in a VM network adapter and it will obey the settings configured. <strong>It only works for outbound traffic</strong>, if you set a limit in a destination VM adapter, then, NIOC will not make any restrictions regarding the inbound traffic.</span>

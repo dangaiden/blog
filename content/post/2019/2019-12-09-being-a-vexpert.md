@@ -27,7 +27,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">Fr</span><span style="font-size: 16px; font-family: Nunito;">om November 25th to January 10th, you can apply to be a vExpert 2020 through many </span><span style="font-size: 16px; font-family: Nunito;">different paths and you must do it if you think you contributed to the VMware community.</span>
 
-# <span style="font-family: Nunito; color: #000000; font-size: 32px;">What is a vExpert?</span>
+# <span style=" font-size: 32px;">What is a vExpert?</span>
 
 <span style="font-family: Nunito; font-size: 16px;">It&#8217;s an award that VMware gives to individuals who have contributed (a lot) to the VMware community.</span>
 
@@ -35,7 +35,7 @@ tags:
 
 <span style="font-family: Nunito;"><span style="font-size: 16px;">vExpert is not a certification! It&#8217;s an award that is given to individuals and not companies so,<strong> companies must not claim </strong>that title.</span> </span>
 
-# <span style="font-family: Nunito; color: #000000; font-size: 32px;">Why become one?</span>
+# <span style=" font-size: 32px;">Why become one?</span>
 
 
 
@@ -55,7 +55,7 @@ tags:
   * <span style="font-size: 16px; font-family: Nunito;">Access to vExpert parties and exclusive gifts at both VMworld events.</span>
   * <span style="font-size: 16px; font-family: Nunito;">Preferent seating at VMworld Keynotes.</span>
 
-# <span style="font-family: Nunito; color: #000000; font-size: 32px;">How-to</span>
+# <span style=" font-size: 32px;">How-to</span>
 
 <span style="font-family: Nunito; font-size: 16px;">Being a VMware vExpert is not a sprint and it doesn&#8217;t consist of making the greatest amount of blog-posts about VMware.</span>
 
@@ -69,7 +69,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">Once you apply, your submission will be evaluated and once the applications are closed, the vExpert 2020 will be awarded.</span>
 
-# <span style="font-family: Nunito; color: #000000; font-size: 32px;">Summary</span>
+# <span style=" font-size: 32px;">Summary</span>
 
 <span style="font-family: Nunito; font-size: 16px;">By being part of the community and involving yourself more in evangelizing VMware products through posts, VMUG events/UserCons, VMTN forums, etc. you will have a high chance of being a vExpert.<br /> </span>
 

@@ -57,25 +57,25 @@ What can you see here?
 
 <img loading="lazy" class="alignnone wp-image-605 size-medium_large" src="/wp-content/uploads/2019/02/LinkedClone-768x730.png" alt="LinkedClone" width="656" height="624" srcset="/wp-content/uploads/2019/02/LinkedClone-768x730.png 768w, /wp-content/uploads/2019/02/LinkedClone-300x285.png 300w, /wp-content/uploads/2019/02/LinkedClone.png 961w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
-<span style="font-size: 16px; font-family: Didact Gothic;">When the linked clone is created, it <strong>shares his own virtual disk</strong> (.vmdk file) with the <strong>snapshot from the parent VM</strong>, this leads to some unique features:</span>
+<span style="">When the linked clone is created, it <strong>shares his own virtual disk</strong> (.vmdk file) with the <strong>snapshot from the parent VM</strong>, this leads to some unique features:</span>
 
   * <span style="font-family: Didact Gothic; font-size: 16px;">The clone will be <strong>dependent </strong>from<strong> the parent VM</strong> because they are sharing their virtual disks. If you delete the parent&#8217;s VM snapshot, it will corrupt the clone&#8217;s virtual disk.</span>
-  * <span style="font-size: 16px; font-family: Didact Gothic;">Even both VMs are sharing their storage, any <strong>changes performed</strong> in the clone won&#8217;t affect the parent VM and vice-versa.</span>
-  * <span style="font-size: 16px; font-family: Didact Gothic;">The linked clone will have the <strong>exact same data</strong> as the source VM because it was created from a snapshot.</span>
+  * <span style="">Even both VMs are sharing their storage, any <strong>changes performed</strong> in the clone won&#8217;t affect the parent VM and vice-versa.</span>
+  * <span style="">The linked clone will have the <strong>exact same data</strong> as the source VM because it was created from a snapshot.</span>
   * <span style="font-family: Didact Gothic; font-size: 16px;">The save spacings are obvious because the <strong>clone will only write the new modifications in </strong>its<strong> own virtual disk</strong>. So, the clone&#8217;s virtual disk size will be only the amount of data that changed after it was created!</span>
 
 ## 
 
 ### <span style="font-family: Didact Gothic;"><span style="color: #000000;">General process</span><br /> </span>
 
-  1. <span style="font-size: 16px; font-family: Didact Gothic;">Use or prepare a VM (Parent VM) that will be used as a master/parent to deploy the linked clones</span>
-  2. <span style="font-size: 16px; font-family: Didact Gothic;">Power-off the Parent VM (Recommended but not mandatory)</span>
-  3. <span style="font-size: 16px; font-family: Didact Gothic;">Perform a snapshot of the VM.</span>
-  4. <span style="font-size: 16px; font-family: Didact Gothic;">Time to create Linked clones referencing the snapshot we created previously.</span>
-  5. <span style="font-size: 16px; font-family: Didact Gothic;">Power-on the clones and customize them (apply customization specifications for example).</span>
-  6. <span style="font-size: 16px; font-family: Didact Gothic;">(Extra) Before powering-on the linked clone, perform another snapshot of the clone to use it as a rollback (if the end-user needs it).</span>
-  7. <span style="font-size: 16px; font-family: Didact Gothic;">(Extra) Power-on the clone and is ready to be delivered.</span>
-  8. <span style="font-size: 16px; font-family: Didact Gothic;">(Extra plus) If you decide to keep the linked clone for any reason, you can perform a full clone of it and it will become an independent VM!</span>
+  1. <span style="">Use or prepare a VM (Parent VM) that will be used as a master/parent to deploy the linked clones</span>
+  2. <span style="">Power-off the Parent VM (Recommended but not mandatory)</span>
+  3. <span style="">Perform a snapshot of the VM.</span>
+  4. <span style="">Time to create Linked clones referencing the snapshot we created previously.</span>
+  5. <span style="">Power-on the clones and customize them (apply customization specifications for example).</span>
+  6. <span style="">(Extra) Before powering-on the linked clone, perform another snapshot of the clone to use it as a rollback (if the end-user needs it).</span>
+  7. <span style="">(Extra) Power-on the clone and is ready to be delivered.</span>
+  8. <span style="">(Extra plus) If you decide to keep the linked clone for any reason, you can perform a full clone of it and it will become an independent VM!</span>
 
 &nbsp;
 
@@ -137,23 +137,23 @@ What can you see here?
 
 <span style="font-size: 16px;"><span style="font-family: Didact Gothic;">In this </span>script<span style="font-family: Didact Gothic;">, I am also using the <em>OSCustomizationSpec</em> parameter, while using the sentence to create the linked clone,  to change the IP, name and join again to the domain the resultant clone. Also, I am changing the SQL instance name in my case because it&#8217;s a server with MSSQL server installed.</span></span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Once the script finished, a new linked clone is created and powered on with the name «SQL-LC1».</span>
+<span style="">Once the script finished, a new linked clone is created and powered on with the name «SQL-LC1».</span>
 
 &nbsp;
 
 <span style="font-family: Didact Gothic;"><span style="font-size: 16px;">We can see the amount of<strong> time</strong> that takes to create a Linked clone (<strong>5 seconds</strong>):</span><span style="font-size: 16px;"><img loading="lazy" class="alignnone wp-image-741 size-large" src="/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png" alt="" width="656" height="111" srcset="/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png 1024w, /wp-content/uploads/2019/03/LinkedClone_tasks-300x51.png 300w, /wp-content/uploads/2019/03/LinkedClone_tasks-768x130.png 768w, /wp-content/uploads/2019/03/LinkedClone_tasks-1536x260.png 1536w, /wp-content/uploads/2019/03/LinkedClone_tasks.png 1552w" sizes="(max-width: 656px) 100vw, 656px" /></span></span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">And now look at the <strong>storage allocated</strong> by the Linked clone (powered off), <strong>750 MB</strong> approximately:</span>
+<span style="">And now look at the <strong>storage allocated</strong> by the Linked clone (powered off), <strong>750 MB</strong> approximately:</span>
 
 <span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-740 size-large" src="/wp-content/uploads/2019/03/SQL_LC1_DSAllocation-1024x246.png" alt="" width="656" height="158" srcset="/wp-content/uploads/2019/03/SQL_LC1_DSAllocation-1024x246.png 1024w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation-300x72.png 300w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation-768x185.png 768w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation.png 1147w" sizes="(max-width: 656px) 100vw, 656px" /></span>
 
 &nbsp;
 
-<span style="font-size: 16px; font-family: Didact Gothic;">After the Linked clone is created and powered on, you can do whatever you want. </span>
+<span style="">After the Linked clone is created and powered on, you can do whatever you want. </span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">I had to wait some minutes (around 10 min. in my case) until the OS customization specification finish all the actions specified (power on the VM, join to the domain, reboot the VM, execute a script to update SQL instance, etc.)</span>
+<span style="">I had to wait some minutes (around 10 min. in my case) until the OS customization specification finish all the actions specified (power on the VM, join to the domain, reboot the VM, execute a script to update SQL instance, etc.)</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Here is the «real» space allocated after the Linked clone has <strong>booted up and I logged in</strong> with a user, around <strong>4 GB</strong>:</span>
+<span style="">Here is the «real» space allocated after the Linked clone has <strong>booted up and I logged in</strong> with a user, around <strong>4 GB</strong>:</span>
 
 <span style="font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-747 size-large" src="/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-1024x242.png" alt="" width="656" height="155" srcset="/wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-1024x242.png 1024w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-300x71.png 300w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2-768x182.png 768w, /wp-content/uploads/2019/03/SQL_LC1_DSAllocation_PowON_v2.png 1179w" sizes="(max-width: 656px) 100vw, 656px" /></span>
 
@@ -171,7 +171,7 @@ What can you see here?
 
   * <span style="font-family: Didact Gothic; font-size: 16px;">Desktop Deployment<br /> </span>
   * <span style="font-family: Didact Gothic; font-size: 16px;">QA</span>
-  * <span style="font-size: 16px; font-family: Didact Gothic;">Bug testing</span>
+  * <span style="">Bug testing</span>
   * <span style="font-family: Didact Gothic; font-size: 16px;">DB server testing</span>
   * <span style="font-family: Didact Gothic; font-size: 16px;">File server testing</span>
   * <span style="font-family: Didact Gothic; font-size: 16px;">General testing</span>

@@ -27,9 +27,9 @@ tags:
 
 ### <span style="font-family: Didact Gothic;">The problem</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">In my case, I was trying to install vCSA 6.5 without DNS (this is why the system name has an IP address and the DNS is itself). Also, notice that the <strong>network section is empty</strong>:</span>
+<span style="">In my case, I was trying to install vCSA 6.5 without DNS (this is why the system name has an IP address and the DNS is itself). Also, notice that the <strong>network section is empty</strong>:</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;"><img loading="lazy" class="alignnone wp-image-842 size-full" src="/wp-content/uploads/2019/04/vcsa_installer_wonw.jpg" alt="" width="582" height="427" srcset="/wp-content/uploads/2019/04/vcsa_installer_wonw.jpg 582w, /wp-content/uploads/2019/04/vcsa_installer_wonw-300x220.jpg 300w" sizes="(max-width: 582px) 100vw, 582px" /></span>
+<span style=""><img loading="lazy" class="alignnone wp-image-842 size-full" src="/wp-content/uploads/2019/04/vcsa_installer_wonw.jpg" alt="" width="582" height="427" srcset="/wp-content/uploads/2019/04/vcsa_installer_wonw.jpg 582w, /wp-content/uploads/2019/04/vcsa_installer_wonw-300x220.jpg 300w" sizes="(max-width: 582px) 100vw, 582px" /></span>
 
 <span style="font-family: Didact Gothic; font-size: 16px;">If you try to continue with the installation, it will show you an error:</span>
 
@@ -39,7 +39,7 @@ tags:
 
 ### <span style="font-family: Didact Gothic;">Solution</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">I checked the ESXi host and obviously, it has other port groups created in a standard virtual switch, then, which was the problem? Why I can&#8217;t see them in the drop-down list?<br /> </span>
+<span style="">I checked the ESXi host and obviously, it has other port groups created in a standard virtual switch, then, which was the problem? Why I can&#8217;t see them in the drop-down list?<br /> </span>
 
 &nbsp;
 

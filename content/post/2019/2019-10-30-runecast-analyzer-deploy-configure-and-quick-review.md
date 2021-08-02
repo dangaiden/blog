@@ -24,7 +24,7 @@ tags:
 ---
 <span style="font-family: Nunito; font-size: 16px;">Today, I&#8217;ll show you how easy is to install, configure Runecast Analyzer (v 3.1.1.0) in your environment and we will review quickly what can we offer this solution.</span>
 
-## **<span style="font-family: Nunito; color: #000000;">Runecast?</span>**
+## **<span style="">Runecast?</span>**
 
 <span style="font-family: Nunito; font-size: 16px;">Runecast is a company founded in 2014 more recognizable because the CEO is Stanimir Markov which is VCDX #74 but in his team has other virtualization veterans who help them to create this solution.</span>
 
@@ -43,7 +43,7 @@ tags:
 
 &nbsp;
 
-## **<span style="font-family: Nunito; color: #000000;">Use it in your environment or try it in a demonstration</span>**
+## **<span style="">Use it in your environment or try it in a demonstration</span>**
 
 <span style="font-family: Nunito; font-size: 16px;">If you want to install and configure this virtual appliance to deploy in your environment, go to <a href="https://www.runecast.com/quick-and-secure-deployment">https://www.runecast.com/quick-and-secure-deployment</a> and in the upper-right menu click the <strong>Free trial</strong> button.</span>
 
@@ -61,7 +61,7 @@ tags:
 
 &nbsp;
 
-## **<span style="font-family: Nunito; color: #000000;">Deploy and configure</span>**
+## **<span style="">Deploy and configure</span>**
 
 <span style="font-family: Nunito; font-size: 16px;">Once you download the OVA file, deploy it in your virtual environment like what you will do with other virtual appliances:</span>
 
@@ -101,7 +101,7 @@ tags:
 
 &nbsp;
 
-## **<span style="font-family: Nunito; color: #000000;">Features</span>**
+## **<span style="">Features</span>**
 
 <span style="font-family: Nunito; font-size: 16px;">Here I&#8217;ll show you some screenshots from the solution and how they look:</span>
 

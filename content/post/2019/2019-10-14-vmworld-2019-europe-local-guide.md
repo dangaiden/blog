@@ -27,7 +27,7 @@ tags:
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-441" src="/wp-content/uploads/2018/11/out-768x576.jpg" alt="" width="656" height="492" srcset="/wp-content/uploads/2018/11/out-768x576.jpg 768w, /wp-content/uploads/2018/11/out-300x225.jpg 300w, /wp-content/uploads/2018/11/out-1024x768.jpg 1024w, /wp-content/uploads/2018/11/out-1536x1152.jpg 1536w, /wp-content/uploads/2018/11/out-1568x1176.jpg 1568w, /wp-content/uploads/2018/11/out.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
-## <span style="font-family: Nunito; color: #000000;">General information</span>
+## <span style="">General information</span>
 
 <span style="font-family: Nunito; font-size: 16px;">This event will take place from the 4th (Monday) to 7th (Thursday) of November at <a href="https://cutt.ly/4eoPvEw">Fira Gran Via</a> in Barcelona, Spain.</span>
 
@@ -51,13 +51,13 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">The official language in Barcelona is Spanish but most of the population speak in Catalan. Saying that, don&#8217;t worry if you don&#8217;t understand some signboards from the street or public places.</span>
 
-## <span style="font-family: Nunito; color: #000000;">Transportation</span>
+## <span style="">Transportation</span>
 
 <span style="font-family: Nunito; font-size: 16px;">There are 3 different train services: <strong>Renfe</strong> (Local Train), <strong>TMB</strong> (metro/subway/underground) and <strong>FGC</strong> (Regional Train).</span>
 
 <span style="font-size: 16px; font-family: Nunito;">Renfe and TMB are the most used because they have more combinations than the FGC and also better schedules. So, basically, you will see in this guide mentioning train for Renfe and metro/subway/underground for <strong>TMB.</strong></span>
 
-### <span style="font-family: Nunito; color: #000000;">Coming from the airport</span>
+### <span style="">Coming from the airport</span>
 
 <span style="font-family: Nunito; font-size: 16px;">Once you land at El Prat airport, there are a few ways to go to the city of Barcelona:</span>
 
@@ -112,7 +112,7 @@ tags:
 
 ### 
 
-### <span style="font-family: Nunito; color: #000000;">Moving inside of Barcelona</span>
+### <span style="">Moving inside of Barcelona</span>
 
 <span style="font-family: Nunito; font-size: 16px;">The <strong>Metro</strong> (subway/underground) is your best choice whatever you stay in Barcelona if you want a cheaper, frequent and reliable service.</span>
 
@@ -120,7 +120,7 @@ tags:
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1135" src="/wp-content/uploads/2019/10/post-metro_map-768x411.png" alt="" width="656" height="351" srcset="/wp-content/uploads/2019/10/post-metro_map-768x411.png 768w, /wp-content/uploads/2019/10/post-metro_map-300x161.png 300w, /wp-content/uploads/2019/10/post-metro_map-1024x549.png 1024w, /wp-content/uploads/2019/10/post-metro_map.png 1150w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
-### <span style="font-family: Nunito; color: #000000;">The fastest way to VMworld?</span>
+### <span style="">The fastest way to VMworld?</span>
 
 <span style="font-family: Nunito; font-size: 16px;"><span style="color: #000000;"><span style="color: #808080;">The closest stop to the VMworld event is</span> </span><span style="color: #ff6600;"><strong>Fira</strong> in L9 Sud <span style="color: #808080;">or the</span> <strong>Europa-Fira</strong> <span style="color: #808080;">stop which is another stop from the</span> L9-Sud line<span style="color: #808080;"> that also combines with another train service</span> <span style="color: #808080;">(</span><a href="https://www.fgc.cat/wp-content/uploads/2018/12/planol_2019.pdf">FGC trains</a><span style="color: #808080;">) which is a different transport service than the metro and it has different stops.</span></span></span>
 
@@ -263,7 +263,7 @@ tags:
                                             </p>
                                             
                                             <h2>
-                                              <span style="font-family: Nunito; color: #000000;">Restaurants</span>
+                                              <span style="">Restaurants</span>
                                             </h2>
                                             
                                             <p>
@@ -380,7 +380,7 @@ tags:
                                             </p>
                                             
                                             <h2>
-                                              <span style="font-family: Nunito; color: #000000;">Conclusion</span>
+                                              <span style="">Conclusion</span>
                                             </h2>
                                             
                                             <p>

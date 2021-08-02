@@ -33,13 +33,13 @@ tags:
 
 <img loading="lazy" class="alignnone wp-image-548" src="/wp-content/uploads/2019/01/LearningPaths-for-post-212x300.jpg" alt="" width="292" height="413" srcset="/wp-content/uploads/2019/01/LearningPaths-for-post-212x300.jpg 212w, /wp-content/uploads/2019/01/LearningPaths-for-post.jpg 429w" sizes="(max-width: 292px) 100vw, 292px" /> 
 
-<span style="font-size: 16px; font-family: Didact Gothic;">When you start learning, you have an idea of what do you want to learn: Network, Cloud, Storage, etc. and then try to master that technology or move on to another one. Hence, you must start somewhere in order to grow your knowledge and then, you will decide which technology or technologies do you want to focus on.</span>
+<span style="">When you start learning, you have an idea of what do you want to learn: Network, Cloud, Storage, etc. and then try to master that technology or move on to another one. Hence, you must start somewhere in order to grow your knowledge and then, you will decide which technology or technologies do you want to focus on.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;"><strong>As soon as you start you will notice if you like or not, but choose one!</strong><br /> </span>
+<span style=""><strong>As soon as you start you will notice if you like or not, but choose one!</strong><br /> </span>
 
 # <span style="font-family: Didact Gothic; font-size: 32px;">Knowledge lost as a tank with a leak.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">As I mentioned at the beginning of this post, Eric Shanks mentioned in his blog <a href="https://theithollow.com/2018/03/26/fill-skills-tank/">https://theithollow.com/2018/03/26/fill-skills-tank/</a> , is like filling a tank (which drains as time passes by) with your knowledge:</span>
+<span style="">As I mentioned at the beginning of this post, Eric Shanks mentioned in his blog <a href="https://theithollow.com/2018/03/26/fill-skills-tank/">https://theithollow.com/2018/03/26/fill-skills-tank/</a> , is like filling a tank (which drains as time passes by) with your knowledge:</span>
 
 <img loading="lazy" class="alignnone wp-image-541" src="/wp-content/uploads/2018/10/Skills_empty-300x224.png" alt="" width="519" height="388" srcset="/wp-content/uploads/2018/10/Skills_empty-300x224.png 300w, /wp-content/uploads/2018/10/Skills_empty-768x573.png 768w, /wp-content/uploads/2018/10/Skills_empty.png 828w" sizes="(max-width: 519px) 100vw, 519px" /> 
 
@@ -55,9 +55,9 @@ tags:
 
 # <span style="font-family: Didact Gothic; font-size: 32px;">Filling the gap, but which?</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">This is what I really wanted to talk.</span>
+<span style="">This is what I really wanted to talk.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Sometimes, it can be really hard to achieve a new position because you notice that there are some gaps between your skills and the desired position/job.</span>
+<span style="">Sometimes, it can be really hard to achieve a new position because you notice that there are some gaps between your skills and the desired position/job.</span>
 
 #### **<span style="font-family: Didact Gothic;">About dream jobs&#8230;</span>**
 
@@ -73,11 +73,11 @@ tags:
 
 #### **<span style="font-family: Didact Gothic;">About filling the gap</span>**
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Another example, if you are a Windows Administrator and now you want to learn about Azure, well, it&#8217;s related to Microsoft but it&#8217;s different than learning about an another OS. In this case, you should gain knowledge in areas like Storage, Networking and maybe some coding skills.</span>
+<span style="">Another example, if you are a Windows Administrator and now you want to learn about Azure, well, it&#8217;s related to Microsoft but it&#8217;s different than learning about an another OS. In this case, you should gain knowledge in areas like Storage, Networking and maybe some coding skills.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Hence, we can conclude that you should try to learn at least a bit of every technology (related to your main knowledge) and trying to maintain/update your knowledge in those areas.</span>
+<span style="">Hence, we can conclude that you should try to learn at least a bit of every technology (related to your main knowledge) and trying to maintain/update your knowledge in those areas.</span>
 
-<span style="font-size: 16px; font-family: Didact Gothic;">Also, bear in mind that the more you learn about different topics, the more you «lose» in other ones, so, my personal advice is to stay close of what do you want to learn and don&#8217;t be shy to learn about what you don&#8217;t.</span>
+<span style="">Also, bear in mind that the more you learn about different topics, the more you «lose» in other ones, so, my personal advice is to stay close of what do you want to learn and don&#8217;t be shy to learn about what you don&#8217;t.</span>
 
 &nbsp;
 

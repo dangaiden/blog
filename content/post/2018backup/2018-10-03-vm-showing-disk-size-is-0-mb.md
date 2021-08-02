@@ -27,7 +27,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">First of all, I checked the guest OS and verified that it was up and running. So I was wondering how the guest OS seems correct but vSphere Web Client (I refreshed several times the browser) was showing no space in all disks and I verified in the Datastores that the .vmdk files were there.</span>
 
-### <span style="font-family: Nunito; color: #000000;">Investigation</span>
+### <span style="">Investigation</span>
 
 <span style="font-size: 16px; font-family: Nunito;">I found in the Events tab for this VM, an error about a snapshot a few weeks ago that it wasn&#8217;t successfully created (from the 3rd party Software), so, maybe this problem is related to the snapshots?</span>
 
@@ -35,7 +35,7 @@ tags:
 
 <span style="font-family: Nunito;"><span style="font-size: 16px;">Anyway, I logged out and logged in just to verify that it wasn&#8217;t a problem of the vSphere Web client but it showed the same (no luck), all disks (LUNs and disks) </span><span style="font-size: 16px;">attached to that VM showed</span><span style="font-size: 16px;"> 0 MB .<br /> </span></span>
 
-### <span style="font-family: Nunito; color: #000000;">Conclusion</span>
+### <span style="">Conclusion</span>
 
 <span style="font-family: Nunito;"><span style="font-size: 16px;">Well, it&#8217;s an easy solution, if you power-off the VM, unregister and register the VM in the vCenter then</span><span style="font-size: 16px;">&#8230; it works! The VM appeared as usual (showing the allocated space for each disk).<br /> </span></span>
 

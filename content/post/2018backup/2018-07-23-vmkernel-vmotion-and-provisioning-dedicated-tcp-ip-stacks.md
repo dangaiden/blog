@@ -31,7 +31,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">Just as a reminder, a VMkernel port is a port you create in an ESXi host to connect with the “outside world” (outside the host), so when you want to communicate two hosts, each host will have a VMkernel port to communicate.</span>
 
-## <span style="font-size: 24px; font-family: Nunito; color: #000000;">TCP/IP stacks</span>
+## <span style="">TCP/IP stacks</span>
 
 <span style="font-size: 16px; font-family: Nunito;">A TCP/IP stack is a set of networking protocols (Do you remember the OSI Model?) used to provide networking support for the services that it handles. So you can use different stacks to support in different ways a service within the stack.</span>
 
@@ -54,7 +54,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">I must admit I always use the first one, the Default TCP/IP stack with the service enabled, so which should we use, the dedicated stack or the default one?</span>
 
-## <span style="font-size: 24px; font-family: Nunito; color: #000000;">Dedicated TCP/IP stack options</span>
+## <span style="">Dedicated TCP/IP stack options</span>
 
   * <span style="font-size: 16px; font-family: Nunito;"><strong><em>vMotion:</em> </strong>It provides better isolation (more security), a separate set of buffers and sockets and avoids routing table conflicts than using the same TCP/IP Stack.</span>
   * <span style="font-size: 16px; font-family: Nunito;"><strong><em>Provisioning:</em> </strong> Used for cold VM migration (migrate power-off VMs), cloning and snapshot traffic.</span>

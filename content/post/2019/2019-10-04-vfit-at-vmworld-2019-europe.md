@@ -66,7 +66,7 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito; color: #000000;"><strong>Route</strong></span>
+## <span style=""><strong>Route</strong></span>
 
 <span style="font-family: Nunito; font-size: 16px;">The route goes from Europa-Fira station (where we meet up) to Montjuic (uphill) and then coming back from the other side (downhill) to end at the Europa Fira station.</span>
 
@@ -86,7 +86,7 @@ tags:
   <span style="font-family: Nunito;">Route map for <a title="View this route map on plotaroute.com" href="https://www.plotaroute.com/route/941196?units=km" target="_blank" rel="noopener noreferrer">VFit Running EMEA 2019</a> by <a title="View this person's profile on plotaroute.com" href="https://www.plotaroute.com/userprofile/262868" target="_blank" rel="noopener noreferrer">Dan Belmonte</a> on <a title="plotaroute.com - free route planner for walking, running, cycling and more" href="https://www.plotaroute.com" target="_blank" rel="noopener noreferrer">plotaroute.com</a></span>
 </p>
 
-## <span style="font-family: Nunito; color: #000000;"><strong>How do I join?</strong></span>
+## <span style=""><strong>How do I join?</strong></span>
 
 <p class="e5881-10 x-text">
   <span style="font-size: 16px; font-family: Nunito;">Just to know how many people are going to attend, register here on any date: <a href="https://www.eventbrite.com/e/vfit-emea-2019-tickets-74746226977">https://www.eventbrite.com/e/vfit-emea-2019-tickets-74746226977</a></span>
