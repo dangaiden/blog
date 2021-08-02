@@ -31,7 +31,7 @@ tags:
 
 &nbsp;
 
-# <span style="font-family: Nunito; color: #000000;"><span style="font-size: 32px;"><strong>RDP isn&#8217;t everything</strong></span><br /> </span>
+# <span style=""><span style="font-size: 32px;"><strong>RDP isn&#8217;t everything</strong></span><br /> </span>
 
 <span style="font-family: Nunito; font-size: 16px;">First thing I notice when someone tells me: «I can&#8217;t access the server via RDP, it must be overloaded, unresponsive, etc. because I can ping it».</span>
 
@@ -43,7 +43,7 @@ tags:
 
 &nbsp;
 
-## **<span style="font-family: Nunito; color: #000000;">MMC (Microsoft Management Console)</span>**
+## **<span style="">MMC (Microsoft Management Console)</span>**
 
 <span style="font-family: Nunito; font-size: 16px;">MMC is everywhere, when you open the Event Viewer it is indeed an MMC that has the Snap-in «Event Viewer». Here is how would you do it manually instead of opening the Event Viewer «console»:<br /> </span>
 
@@ -77,7 +77,7 @@ tags:
 
 ## <span style="color: #000000;"><strong><span style="font-family: Nunito;">Check memory resources (RAM)</span></strong></span>
 
-#### **<span style="font-family: Nunito; color: #000000;"><span style="color: #808080;">CMD (command prompt)</span><br /> </span>**
+#### **<span style=""><span style="color: #808080;">CMD (command prompt)</span><br /> </span>**
 
 <span style="font-size: 16px; font-family: Nunito;">Our «old» friend <strong>CMD</strong> or command prompt interpreter which works on all versions of Windows Server, no matter which problem you have on your server that you can always run it and <strong>it is available on any Windows installation without any requirement</strong>.</span>
 
@@ -95,7 +95,7 @@ tags:
 
 &nbsp;
 
-## **<span style="font-family: Nunito; color: #000000;">Check CPU resources (CPU)</span>**
+## **<span style="">Check CPU resources (CPU)</span>**
 
 #### <span style="font-family: Nunito;"><strong><span style="color: #808080;">WMIC (Windows Management Interface Console)</span><br /> </strong></span>
 
