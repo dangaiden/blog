@@ -23,7 +23,7 @@ tags:
   - vmworld
 
 ---
-<span style="font-family: Nunito;"><span style="font-size: 16px;">VMworld 2019 Europe is almost here! And I made a local guide with tips about transport, restaurants, places to go, etc. to ensure you can enjoy more your experience in VMworld.</span></span>
+<span><span style="font-size: 16px;">VMworld 2019 Europe is almost here! And I made a local guide with tips about transport, restaurants, places to go, etc. to ensure you can enjoy more your experience in VMworld.</span></span>
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-441" src="/wp-content/uploads/2018/11/out-768x576.jpg" alt="" width="656" height="492" srcset="/wp-content/uploads/2018/11/out-768x576.jpg 768w, /wp-content/uploads/2018/11/out-300x225.jpg 300w, /wp-content/uploads/2018/11/out-1024x768.jpg 1024w, /wp-content/uploads/2018/11/out-1536x1152.jpg 1536w, /wp-content/uploads/2018/11/out-1568x1176.jpg 1568w, /wp-content/uploads/2018/11/out.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
@@ -93,7 +93,7 @@ tags:
   <span style="font-size: 16px; font-family: Nunito;">The Aerobus will take you to «Plaça Catalunya» (Catalunya Plaza) but it costs a bit more than other services (<strong>5,90 €</strong> at the moment), you can review more information in this <a href="https://www.aeropuertobarcelona-elprat.com/ingl/accesos_aeropuerto_taxi_bus4030.htm#aerobus-A1-A2">link</a>.</span>
 </p>
 
-#### <span style="font-family: Nunito;">T-10 card</span><br /> </span>
+#### <span>T-10 card</span><br /> </span>
 
 <span style="font-size: 16px; font-family: Nunito;">If you plan to visit Barcelona, consider buying a <a href="https://www.tmb.cat/en/barcelona-fares-metro-bus/single-and-integrated/t-10"><strong>T-10 ticket</strong></a> (which includes 10 single tickets or 10 journeys) as it will save you <span class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0">half the price of many single tickets. This T-10 card can be used for many people as you want so, consider it if you are a group.</span></span>
 
@@ -116,7 +116,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">The <strong>Metro</strong> (subway/underground) is your best choice whatever you stay in Barcelona if you want a cheaper, frequent and reliable service.</span>
 
-<span style="font-size: 16px;"><span style="font-family: Nunito;">With the metro (remember the name) you can travel through lines at the same cost</span><span style="font-family: Nunito;">. The main stops to consider will be <span style="color: #ff6600;">Fira in L9 Sud, <span style="color: #ff0000;">Plaça Espanya in L1</span><span style="color: #808080;">/</span><span style="color: #339966;">L3</span></span> and <span style="color: #000080;">Sants-Estacio in L5/<span style="color: #339966;">L3</span>>.</span></span></span></span>
+<span style="font-size: 16px;"><span>With the metro (remember the name) you can travel through lines at the same cost</span><span>. The main stops to consider will be <span style="color: #ff6600;">Fira in L9 Sud, <span style="color: #ff0000;">Plaça Espanya in L1</span><span style="color: #808080;">/</span><span style="color: #339966;">L3</span></span> and <span style="color: #000080;">Sants-Estacio in L5/<span style="color: #339966;">L3</span>>.</span></span></span></span>
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1135" src="/wp-content/uploads/2019/10/post-metro_map-768x411.png" alt="" width="656" height="351" srcset="/wp-content/uploads/2019/10/post-metro_map-768x411.png 768w, /wp-content/uploads/2019/10/post-metro_map-300x161.png 300w, /wp-content/uploads/2019/10/post-metro_map-1024x549.png 1024w, /wp-content/uploads/2019/10/post-metro_map.png 1150w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
@@ -130,11 +130,11 @@ tags:
 
 <img loading="lazy" class="alignnone size-full wp-image-1138" src="/wp-content/uploads/2019/10/FiraGranVia_highlight.png" alt="FiraGranVia-map" width="939" height="725" srcset="/wp-content/uploads/2019/10/FiraGranVia_highlight.png 939w, /wp-content/uploads/2019/10/FiraGranVia_highlight-300x232.png 300w, /wp-content/uploads/2019/10/FiraGranVia_highlight-768x593.png 768w" sizes="(max-width: 939px) 100vw, 939px" /> 
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;"><span style="font-family: Nunito;">Last year VMworld provided a free metro card; As I don&#8217;t know if it will be the same but if you are aiming to visit Barcelona and visit other places, consider to buy a</span> T-10 travel card (10 single <span style="font-family: Nunito;">rides) which is </span><span style="font-family: Nunito;">multi personal and quite cheaper than buying 10 single tickets<span style="color: #ff0000;">.</span></span></span><br /> </span>
+<span><span style="font-size: 16px;"><span>Last year VMworld provided a free metro card; As I don&#8217;t know if it will be the same but if you are aiming to visit Barcelona and visit other places, consider to buy a</span> T-10 travel card (10 single <span>rides) which is </span><span>multi personal and quite cheaper than buying 10 single tickets<span style="color: #ff0000;">.</span></span></span><br /> </span>
 
 &nbsp;
 
-## <span style="font-family: Nunito;">Events around VMworld</span><br /> </span>
+## <span>Events around VMworld</span><br /> </span>
 
 <span style="font-size: 16px; font-family: Nunito;"><a href="https://twitter.com/Fred_vBrain">Fred Hofer</a> has a magnificent post where it summarizes all the events and parties that will happen on these dates, check it <a href="http://www.vbrain.info/2019/09/17/vmworld-emea-2019-parties-gatherings-events-and-more/"><span style="text-decoration: underline;"><strong>here</strong> </span></a></span>
 
@@ -144,9 +144,9 @@ tags:
 
 &nbsp;
 
-## <span style="font-family: Nunito;">Outside VMworld (Sightseeing)</span><br /> </span>
+## <span>Outside VMworld (Sightseeing)</span><br /> </span>
 
-<span style="font-family: Nunito;">Here is a summary of the places that you could visit if you come to Barcelona:</span>
+<span>Here is a summary of the places that you could visit if you come to Barcelona:</span>
 
 <table style="border-collapse: collapse; width: 101.315%; height: 240px;">
   <tr style="height: 30px;">
@@ -158,7 +158,7 @@ tags:
       </p>
       
       <p>
-        <span style="font-size: 16px;"><span style="font-family: Nunito;">Probably the most iconic building </span>in<span style="font-family: Nunito;"> Barcelona. It is an unfinished church designed by <a href="https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD">Gaudí</a>, an architect who made many iconic buildings here in Barcelona.</span></span>
+        <span style="font-size: 16px;"><span>Probably the most iconic building </span>in<span> Barcelona. It is an unfinished church designed by <a href="https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD">Gaudí</a>, an architect who made many iconic buildings here in Barcelona.</span></span>
       </p>
       
       <p>
@@ -248,7 +248,7 @@ tags:
                                           </p>
                                           
                                           <p>
-                                            <span style="font-size: 16px;"><span style="font-family: Nunito;">It is one of the most exciting leisure and touristic spots throughout Barcelona, with a wide offering of shops, clubs, </span>and<span style="font-family: Nunito;"> restaurants. It&#8217;s the gateway to the Barcelona beaches and also there is the Barcelona zoo near to it.</span></span>
+                                            <span style="font-size: 16px;"><span>It is one of the most exciting leisure and touristic spots throughout Barcelona, with a wide offering of shops, clubs, </span>and<span> restaurants. It&#8217;s the gateway to the Barcelona beaches and also there is the Barcelona zoo near to it.</span></span>
                                           </p>
                                           
                                           <p>
@@ -259,7 +259,7 @@ tags:
                                             </p>
                                             
                                             <p>
-                                              <span style="font-size: 16px;">Also<span style="font-family: Nunito;">, avoid the neighborhood known as «La Mina» which is farther from Barcelona but it still accessible by Metro.</span></span>
+                                              <span style="font-size: 16px;">Also<span>, avoid the neighborhood known as «La Mina» which is farther from Barcelona but it still accessible by Metro.</span></span>
                                             </p>
                                             
                                             <h2>
@@ -328,7 +328,7 @@ tags:
                                             </ul>
                                             
                                             <h4>
-                                              <span style="font-family: Nunito;">Local food</span>
+                                              <span>Local food</span>
                                             </h4>
                                             
                                             <p>

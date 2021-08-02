@@ -24,18 +24,18 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">Eric Wright (<a href="https://twitter.com/discoposse">@discoposse</a>) is the creator of this event and you can check how it went at VMworld US <a href="https://discoposse.com/vfit/">here</a>! I love his idea of engaging folks who attend tech events to do some exercise at tech events and why not at VMworld Europe? </span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">Enjoy a run with our great community outside VMworld. You can meet people, share a great moment to run outside the event </span><span style="font-size: 16px;">centers</span><span style="font-size: 16px;"> and enjoy the city of Barcelona.</span></span>
+<span><span style="font-size: 16px;">Enjoy a run with our great community outside VMworld. You can meet people, share a great moment to run outside the event </span><span style="font-size: 16px;">centers</span><span style="font-size: 16px;"> and enjoy the city of Barcelona.</span></span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">So, this year in Barcelona I will be the organizer for the #vFit event and I hope you can join me and other community folks in </span><span style="font-size: 16px;"><strong>the 2019 #vFit runs at VMworld Europe. </strong></span></span>
+<span><span style="font-size: 16px;">So, this year in Barcelona I will be the organizer for the #vFit event and I hope you can join me and other community folks in </span><span style="font-size: 16px;"><strong>the 2019 #vFit runs at VMworld Europe. </strong></span></span>
 
 &nbsp;
 
 ## <span style="color: #000000; font-family: Nunito;"><strong>Basic information</strong></span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">Anyone can join </span><span style="font-size: 16px;">this event to run with a group of community folks at approximately 6.21min per km / 10min per mile. M</span><span style="font-size: 16px;">ay be a second group if enough walkers join, we will discuss it once when we meet there.</span></span>
+<span><span style="font-size: 16px;">Anyone can join </span><span style="font-size: 16px;">this event to run with a group of community folks at approximately 6.21min per km / 10min per mile. M</span><span style="font-size: 16px;">ay be a second group if enough walkers join, we will discuss it once when we meet there.</span></span>
 
 <span style="font-size: 16px; font-family: Nunito;">The meet up for the runs will be at the exit of Europa-Fira station: <a href="https://www.google.com/maps/dir/41.3566792,2.1259522//@41.3566807,2.1259254,113m/data=!3m1!1e3!4m2!4m1!3e2">https://bit.ly/354kRsN</a></span>  
-<span style="font-size: 16px;"><span style="font-family: Nunito;">There are two exits at Europa-Fira (showed in <span style="color: #00ccff;"><strong>blue</strong></span>), you must go to the one which has 3 «big» buildings. Our meet-up will be at the <span style="color: #ff0000;"><strong>red</strong></span> circle that you can see in the following map:</span> </span>  
+<span style="font-size: 16px;"><span>There are two exits at Europa-Fira (showed in <span style="color: #00ccff;"><strong>blue</strong></span>), you must go to the one which has 3 «big» buildings. Our meet-up will be at the <span style="color: #ff0000;"><strong>red</strong></span> circle that you can see in the following map:</span> </span>  
 <span style="font-family: DidactGothic;"><img loading="lazy" class="alignnone wp-image-1084 size-medium_large" src="/wp-content/uploads/2019/10/Europa_Fira_vFit-768x486.png" alt="Europa_Fira_map" width="656" height="415" srcset="/wp-content/uploads/2019/10/Europa_Fira_vFit-768x486.png 768w, /wp-content/uploads/2019/10/Europa_Fira_vFit-300x190.png 300w, /wp-content/uploads/2019/10/Europa_Fira_vFit-1024x648.png 1024w, /wp-content/uploads/2019/10/Europa_Fira_vFit-1536x972.png 1536w, /wp-content/uploads/2019/10/Europa_Fira_vFit-1568x992.png 1568w, /wp-content/uploads/2019/10/Europa_Fira_vFit.png 1907w" sizes="(max-width: 656px) 100vw, 656px" /></span>  
 <span style="font-size: 16px; font-family: Nunito;">Here you have a Google Street View just in case you&#8217;re not sure if you picked the correct exit: <a href="https://bit.ly/30N3o4x">https://bit.ly/30N3o4x</a></span>
 
@@ -45,7 +45,7 @@ tags:
 
 ## <span style="color: #000000; font-family: Nunito;"><strong>Schedules</strong></span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">Usually, this is a daily run event but, as I am the one organizing it, I can&#8217;t commit to doing a daily run because I have other duties to do at VMworld.</span></span>
+<span><span style="font-size: 16px;">Usually, this is a daily run event but, as I am the one organizing it, I can&#8217;t commit to doing a daily run because I have other duties to do at VMworld.</span></span>
 
 <span style="font-size: 16px; font-family: Nunito;">Therefore I decided to do 2 runs and the time of each meet up is:</span>
 
@@ -83,7 +83,7 @@ tags:
 </div>
 
 <p style="margin-top: 8px; font-family: HelveticaNeue,Helvetica,arial; font-size: 11px;">
-  <span style="font-family: Nunito;">Route map for <a title="View this route map on plotaroute.com" href="https://www.plotaroute.com/route/941196?units=km" target="_blank" rel="noopener noreferrer">VFit Running EMEA 2019</a> by <a title="View this person's profile on plotaroute.com" href="https://www.plotaroute.com/userprofile/262868" target="_blank" rel="noopener noreferrer">Dan Belmonte</a> on <a title="plotaroute.com - free route planner for walking, running, cycling and more" href="https://www.plotaroute.com" target="_blank" rel="noopener noreferrer">plotaroute.com</a></span>
+  <span>Route map for <a title="View this route map on plotaroute.com" href="https://www.plotaroute.com/route/941196?units=km" target="_blank" rel="noopener noreferrer">VFit Running EMEA 2019</a> by <a title="View this person's profile on plotaroute.com" href="https://www.plotaroute.com/userprofile/262868" target="_blank" rel="noopener noreferrer">Dan Belmonte</a> on <a title="plotaroute.com - free route planner for walking, running, cycling and more" href="https://www.plotaroute.com" target="_blank" rel="noopener noreferrer">plotaroute.com</a></span>
 </p>
 
 ## <span style=""><strong>How do I join?</strong></span>
@@ -96,6 +96,6 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">Use the #vFit to share it with the community!<br /> </span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">If you need more information, just send me a DM on <a href="https://twitter.com/DanGaiden">Twitter</a> or </span>comment<span style="font-size: 16px;"> on this post and I&#8217;ll be glad to help you.</span></span>
+<span><span style="font-size: 16px;">If you need more information, just send me a DM on <a href="https://twitter.com/DanGaiden">Twitter</a> or </span>comment<span style="font-size: 16px;"> on this post and I&#8217;ll be glad to help you.</span></span>
 
 <span style="text-decoration: underline; font-size: 16px; font-family: Nunito;"><strong>See you there!</strong></span>

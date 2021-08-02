@@ -106,7 +106,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">In the <a href="https://wp.me/p98Ovg-js">post</a>, I mentioned to you at the beginning there are some resources which are quite helpful in order to learn and improve your non-tech skills. </span>
 
-# <span style="color: #000000; font-size: 32px;"><strong><span style="font-family: Nunito;">Summary</span></strong></span>
+# <span style="color: #000000; font-size: 32px;"><strong><span>Summary</span></strong></span>
 
 <span style="font-size: 16px; font-family: Nunito;">There is so much information to digest if you don&#8217;t have a certain level of knowledge in vSphere and the «art» of designing solutions, which could lead you to study a lot of products, methodologies, and features in probably, a great amount of time.</span>
 

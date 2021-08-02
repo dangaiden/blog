@@ -45,7 +45,7 @@ tags:
   3. <span style="font-family: Nunito; font-size: 16px;">Promote one of the ADFS 2016 servers as “primary” of the farm, and point all other secondary servers to the new “primary”.</span>
   4. <span style="font-family: Nunito; font-size: 16px;">Change DNS records to the new servers&#8217;s IP address.</span>
   5. <span style="font-family: Nunito; font-size: 16px;">Raise the Farm Behavior Level feature (FBL) to ‘2016’</span>
-  6. <span style="font-family: Nunito;">Test that the setup works correctly.</span>
+  6. <span>Test that the setup works correctly.</span>
   7. <span style="font-family: Nunito; font-size: 16px;">Remove the old ADFS server (W2012 R2) from the farm.</span>
 
 ## 
@@ -58,7 +58,7 @@ tags:
 
 <span style="font-size: 16px; font-family: Nunito;">Adprep /forestprep</span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">In my </span><span style="font-size: 16px;">case, it was already updated (my domain is in W2012 R2 so it seems that I don’t need it).</span></span>
+<span><span style="font-size: 16px;">In my </span><span style="font-size: 16px;">case, it was already updated (my domain is in W2012 R2 so it seems that I don’t need it).</span></span>
 
 &nbsp;
 
@@ -76,7 +76,7 @@ tags:
 
 &nbsp;
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">Provide your federation service name. You can review it in the current ADFS primary server and click Properties in the root folder of the ADFS console:</span><img loading="lazy" class="alignnone wp-image-989 size-full" src="/wp-content/uploads/2019/08/Review_fed_name_img_3.png" alt="" width="669" height="461" srcset="/wp-content/uploads/2019/08/Review_fed_name_img_3.png 669w, /wp-content/uploads/2019/08/Review_fed_name_img_3-300x207.png 300w" sizes="(max-width: 669px) 100vw, 669px" /></span>
+<span><span style="font-size: 16px;">Provide your federation service name. You can review it in the current ADFS primary server and click Properties in the root folder of the ADFS console:</span><img loading="lazy" class="alignnone wp-image-989 size-full" src="/wp-content/uploads/2019/08/Review_fed_name_img_3.png" alt="" width="669" height="461" srcset="/wp-content/uploads/2019/08/Review_fed_name_img_3.png 669w, /wp-content/uploads/2019/08/Review_fed_name_img_3-300x207.png 300w" sizes="(max-width: 669px) 100vw, 669px" /></span>
 
 &nbsp;
 
@@ -86,7 +86,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">Specify your SSL certificate (usually your wildcard):</span>
 
-<span style="font-family: Nunito;"><img loading="lazy" class="alignnone size-full wp-image-979" src="/wp-content/uploads/2019/08/specify_ssl_cert_img_6.png" alt="" width="747" height="449" srcset="/wp-content/uploads/2019/08/specify_ssl_cert_img_6.png 747w, /wp-content/uploads/2019/08/specify_ssl_cert_img_6-300x180.png 300w" sizes="(max-width: 747px) 100vw, 747px" /></span>
+<span><img loading="lazy" class="alignnone size-full wp-image-979" src="/wp-content/uploads/2019/08/specify_ssl_cert_img_6.png" alt="" width="747" height="449" srcset="/wp-content/uploads/2019/08/specify_ssl_cert_img_6.png 747w, /wp-content/uploads/2019/08/specify_ssl_cert_img_6-300x180.png 300w" sizes="(max-width: 747px) 100vw, 747px" /></span>
 
 &nbsp;
 
@@ -94,7 +94,7 @@ tags:
 
 &nbsp;
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">Review your configuration and after the pre-requisite checks proceed with the «Configure» button:</span><img loading="lazy" class="alignnone size-full wp-image-981" src="/wp-content/uploads/2019/08/review-config_img_7.png" alt="" width="751" height="515" srcset="/wp-content/uploads/2019/08/review-config_img_7.png 751w, /wp-content/uploads/2019/08/review-config_img_7-300x206.png 300w" sizes="(max-width: 751px) 100vw, 751px" /></span>
+<span><span style="font-size: 16px;">Review your configuration and after the pre-requisite checks proceed with the «Configure» button:</span><img loading="lazy" class="alignnone size-full wp-image-981" src="/wp-content/uploads/2019/08/review-config_img_7.png" alt="" width="751" height="515" srcset="/wp-content/uploads/2019/08/review-config_img_7.png 751w, /wp-content/uploads/2019/08/review-config_img_7-300x206.png 300w" sizes="(max-width: 751px) 100vw, 751px" /></span>
 
 &nbsp;
 
@@ -112,7 +112,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">Open a PS console and execute: </span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px; font-family: courier new, courier; color: #000000;">Set-AdfsSyncProperties -Role PrimaryComputer</span><img loading="lazy" class="alignnone wp-image-984 size-full" src="/wp-content/uploads/2019/08/pscommand_img_10.png" alt="" width="442" height="102" srcset="/wp-content/uploads/2019/08/pscommand_img_10.png 442w, /wp-content/uploads/2019/08/pscommand_img_10-300x69.png 300w" sizes="(max-width: 442px) 100vw, 442px" /></span>
+<span><span style="font-size: 16px; font-family: courier new, courier; color: #000000;">Set-AdfsSyncProperties -Role PrimaryComputer</span><img loading="lazy" class="alignnone wp-image-984 size-full" src="/wp-content/uploads/2019/08/pscommand_img_10.png" alt="" width="442" height="102" srcset="/wp-content/uploads/2019/08/pscommand_img_10.png 442w, /wp-content/uploads/2019/08/pscommand_img_10-300x69.png 300w" sizes="(max-width: 442px) 100vw, 442px" /></span>
 
 &nbsp;
 
@@ -124,7 +124,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">Set-AdfsSyncProperties -Role SecondaryComputer -PrimaryComputerName sts.teselia.com</span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">Then, we will check that in our old ADFS server it’s correct:</span><img loading="lazy" class="alignnone wp-image-986 size-full" src="/wp-content/uploads/2019/08/ps_commands_img_12.png" alt="" width="829" height="159" srcset="/wp-content/uploads/2019/08/ps_commands_img_12.png 829w, /wp-content/uploads/2019/08/ps_commands_img_12-300x58.png 300w, /wp-content/uploads/2019/08/ps_commands_img_12-768x147.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></span>
+<span><span style="font-size: 16px;">Then, we will check that in our old ADFS server it’s correct:</span><img loading="lazy" class="alignnone wp-image-986 size-full" src="/wp-content/uploads/2019/08/ps_commands_img_12.png" alt="" width="829" height="159" srcset="/wp-content/uploads/2019/08/ps_commands_img_12.png 829w, /wp-content/uploads/2019/08/ps_commands_img_12-300x58.png 300w, /wp-content/uploads/2019/08/ps_commands_img_12-768x147.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></span>
 
 ### 
 
@@ -152,13 +152,13 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">Basically, what you have to do is to add a couple of registry values in this new ADFS server because it&#8217;s Windows Server 2016 and is running ADFS 4.0 version.</span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">Once you applied the fix, reboot it and works flawlessly!</span><img loading="lazy" class="alignnone wp-image-995 size-full" src="/wp-content/uploads/2019/07/fed_metadata_13.png" alt="" width="882" height="522" srcset="/wp-content/uploads/2019/07/fed_metadata_13.png 882w, /wp-content/uploads/2019/07/fed_metadata_13-300x178.png 300w, /wp-content/uploads/2019/07/fed_metadata_13-768x455.png 768w" sizes="(max-width: 882px) 100vw, 882px" /></span>
+<span><span style="font-size: 16px;">Once you applied the fix, reboot it and works flawlessly!</span><img loading="lazy" class="alignnone wp-image-995 size-full" src="/wp-content/uploads/2019/07/fed_metadata_13.png" alt="" width="882" height="522" srcset="/wp-content/uploads/2019/07/fed_metadata_13.png 882w, /wp-content/uploads/2019/07/fed_metadata_13-300x178.png 300w, /wp-content/uploads/2019/07/fed_metadata_13-768x455.png 768w" sizes="(max-width: 882px) 100vw, 882px" /></span>
 
 &nbsp;
 
-## <span style="font-family: Nunito;">Testing the new setup</span><br /> </span>
+## <span>Testing the new setup</span><br /> </span>
 
-<span style="font-family: Nunito;">T<span style="font-size: 16px;">o check that it&#8217;s really working, try to log into your Office 365 portal and it must show you the portal from your federation service.</span></span>
+<span>T<span style="font-size: 16px;">o check that it&#8217;s really working, try to log into your Office 365 portal and it must show you the portal from your federation service.</span></span>
 
 <span style="font-family: Nunito; font-size: 16px;">As the WAP service isn&#8217;t migrated yet, it should respond correctly but if the configuration is not correct, it won&#8217;t be able to gather the configuration from the ADFS service.</span>
 

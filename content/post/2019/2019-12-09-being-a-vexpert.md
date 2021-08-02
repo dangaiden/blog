@@ -33,7 +33,7 @@ tags:
 
 <span style="font-family: Nunito; font-size: 16px;">Only the contributions over the past year are evaluated, therefore, it is a program that requires constant dedication every year by being an evangelist and advocacy of VMware products.</span>
 
-<span style="font-family: Nunito;"><span style="font-size: 16px;">vExpert is not a certification! It&#8217;s an award that is given to individuals and not companies so,<strong> companies must not claim </strong>that title.</span> </span>
+<span><span style="font-size: 16px;">vExpert is not a certification! It&#8217;s an award that is given to individuals and not companies so,<strong> companies must not claim </strong>that title.</span> </span>
 
 # <span style=" font-size: 32px;">Why become one?</span>
 

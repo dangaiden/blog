@@ -81,7 +81,7 @@ T<span style="font-size: 16px;">here are many resources that you can find on the
     </p>
     
     <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">
-      <span style="font-size: 16px;"><a href="https://www.jeffreykusters.nl/2017/08/02/preparing-vcap65-dcv-design/"><span style="font-family: Nunito;">https://www.jeffreykusters.nl/2017/08/02/preparing-vcap65-dcv-design/</span></a></span>
+      <span style="font-size: 16px;"><a href="https://www.jeffreykusters.nl/2017/08/02/preparing-vcap65-dcv-design/"><span>https://www.jeffreykusters.nl/2017/08/02/preparing-vcap65-dcv-design/</span></a></span>
     </p>
   </li>
 </ul>
@@ -128,7 +128,7 @@ T<span style="font-size: 16px;">here are many resources that you can find on the
   </div>
 </div>
 
-# <span style="font-family: Nunito;"><span style="color: #000000; font-size: 32px;">Notes</span><br /> </span>
+# <span><span style="color: #000000; font-size: 32px;">Notes</span><br /> </span>
 
 <span style="font-family: Nunito; font-size: 16px;">As far as I know, this exam goes until <strong>ESXi 6.5 U1</strong> (which is the latest release before the blueprint came out).</span>
 
