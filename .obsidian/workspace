@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/about-me/index.md",
+            "file": "content/post/2021/Kubernetes-the-hard-way-but-on-prem.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 615
+    "width": 443
   },
   "right": {
     "id": "c2936bd4181d260e",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/about-me/index.md",
+                "file": "content/post/2021/Kubernetes-the-hard-way-but-on-prem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "f16846662830706c",
   "lastOpenFiles": [
+    "content/post/2021/Kubernetes-the-hard-way-but-on-prem/Kubernetes-the-hard-way-but-on-prem.md",
+    "content/post/2021/2021-06-08-az-400-exam-notes.md",
+    "content/post/2021/Kubernetes-the-hard-way-but-on-prem/Untitled.md",
+    "content/post/2021/OSS-monitoring-series.md",
+    "content/archives.md",
+    "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
     "content/about-me/index.md",
     "content/post/2019/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone.md",
     "content/post/2019/2019-10-04-vfit-at-vmworld-2019-europe.md",
-    "content/post/2019/2019-10-30-runecast-analyzer-deploy-configure-and-quick-review.md",
-    "content/post/2019/2019-12-09-being-a-vexpert.md",
-    "content/post/2019/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones.md",
-    "content/post/2017/2017-12-31-azure-error-adding-new-rule-nsg_backup.md",
-    "content/post/2017/2017-12-31-azure-error-adding-new-rule-nsg.md",
-    "content/post/2017/2017-09-03-vcp6-dcv-achieved.md",
-    "content/post/2018/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks.md"
+    "content/post/2019/2019-10-30-runecast-analyzer-deploy-configure-and-quick-review.md"
   ]
 }
