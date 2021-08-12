@@ -23,9 +23,9 @@ tags:
   - VMware
 
 ---
-<span style="font-family: Didact Gothic;"><span style="font-size: 16px;">This is a quick post of an error I found sometimes</span><span style="font-size: 16px;"> while deploying a new vCenter server appliance with an embedded PSC on the vCSA 6.x installer.</span></span>
+<span ><span >This is a quick post of an error I found sometimes</span><span > while deploying a new vCenter server appliance with an embedded PSC on the vCSA 6.x installer.</span></span>
 
-### <span style="font-family: Didact Gothic;">The problem</span>
+### <span >The problem</span>
 
 <span style="">In my case, I was trying to install vCSA 6.5 without DNS (this is why the system name has an IP address and the DNS is itself). Also, notice that the <strong>network section is empty</strong>:</span>
 
@@ -37,7 +37,7 @@ tags:
 
 &nbsp;
 
-### <span style="font-family: Didact Gothic;">Solution</span>
+### <span >Solution</span>
 
 <span style="">I checked the ESXi host and obviously, it has other port groups created in a standard virtual switch, then, which was the problem? Why I can&#8217;t see them in the drop-down list?<br /> </span>
 
@@ -57,4 +57,4 @@ tags:
 
 &nbsp;
 
-<span style="font-size: 16px;">I hope this helps if someone has this issue.</span>
+<span >I hope this helps if someone has this issue.</span>

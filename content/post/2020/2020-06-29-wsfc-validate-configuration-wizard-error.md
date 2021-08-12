@@ -32,21 +32,21 @@ tags:
 
 # <span style="font-family: Nunito;  font-size: 32px;">Possible solutions</span>
 
-  * <span style="font-family: Nunito; font-size: 16px;">Execute in Powershell (PS): </span><span style="font-family: courier new, courier; font-size: 16px;">winrm quickconfig</span>
+  * <span >Execute in Powershell (PS): </span><span style="font-family: courier new, courier; font-size: 16px;">winrm quickconfig</span>
 
-<span style="font-family: Nunito; font-size: 16px;">This will set up «winrm» (Windows Remote Management), more information in this <span style="text-decoration: underline;"><a href="https://docs.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management">link</a>.</span></span>
+<span >This will set up «winrm» (Windows Remote Management), more information in this <span style="text-decoration: underline;"><a href="https://docs.microsoft.com/en-us/windows/win32/winrm/installation-and-configuration-for-windows-remote-management">link</a>.</span></span>
 
-  * <span style="font-family: Nunito; font-size: 16px;">Review the NIC settings on the affected node:</span>
+  * <span >Review the NIC settings on the affected node:</span>
 
-<span style="font-family: Nunito; font-size: 16px;">Check the options <span lang="EN-US">“File and Print Sharing for Microsoft Networks» and «Client for Microsoft Networks» for the NIC that you&#8217;re are trying to add the node (based on what&#8217;s registered in DNS): </span></span>
+<span >Check the options <span lang="EN-US">“File and Print Sharing for Microsoft Networks» and «Client for Microsoft Networks» for the NIC that you&#8217;re are trying to add the node (based on what&#8217;s registered in DNS): </span></span>
 
-<span style="font-family: Nunito; font-size: 16px;"><img loading="lazy" class="alignnone wp-image-1796 " src="/wp-content/uploads/2020/06/Ethernet_config.png" alt="" width="309" height="379" srcset="/wp-content/uploads/2020/06/Ethernet_config.png 539w, /wp-content/uploads/2020/06/Ethernet_config-244x300.png 244w" sizes="(max-width: 309px) 100vw, 309px" /></span>
+<span ><img loading="lazy" class="alignnone wp-image-1796 " src="/wp-content/uploads/2020/06/Ethernet_config.png" alt="" width="309" height="379" srcset="/wp-content/uploads/2020/06/Ethernet_config.png 539w, /wp-content/uploads/2020/06/Ethernet_config-244x300.png 244w" sizes="(max-width: 309px) 100vw, 309px" /></span>
 
-  * <span style="font-family: Nunito; font-size: 16px;"> Review the service «remote registry» is set to <strong>«automatic (trigger start)».</strong></span>
+  * <span > Review the service «remote registry» is set to <strong>«automatic (trigger start)».</strong></span>
 
 &nbsp;
 
-<span style="font-family: Nunito; font-size: 16px;">After that, you shouldn&#8217;t have problems in order to add your nodes within the cluster from the wizard:</span>
+<span >After that, you shouldn&#8217;t have problems in order to add your nodes within the cluster from the wizard:</span>
 
 <span style="font-family: Roboto Slab; font-size: 16px;"><img loading="lazy" class="alignnone wp-image-1798 " src="/wp-content/uploads/2020/06/validate-configuration_working.png" alt="" width="572" height="374" srcset="/wp-content/uploads/2020/06/validate-configuration_working.png 1003w, /wp-content/uploads/2020/06/validate-configuration_working-300x196.png 300w, /wp-content/uploads/2020/06/validate-configuration_working-768x502.png 768w" sizes="(max-width: 572px) 100vw, 572px" /></span>
 

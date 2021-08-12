@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/post/2021/Kubernetes-the-hard-way-but-on-prem-part1.md",
+            "file": "content/post/2019/2019-10-14-vmworld-2019-europe-local-guide.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2021/Kubernetes-the-hard-way-but-on-prem-part1.md",
+                "file": "content/post/2019/2019-10-14-vmworld-2019-europe-local-guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "f16846662830706c",
   "lastOpenFiles": [
-    "content/post/2021/Kubernetes-the-hard-way-but-on-prem-part1.md",
-    "content/post/2021/note about k8s part1.md",
-    "content/post/2021/2021-06-08-az-400-exam-notes.md",
-    "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
-    "content/post/2021/Simple-guide-install-and-configure-RHEL-in-VM.md",
-    "content/post/2021/Installing RHEL 8.4.md",
-    "content/post/2021/Untitled.md",
-    "content/post/2021/Kubernetes-the-hard-way-but-on-prem.md",
-    "content/post/2021/OSS-monitoring-series.md",
-    "content/search.md"
+    "content/post/2019/2019-10-14-vmworld-2019-europe-local-guide.md",
+    "content/post/2019/2019-10-04-vfit-at-vmworld-2019-europe.md",
+    "content/post/2019/2019-08-31-veeam-backup-remote-sites.md",
+    "content/post/2019/2019-07-31-migrating-adfs-from-2012-r2-to-2016.md",
+    "content/post/2019/2019-06-21-exam-70-743-upgrading-mcsa-windows-server-2016-experience.md",
+    "content/post/2019/2019-05-09-cohesity-build-day-live.md",
+    "content/post/2019/2019-04-30-vcsa-6-x-installer-error.md",
+    "content/post/2019/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones.md",
+    "content/post/2019/2019-03-30-cloning-virtual-machines-in-vsphere-series-part-4-instant-clones.md",
+    "content/post/2019/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone.md"
   ]
 }

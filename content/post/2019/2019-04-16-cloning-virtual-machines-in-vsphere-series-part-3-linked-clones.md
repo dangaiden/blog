@@ -27,17 +27,17 @@ tags:
   - vSphere
 
 ---
-<span style="font-size: 16px;">Let&#8217;s start with part 3 in the <em>cloning virtual machines in vSphere</em> series, I am going to talk about another type of clones, <strong>linked clones</strong>!<br /> </span>
+<span >Let&#8217;s start with part 3 in the <em>cloning virtual machines in vSphere</em> series, I am going to talk about another type of clones, <strong>linked clones</strong>!<br /> </span>
 
 &nbsp;
 
-<span style="font-size: 16px;">All articles regarding <strong>cloning virtual machines in vSphere</strong> series:</span>
+<span >All articles regarding <strong>cloning virtual machines in vSphere</strong> series:</span>
 
 <p style="padding-left: 40px;">
-  <span style="font-size: 16px;"><a href="http://www.itgaiden.com/cloning-vms-in-vsphere-part-1/">Part 1: Types of clone</a></span><br /> <span style="font-size: 16px;"><a href="http://www.itgaiden.com/cloning-virtual-machines-in-vsphere-part-2-full-clone/">Part 2: Full Clone</a></span><br /> <span style="font-size: 16px;"><a href="http://www.itgaiden.com/cloning-virtual-machines-in-vsphere-series-part-4-instant-clones">Part 4: Instant Clones</a> (not published yet)</span>
+  <span ><a href="http://www.itgaiden.com/cloning-vms-in-vsphere-part-1/">Part 1: Types of clone</a></span><br /> <span ><a href="http://www.itgaiden.com/cloning-virtual-machines-in-vsphere-part-2-full-clone/">Part 2: Full Clone</a></span><br /> <span ><a href="http://www.itgaiden.com/cloning-virtual-machines-in-vsphere-series-part-4-instant-clones">Part 4: Instant Clones</a> (not published yet)</span>
 </p>
 
-<span style="font-size: 16px;">As said in previous articles, this series is only focused on VMware vSphere hence, VMware Horizon View is not contemplated (Linked clones are commonly used</span> <span style="font-size: 16px;">in that product).</span>
+<span >As said in previous articles, this series is only focused on VMware vSphere hence, VMware Horizon View is not contemplated (Linked clones are commonly used</span> <span >in that product).</span>
 
 ### 
 
@@ -47,13 +47,13 @@ What can you see here?
 
 <figure id="attachment_786" aria-describedby="caption-attachment-786" style="width: 656px" class="wp-caption alignnone"><img loading="lazy" class="wp-image-786 size-medium_large" src="/wp-content/uploads/2019/04/LinkedClone-768x294.png" alt="KR_linked" width="656" height="251" srcset="/wp-content/uploads/2019/04/LinkedClone-768x294.png 768w, /wp-content/uploads/2019/04/LinkedClone-300x115.png 300w, /wp-content/uploads/2019/04/LinkedClone-1024x392.png 1024w, /wp-content/uploads/2019/04/LinkedClone.png 1280w" sizes="(max-width: 656px) 100vw, 656px" /><figcaption id="caption-attachment-786" class="wp-caption-text">Keanu Reeves has been linked cloned!</figcaption></figure>
 
-<span style="font-size: 16px;">In the previous image, you can see 3 different characters but they share something in common&#8230;the actor!</span>
+<span >In the previous image, you can see 3 different characters but they share something in common&#8230;the actor!</span>
 
 &nbsp;
 
-<span style="font-size: 16px;">Linked clones are the same! A <strong>linked clone</strong> is a type of clone (a copy of a virtual machine) where the parent VM <strong>shares virtual disks</strong> with their clones.</span>
+<span >Linked clones are the same! A <strong>linked clone</strong> is a type of clone (a copy of a virtual machine) where the parent VM <strong>shares virtual disks</strong> with their clones.</span>
 
-<span style="font-size: 16px;">The resulting linked clone will be <strong>created from the parent&#8217;s VM snapshot</strong> and because of being a <a href="https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/managing_virtual_machines/c_about_snapshots.html">snapshot</a>, it will have the same state that was the snapshot was taken.</span>
+<span >The resulting linked clone will be <strong>created from the parent&#8217;s VM snapshot</strong> and because of being a <a href="https://pubs.vmware.com/vsphere-4-esx-vcenter/index.jsp?topic=/com.vmware.vsphere.vmadmin.doc_41/vsp_vm_guide/managing_virtual_machines/c_about_snapshots.html">snapshot</a>, it will have the same state that was the snapshot was taken.</span>
 
 <img loading="lazy" class="alignnone wp-image-605 size-medium_large" src="/wp-content/uploads/2019/02/LinkedClone-768x730.png" alt="LinkedClone" width="656" height="624" srcset="/wp-content/uploads/2019/02/LinkedClone-768x730.png 768w, /wp-content/uploads/2019/02/LinkedClone-300x285.png 300w, /wp-content/uploads/2019/02/LinkedClone.png 961w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
@@ -79,7 +79,7 @@ What can you see here?
 
 &nbsp;
 
-<span style="font-size: 16px;">In the next section, I wi<span style="font-family: Didact Gothic;">ll show you how to <strong>create a linked clone with PowerCLI</strong> from a Windows VM and in my case, I will use Custom Specifications within the script to launch the clone.<br /> </span></span>
+<span >In the next section, I wi<span style="font-family: Didact Gothic;">ll show you how to <strong>create a linked clone with PowerCLI</strong> from a Windows VM and in my case, I will use Custom Specifications within the script to launch the clone.<br /> </span></span>
 
 ## 
 
@@ -104,7 +104,7 @@ What can you see here?
 
 &nbsp;
 
-<span style="font-size: 16px;"><strong><span style="font-family: Didact Gothic;">What are we going to do?</span></strong></span>
+<span ><strong><span style="font-family: Didact Gothic;">What are we going to do?</span></strong></span>
 
   1. <span style="font-family: Didact Gothic; font-size: 16px;">Shutdown the master image VM that hosts some DBs.</span>
   2. <span style="font-family: Didact Gothic; font-size: 16px;">Create a snapshot when the VM is powered-off to ensure that is consistent (this is a VM with a SQL installed so, even more recommended)</span>
@@ -135,13 +135,13 @@ What can you see here?
   </p>
 </div>
 
-<span style="font-size: 16px;"><span style="font-family: Didact Gothic;">In this </span>script<span style="font-family: Didact Gothic;">, I am also using the <em>OSCustomizationSpec</em> parameter, while using the sentence to create the linked clone,  to change the IP, name and join again to the domain the resultant clone. Also, I am changing the SQL instance name in my case because it&#8217;s a server with MSSQL server installed.</span></span>
+<span ><span style="font-family: Didact Gothic;">In this </span>script<span style="font-family: Didact Gothic;">, I am also using the <em>OSCustomizationSpec</em> parameter, while using the sentence to create the linked clone,  to change the IP, name and join again to the domain the resultant clone. Also, I am changing the SQL instance name in my case because it&#8217;s a server with MSSQL server installed.</span></span>
 
 <span style="">Once the script finished, a new linked clone is created and powered on with the name «SQL-LC1».</span>
 
 &nbsp;
 
-<span style="font-family: Didact Gothic;"><span style="font-size: 16px;">We can see the amount of<strong> time</strong> that takes to create a Linked clone (<strong>5 seconds</strong>):</span><span style="font-size: 16px;"><img loading="lazy" class="alignnone wp-image-741 size-large" src="/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png" alt="" width="656" height="111" srcset="/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png 1024w, /wp-content/uploads/2019/03/LinkedClone_tasks-300x51.png 300w, /wp-content/uploads/2019/03/LinkedClone_tasks-768x130.png 768w, /wp-content/uploads/2019/03/LinkedClone_tasks-1536x260.png 1536w, /wp-content/uploads/2019/03/LinkedClone_tasks.png 1552w" sizes="(max-width: 656px) 100vw, 656px" /></span></span>
+<span style="font-family: Didact Gothic;"><span >We can see the amount of<strong> time</strong> that takes to create a Linked clone (<strong>5 seconds</strong>):</span><span ><img loading="lazy" class="alignnone wp-image-741 size-large" src="/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png" alt="" width="656" height="111" srcset="/wp-content/uploads/2019/03/LinkedClone_tasks-1024x174.png 1024w, /wp-content/uploads/2019/03/LinkedClone_tasks-300x51.png 300w, /wp-content/uploads/2019/03/LinkedClone_tasks-768x130.png 768w, /wp-content/uploads/2019/03/LinkedClone_tasks-1536x260.png 1536w, /wp-content/uploads/2019/03/LinkedClone_tasks.png 1552w" sizes="(max-width: 656px) 100vw, 656px" /></span></span>
 
 <span style="">And now look at the <strong>storage allocated</strong> by the Linked clone (powered off), <strong>750 MB</strong> approximately:</span>
 
@@ -167,7 +167,7 @@ What can you see here?
 
 ### <span style="font-family: Didact Gothic;">Use cases</span>
 
-<span style="font-size: 16px;">It&#8217;s commonly used in VDI and DEV environments but here are some examples:</span>
+<span >It&#8217;s commonly used in VDI and DEV environments but here are some examples:</span>
 
   * <span style="font-family: Didact Gothic; font-size: 16px;">Desktop Deployment<br /> </span>
   * <span style="font-family: Didact Gothic; font-size: 16px;">QA</span>
@@ -189,12 +189,12 @@ What can you see here?
   * <span style="font-family: Didact Gothic; font-size: 16px;">Useful for development environments or if you want to keep the clone just, <strong>perform a full clone</strong> of it!</span>
   * <span style="font-family: Didact Gothic; font-size: 16px;">Deploy as many linked clones as you want, they will reference the snapshot in the Parent VM hence, there is no disk chain on that (except for the snapshot you created of course) and the benefits of replicating.</span>
   * <span style="font-family: Didact Gothic; font-size: 16px;">Ongoing changes made in the virtual disk of the <strong>source VM don&#8217;t affect the linked clones</strong> and <strong>changes to the disk of the linked don&#8217;t affect the parent</strong>.</span>
-  * <span style="font-size: 16px;"><span style="font-family: Didact Gothic;">It can be performed with the parent VM powered on but, it will have some performance degradation and probably inconsistent data (if for </span>example<span style="font-family: Didact Gothic;">, the parent VM hosts a DB).</span></span>
+  * <span ><span style="font-family: Didact Gothic;">It can be performed with the parent VM powered on but, it will have some performance degradation and probably inconsistent data (if for </span>example<span style="font-family: Didact Gothic;">, the parent VM hosts a DB).</span></span>
 
 **<span style="color: #ff0000; font-family: Didact Gothic; font-size: 16px;">Cons</span>**
 
   * <span style="font-family: Didact Gothic; font-size: 16px;">Recommended but not mandatory that the parent VM has to be powered off.</span>
-  * <span style="font-size: 16px;"><span style="font-family: Didact Gothic;">There is a storage/disk dependency as the linked clone is created from the parent&#8217;s </span>VM<span style="font-family: Didact Gothic;"> snapshot then, if you <strong>delete that snapshot</strong>, </span><strong>inconsistencies</strong><span style="font-family: Didact Gothic;"> will occur in the clone (and at the end you will delete it).</span></span>
+  * <span ><span style="font-family: Didact Gothic;">There is a storage/disk dependency as the linked clone is created from the parent&#8217;s </span>VM<span style="font-family: Didact Gothic;"> snapshot then, if you <strong>delete that snapshot</strong>, </span><strong>inconsistencies</strong><span style="font-family: Didact Gothic;"> will occur in the clone (and at the end you will delete it).</span></span>
   * <span style="font-family: Didact Gothic; font-size: 16px;"><strong>Performance on the destination clone</strong> will be impacted (as virtual machines are sharing storage)</span>
 
 ### 
@@ -203,8 +203,8 @@ What can you see here?
 
 ### <span style="font-family: Didact Gothic;">To conclude</span>
 
-<span style="font-size: 16px;">Linked clones have multiple benefits compared to full clones and it has many use cases as we saw before.</span>
+<span >Linked clones have multiple benefits compared to full clones and it has many use cases as we saw before.</span>
 
-<span style="font-size: 16px;">You can easily replicate the status of a VM (snapshot) and deploy linked clones to your end-users with all the benefits as for example space savings or the deployment speed. </span>
+<span >You can easily replicate the status of a VM (snapshot) and deploy linked clones to your end-users with all the benefits as for example space savings or the deployment speed. </span>
 
-<span style="font-size: 16px;">To end this series, we will look at instant clones, another type of clone that is even faster than linked clones but, with some particularities.</span>
+<span >To end this series, we will look at instant clones, another type of clone that is even faster than linked clones but, with some particularities.</span>

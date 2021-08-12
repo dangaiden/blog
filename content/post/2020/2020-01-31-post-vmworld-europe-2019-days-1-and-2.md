@@ -22,21 +22,21 @@ tags:
   - vmworld
 
 ---
-<span style="font-family: Nunito; font-size: 16px;">Here I will explain a summary of days 1 and 2 (November 4th and 5th) of VMworld Europe 2019 from my perspective.</span>
+<span >Here I will explain a summary of days 1 and 2 (November 4th and 5th) of VMworld Europe 2019 from my perspective.</span>
 
-<span style="font-family: Nunito; font-size: 16px;">So, the first official day is on Monday (November 4th) where there aren&#8217;t many people like the next day (the second day, Tuesday 5th) but anyway there are many activities to do!</span>
+<span >So, the first official day is on Monday (November 4th) where there aren&#8217;t many people like the next day (the second day, Tuesday 5th) but anyway there are many activities to do!</span>
 
 <span style="font-family: Nunito;"><img loading="lazy" class="alignnone wp-image-1445 " src="/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-768x768.jpg" alt="" width="428" height="428" srcset="/wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-768x768.jpg 768w, /wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-300x300.jpg 300w, /wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-1024x1024.jpg 1024w, /wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534-150x150.jpg 150w, /wp-content/uploads/2020/01/VMworld_genses_badge-e1580427419534.jpg 1370w" sizes="(max-width: 428px) 100vw, 428px" /></span>
 
-<span style="font-family: Nunito; font-size: 16px;">This time I was awarded a blogger pass, hence, I will have the honor to be with other bloggers at VMworld while enjoying some privileges like having a reserved seat in the general session, stay with other bloggers or join some special events.</span>
+<span >This time I was awarded a blogger pass, hence, I will have the honor to be with other bloggers at VMworld while enjoying some privileges like having a reserved seat in the general session, stay with other bloggers or join some special events.</span>
 
 # **<span style="font-family: Nunito;  font-size: 32px;">The Community: vCommunity</span>**
 
-<span style="font-family: Nunito; font-size: 16px;">I think that for almost everyone that is involved in the vCommunity, VMworld means vCommunity but why?</span>
+<span >I think that for almost everyone that is involved in the vCommunity, VMworld means vCommunity but why?</span>
 
-<span style="font-family: Nunito; font-size: 16px;">Easy, is the main event where you can meet again your friends, make new ones and have fun with them! By the way, vCommunity means virtual community and not VMware Community 😉<br /> </span>
+<span >Easy, is the main event where you can meet again your friends, make new ones and have fun with them! By the way, vCommunity means virtual community and not VMware Community 😉<br /> </span>
 
-<span style="font-family: Nunito; font-size: 16px;">This year, I was able to help as a Champion for the <strong>Tech Level up Project</strong> which is the one who made The <span style="text-decoration: underline;"><strong>vTrail Map</strong></span> (A community guide for your virtualization journey)!</span>
+<span >This year, I was able to help as a Champion for the <strong>Tech Level up Project</strong> which is the one who made The <span style="text-decoration: underline;"><strong>vTrail Map</strong></span> (A community guide for your virtualization journey)!</span>
 
 <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
   <p lang="en" dir="ltr">
@@ -50,29 +50,29 @@ tags:
 
 
 
-<span style="font-family: Nunito; font-size: 16px;">You can get the digital version <a href="https://www.cohesity.com/resource-assets/vTrail-Map-2019.pdf">here</a> for free!</span>
+<span >You can get the digital version <a href="https://www.cohesity.com/resource-assets/vTrail-Map-2019.pdf">here</a> for free!</span>
 
-<span style="font-family: Nunito; font-size: 16px;">Many people from the vCommunity as Champions delivered lots of physical copies of the vTrail Map at VMworld just to engage them in our community.</span>
+<span >Many people from the vCommunity as Champions delivered lots of physical copies of the vTrail Map at VMworld just to engage them in our community.</span>
 
 &nbsp;
 
 # **<span style="font-family: Nunito;  font-size: 32px;">1st general session</span>**
 
-<span style="font-family: Nunito; font-size: 16px;">Although there weren&#8217;t bigger announcements like at the VMworld US, there were some new projects and features that were announced.</span>
+<span >Although there weren&#8217;t bigger announcements like at the VMworld US, there were some new projects and features that were announced.</span>
 
 <span style="font-family: Nunito;"><img loading="lazy" class="alignnone wp-image-1436 size-medium_large" src="/wp-content/uploads/2020/01/VMworld_gen_ses_1-768x432.jpg" alt="" width="656" height="369" srcset="/wp-content/uploads/2020/01/VMworld_gen_ses_1-768x432.jpg 768w, /wp-content/uploads/2020/01/VMworld_gen_ses_1-300x169.jpg 300w, /wp-content/uploads/2020/01/VMworld_gen_ses_1.jpg 1000w" sizes="(max-width: 656px) 100vw, 656px" /></span>
 
-<span style="font-family: Nunito; font-size: 16px;">Day 1 (Now talking about November 5th) is more focused on announcements about new products, strategies and gives you a better vision of what VMware has to offer with new features, insights, etc.</span>
+<span >Day 1 (Now talking about November 5th) is more focused on announcements about new products, strategies and gives you a better vision of what VMware has to offer with new features, insights, etc.</span>
 
-<span style="font-family: Nunito; font-size: 16px;"> Here you have the link for the first session:</span>
+<span > Here you have the link for the first session:</span>
 
   * <span style="font-family: Nunito;"><a href="https://www.youtube.com/watch?v=UHlo7aS_8Mc"><span style="font-size: 16px;">Day 1 General Session (November 5th)</span></a></span>
 
 # <span style="font-size: 32px;"><strong><span style="font-family: Nunito; ">vBrownbag Tech Talks</span></strong></span>
 
-<span style="font-family: Nunito; font-size: 16px;">On Day 1 there wasn&#8217;t much to do as we couldn&#8217;t record anything at the vBrownbag stage.</span>
+<span >On Day 1 there wasn&#8217;t much to do as we couldn&#8217;t record anything at the vBrownbag stage.</span>
 
-<span style="font-family: Nunito; font-size: 16px;">Gregg Robertson (vBrownbag member) likes to make fun of me a bit while I am performing tests on the stage:</span>
+<span >Gregg Robertson (vBrownbag member) likes to make fun of me a bit while I am performing tests on the stage:</span>
 
 <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
   <p lang="en" dir="ltr">
@@ -88,15 +88,15 @@ tags:
 
 &nbsp;
 
-<span style="font-family: Nunito; font-size: 16px;">On Day 2 we started the vBrownbag Tech Talks at the VMware Community booth from 11:00 AM to 5:00 PM.</span>
+<span >On Day 2 we started the vBrownbag Tech Talks at the VMware Community booth from 11:00 AM to 5:00 PM.</span>
 
-<span style="font-family: Nunito; font-size: 16px;">Ariel Sánchez, Alastair Cooke and me recorded around 15 sessions where many people from the vCommunity among other companies that showed us their community programs, new features, versions, etc.</span>
+<span >Ariel Sánchez, Alastair Cooke and me recorded around 15 sessions where many people from the vCommunity among other companies that showed us their community programs, new features, versions, etc.</span>
 
-<span style="font-family: Nunito; font-size: 16px;">Although I was «anchored» at the VMware community booth recording people with the mixed audio and all of the vBrownbag members helping the presenters (and recording as well), it was so nice to spend time there with lots of new and old people from the community.</span>
+<span >Although I was «anchored» at the VMware community booth recording people with the mixed audio and all of the vBrownbag members helping the presenters (and recording as well), it was so nice to spend time there with lots of new and old people from the community.</span>
 
-<span style="font-family: Nunito; font-size: 16px;">Also, I learned from each session that we recorded. If the topic is a bit interesting for me, it was great to hear about it and even ask the presenter.</span>
+<span >Also, I learned from each session that we recorded. If the topic is a bit interesting for me, it was great to hear about it and even ask the presenter.</span>
 
-<span style="font-family: Nunito; font-size: 16px;">Here you have a picture of me while I was recording my friend Jorge de la Cruz!</span>
+<span >Here you have a picture of me while I was recording my friend Jorge de la Cruz!</span>
 
 <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
   <p lang="en" dir="ltr">
@@ -112,13 +112,13 @@ tags:
 
 # <span style="font-size: 32px;"><strong><span style="font-family: Nunito; ">Enjoying VMworld</span></strong></span>
 
-<span style="font-family: Nunito; font-size: 16px;">And here I share with you some events, moments and things that couldn&#8217;t be possible without the vCommunity.</span>
+<span >And here I share with you some events, moments and things that couldn&#8217;t be possible without the vCommunity.</span>
 
-<span style="font-family: Nunito; font-size: 16px;">All these moments are perfect to meet new people, engage with them and have fun!</span>
+<span >All these moments are perfect to meet new people, engage with them and have fun!</span>
 
 ## <span style="font-size: 28px;"><strong><span style="font-family: Nunito; ">vFit Run</span></strong></span>
 
-<span style="font-family: Nunito; font-size: 16px;">In the early morning (6:45 AM) we did a run on the first day (November 4th) with some people from the community. It was so nice but at the same time painful to wake up at that time&#8230;</span>
+<span >In the early morning (6:45 AM) we did a run on the first day (November 4th) with some people from the community. It was so nice but at the same time painful to wake up at that time&#8230;</span>
 
 <blockquote class="twitter-tweet" data-width="550" data-dnt="true">
   <p lang="en" dir="ltr">
@@ -132,7 +132,7 @@ tags:
 
 
 
-<span style="font-family: Nunito; font-size: 16px;">There was a second run scheduled for November 6th but I couldn&#8217;t attend so I assume that it wasn&#8217;t done.</span>
+<span >There was a second run scheduled for November 6th but I couldn&#8217;t attend so I assume that it wasn&#8217;t done.</span>
 
 ## <span style="font-size: 28px;"><strong><span style="font-family: Nunito; ">vSoccer</span></strong></span>
 
