@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/post/2021/Kubernetes-the-hard-way-but-on-prem-part1.md",
+            "file": "content/post/2021/2021-06-08-az-400-exam-notes.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2021/Kubernetes-the-hard-way-but-on-prem-part1.md",
+                "file": "content/post/2021/2021-06-08-az-400-exam-notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "f16846662830706c",
   "lastOpenFiles": [
+    "content/post/2021/2021-06-08-az-400-exam-notes.md",
     "content/post/2021/Kubernetes-the-hard-way-but-on-prem-part1.md",
     "content/post/2021/note about k8s part1.md",
+    "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
     "content/post/2021/Simple-guide-install-and-configure-RHEL-in-VM.md",
     "content/post/2021/Installing RHEL 8.4.md",
-    "content/post/2021/2021-06-08-az-400-exam-notes.md",
     "content/post/2021/Untitled.md",
     "content/post/2021/Kubernetes-the-hard-way-but-on-prem.md",
     "content/post/2021/OSS-monitoring-series.md",
-    "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
     "content/search.md"
   ]
 }

@@ -1,9 +1,9 @@
 ---
-title: Kubernetes-the-hard-way-but-on-prem-part1
+title: kubernetes-the-hard-way-but-on-prem-part1
 author: itgaiden
 type: post
 date: 2021-08-12T11:27:51+00:00
-url: Kubernetes-the-hard-way-but-on-prem-part1
+url: kubernetes-the-hard-way-but-on-prem-part1
 categories:
   - microservices
   - kubernetes
