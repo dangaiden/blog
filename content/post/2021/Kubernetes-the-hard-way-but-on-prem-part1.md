@@ -33,14 +33,14 @@ As per writting this blog, the components will be:
 
 Therefore, the **Kubernetes the hard way** guide will be my base to perform the Kubernetes cluster creation with all the componenrs or basically saying, I will do the "Kubernetes the hard way" a bit different :)
 
-<table><tr><td>This is the first part of the series for the Kubernetes the hard way but on-prem</td></tr></table>
+This is the **first part of the series** for the Kubernetes the hard way but on-prem.
 
 
 # Local infrastructure
 
 >Note: This post explains how I did it and I can be wrong  in some parts,  do it in the most comfortable way for you.
 
-Here is the main point when it differs from the guide, we will do it with virtual machines (a.k.a. VMs) instead of using instances in the cloud, why? 
+Here is the main point when it differs from the guide, we will do it **with virtual machines** (a.k.a. VMs) instead of using instances in the cloud, why? 
 
 Because I don't want to setup a cloud account in GCP which will exceed the limits of the free tier (as it does in the guide) plus other concerns.
 
@@ -57,7 +57,7 @@ With this you will be "tied" with the infrastructure as it will be on-prem (your
 
 We basically need a hypervisor (type 2, as we'll install it in our OS), 3 virtual machines (that will act as our nodes for the K8s cluster) with an operating system, configure them and then the Kubernetes hype can start.
 
-### Our hypervisor
+### The hypervisor
 
 As easy as downloading [Virtual Box](https://www.virtualbox.org/wiki/Linux_Downloads) (Oracle VM VirtualBox) and installing it in the flavour you want (I am using Debian 10).
 
