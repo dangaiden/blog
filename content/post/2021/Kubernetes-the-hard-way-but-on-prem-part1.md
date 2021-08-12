@@ -48,10 +48,7 @@ In this way, **I can do it for free** (with Virtual Box and with almost any Linu
 
 A quick diagram of what I will have in the PC (3 VMs in the same network):
 
-![image info](/static/VMs_infra_k8s_hardway.png)
-
-
-With this you will be "tied" with the infrastructure as it will be on-prem (your PC, laptop, etc.) so it can be a disadvantatge if you want to work with it from different places.
+<img src = "/static/VMs_infra_k8s_hardway.png" />
 
 # Let's start with the infra
 
