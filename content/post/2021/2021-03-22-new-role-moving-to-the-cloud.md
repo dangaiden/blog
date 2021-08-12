@@ -27,7 +27,7 @@ tags:
 
 ![][1] 
 
-# <span style="font-family: Nunito;"><span style="font-size: 32px;">Cloud what?</span><br /> </span>
+# Cloud what?
 
 <span style="font-family: Nunito;">Wait&#8230;.what the hell is «Cloud SRE»? </span>
 
@@ -41,7 +41,7 @@ tags:
 
 <span style="font-family: Nunito;">I&#8217;ll be working only with cloud providers, specifically GCP and Azure, for now, we will see later.</span>
 
-# <span style="font-family: Nunito;"><span style="font-size: 32px;">Challenges ahead</span><br /> </span>
+# Challenges ahead
 
 <span style="font-family: Nunito;"><img loading="lazy" class="" src="https://media.giphy.com/media/a3HHoUXvLyDDO/source.gif" width="394" height="345" /></span>
 
@@ -59,8 +59,5 @@ _**<span style="font-family: Nunito;">P.S. This change will have a massive impac
 
 &nbsp;
 
-&nbsp;
-
-&nbsp;
 
  [1]: https://media.giphy.com/media/fqtyYcXoDV0X6ss8Mf/source.gif
