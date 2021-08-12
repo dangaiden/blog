@@ -1,5 +1,5 @@
 ---
-title: Kubernetes the hard way but on prem - Part 1
+title: Kubernetes the hard way but on-prem - part 1
 author: itgaiden
 type: post
 date: 2021-08-12T11:27:51+00:00
