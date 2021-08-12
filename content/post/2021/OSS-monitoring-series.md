@@ -21,7 +21,7 @@ If you work with micro-services (maybe not) and in the cloud (or not), you have 
 
 All these products are open-source projects which have become the go-to for many companies and I can deny that they work well (at least in my experience) especially for services built in the cloud or micro-services.
 
-![image info](../static/oss-m-series-1.png)
+![image info](/static/oss-m-series-1.png)
 
 
 Of course I can't forget other open source projects like Zabbix or Nagios but those are ones which I haven't seen to escalate as good as these ones, being versatile or being used as much as the ones I mentioned before.

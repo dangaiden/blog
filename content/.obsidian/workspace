@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "post/2021/OSS-monitoring-series.md",
-            "mode": "source"
+            "file": "post/2021/Installing RHEL 8.4.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "post/2021/OSS-monitoring-series.md",
+                "file": "post/2021/Installing RHEL 8.4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,12 @@
   },
   "active": "309e0040b22033fd",
   "lastOpenFiles": [
+    "post/2021/Installing RHEL 8.4.md",
+    "post/2021/2021-06-08-az-400-exam-notes.md",
+    "post/2021/Kubernetes-the-hard-way-but-on-prem.md",
     "post/2021/OSS-monitoring-series.md",
-    "post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
     "post/2021/Untitled.md",
+    "post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
     "Untitled.md"
   ]
 }
