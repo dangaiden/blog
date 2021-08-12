@@ -48,7 +48,7 @@ In this way, **I can do it for free** (with Virtual Box and with almost any Linu
 
 A quick diagram of what I will have in the PC (3 VMs in the same network):
 
-<span><img src = "/static/VMs_infra_k8s_hardway.png" /></span>
+<span><img src = "/wp-content/uploads/2021/VMs_infra_k8s_hardway.png" /></span>
 
 # Let's start with the infra
 
