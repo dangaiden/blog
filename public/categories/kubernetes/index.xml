@@ -17,9 +17,8 @@
       <pubDate>Thu, 12 Aug 2021 11:27:51 +0000</pubDate>
       
       <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part1/</guid>
-      <description>Context  DISCLAIMER: I decided to not continue with this due to the huge implications that will be to do everything in VMs, baed.sically, a lot of time should be invest
- In order to practice for the CKA exam, it is recommended to perform the famous Kubernetes The Hard Way by Kelsey Hightower.
-That guide is one of the best way to create a Kubernetes cluster by installing each component of them separatedly instead of using other tools like Kind, MiniKube, etc.</description>
+      <description>DISCLAIMER  I decided to not continue with this due to the huge implications that will be to do everything in VMs, basically, a lot of time should be invested and I miscalculated it too much. Therefore, this will be probably the first and only post about these series.
+ Context In order to practice for the CKA exam, it is recommended to perform the famous Kubernetes The Hard Way by Kelsey Hightower.</description>
     </item>
     
   </channel>
