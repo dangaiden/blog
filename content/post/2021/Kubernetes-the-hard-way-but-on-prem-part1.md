@@ -13,9 +13,11 @@ tags:
   - cka
 ---
 
-# Context
+# DISCLAIMER
 
-> DISCLAIMER: I decided to not continue with this due to the huge implications that will be to do everything in VMs, baed.sically, a lot of time should be invest
+>I decided to not continue with this due to the huge implications that will be to do everything in VMs, basically, a lot of time should be invested and I miscalculated it too much. Therefore, this will be probably the first and only post about these series.
+
+# Context
 
 In order to practice for the CKA exam, it is recommended to perform the famous [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way#kubernetes-the-hard-way) by Kelsey Hightower.
 
@@ -33,8 +35,7 @@ As per writting this blog, the components will be:
 
 Therefore, the **Kubernetes the hard way** guide will be my base to perform the Kubernetes cluster creation with all the componenrs or basically saying, I will do the "Kubernetes the hard way" a bit different :)
 
-This is the **first part of the series** for the Kubernetes the hard way but on-prem and **now is discontinued**
-
+This is the **first part of the series** for the Kubernetes the hard way but on-prem. (**Now  discontinued**)
 
 # Local infrastructure
 
