@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cka on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/cka/</link>
+    <description>Recent content in cka on Dan Belmonte</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Aug 2021 11:27:51 +0000</lastBuildDate>
+    
+	<atom:link href="https://dangaiden.github.io/tags/cka/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes the hard way but on-prem - part 1</title>
+      <link>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part1/</link>
+      <pubDate>Thu, 12 Aug 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part1/</guid>
+      <description>Context In order to practice for the CKA exam, it is recommended to perform the famous Kubernetes The Hard Way by Kelsey Hightower.
+That guide is one of the best way to create a Kubernetes cluster by installing each component of them separatedly instead of using other tools like Kind, MiniKube, etc. which will create a K8s cluster without dealing about any complexity.
+In this way, we can learn the componentes involved and how they really interact them.</description>
+    </item>
+    
+  </channel>
+</rss>
