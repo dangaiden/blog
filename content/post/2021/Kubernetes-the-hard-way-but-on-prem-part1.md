@@ -1,5 +1,5 @@
 ---
-title: Kubernetes the hard way but on-prem - part 1
+title: Kubernetes the hard way but on-prem - part 1 (discontinued)
 author: itgaiden
 type: post
 date: 2021-08-12T11:27:51+00:00
@@ -12,6 +12,11 @@ tags:
   - kubernetes
   - cka
 ---
+# Disclaimer
+
+I miscalculated and after reviewing deeply the rest of the tutorial will require a deep investigation which I am not willing to do at this time.
+Therefore, this will be for now the only post dedicated to do it "on-prem".
+> This means this series is discontinued
 
 # Context
 
@@ -33,7 +38,7 @@ As per writting this blog, the components will be:
 
 Therefore, the **Kubernetes the hard way** guide will be my base to perform the Kubernetes cluster creation with all the componenrs or basically saying, I will do the "Kubernetes the hard way" a bit different :)
 
-This is the **first part of the series** for the Kubernetes the hard way but on-prem.
+This is the **first part of the series** for the Kubernetes the hard way but on-prem (now discontinued).
 
 
 # Local infrastructure
