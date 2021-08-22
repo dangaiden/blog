@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>rhel on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/rhel/</link>
+    <description>Recent content in rhel on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Jul 2021 11:27:51 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/rhel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Simple-guide-install-and-configure-RHEL-in-VM</title>
+      <link>https://dangaiden.github.io/Simple-guide-install-and-configure-RHEL-in-VM/</link>
+      <pubDate>Tue, 27 Jul 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/Simple-guide-install-and-configure-RHEL-in-VM/</guid>
+      <description>Quick How-to with RHEL  Create an account (it&amp;rsquo;s free) and download RHEL ISO from the official repository here Create a VM in VirtualBox with the resources you want. I created mine with 2GB of RAM, 2 vCPU and 40 GB of disk space . Follow the wizard and install the way you prefer: Minimal server, Keyboard, network, etc. Recommended to partition your disk with LVM and partition it as recommended by the provider Once is installed proceed to log as root to the OS (I used &amp;ldquo;Somred1&amp;rdquo; as hostname) and add another user (dangaiden as example) with a password: $ useradd dangaiden &amp;amp; passwd dangaiden   4.</description>
+    </item>
+    
+  </channel>
+</rss>

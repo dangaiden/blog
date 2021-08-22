@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>mcsa on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/mcsa/</link>
+    <description>Recent content in mcsa on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Jun 2019 11:02:14 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/mcsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exam 70-743, Upgrading MCSA Windows Server 2016 experience</title>
+      <link>https://dangaiden.github.io/?p=704/</link>
+      <pubDate>Fri, 21 Jun 2019 11:02:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=704/</guid>
+      <description>I will explain quickly my experience regarding the Exam 70-743, Upgrading Your Skills to MCSA: Windows Server 2016 exam from Microsoft I took last April.
+It’s been a while since I took an exam from Microsoft (the latestwas in 2013 I think) where you probably know that these kind of exams are multiple-choice or single-choice.
+Through my career, I saw a lot of people cheating with these exams by memorizing the questions you can find on the internet and finishing it in just 20 minutes.</description>
+    </item>
+    
+  </channel>
+</rss>

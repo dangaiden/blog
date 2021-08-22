@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>kubernetes on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/kubernetes/</link>
+    <description>Recent content in kubernetes on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Aug 2021 11:27:51 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes the hard way but on-prem - part 1 (discontinued)</title>
+      <link>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part1/</link>
+      <pubDate>Thu, 12 Aug 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part1/</guid>
+      <description>Disclaimer I miscalculated and after reviewing deeply the rest of the tutorial will require a deep investigation which I am not willing to do at this time. Therefore, this will be for now the only post dedicated to do it &amp;ldquo;on-prem&amp;rdquo;.
+ This means this series is discontinued
+ Context In order to practice for the CKA exam, it is recommended to perform the famous Kubernetes The Hard Way by Kelsey Hightower.</description>
+    </item>
+    
+  </channel>
+</rss>

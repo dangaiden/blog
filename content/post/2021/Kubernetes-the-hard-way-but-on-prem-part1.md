@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: Kubernetes the hard way but on-prem - part 1 (discontinued)
+=======
+title: Kubernetes the hard way but on-prem - part 1 (Discontinued)
+>>>>>>> 290e6021573c90e4e0152a142000b3cbc2051119
 author: itgaiden
 type: post
 date: 2021-08-12T11:27:51+00:00
@@ -18,11 +22,13 @@ I miscalculated and after reviewing deeply the rest of the tutorial will require
 Therefore, this will be for now the only post dedicated to do it "on-prem".
 > This means this series is discontinued
 
+# DISCLAIMER
+
+>I decided to not continue with this due to the huge implications that will be to do everything in VMs, basically, a lot of time should be invested and I miscalculated it too much. Therefore, this will be probably the first and only post about these series.
+
 # Context
 
-
 In order to practice for the CKA exam, it is recommended to perform the famous [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way#kubernetes-the-hard-way) by Kelsey Hightower.
-
 
 That guide is one of the best way to create a Kubernetes cluster by installing each component of them separatedly instead of using other tools like Kind, MiniKube, etc. which will create a K8s cluster without dealing about any complexity.
 
@@ -38,8 +44,12 @@ As per writting this blog, the components will be:
 
 Therefore, the **Kubernetes the hard way** guide will be my base to perform the Kubernetes cluster creation with all the componenrs or basically saying, I will do the "Kubernetes the hard way" a bit different :)
 
+<<<<<<< HEAD
 This is the **first part of the series** for the Kubernetes the hard way but on-prem (now discontinued).
 
+=======
+This is the **first part of the series** for the Kubernetes the hard way but on-prem. (**Now  discontinued**)
+>>>>>>> 290e6021573c90e4e0152a142000b3cbc2051119
 
 # Local infrastructure
 

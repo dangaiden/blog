@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>virtualization on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/virtualization/</link>
+    <description>Recent content in virtualization on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Oct 2020 20:32:17 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/virtualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Is the applications’ future «containe(r)d»?</title>
+      <link>https://dangaiden.github.io/2020-10-31-applications-future-containerd/</link>
+      <pubDate>Sat, 31 Oct 2020 20:32:17 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-10-31-applications-future-containerd/</guid>
+      <description>Well, I’ll be lying if I haven’t heard of containers in the past years although I used them barely at my job (solutions engineer) shouldn’t I consider them more every time to replace the applications where my customers have their servers?
+Like many people that work as sysadmin these days, they are used to work with virtualization, in particular Virtual Machines (VMs), customers still using them (and it will continue) to deploy their applications in an OS which delivers great benefits against the legacy approach of the Baremetal (Mainframe) era.</description>
+    </item>
+    
+  </channel>
+</rss>

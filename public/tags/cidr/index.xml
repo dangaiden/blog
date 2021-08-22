@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CIDR on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/cidr/</link>
+    <description>Recent content in CIDR on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Dec 2017 15:50:35 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/cidr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure – Error when adding new rule on NSG</title>
+      <link>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg/</link>
+      <pubDate>Sun, 31 Dec 2017 15:50:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg/</guid>
+      <description>Hello everyone!
+It’s been a while since I wrote something, but I was so busy with other things (University) and I wasn’t able to allocate time to write anything.
+Today I’m going to talk about an issue I found on Azure when trying to add new rules to some NSGs.
+To create rules in Azure I used this script from TechNet Gallery: https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332
+Problem I was trying to add some rules in an NSG with the address 193.</description>
+    </item>
+    
+    <item>
+      <title>Azure – Error when adding new rule on NSG</title>
+      <link>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg_backup/</link>
+      <pubDate>Sun, 31 Dec 2017 15:50:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg_backup/</guid>
+      <description>Hello everyone!
+It’s been a while since I wrote something, but I was so busy with other things (University) and I wasn’t able to allocate time to write anything.
+Today I’m going to talk about an issue I found on Azure when trying to add new rules to some NSGs.
+To create rules in Azure I used this script from TechNet Gallery: https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332
+Problem I was trying to add some rules in an NSG with the address 193.</description>
+    </item>
+    
+  </channel>
+</rss>

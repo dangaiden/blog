@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vcsa on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/vcsa/</link>
+    <description>Recent content in vcsa on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Aug 2020 09:00:11 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/vcsa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Increasing the heap memory on vCSA 6.7 services</title>
+      <link>https://dangaiden.github.io/2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services/</link>
+      <pubDate>Mon, 31 Aug 2020 09:00:11 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services/</guid>
+      <description>For some reason, our monitoring alerted that the service “vsphere-ui” from the vCSA it was having some problems randomly. From the user perspective only we noticed some slowness when navigating within the HTML5 client.
+I took a quick view of the VAMI I saw this message from the VMware vSphere Client service:
+The server is running low on heap memory (&amp;gt;90% utilized.)
+So it was time to solve those random alerts about memory utilization.</description>
+    </item>
+    
+    <item>
+      <title>vCSA 6.x installer error: “No networks on the host. Cannot proceed with the installation.»</title>
+      <link>https://dangaiden.github.io/2019-04-30-vcsa-6-x-installer-error/</link>
+      <pubDate>Tue, 30 Apr 2019 08:00:57 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-04-30-vcsa-6-x-installer-error/</guid>
+      <description>This is a quick post of an error I found sometimeswhile deploying a new vCenter server appliance with an embedded PSC on the vCSA 6.x installer.
+The problem In my case, I was trying to install vCSA 6.5 without DNS (this is why the system name has an IP address and the DNS is itself). Also, notice that the network section is empty:
+
+If you try to continue with the installation, it will show you an error:</description>
+    </item>
+    
+  </channel>
+</rss>

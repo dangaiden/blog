@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vROps on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/vrops/</link>
+    <description>Recent content in vROps on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 May 2020 20:00:52 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/vrops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Upgrade vROps from 6.7.0 to 8.0.1</title>
+      <link>https://dangaiden.github.io/2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1/</link>
+      <pubDate>Thu, 21 May 2020 20:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1/</guid>
+      <description>In this blog post, we will see how to upgrade vRealize Operations (vROps) from version 6.7.0 to 8.0.1. The whole process takes about 30 minutes.
+Bear in mind that, you will need new license keys after updating to the later version (after 8.0 version).
+
+ Note: You will see a version mismatch in some screenshots.
+Download the required files  Download the Upgrade Assessment Tool available at VMware Downloads.</description>
+    </item>
+    
+  </channel>
+</rss>

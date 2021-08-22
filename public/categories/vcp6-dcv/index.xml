@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VCP6-DCV on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/vcp6-dcv/</link>
+    <description>Recent content in VCP6-DCV on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Sep 2017 16:20:45 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/vcp6-dcv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCP6-DCV achieved!</title>
+      <link>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</link>
+      <pubDate>Sun, 03 Sep 2017 16:20:45 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</guid>
+      <description>I am going to start talking about the exam VCP6-DCV from VMware. The main resource you should use is the VMware site: http://bit.ly/1PLshWR
+There you can check a path to achieve VCP6-DCV (there is a newer version VCP6.5-DCV). I took path 1, as I wasn’t certified.
+
+Later, I took one official training course, VMware vSphere: Install, Configure, Manage [V6].
+Next, I passed the vSphere 6 Foundations Exam (2V0-620) months ago and finally I did VMware Certified Professional 6 – Data Center Virtualization Exam (2V0-621).</description>
+    </item>
+    
+  </channel>
+</rss>

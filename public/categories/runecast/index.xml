@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Runecast on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/runecast/</link>
+    <description>Recent content in Runecast on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Oct 2019 21:14:01 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/runecast/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Runecast Analyzer: Deploy, configure and quick review</title>
+      <link>https://dangaiden.github.io/2019-10-30-runecast-analyzer-deploy-configure-and-quick-review/</link>
+      <pubDate>Wed, 30 Oct 2019 21:14:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-30-runecast-analyzer-deploy-configure-and-quick-review/</guid>
+      <description>Today, I’ll show you how easy is to install, configure Runecast Analyzer (v 3.1.1.0) in your environment and we will review quickly what can we offer this solution.
+Runecast? Runecast is a company founded in 2014 more recognizable because the CEO is Stanimir Markov which is VCDX #74 but in his team has other virtualization veterans who help them to create this solution.
+It’s a solution made by and for IT Admins which will scan your VMware environment (vSphere, vSAN, and NSX-T and V) and inform you about issues, best practices, hardware compatibility and apply security hardening in your VMware environment.</description>
+    </item>
+    
+  </channel>
+</rss>

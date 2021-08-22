@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vforum on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/vforum/</link>
+    <description>Recent content in vforum on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 21 Apr 2020 12:26:33 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/vforum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vForum Online Spring 2020</title>
+      <link>https://dangaiden.github.io/2020-04-21-vforum-online-spring-2020/</link>
+      <pubDate>Tue, 21 Apr 2020 12:26:33 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-04-21-vforum-online-spring-2020/</guid>
+      <description>A few days ago VMware announced that VMworld will be online due to the current situation with COVID-19. Review the VMworld FAQs.
+ Therefore, as there will be only one big online event during the week of September 28, 2020.
+ So, why not attend a free mini-VMworld in less than a month?
+That’s vForum Online!
+
+vForum Online is a LIVE virtual event where you can access it directly from any device.</description>
+    </item>
+    
+  </channel>
+</rss>
