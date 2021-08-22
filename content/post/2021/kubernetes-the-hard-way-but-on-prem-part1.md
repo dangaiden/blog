@@ -1,5 +1,5 @@
 ---
-title: Kubernetes the hard way but on-prem - part 1 (Discontinued)
+title: Kubernetes the hard way but on-prem - part 1
 author: itgaiden
 type: draft
 date: 2021-08-12T11:47:51+00:00
