@@ -4,14 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a9db93d2407d8084",
+        "id": "f750492b8b87d785",
         "type": "leaf",
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/post/2021/kubernetes-the-hard-way-but-on-prem-part1.md",
+            "file": "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
             "mode": "source"
-          }
+          },
+          "pinned": true
         }
       }
     ],
@@ -68,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2021/kubernetes-the-hard-way-but-on-prem-part1.md",
+                "file": "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +88,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a9db93d2407d8084",
+  "active": "f750492b8b87d785",
   "lastOpenFiles": [
     "content/post/2021/kubernetes-the-hard-way-but-on-prem-part1.md",
-    "content/post/2021/2021-06-08-az-400-exam-notes.md",
-    "content/post/2021/note about k8s part1.md",
+    "content/post/2021/Simple-guide-install-and-configure-RHEL-in-VM.md",
     "content/post/2021/OSS-monitoring-series.md",
-    "Untitled.md",
-    "content/post/2021/Kubernetes-the-hard-way-but-on-prem-part1.md",
+    "content/post/2021/note about k8s part1.md",
     "static/wp-content/uploads/2021/VMs_infra_k8s_hardway.png",
-    "content/post/2019/2019-10-14-vmworld-2019-europe-local-guide.md",
-    "content/post/2019/2019-10-04-vfit-at-vmworld-2019-europe.md",
-    "content/post/2019/2019-08-31-veeam-backup-remote-sites.md"
+    "archetypes/default.md",
+    "content/about-me/index.md",
+    "content/search.md",
+    "content/archives.md",
+    "content/itgaiden.jpg"
   ]
 }

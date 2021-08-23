@@ -3,7 +3,7 @@ title: Kubernetes the hard way but on-prem - part 1 (Discontinued)
 author: itgaiden
 type: post
 date: 2021-08-12T11:47:51+00:00
-url: kubernetes-the-hard-way-but-on-prem-part1
+url: kubernetes-the-hard-way-but-on-prem-part-1
 categories:
   - microservices
   - kubernetes
@@ -15,7 +15,8 @@ tags:
 
 # DISCLAIMER
 
->I decided to not continue with this due to the huge implications that will be to do everything in VMs, basically, a lot of time should be invested and I miscalculated it too much. Therefore, this will be probably the first and only post about these series.
+> I decided to not continue with this due to the huge implications that will be to redo everything not in the cloud. Basically, a lot of time should be invested and I miscalculated it by too much. 
+Therefore, this will be probably the first and only post about these series.
 
 # Context
 
