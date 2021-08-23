@@ -114,7 +114,7 @@ menu:
         - name: Archive
           url: archives/
           weight: 5
-        - name: Searcher
+        - name: Search
           url: search/
           weight: 10
         - identifier: categories
@@ -122,12 +122,12 @@ menu:
           url: /categories/
           weight: 15
         - identifier: tags
-          name: Tagos
+          name: Tags
           url: /tags/
           weight: 20
         - identifier: aboutme
           name: "About me"
-          url: /content/about-me/
+          url: /about-me/
           weight: 25
 
 
