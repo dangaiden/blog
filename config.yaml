@@ -118,13 +118,17 @@ menu:
           url: search/
           weight: 10
         - identifier: categories
-          name: categories
+          name: Categories
           url: /categories/
           weight: 15
         - identifier: tags
-          name: tags
+          name: Tags
           url: /tags/
           weight: 20
+        - identifier: aboutme
+          name: "About me"
+          url: /content/about-me/
+          weight: 25
 
 
 #[params]
