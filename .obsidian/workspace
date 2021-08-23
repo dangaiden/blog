@@ -15,6 +15,17 @@
           },
           "pinned": true
         }
+      },
+      {
+        "id": "ccefcfb3ebccb85f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
+            "mode": "source"
+          }
+        }
       }
     ],
     "direction": "vertical"
@@ -90,15 +101,15 @@
   },
   "active": "f750492b8b87d785",
   "lastOpenFiles": [
+    "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
+    "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
+    "archetypes/default.md",
+    "themes/papermod/README.md",
+    "content/post/2021/note about k8s part1.md",
+    "content/post/2021/2021-06-08-az-400-exam-notes.md",
     "content/post/2021/kubernetes-the-hard-way-but-on-prem-part1.md",
     "content/post/2021/Simple-guide-install-and-configure-RHEL-in-VM.md",
     "content/post/2021/OSS-monitoring-series.md",
-    "content/post/2021/note about k8s part1.md",
-    "static/wp-content/uploads/2021/VMs_infra_k8s_hardway.png",
-    "archetypes/default.md",
-    "content/about-me/index.md",
-    "content/search.md",
-    "content/archives.md",
-    "content/itgaiden.jpg"
+    "static/wp-content/uploads/2021/VMs_infra_k8s_hardway.png"
   ]
 }
