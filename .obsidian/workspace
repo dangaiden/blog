@@ -4,27 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "f750492b8b87d785",
-        "type": "leaf",
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
-            "mode": "source"
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "ccefcfb3ebccb85f",
+        "id": "1f4c7dc31cd4ff12",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -81,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,10 +82,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f750492b8b87d785",
+  "active": "1f4c7dc31cd4ff12",
   "lastOpenFiles": [
-    "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
     "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
+    "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
     "archetypes/default.md",
     "themes/papermod/README.md",
     "content/post/2021/note about k8s part1.md",
