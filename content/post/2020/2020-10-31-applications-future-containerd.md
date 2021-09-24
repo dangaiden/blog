@@ -60,12 +60,12 @@ tags:
 
 # Summary
 
-<span style="font-size: 16px; font-family: Nunito;">We don&#8217;t know the future but for sure containers are still a trend for many years.</span>
+<span >We don&#8217;t know the future but for sure containers are still a trend for many years.</span>
 
-<span style="font-size: 16px; font-family: Nunito;">You can see that even VMware embedded Kubernetes (Container orchestrator) in their products.</span>
+<span >You can see that even VMware embedded Kubernetes (Container orchestrator) in their products.</span>
 
-<span style="font-size: 16px; font-family: Nunito;">So it will be everything containers, a mix of containers and VMs or something like Kata Containers could be the next thing?</span>
+<span >So it will be everything containers, a mix of containers and VMs or something like Kata Containers could be the next thing?</span>
 
-<span style="font-size: 16px; font-family: Nunito;">We will see, for now, let me research more in this last open-source project and see how it really delivers!</span>
+<span >We will see, for now, let me research more in this last open-source project and see how it really delivers!</span>
 
 &nbsp;
