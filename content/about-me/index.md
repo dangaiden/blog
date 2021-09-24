@@ -12,7 +12,7 @@ rank_math_robots:
   - 'a:1:{i:0;s:5:"index";}'
 
 ---
-<span style="font-family: Nunito;">Hey!  I am <strong>Dan Belmonte</strong> and I work as a Cloud SREat NTT.</span>
+<span style="font-family: Nunito;">Hey!  I am <strong>Dan Belmonte</strong> and I work as a Cloud SRE at NTT.</span>
 
 <span style="font-family: Nunito;">My daily work is associated with Cloud, container, and IaC technologies. </span>Here you will see a variety of topics from VMware and Microsoft to Linux, Cloud, and containerization stuff.</span>
 
@@ -29,10 +29,9 @@ rank_math_robots:
 
 <span ><img loading="lazy" class="alignnone wp-image-700" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-300x169.jpg" alt="" width="548" height="309" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-300x169.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-1024x576.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-768x432.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-1536x864.jpg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-1568x882.jpg 1568w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2.jpg 1599w" sizes="(max-width: 548px) 100vw, 548px" /></span>
 
-<span >And also at VMworld 2019 EU:</span>
+<span >And also at [VMworld 2019 EU](https://www.youtube.com/watch?v=A1E3RxceOOk)!</span>
 
 
-
-<span >If you love Street Fighter, some of us use <a href="https://twitter.com/search?q=%23vstreetfighter&src=typd">#vStreetfighter</a> when we are at VMworld or just at home playing against each other.</span>
+<span >If you love Street Fighter/Tekken or any fighting game, some of us use <a href="https://twitter.com/search?q=%23vstreetfighter&src=typd">#vStreetfighter</a> when we are at VMworld or just at home playing against each other.</span>
 
 &nbsp;
