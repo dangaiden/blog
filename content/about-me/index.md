@@ -25,9 +25,7 @@ rank_math_robots:
 
 <span >I am a member of <a href="https://vbrownbag.com/">vBrownbag</a> which is a community of people who believe in helping other people. Specifically, we work in IT infrastructure and we help other people in the IT industry to be better at their jobs by learning about IT.</span>
 
-<span >I presented in some VMUGs like in the VMUG Barcelona and VMUG Madrid:</span>
-
-<span ><img loading="lazy" class="alignnone wp-image-700" src="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-300x169.jpg" alt="" width="548" height="309" srcset="http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-300x169.jpg 300w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-1024x576.jpg 1024w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-768x432.jpg 768w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-1536x864.jpg 1536w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2-1568x882.jpg 1568w, http://wp.docker.localhost:8000/wp-content/uploads/2019/03/vmug2.jpg 1599w" sizes="(max-width: 548px) 100vw, 548px" /></span>
+I presented in some VMUGs like in the VMUG Barcelona and VMUG Madrid in 2018 and 2019 and now I am VMUG leader for the Madrid one
 
 <span >And also at [VMworld 2019 EU](https://www.youtube.com/watch?v=A1E3RxceOOk)!</span>
 
