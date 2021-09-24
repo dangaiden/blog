@@ -12,9 +12,9 @@ rank_math_robots:
   - 'a:1:{i:0;s:5:"index";}'
 
 ---
-<span style="font-family: Nunito;">Hey!  I am <strong>Dan Belmonte</strong> and I work as a Cloud SRE at NTT.</span>
+<span >Hey! I am <strong>Dan Belmonte</strong> and now I am working as a Cloud SRE (weird name I know) at NTT.</span>
 
-<span style="font-family: Nunito;">My daily work is associated with Cloud, container, and IaC technologies. </span>Here you will see a variety of topics from VMware and Microsoft to Linux, Cloud, and containerization stuff.</span>
+<span >My daily work is associated with Cloud, container, and IaC technologies. </span>Here you will see a variety of topics from VMware and Microsoft to Linux, Cloud, and containerization stuff.</span>
 
 <span >You can find me at:</span>
 
@@ -33,5 +33,3 @@ rank_math_robots:
 
 
 <span >If you love Street Fighter/Tekken or any fighting game, some of us use <a href="https://twitter.com/search?q=%23vstreetfighter&src=typd">#vStreetfighter</a> when we are at VMworld or just at home playing against each other.</span>
-
-&nbsp;
