@@ -11,7 +11,7 @@ tags:
   - personal
 
 ---
-<span >Finally, I am writing something here.</span>
+<span >Finally, after some time... I am writing something here.</span>
 
 <span >It's being almost 5 months since I wrote my last blog post and it happened so fast but my final project kept me quite busy between November '20 and January '21.</span>
 
