@@ -1,3 +1,16 @@
+---
+title: New adventure ahead
+author: itgaiden
+type: post
+date: 2021-12-24T11:47:51+00:00
+url: new-adventure
+categories:
+  - personal
+tags:
+  - personal
+  
+---
+
 #  New adventure ahead!
 
 Yes, it happened, in the past week... **I have moved to a new company**!
