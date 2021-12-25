@@ -56,7 +56,7 @@ baseURL : "https://dangaiden.github.io"
 languageCode : "en-us"
 theme : "papermod"
 title : "Dan Belmonte"
-paginate : 6
+paginate : 5
 buildDrafts: false
 enableEmoji: true
 
