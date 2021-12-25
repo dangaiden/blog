@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NIOC on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/nioc/</link>
+    <description>Recent content in NIOC on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Aug 2018 23:39:01 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/nioc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vSphere Network I/O Control: NIC Limit bandwidth</title>
+      <link>https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/</link>
+      <pubDate>Thu, 02 Aug 2018 23:39:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/</guid>
+      <description>Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.
+Prerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DevOps on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/devops/</link>
+    <description>Recent content in DevOps on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jun 2021 13:37:03 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AZ-400 exam notes</title>
+      <link>https://dangaiden.github.io/2021-06-08-az-400-exam-notes/</link>
+      <pubDate>Tue, 08 Jun 2021 13:37:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2021-06-08-az-400-exam-notes/</guid>
+      <description>Some months missing between my last update!
+I must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!
+Therefore, let&amp;rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.
+Certification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:</description>
+    </item>
+    
+    <item>
+      <title>Is the applications’ future «containe(r)d»?</title>
+      <link>https://dangaiden.github.io/2020-10-31-applications-future-containerd/</link>
+      <pubDate>Sat, 31 Oct 2020 20:32:17 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-10-31-applications-future-containerd/</guid>
+      <description>Well, I’ll be lying if I haven’t heard of containers in the past years although I used them barely at my job (solutions engineer) shouldn’t I consider them more every time to replace the applications where my customers have their servers?
+Like many people that work as sysadmin these days, they are used to work with virtualization, in particular Virtual Machines (VMs), customers still using them (and it will continue) to deploy their applications in an OS which delivers great benefits against the legacy approach of the Baremetal (Mainframe) era.</description>
+    </item>
+    
+    <item>
+      <title>Finishing a Computer Engineering degree with DevOps stuff</title>
+      <link>https://dangaiden.github.io/2020-10-19-finishing-a-computer-engineering-degree-with-devops-stuff/</link>
+      <pubDate>Mon, 19 Oct 2020 12:55:26 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-10-19-finishing-a-computer-engineering-degree-with-devops-stuff/</guid>
+      <description>It&amp;rsquo;s been more than one month since I published something here but I&amp;rsquo;ve been changing quite a lot my focus learning and I changed now from CCNA to DevOps things.
+ TL;DR I will be building an automated CI/CD pipeline for my final assignment focusing on tools installed and configured on-premise although there will be cloud services like the front-end.
+ Also, I forgot to mention that last month I started the last semester of my Computer Engineering degree that I started back in 2014 (oh my!</description>
+    </item>
+    
+  </channel>
+</rss>

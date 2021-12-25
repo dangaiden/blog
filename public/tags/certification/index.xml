@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>certification on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/certification/</link>
+    <description>Recent content in certification on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Aug 2021 11:47:51 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/certification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes the hard way but on-prem - part 1 (Discontinued)</title>
+      <link>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part-1/</link>
+      <pubDate>Thu, 12 Aug 2021 11:47:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part-1/</guid>
+      <description>DISCLAIMER  I decided to not continue with this due to the huge implications that will be to redo everything not in the cloud. Basically, a lot of time should be invested and I miscalculated it by too much. Therefore, this will be probably the first and only post about these series.
+ Context In order to practice for the CKA exam, it is recommended to perform the famous Kubernetes The Hard Way by Kelsey Hightower.</description>
+    </item>
+    
+    <item>
+      <title>AZ-400 exam notes</title>
+      <link>https://dangaiden.github.io/2021-06-08-az-400-exam-notes/</link>
+      <pubDate>Tue, 08 Jun 2021 13:37:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2021-06-08-az-400-exam-notes/</guid>
+      <description>Some months missing between my last update!
+I must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!
+Therefore, let&amp;rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.
+Certification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:</description>
+    </item>
+    
+    <item>
+      <title>VCAP-DCV Design exam notes</title>
+      <link>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</link>
+      <pubDate>Thu, 31 Oct 2019 22:47:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</guid>
+      <description>As the VCAP-DCV Design 2020 certification is going to be released (but the 3V0-624 exam is not scheduled to be retired yet) on Jan 1, 2020.
+Recently I made another post about my experience with this exam where I failed, check it here.
+For your information, at the moment the 3V0-624 is the current exam code for the VCAP-DCV 6.5 Design certification (Also named VCAP-DCV Design 2019), always check the code for the exam no matter which is the certification name.</description>
+    </item>
+    
+    <item>
+      <title>VCAP6.5-DCV Design failed exam experience</title>
+      <link>https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/</link>
+      <pubDate>Fri, 25 Oct 2019 21:44:50 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/</guid>
+      <description>Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).
+I took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.
+I recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not).</description>
+    </item>
+    
+    <item>
+      <title>Exam 70-743, Upgrading MCSA Windows Server 2016 experience</title>
+      <link>https://dangaiden.github.io/?p=704/</link>
+      <pubDate>Fri, 21 Jun 2019 11:02:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=704/</guid>
+      <description>I will explain quickly my experience regarding the Exam 70-743, Upgrading Your Skills to MCSA: Windows Server 2016 exam from Microsoft I took last April.
+It’s been a while since I took an exam from Microsoft (the latestwas in 2013 I think) where you probably know that these kind of exams are multiple-choice or single-choice.
+Through my career, I saw a lot of people cheating with these exams by memorizing the questions you can find on the internet and finishing it in just 20 minutes.</description>
+    </item>
+    
+    <item>
+      <title>VCAP6-DCV Deploy exam experience</title>
+      <link>https://dangaiden.github.io/2018-10-19-vcap6-dcv-deploy-exam-experience/</link>
+      <pubDate>Fri, 19 Oct 2018 07:45:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-19-vcap6-dcv-deploy-exam-experience/</guid>
+      <description>Hi! I am going to talk about my VCAP6-DCV Deploy exam experience.
+I thought about making a huge post about the VCAP6-DCV experience (resources, notes, etc.) but, I don’t want to overwhelm you know. Hence, I am going to make another post for that, hence this post will be shorter and more readable.
+1st attempt (Java error at the beginning) At September, 21st I sat down to take my first attempt in a VCAP exam.</description>
+    </item>
+    
+    <item>
+      <title>VCP6-DCV achieved!</title>
+      <link>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</link>
+      <pubDate>Sun, 03 Sep 2017 16:20:45 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</guid>
+      <description>I am going to start talking about the exam VCP6-DCV from VMware. The main resource you should use is the VMware site: http://bit.ly/1PLshWR
+There you can check a path to achieve VCP6-DCV (there is a newer version VCP6.5-DCV). I took path 1, as I wasn’t certified.
+
+Later, I took one official training course, VMware vSphere: Install, Configure, Manage [V6].
+Next, I passed the vSphere 6 Foundations Exam (2V0-620) months ago and finally I did VMware Certified Professional 6 – Data Center Virtualization Exam (2V0-621).</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes the hard way but on-prem - part 2</title>
+      <link>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part2/</guid>
+      <description>Context Let&amp;rsquo;s continue with the guide, in this part 2.
+This is based in: https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/03-compute-resources.md
+Kubernetes Controllers We will be using the following CIDR 192.168.1.0/24 for node within the cluster:
+ Somred1: 192.168.1.50/24 Somred2: 192.168.1.51/24 Somred3: 192.168.1.52/24  Kubernetes Workers This nodes will act as the Kubernetes workers nodes which will host the pods, we need to have 2 NICs for each node.
+One NIC will be the one used before to communicate with the other nodes: 192.</description>
+    </item>
+    
+  </channel>
+</rss>

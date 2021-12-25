@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.) | Dan Belmonte</title>
+<meta name="keywords" content="ADFS" />
+<meta name="description" content="I will explain today how to migrate ADFS from 2012 R2 (3.0 v) to 2016 (4.0) without almost no downtime. The overall process consists in adding the new ADFS server to the farm, assign the primary role to the new ADFS, make some changes and then we’re done.
+
+ The current environment is:
+ 1 x WAP Server (W2012 R2) 1 x ADFS Server (W2012 R2)  No applications published, just an Office 365 Relying party trust.">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/2019-07-31-migrating-adfs-from-2012-r2-to-2016/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)" />
+<meta property="og:description" content="I will explain today how to migrate ADFS from 2012 R2 (3.0 v) to 2016 (4.0) without almost no downtime. The overall process consists in adding the new ADFS server to the farm, assign the primary role to the new ADFS, make some changes and then we’re done.
+
+ The current environment is:
+ 1 x WAP Server (W2012 R2) 1 x ADFS Server (W2012 R2)  No applications published, just an Office 365 Relying party trust." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/2019-07-31-migrating-adfs-from-2012-r2-to-2016/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-07-31T21:12:50&#43;00:00" />
+<meta property="article:modified_time" content="2019-07-31T21:12:50&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)"/>
+<meta name="twitter:description" content="I will explain today how to migrate ADFS from 2012 R2 (3.0 v) to 2016 (4.0) without almost no downtime. The overall process consists in adding the new ADFS server to the farm, assign the primary role to the new ADFS, make some changes and then we’re done.
+
+ The current environment is:
+ 1 x WAP Server (W2012 R2) 1 x ADFS Server (W2012 R2)  No applications published, just an Office 365 Relying party trust."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)",
+      "item": "https://dangaiden.github.io/2019-07-31-migrating-adfs-from-2012-r2-to-2016/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)",
+  "name": "Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)",
+  "description": "I will explain today how to migrate ADFS from 2012 R2 (3.0 v) to 2016 (4.0) without almost no downtime. The overall process consists in adding the new ADFS server to the farm, assign the primary role to the new ADFS, make some changes and then we’re done.\n\n The current environment is:\n 1 x WAP Server (W2012 R2) 1 x ADFS Server (W2012 R2)  No applications published, just an Office 365 Relying party trust.",
+  "keywords": [
+    "ADFS"
+  ],
+  "articleBody": "I will explain today how to migrate ADFS from 2012 R2 (3.0 v) to 2016 (4.0) without almost no downtime. The overall process consists in adding the new ADFS server to the farm, assign the primary role to the new ADFS, make some changes and then we’re done.\n\n The current environment is:\n 1 x WAP Server (W2012 R2) 1 x ADFS Server (W2012 R2)  No applications published, just an Office 365 Relying party trust.\nA DNS A record that points sts.teselia.com to the ADFS IP address.\n And the future environment will be:\n 1 x WAP Server (W2016) - Not in this post\n 1 x ADFS Server (W2016) - In this post\n  Planning for your ADFS Migration  Active Directory schema update using ‘ADPrep’ with the Windows Server 2016 additions (not necessary in my case) Build a Windows Server 2016 server with ADFS and join into an existing farm. Promote one of the ADFS 2016 servers as “primary” of the farm, and point all other secondary servers to the new “primary”. Change DNS records to the new servers’s IP address. Raise the Farm Behavior Level feature (FBL) to ‘2016’ Test that the setup works correctly. Remove the old ADFS server (W2012 R2) from the farm.   Upgrading Schema Now, time to upgrade the schema of the AD:\nPut the installation media from W2016 Datacenter:\nAdprep /forestprep\nIn my case, it was already updated (my domain is in W2012 R2 so it seems that I don’t need it).\n Installing and configuring ADFS Once we deployed a new Windows Server 2016 and it’s joined to our domain…\nInstall the role of ADFS in your target server and then continue with the post-deployment config:\n\n Provide can account with Domain Administrator permissions:\n Provide your federation service name. You can review it in the current ADFS primary server and click Properties in the root folder of the ADFS console:\n In our case “sts.teselia.com”:\n Specify your SSL certificate (usually your wildcard):\n\n Then, I will use an account (Managed service account recommended):\n Review your configuration and after the pre-requisite checks proceed with the «Configure» button:\n After the server is installed you will have some warnings that will be fixed later by rebooting the server and making this new server as the primary ADFS server in the farm:\nThen, we will proceed to reboot our server (ADFS01.teselia.com).\n Configuring as a «PrimaryComputer» in the ADFS farm Once the machine has restarted, open the ADFS Management Console, and you’ll notice it’s not the primary federation server in the farm.\n\nOpen a PS console and execute: \nSet-AdfsSyncProperties -Role PrimaryComputer\n After that, I can access the ADFS console from our new ADFS server without the warning:\n Execute this on the other ADFS servers (we will point the new ADFS server as the PRIMARY):\nSet-AdfsSyncProperties -Role SecondaryComputer -PrimaryComputerName sts.teselia.com\nThen, we will check that in our old ADFS server it’s correct:\n Details to bear in mind So, in my case, I have a DNS A record that points sts.teselia.com to an IP address (the ADFS server)\nAfter pointing the new, I had to modify the hosts file from the WAP server in the DMZ to point to the new server!\nAlso, I modified the DNS record from the internal DNS with the new server’s IP address.\n  Error with 0365 relying party trust After migrating the service from ADFS 3.0 (W2012 R2) to ADFS 4.0 (W2016), I faced a problem when updating the O365 relying party trust.\n\nThe solution was to apply a fix described by Microsoft:\nhttps://docs.microsoft.com/en-us/security-updates/SecurityAdvisories/2015/2960358\nBasically, what you have to do is to add a couple of registry values in this new ADFS server because it’s Windows Server 2016 and is running ADFS 4.0 version.\nOnce you applied the fix, reboot it and works flawlessly!\n Testing the new setup\n To check that it’s really working, try to log into your Office 365 portal and it must show you the portal from your federation service.\nAs the WAP service isn’t migrated yet, it should respond correctly but if the configuration is not correct, it won’t be able to gather the configuration from the ADFS service.\nRemoving the old ADFS server Once you tested that it works correctly, as both ADFS servers will have the configuration replicated, you can remove the role from the old one (that now holds the secondary role) and then remove it from the domain.\nWith that done, you will have a fresh new Windows Server 2016 ADFS server and none «old» ADFS servers.\n  And that’s all, I will do in the future another post about the WAP service migration that it’s easier than this one, I hope that this can help someone.\n",
+  "wordCount" : "771",
+  "inLanguage": "en",
+  "datePublished": "2019-07-31T21:12:50Z",
+  "dateModified": "2019-07-31T21:12:50Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/2019-07-31-migrating-adfs-from-2012-r2-to-2016/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)
+    </h1>
+    <div class="post-meta">July 31, 2019&nbsp;·&nbsp;4 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#span-stylestrongplanning-for-your-adfs-migrationstrongspan" aria-label="Planning for your ADFS Migration"><span style=""><strong>Planning for your ADFS Migration</strong></span></a></li>
+                <li>
+                    <a href="#span-styleupgrading-schemaspan" aria-label="Upgrading Schema"><span style="">Upgrading Schema</span></a></li>
+                <li>
+                    <a href="#span-styleinstalling-and-configuring-adfsspan" aria-label="Installing and configuring ADFS"><span style="">Installing and configuring ADFS</span></a></li>
+                <li>
+                    <a href="#span-styleconfiguring-as-a-primarycomputer-in-the-adfs-farmspan" aria-label="Configuring as a «PrimaryComputer» in the ADFS farm"><span style="">Configuring as a «PrimaryComputer» in the ADFS farm</span></a><ul>
+                        
+                <li>
+                    <a href="#span-styledetails-to-bear-in-mindspan" aria-label="Details to bear in mind"><span style="">Details to bear in mind</span></a></li></ul>
+                </li>
+                <li>
+                    <a href="#span-styleerror-with-0365-relying-party-trustspan" aria-label="Error with 0365 relying party trust"><span style="">Error with 0365 relying party trust</span></a></li>
+                <li>
+                    <a href="#spantesting-the-new-setupspanbr--span" aria-label="Testing the new setup
+"><span>Testing the new setup</span><br /> </span></a></li>
+                <li>
+                    <a href="#span-stylecolor-000000-font-family-nunitoremoving-the-old-adfs-serverspan" aria-label="Removing the old ADFS server"><span style="color: #000000; font-family: Nunito;">Removing the old ADFS server</span></a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><span >I will explain today how to migrate ADFS from 2012 R2 (3.0 v) to 2016 (4.0) without almost no downtime. The overall process consists in adding the new ADFS server to the farm, assign the primary role to the new ADFS, make some changes and then we’re done.<br /> </span></p>
+<p> </p>
+<p><span >The current environment is:</span></p>
+<ul>
+<li><span >1 x WAP Server (W2012 R2)</span></li>
+<li><span style="font-size: 16px; font-family: Nunito;"><strong>1 x ADFS Server (W2012 R2)</strong></span></li>
+</ul>
+<p><span style="font-size: 16px; font-family: Nunito;">No applications published, just an Office 365 </span>Relying <span style="font-size: 16px; font-family: Nunito;">party trust.</span></p>
+<p><span style="font-size: 16px; font-family: Nunito;">A DNS A record that points <strong>sts.teselia.com</strong> to the ADFS IP address.</span></p>
+<p> </p>
+<p><span >And the future environment will be:</span></p>
+<ul>
+<li><span >1 x WAP Server (W2016) -&gt; Not in this post<br /> </span></li>
+<li><span style="font-size: 16px; font-family: Nunito;"><strong>1 x ADFS Server (W2016) -&gt; In this post<br /> </strong></span></li>
+</ul>
+<h2 id="span-stylestrongplanning-for-your-adfs-migrationstrongspan"><span style=""><strong>Planning for your ADFS Migration</strong></span><a hidden class="anchor" aria-hidden="true" href="#span-stylestrongplanning-for-your-adfs-migrationstrongspan">#</a></h2>
+<ol>
+<li><span >Active Directory schema update using ‘ADPrep’ with the Windows Server 2016 additions (not necessary in my case)</span></li>
+<li><span >Build a Windows Server 2016 server with ADFS and join into an existing farm.</span></li>
+<li><span >Promote one of the ADFS 2016 servers as “primary” of the farm, and point all other secondary servers to the new “primary”.</span></li>
+<li><span >Change DNS records to the new servers’s IP address.</span></li>
+<li><span >Raise the Farm Behavior Level feature (FBL) to ‘2016’</span></li>
+<li><span>Test that the setup works correctly.</span></li>
+<li><span >Remove the old ADFS server (W2012 R2) from the farm.</span></li>
+</ol>
+<h2 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h2>
+<h2 id="span-styleupgrading-schemaspan"><span style="">Upgrading Schema</span><a hidden class="anchor" aria-hidden="true" href="#span-styleupgrading-schemaspan">#</a></h2>
+<p><span >Now, time to upgrade the schema of the AD:</span></p>
+<p><span >Put the installation media from W2016 Datacenter:</span></p>
+<p><span style="font-size: 16px; font-family: Nunito;">Adprep /forestprep</span></p>
+<p><span><span style="font-size: 16px;">In my </span><span style="font-size: 16px;">case, it was already updated (my domain is in W2012 R2 so it seems that I don’t need it).</span></span></p>
+<p> </p>
+<h2 id="span-styleinstalling-and-configuring-adfsspan"><span style="">Installing and configuring ADFS</span><a hidden class="anchor" aria-hidden="true" href="#span-styleinstalling-and-configuring-adfsspan">#</a></h2>
+<p><span style="font-size: 16px; font-family: Nunito;">Once we deployed a new Windows Server 2016 and it’s joined to our domain…</span></p>
+<p><span >Install the role of ADFS in your target server and then continue with the post-deployment config:</span></p>
+<p><span ><img loading="lazy" class="alignnone size-medium wp-image-987" src="/wp-content/uploads/2019/08/Post_deployment_img_1-300x98.png" alt="" width="300" height="98" srcset="/wp-content/uploads/2019/08/Post_deployment_img_1-300x98.png 300w, /wp-content/uploads/2019/08/Post_deployment_img_1.png 327w" sizes="(max-width: 300px) 100vw, 300px" /></span></p>
+<p> </p>
+<p><span style="font-size: 16px; font-family: Nunito;">Provide can account with Domain Administrator permissions:<img loading="lazy" class="alignnone wp-image-988 size-penscratch-featured" src="/wp-content/uploads/2019/08/Post_deployment_img_2-656x300.png" alt="" width="656" height="300" /></span></p>
+<p> </p>
+<p><span><span style="font-size: 16px;">Provide your federation service name. You can review it in the current ADFS primary server and click Properties in the root folder of the ADFS console:</span><img loading="lazy" class="alignnone wp-image-989 size-full" src="/wp-content/uploads/2019/08/Review_fed_name_img_3.png" alt="" width="669" height="461" srcset="/wp-content/uploads/2019/08/Review_fed_name_img_3.png 669w, /wp-content/uploads/2019/08/Review_fed_name_img_3-300x207.png 300w" sizes="(max-width: 669px) 100vw, 669px" /></span></p>
+<p> </p>
+<p><span style="font-size: 16px; font-family: Nunito;">In our case “<strong>sts.teselia.com</strong>”:<img loading="lazy" class="alignnone wp-image-990 size-full" src="/wp-content/uploads/2019/08/insert_fed_name_img_4.png" alt="" width="757" height="459" srcset="/wp-content/uploads/2019/08/insert_fed_name_img_4.png 757w, /wp-content/uploads/2019/08/insert_fed_name_img_4-300x182.png 300w" sizes="(max-width: 757px) 100vw, 757px" /></span></p>
+<p> </p>
+<p><span >Specify your SSL certificate (usually your wildcard):</span></p>
+<p><span><img loading="lazy" class="alignnone size-full wp-image-979" src="/wp-content/uploads/2019/08/specify_ssl_cert_img_6.png" alt="" width="747" height="449" srcset="/wp-content/uploads/2019/08/specify_ssl_cert_img_6.png 747w, /wp-content/uploads/2019/08/specify_ssl_cert_img_6-300x180.png 300w" sizes="(max-width: 747px) 100vw, 747px" /></span></p>
+<p> </p>
+<p><span style="font-size: 16px; font-family: Nunito;">Then, I will use an account (Managed service account recommended):<img loading="lazy" class="alignnone size-full wp-image-980" src="/wp-content/uploads/2019/08/specify_serv_acc_img_5.png" alt="" width="749" height="342" srcset="/wp-content/uploads/2019/08/specify_serv_acc_img_5.png 749w, /wp-content/uploads/2019/08/specify_serv_acc_img_5-300x137.png 300w" sizes="(max-width: 749px) 100vw, 749px" /></span></p>
+<p> </p>
+<p><span><span style="font-size: 16px;">Review your configuration and after the pre-requisite checks proceed with the «Configure» button:</span><img loading="lazy" class="alignnone size-full wp-image-981" src="/wp-content/uploads/2019/08/review-config_img_7.png" alt="" width="751" height="515" srcset="/wp-content/uploads/2019/08/review-config_img_7.png 751w, /wp-content/uploads/2019/08/review-config_img_7-300x206.png 300w" sizes="(max-width: 751px) 100vw, 751px" /></span></p>
+<p> </p>
+<p><span style="font-size: 16px; font-family: Nunito;">After the server is installed you will have some warnings that will be fixed later by rebooting the server and making this new server as the primary ADFS server in the farm:<img loading="lazy" class="alignnone size-full wp-image-982" src="/wp-content/uploads/2019/08/configured_warnings_img_8.png" alt="" width="747" height="509" srcset="/wp-content/uploads/2019/08/configured_warnings_img_8.png 747w, /wp-content/uploads/2019/08/configured_warnings_img_8-300x204.png 300w" sizes="(max-width: 747px) 100vw, 747px" /></span></p>
+<p><span >Then, we will proceed to reboot our server (ADFS01.teselia.com).</span></p>
+<p> </p>
+<h2 id="span-styleconfiguring-as-a-primarycomputer-in-the-adfs-farmspan"><span style="">Configuring as a «PrimaryComputer» in the ADFS farm</span><a hidden class="anchor" aria-hidden="true" href="#span-styleconfiguring-as-a-primarycomputer-in-the-adfs-farmspan">#</a></h2>
+<p><span >Once the machine has restarted, open the ADFS Management Console, and you’ll notice it’s not the primary federation server in the farm.</span></p>
+<p><span ><img loading="lazy" class="alignnone wp-image-983 size-full" src="/wp-content/uploads/2019/08/adfs_console_warnings_img_9.png" alt="" width="564" height="213" srcset="/wp-content/uploads/2019/08/adfs_console_warnings_img_9.png 564w, /wp-content/uploads/2019/08/adfs_console_warnings_img_9-300x113.png 300w" sizes="(max-width: 564px) 100vw, 564px" /></span></p>
+<p><span >Open a PS console and execute: </span></p>
+<p><span><span style="font-size: 16px; font-family: courier new, courier; color: #000000;">Set-AdfsSyncProperties -Role PrimaryComputer</span><img loading="lazy" class="alignnone wp-image-984 size-full" src="/wp-content/uploads/2019/08/pscommand_img_10.png" alt="" width="442" height="102" srcset="/wp-content/uploads/2019/08/pscommand_img_10.png 442w, /wp-content/uploads/2019/08/pscommand_img_10-300x69.png 300w" sizes="(max-width: 442px) 100vw, 442px" /></span></p>
+<p> </p>
+<p><span style="font-size: 16px; font-family: Nunito;">After that, I can access the ADFS console from our new ADFS server without the warning:<img loading="lazy" class="alignnone wp-image-985 size-medium_large" src="/wp-content/uploads/2019/08/adfs_console_img_11-768x400.png" alt="" width="656" height="342" srcset="/wp-content/uploads/2019/08/adfs_console_img_11-768x400.png 768w, /wp-content/uploads/2019/08/adfs_console_img_11-300x156.png 300w, /wp-content/uploads/2019/08/adfs_console_img_11.png 875w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p> </p>
+<p><span >Execute this on the other ADFS servers (we will point the new ADFS server as the PRIMARY):</span></p>
+<p><span >Set-AdfsSyncProperties -Role SecondaryComputer -PrimaryComputerName sts.teselia.com</span></p>
+<p><span><span style="font-size: 16px;">Then, we will check that in our old ADFS server it’s correct:</span><img loading="lazy" class="alignnone wp-image-986 size-full" src="/wp-content/uploads/2019/08/ps_commands_img_12.png" alt="" width="829" height="159" srcset="/wp-content/uploads/2019/08/ps_commands_img_12.png 829w, /wp-content/uploads/2019/08/ps_commands_img_12-300x58.png 300w, /wp-content/uploads/2019/08/ps_commands_img_12-768x147.png 768w" sizes="(max-width: 829px) 100vw, 829px" /></span></p>
+<h3 id="heading-1"><a hidden class="anchor" aria-hidden="true" href="#heading-1">#</a></h3>
+<h3 id="span-styledetails-to-bear-in-mindspan"><span style="">Details to bear in mind</span><a hidden class="anchor" aria-hidden="true" href="#span-styledetails-to-bear-in-mindspan">#</a></h3>
+<p><span style="font-size: 16px; font-family: Nunito;">So, in my case, I have a DNS A record that points <strong>sts.teselia.com</strong> to an IP address (the ADFS server)</span></p>
+<p><span >After pointing the new, I had to modify the hosts file from the WAP server in the DMZ to point to the new server!</span></p>
+<p><span >Also, I modified the DNS  record from the <strong>internal DNS</strong> with the new server’s IP address.</span></p>
+<p> </p>
+<p> </p>
+<h2 id="span-styleerror-with-0365-relying-party-trustspan"><span style="">Error with 0365 relying party trust</span><a hidden class="anchor" aria-hidden="true" href="#span-styleerror-with-0365-relying-party-trustspan">#</a></h2>
+<p><span >After migrating the service from ADFS 3.0 (W2012 R2) to ADFS 4.0 (W2016), I faced a  problem when updating the O365 relying party trust.</span></p>
+<p><span ><img loading="lazy" class="alignnone wp-image-993 size-full" src="/wp-content/uploads/2019/07/fed_metadata_error_12_bis.png" alt="" width="636" height="456" srcset="/wp-content/uploads/2019/07/fed_metadata_error_12_bis.png 636w, /wp-content/uploads/2019/07/fed_metadata_error_12_bis-300x215.png 300w" sizes="(max-width: 636px) 100vw, 636px" /></span></p>
+<p><span >The solution was to apply a fix described by Microsoft:</span></p>
+<p><span ><a href="https://docs.microsoft.com/en-us/security-updates/SecurityAdvisories/2015/2960358"><a href="https://docs.microsoft.com/en-us/security-updates/SecurityAdvisories/2015/2960358">https://docs.microsoft.com/en-us/security-updates/SecurityAdvisories/2015/2960358</a></a></span></p>
+<p><span >Basically, what you have to do is to add a couple of registry values in this new ADFS server because it’s Windows Server 2016 and is running ADFS 4.0 version.</span></p>
+<p><span><span style="font-size: 16px;">Once you applied the fix, reboot it and works flawlessly!</span><img loading="lazy" class="alignnone wp-image-995 size-full" src="/wp-content/uploads/2019/07/fed_metadata_13.png" alt="" width="882" height="522" srcset="/wp-content/uploads/2019/07/fed_metadata_13.png 882w, /wp-content/uploads/2019/07/fed_metadata_13-300x178.png 300w, /wp-content/uploads/2019/07/fed_metadata_13-768x455.png 768w" sizes="(max-width: 882px) 100vw, 882px" /></span></p>
+<p> </p>
+<h2 id="spantesting-the-new-setupspanbr--span"><span>Testing the new setup</span><br /> </span><a hidden class="anchor" aria-hidden="true" href="#spantesting-the-new-setupspanbr--span">#</a></h2>
+<p><span>T<span style="font-size: 16px;">o check that it’s really working, try to log into your Office 365 portal and it must show you the portal from your federation service.</span></span></p>
+<p><span >As the WAP service isn’t migrated yet, it should respond correctly but if the configuration is not correct, it won’t be able to gather the configuration from the ADFS service.</span></p>
+<h2 id="span-stylecolor-000000-font-family-nunitoremoving-the-old-adfs-serverspan"><span style="color: #000000; font-family: Nunito;">Removing the old ADFS server</span><a hidden class="anchor" aria-hidden="true" href="#span-stylecolor-000000-font-family-nunitoremoving-the-old-adfs-serverspan">#</a></h2>
+<p><span style="font-size: 16px; font-family: Nunito;">Once you tested that it works correctly, as both ADFS servers will have the configuration replicated, you can remove the role from the old one (that now holds the secondary role) and then remove it from the domain.</span></p>
+<p><span style="font-size: 16px; font-family: Nunito;">With that done, you will have a fresh new Windows Server 2016 ADFS server and none «old» ADFS servers.</span></p>
+<p> </p>
+<p> </p>
+<p><span style="font-size: 16px; font-family: Nunito;">And that’s all, I will do in the future another post about the WAP service migration that it’s easier than this one, I hope that this can help someone.</span></p>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/adfs/">ADFS</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

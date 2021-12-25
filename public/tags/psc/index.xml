@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PSC on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/psc/</link>
+    <description>Recent content in PSC on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Aug 2018 14:30:12 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/psc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vSphere 6.0: New external PSC within existing SSO Domain</title>
+      <link>https://dangaiden.github.io/2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain/</link>
+      <pubDate>Mon, 20 Aug 2018 14:30:12 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain/</guid>
+      <description>Hello there!
+A quick post talking about a new external PSC in vSphere 6.0 environments.
+As you may now the vCenter product is composed by the PSC (Platform Services Controller) and the vCenter component.
+Services provided by each component: Platform Services Controller  &amp;lt;td style=&amp;quot;width: 50%; height: 10px; text-align: center;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-family: Didact Gothic;&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;span style=&amp;quot;background-color: #ffffff; color: #000000; font-size: 12pt;&amp;quot;&amp;gt;vCenter&amp;lt;/span&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/td&amp;gt;   vCenter Single Sign-On  &amp;lt;td style=&amp;quot;width: 50%; height: 27px; text-align: center;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-size: 10pt; font-family: Didact Gothic;&amp;quot;&amp;gt;PostgreSQL or SQL Express (in 6.</description>
+    </item>
+    
+  </channel>
+</rss>

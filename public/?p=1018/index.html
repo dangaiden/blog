@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Veeam – Backup VMs in remote sites | Dan Belmonte</title>
+<meta name="keywords" content="backup, refs, veeam, veeam proxy" />
+<meta name="description" content="I was wondering why I haven’t talked about Veeam when I use it almost every day in my job, not only administering backups but doing new implementations.
+Recently, I had to implement a design where I need to backup VMs in remote sites but not back up them in a centralized storage, they will be backed up on each remote site storage.
+So, by deploying a VM with the Backup proxy service and also use it as the backup repository we can accomplish the goal.">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/?p=1018/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="Veeam – Backup VMs in remote sites" />
+<meta property="og:description" content="I was wondering why I haven’t talked about Veeam when I use it almost every day in my job, not only administering backups but doing new implementations.
+Recently, I had to implement a design where I need to backup VMs in remote sites but not back up them in a centralized storage, they will be backed up on each remote site storage.
+So, by deploying a VM with the Backup proxy service and also use it as the backup repository we can accomplish the goal." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/?p=1018/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-08-31T19:00:54&#43;00:00" />
+<meta property="article:modified_time" content="2019-08-31T19:00:54&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="Veeam – Backup VMs in remote sites"/>
+<meta name="twitter:description" content="I was wondering why I haven’t talked about Veeam when I use it almost every day in my job, not only administering backups but doing new implementations.
+Recently, I had to implement a design where I need to backup VMs in remote sites but not back up them in a centralized storage, they will be backed up on each remote site storage.
+So, by deploying a VM with the Backup proxy service and also use it as the backup repository we can accomplish the goal."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Veeam – Backup VMs in remote sites",
+      "item": "https://dangaiden.github.io/?p=1018/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Veeam – Backup VMs in remote sites",
+  "name": "Veeam – Backup VMs in remote sites",
+  "description": "I was wondering why I haven’t talked about Veeam when I use it almost every day in my job, not only administering backups but doing new implementations.\nRecently, I had to implement a design where I need to backup VMs in remote sites but not back up them in a centralized storage, they will be backed up on each remote site storage.\nSo, by deploying a VM with the Backup proxy service and also use it as the backup repository we can accomplish the goal.",
+  "keywords": [
+    "backup", "refs", "veeam", "veeam proxy"
+  ],
+  "articleBody": "I was wondering why I haven’t talked about Veeam when I use it almost every day in my job, not only administering backups but doing new implementations.\nRecently, I had to implement a design where I need to backup VMs in remote sites but not back up them in a centralized storage, they will be backed up on each remote site storage.\nSo, by deploying a VM with the Backup proxy service and also use it as the backup repository we can accomplish the goal. We will save bandwidth and increase the speed to restore and backup those remote virtual machines by using the local storage on each remote site.\n Scenario The scenario I am talking is the following, a dedicated VM with Windows Server 2016 Standard (a.k.a. W2016 STD) to act as a backup proxy and backup repository and Veeam B\u0026R installed on the main site (the cloud we will say).\nThis is the high level design:\nSo, we are going to back up all the VMs that are hosted in the remote ESXi hosts and also save the backup data in the local storage.\nAs said before, in this way we save bandwidth and gain speed in the backup and restore process in case we need to perform any of it.\nWe will assume that we have a vCenter deployed with Veeam B\u0026R installed. The Veeam B\u0026R has configured the vCenter and then all remote ESXi hosts.\n Implementation The implementation is pretty straightforward, we will have a dedicated VM to be deployed on each remote site and then perform the following high-level steps:\n– As a backup repository, we are going to add a hard disk to the remote VM and use that hard disk as the backup repository for the site. We will seize the capabilities of Windows Server 2016 and use ReFS as the filesystem for the added hard disk.\n– Install a backup proxy service, we just need to deploy the backup proxy service from the Veeam B\u0026R console to the VM that we are using. The backup proxy will be who processes jobs and delivers backup traffic.\nSo, let’s go each step!\n Backup proxy service First, our Windows Guest OS VM is joined to the domain, so we won’t have any kind of problem for resolving the name or accessing with domain account credentials.\nLet’s add the proxy by going to the Backup Infrastructure tab  Backup Proxy  Add VMware Backup Proxy…\nAs this is a new server for Veeam, we will have to add it as a «server» by pressing «Add New…»:\n\nThen, this window will appear, just enter the FQDN of your server:\n\nChoose credentials and choose«Apply «to install the transport service:\n\nAfter that, you will be able to choose the newly added server (Proxy_EUR.itgaiden.com) from the drop-down menu:\n\nNow, let’s configure the Transport mode and Datastores for this proxy (as in the previous screenshot):\n\nAnd for the datastores, choose the ones that are connected to the ESXi host where the VM is hosted by selecting Manual Selection and adding them:\n\nAfter configuring that, you will have the same configuration as in this screenshot:\n\nFinally, just hit Next and apply any kind of traffic rule if you want:\n\nNow, finish, and the proxy will be fully configured and ready.\n  We configured these options because they are the best for our deployment which is using a Windows VM that will have a backup repository which will save the backups.\nFor more detailed options about the Backup Proxy service go here.\nAfter configuring each backup proxy we will have a bunch of them in the Backup Proxies tab:\n\nBackup repository configuration In this step, I suggest following this article to perform this step.\nBasically, we just have to add a new hard disk to our dedicated VM as Thick Provision Eager Zeroed, format the disk as ReFS and finally, add the Backup Repository to the Veeam B\u0026R Console.\nIn that article, it’s also explained the benefits of ReFS so, I think it’s more detailed and easy to follow it.\nAfter we configure all the backup repositories, we will have the same amount as the backup proxies:\n\nAs you can see in the previous screenshot, the path (D:\\Backups) is the disk that we added to the VM on each remote site. We have configured the backup repository to that path because, as explained before, we have a disk formatted in ReFS and it’s explained in the article.\n Backup job configuration After configuring the backup proxy and backup repositories on each site, we are ready to the last step, configuring the backup job to perform backups.\nGo to Home tab and then Backup… Virtual Machine:\n\nNow, step by step, pick a name for the job:\nProceed to select the VMs you want to backup (in our case the ones in the EUR site):\n Let’s continue and in the Backup proxy, click Choose… and select the correspondent backup proxy (EUR_proxy):\n Press OK and go to Advanced. Configure it like that if you want Synthetic full backups: \n And then the monthly health check (recommended):\nAccept and here is the summary for the backup proxy step (we will keep 7 restore points in our case):\n\nConfigure any option as you like (not in my case):\n\nAnd finally, proceed with the schedule that you want after finishing the configuration for this job!\nAnd that would be all for this remote site. We had to to the same with the other remote sites and our job will be done!\n\n Conclusion Finally, with this design you will be able to back up remote sites and store the backups in the local storage from each site.\nIf you don’t want to use a dedicated VM as a backup proxy, you can install the service on a VM that has low usage and install the backup proxy service, however, it’s recommended to use a dedicated VM which will have the backup proxy service and the backup repository (the virtual hard disk attached).\n   ",
+  "wordCount" : "999",
+  "inLanguage": "en",
+  "datePublished": "2019-08-31T19:00:54Z",
+  "dateModified": "2019-08-31T19:00:54Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/?p=1018/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Veeam – Backup VMs in remote sites
+    </h1>
+    <div class="post-meta">August 31, 2019&nbsp;·&nbsp;5 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#span-stylecolor-000000-font-family-nunitoscenariospan" aria-label="Scenario"><span style="color: #000000; font-family: Nunito;">Scenario</span></a></li>
+                <li>
+                    <a href="#span-stylecolor-000000-font-family-nunitoimplementationspan" aria-label="Implementation"><span style="color: #000000; font-family: Nunito;">Implementation</span></a></li>
+                <li>
+                    <a href="#span-stylecolor-000000-font-family-nunitobackup-proxy-servicespan" aria-label="Backup proxy service"><span style="color: #000000; font-family: Nunito;">Backup proxy service</span></a></li>
+                <li>
+                    <a href="#span-stylecolor-000000-font-family-nunitobackup-repository-configurationspan" aria-label="Backup repository configuration"><span style="color: #000000; font-family: Nunito;">Backup repository configuration</span></a></li>
+                <li>
+                    <a href="#span-stylecolor-000000-font-family-nunitobackup-job-configurationspan" aria-label="Backup job configuration"><span style="color: #000000; font-family: Nunito;">Backup job configuration</span></a></li>
+                <li>
+                    <a href="#span-stylecolor-000000-font-family-nunitoconclusionspan" aria-label="Conclusion"><span style="color: #000000; font-family: Nunito;">Conclusion</span></a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><span >I was wondering why I haven’t talked about Veeam when I use it almost every day in my job, not only administering backups but doing new implementations.</span></p>
+<p><span><span >Recently, I had to implement a design where I need to backup VMs in remote sites but not back up them in a centralized storage, they will be backed up on each remote site storage.</span></span></p>
+<p><span >So, by deploying a VM with the Backup proxy service and also use it as the backup repository we can accomplish the goal. We will save bandwidth and increase the speed to restore and backup those remote virtual machines by using the local storage on each remote site.</span></p>
+<p> </p>
+<h3 id="span-stylecolor-000000-font-family-nunitoscenariospan"><span style="color: #000000; font-family: Nunito;">Scenario</span><a hidden class="anchor" aria-hidden="true" href="#span-stylecolor-000000-font-family-nunitoscenariospan">#</a></h3>
+<p><span >The scenario I am talking is the following, a dedicated VM with Windows Server 2016 Standard (a.k.a. W2016 STD) to act as a backup proxy and backup repository and Veeam B&amp;R installed on the main site (the cloud we will say).</span></p>
+<p><span >This is the high level design:</span></p>
+<p><img loading="lazy" class="alignnone wp-image-1022 size-large" src="/wp-content/uploads/2019/08/Veeam_deployment-1024x651.png" alt="Veeam_scenario" width="656" height="417" srcset="/wp-content/uploads/2019/08/Veeam_deployment-1024x651.png 1024w, /wp-content/uploads/2019/08/Veeam_deployment-300x191.png 300w, /wp-content/uploads/2019/08/Veeam_deployment-768x489.png 768w, /wp-content/uploads/2019/08/Veeam_deployment-1536x977.png 1536w, /wp-content/uploads/2019/08/Veeam_deployment-1568x997.png 1568w, /wp-content/uploads/2019/08/Veeam_deployment.png 1613w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p><span >So, we are going to back up all the VMs that are hosted in the remote ESXi hosts and also save the backup data in the local storage.</span></p>
+<p><span >As said before, in this way we save bandwidth and gain speed in the backup and restore process in case we need to perform any of it.</span></p>
+<p><span >We will assume that we have a vCenter deployed with Veeam B&amp;R installed. The Veeam B&amp;R has configured the vCenter and then all remote ESXi hosts.</span></p>
+<p> </p>
+<h3 id="span-stylecolor-000000-font-family-nunitoimplementationspan"><span style="color: #000000; font-family: Nunito;">Implementation</span><a hidden class="anchor" aria-hidden="true" href="#span-stylecolor-000000-font-family-nunitoimplementationspan">#</a></h3>
+<p><span >The implementation is pretty straightforward, we will have a dedicated VM to be deployed on each remote site and then perform the following high-level steps:</span></p>
+<p><span >– As a <strong>backup repository</strong>, we are going to add a hard disk to the remote VM and use that hard disk as the backup repository for the site. We will seize the capabilities of Windows Server 2016 and use ReFS as the filesystem for the added hard disk.</span></p>
+<p><span >– Install a <strong>backup proxy </strong>service, we just need to deploy the backup proxy service from the Veeam B&amp;R console to the VM that we are using. The backup proxy will be who processes jobs and delivers backup traffic.</span></p>
+<p><span >So, let’s go each step!</span></p>
+<p> </p>
+<h3 id="span-stylecolor-000000-font-family-nunitobackup-proxy-servicespan"><span style="color: #000000; font-family: Nunito;">Backup proxy service</span><a hidden class="anchor" aria-hidden="true" href="#span-stylecolor-000000-font-family-nunitobackup-proxy-servicespan">#</a></h3>
+<p><span>First, our Windows Guest OS VM is joined to the domain, so we won’t have any kind of problem for resolving the name or accessing with domain account credentials.</span></p>
+<p><span>Let’s add the proxy by going to the Backup Infrastructure tab &gt; Backup Proxy &gt; <strong>Add VMware Backup Proxy…</strong></span></p>
+<p><img loading="lazy" class="alignnone wp-image-1026 size-full" src="/wp-content/uploads/2019/08/Add-VMware-Backup-Proxy.png" alt="" width="653" height="587" srcset="/wp-content/uploads/2019/08/Add-VMware-Backup-Proxy.png 653w, /wp-content/uploads/2019/08/Add-VMware-Backup-Proxy-300x270.png 300w" sizes="(max-width: 653px) 100vw, 653px" /></p>
+<p><span >As this is a new server for Veeam, we will have to add it as a «server» by pressing «<strong>Add New…»</strong>:</span></p>
+<p><span ><img loading="lazy" class="alignnone wp-image-1035 size-medium_large" src="/wp-content/uploads/2019/08/VMware_proxy_default-768x545.png" alt="" width="656" height="466" srcset="/wp-content/uploads/2019/08/VMware_proxy_default-768x545.png 768w, /wp-content/uploads/2019/08/VMware_proxy_default-300x213.png 300w, /wp-content/uploads/2019/08/VMware_proxy_default-1024x727.png 1024w, /wp-content/uploads/2019/08/VMware_proxy_default.png 1125w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span >Then, this window will appear, just enter the FQDN of your server:</span></p>
+<p><span><img loading="lazy" class="alignnone wp-image-1029 size-medium_large" src="/wp-content/uploads/2019/08/NewWServer_1-768x545.png" alt="" width="656" height="466" srcset="/wp-content/uploads/2019/08/NewWServer_1-768x545.png 768w, /wp-content/uploads/2019/08/NewWServer_1-300x213.png 300w, /wp-content/uploads/2019/08/NewWServer_1-1024x726.png 1024w, /wp-content/uploads/2019/08/NewWServer_1.png 1128w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span><span >Choose credentials and </span>choose<span > «<strong>Apply</strong> «to install the transport service:</span></span></p>
+<p><span><img loading="lazy" class="alignnone wp-image-1030 size-medium_large" src="/wp-content/uploads/2019/08/NewWServer_2_apply-768x551.png" alt="" width="656" height="471" srcset="/wp-content/uploads/2019/08/NewWServer_2_apply-768x551.png 768w, /wp-content/uploads/2019/08/NewWServer_2_apply-300x215.png 300w, /wp-content/uploads/2019/08/NewWServer_2_apply-1024x734.png 1024w, /wp-content/uploads/2019/08/NewWServer_2_apply.png 1124w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span >After that, you will be able to choose the newly added server (Proxy_EUR.itgaiden.com) from the drop-down menu:</span></p>
+<p><span><img loading="lazy" class="alignnone wp-image-1034 size-large" src="/wp-content/uploads/2019/08/VMware_proxy_summary-1024x727.png" alt="" width="656" height="466" srcset="/wp-content/uploads/2019/08/VMware_proxy_summary-1024x727.png 1024w, /wp-content/uploads/2019/08/VMware_proxy_summary-300x213.png 300w, /wp-content/uploads/2019/08/VMware_proxy_summary-768x545.png 768w, /wp-content/uploads/2019/08/VMware_proxy_summary.png 1124w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span >Now, let’s configure the Transport mode and Datastores for this proxy (as in the previous screenshot):</span></p>
+<p><span><img loading="lazy" class="alignnone wp-image-1031 size-full" src="/wp-content/uploads/2019/08/Transport_mode.png" alt="" width="755" height="791" srcset="/wp-content/uploads/2019/08/Transport_mode.png 755w, /wp-content/uploads/2019/08/Transport_mode-286x300.png 286w" sizes="(max-width: 755px) 100vw, 755px" /></span></p>
+<p><span >And for the datastores, choose the ones that are connected to the ESXi host where the VM is hosted by selecting <strong>Manual Selection </strong>and adding them:</span></p>
+<p><span ><img loading="lazy" class="alignnone size-penscratch-featured wp-image-1028" src="/wp-content/uploads/2019/08/manual_datastores-656x300.png" alt="choose_manual_datastores" width="656" height="300" /></span></p>
+<p><span >After configuring that, you will have the same configuration as in this screenshot:</span></p>
+<p><span><img loading="lazy" class="alignnone size-medium_large wp-image-1034" src="/wp-content/uploads/2019/08/VMware_proxy_summary-768x545.png" alt="" width="656" height="466" srcset="/wp-content/uploads/2019/08/VMware_proxy_summary-768x545.png 768w, /wp-content/uploads/2019/08/VMware_proxy_summary-300x213.png 300w, /wp-content/uploads/2019/08/VMware_proxy_summary-1024x727.png 1024w, /wp-content/uploads/2019/08/VMware_proxy_summary.png 1124w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span >Finally, just hit <strong>Next </strong>and apply any kind of traffic rule if you want:</span></p>
+<p><span ><img loading="lazy" class="alignnone size-medium_large wp-image-1033" src="/wp-content/uploads/2019/08/VMware_proxy_trafficrules-768x546.png" alt="" width="656" height="466" srcset="/wp-content/uploads/2019/08/VMware_proxy_trafficrules-768x546.png 768w, /wp-content/uploads/2019/08/VMware_proxy_trafficrules-300x213.png 300w, /wp-content/uploads/2019/08/VMware_proxy_trafficrules-1024x727.png 1024w, /wp-content/uploads/2019/08/VMware_proxy_trafficrules.png 1122w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span >Now, finish, and the proxy will be fully configured and ready.</span></p>
+<p> </p>
+<p> </p>
+<p><span >We configured these options because they are the best for our deployment which is using a Windows VM that will have a backup repository which will save the backups.</span></p>
+<p><span >For more detailed options about the Backup Proxy service go <a href="https://helpcenter.veeam.com/docs/backup/vsphere/backup_proxy.html?ver=95u4">here</a>.</span></p>
+<p><span >After configuring each backup proxy we will have a bunch of them in the Backup Proxies tab:</span></p>
+<p><span><img loading="lazy" class="alignnone size-medium_large wp-image-1040" src="/wp-content/uploads/2019/08/Backup_Proxies-768x299.png" alt="Backup_Proxies" width="656" height="255" srcset="/wp-content/uploads/2019/08/Backup_Proxies-768x299.png 768w, /wp-content/uploads/2019/08/Backup_Proxies-300x117.png 300w, /wp-content/uploads/2019/08/Backup_Proxies.png 996w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<h3 id="span-stylecolor-000000-font-family-nunitobackup-repository-configurationspan"><span style="color: #000000; font-family: Nunito;">Backup repository configuration</span><a hidden class="anchor" aria-hidden="true" href="#span-stylecolor-000000-font-family-nunitobackup-repository-configurationspan">#</a></h3>
+<p><span><span >In this step, I suggest </span>fo<span >llowing this <a href="https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fwww.jorgedelacruz.es%2F2018%2F04%2F16%2Fveeam-repositorios-de-backup-usando-el-nuevo-microsoft-refs-que-viene-incluido-en-microsoft-windows-server-2016%2F">article</a> to perform this step.</span></span></p>
+<p><span >Basically, we just have to add a new hard disk to our dedicated VM as Thick Provision Eager Zeroed, format the disk as ReFS and finally, add the Backup Repository to the Veeam B&amp;R Console.</span></p>
+<p><span >In that article, it’s also explained the benefits of ReFS so, I think it’s more detailed and easy to follow it.</span></p>
+<p><span >After we configure all the backup repositories, we will have the same amount as the backup proxies:</span></p>
+<p><span ><img loading="lazy" class="alignnone size-full wp-image-1048" src="/wp-content/uploads/2019/08/veeam_backup_repositories.png" alt="veeam_backup_repositories" width="2336" height="944" srcset="/wp-content/uploads/2019/08/veeam_backup_repositories.png 2336w, /wp-content/uploads/2019/08/veeam_backup_repositories-300x121.png 300w, /wp-content/uploads/2019/08/veeam_backup_repositories-1024x414.png 1024w, /wp-content/uploads/2019/08/veeam_backup_repositories-768x310.png 768w, /wp-content/uploads/2019/08/veeam_backup_repositories-1536x621.png 1536w, /wp-content/uploads/2019/08/veeam_backup_repositories-2048x828.png 2048w, /wp-content/uploads/2019/08/veeam_backup_repositories-1568x634.png 1568w" sizes="(max-width: 2336px) 100vw, 2336px" /></span></p>
+<p><span >As you can see in the previous screenshot, the path (D:\Backups) is the disk that we added to the VM on each remote site. We have configured the backup repository to that path because, as explained before, we have a disk formatted in ReFS and it’s explained in the <a href="https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fwww.jorgedelacruz.es%2F2018%2F04%2F16%2Fveeam-repositorios-de-backup-usando-el-nuevo-microsoft-refs-que-viene-incluido-en-microsoft-windows-server-2016%2F">article</a>.</span></p>
+<h3 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h3>
+<h3 id="span-stylecolor-000000-font-family-nunitobackup-job-configurationspan"><span style="color: #000000; font-family: Nunito;">Backup job configuration</span><a hidden class="anchor" aria-hidden="true" href="#span-stylecolor-000000-font-family-nunitobackup-job-configurationspan">#</a></h3>
+<p><span >After configuring the backup proxy and backup repositories on each site, we are ready to the last step, configuring the backup job to perform backups.</span></p>
+<p><span >Go to <strong>Home</strong> tab and then Backup… Virtual Machine:</span></p>
+<p><span ><img loading="lazy" class="alignnone size-medium wp-image-1050" src="/wp-content/uploads/2019/08/Backupjob_start-300x79.png" alt="" width="300" height="79" srcset="/wp-content/uploads/2019/08/Backupjob_start-300x79.png 300w, /wp-content/uploads/2019/08/Backupjob_start.png 464w" sizes="(max-width: 300px) 100vw, 300px" /></span></p>
+<p><span><span >Now, step by step, pick a name for the job:</span><img loading="lazy" class="alignnone wp-image-1060 size-medium_large" src="/wp-content/uploads/2019/08/Backupjob_name-768x549.png" alt="" width="656" height="469" srcset="/wp-content/uploads/2019/08/Backupjob_name-768x549.png 768w, /wp-content/uploads/2019/08/Backupjob_name-300x214.png 300w, /wp-content/uploads/2019/08/Backupjob_name-1024x732.png 1024w, /wp-content/uploads/2019/08/Backupjob_name.png 1125w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span >Proceed to select the VMs you want to backup (in our case the ones in the EUR site):</span><span><img loading="lazy" class="alignnone size-medium_large wp-image-1057" src="/wp-content/uploads/2019/08/Backupjob_vm_2-768x536.png" alt="" width="656" height="458" srcset="/wp-content/uploads/2019/08/Backupjob_vm_2-768x536.png 768w, /wp-content/uploads/2019/08/Backupjob_vm_2-300x209.png 300w, /wp-content/uploads/2019/08/Backupjob_vm_2-1024x715.png 1024w, /wp-content/uploads/2019/08/Backupjob_vm_2.png 1127w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p> </p>
+<p><span >Let’s continue and in the Backup proxy, click <strong>Choose…</strong> and select the correspondent backup proxy (EUR_proxy):<img loading="lazy" class="alignnone size-medium_large wp-image-1059" src="/wp-content/uploads/2019/08/Backupjob_proxy_3-768x547.png" alt="" width="656" height="467" srcset="/wp-content/uploads/2019/08/Backupjob_proxy_3-768x547.png 768w, /wp-content/uploads/2019/08/Backupjob_proxy_3-300x214.png 300w, /wp-content/uploads/2019/08/Backupjob_proxy_3-1024x729.png 1024w, /wp-content/uploads/2019/08/Backupjob_proxy_3.png 1128w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p> </p>
+<p><span><span >Press OK and go to Advanced. Configure it like that if you want Synthetic  full backups:</span> <img loading="lazy" class="alignnone size-full wp-image-1055" src="/wp-content/uploads/2019/08/Backupjob_proxy_adv_4.png" alt="" width="726" height="837" srcset="/wp-content/uploads/2019/08/Backupjob_proxy_adv_4.png 726w, /wp-content/uploads/2019/08/Backupjob_proxy_adv_4-260x300.png 260w" sizes="(max-width: 726px) 100vw, 726px" /></span></p>
+<p> </p>
+<p><span><span >And then the monthly health check (recommended):</span><img loading="lazy" class="alignnone size-full wp-image-1056" src="/wp-content/uploads/2019/08/Backupjob_proxy_adv_5.png" alt="" width="728" height="588" srcset="/wp-content/uploads/2019/08/Backupjob_proxy_adv_5.png 728w, /wp-content/uploads/2019/08/Backupjob_proxy_adv_5-300x242.png 300w" sizes="(max-width: 728px) 100vw, 728px" /></span></p>
+<p><span >Accept and here is the summary for the backup proxy step (we will keep 7 restore points in our case):</span></p>
+<p><span><img loading="lazy" class="alignnone size-medium_large wp-image-1058" src="/wp-content/uploads/2019/08/Backupjob_proxysummary_6-768x544.png" alt="" width="656" height="465" srcset="/wp-content/uploads/2019/08/Backupjob_proxysummary_6-768x544.png 768w, /wp-content/uploads/2019/08/Backupjob_proxysummary_6-300x213.png 300w, /wp-content/uploads/2019/08/Backupjob_proxysummary_6-1024x725.png 1024w, /wp-content/uploads/2019/08/Backupjob_proxysummary_6.png 1125w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span >Configure any option as you like (not in my case):</span></p>
+<p><span><img loading="lazy" class="alignnone size-medium_large wp-image-1054" src="/wp-content/uploads/2019/08/Backupjob_vm_guest_7-768x549.png" alt="" width="656" height="469" srcset="/wp-content/uploads/2019/08/Backupjob_vm_guest_7-768x549.png 768w, /wp-content/uploads/2019/08/Backupjob_vm_guest_7-300x214.png 300w, /wp-content/uploads/2019/08/Backupjob_vm_guest_7-1024x732.png 1024w, /wp-content/uploads/2019/08/Backupjob_vm_guest_7.png 1121w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span><span >And finally, proceed with the schedule that you want after finishing the configuration for this job!</span></span></p>
+<p><span >And that would be all for this remote site. We had to to the same with the other remote sites and our job will be done!<br /> </span></p>
+<p> </p>
+<h3 id="span-stylecolor-000000-font-family-nunitoconclusionspan"><span style="color: #000000; font-family: Nunito;">Conclusion</span><a hidden class="anchor" aria-hidden="true" href="#span-stylecolor-000000-font-family-nunitoconclusionspan">#</a></h3>
+<p><span >Finally, with this design you will be able to back up remote sites and store the backups in the local storage from each site.</span></p>
+<p><span >If you don’t want to use a dedicated VM as a backup proxy, you can install the service on a VM that has low usage and install the backup proxy service, however, it’s recommended to use a dedicated VM which will have the backup proxy service and the backup repository (the virtual hard disk attached).</span></p>
+<h3 id="heading-1"><a hidden class="anchor" aria-hidden="true" href="#heading-1">#</a></h3>
+<p> </p>
+<p> </p>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/backup/">backup</a></li>
+      <li><a href="https://dangaiden.github.io/tags/refs/">refs</a></li>
+      <li><a href="https://dangaiden.github.io/tags/veeam/">veeam</a></li>
+      <li><a href="https://dangaiden.github.io/tags/veeam-proxy/">veeam proxy</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

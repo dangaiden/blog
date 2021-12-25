@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VMUG on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/vmug/</link>
+    <description>Recent content in VMUG on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Dec 2019 11:00:36 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/vmug/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Want to be a vExpert?</title>
+      <link>https://dangaiden.github.io/2019-12-09-being-a-vexpert/</link>
+      <pubDate>Mon, 09 Dec 2019 11:00:36 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-12-09-being-a-vexpert/</guid>
+      <description>vExpert 2020 applications are open!
+From November 25th to January 10th, you can apply to be a vExpert 2020 through many different paths and you must do it if you think you contributed to the VMware community.
+What is a vExpert? It’s an award that VMware gives to individuals who have contributed (a lot) to the VMware community.
+Only the contributions over the past year are evaluated, therefore, it is a program that requires constant dedication every year by being an evangelist and advocacy of VMware products.</description>
+    </item>
+    
+    <item>
+      <title>Experience at a local VMUG – Barcelona VMUG</title>
+      <link>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</link>
+      <pubDate>Fri, 29 Mar 2019 10:26:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</guid>
+      <description>I am going to talk about my experience at a local VMUG, in my case the VMUG from Barcelona (BCN). It was my first time at a local VMUG event and this is why I decided to share my thoughts about it.
+
+VMUG – What is? As you probably know VMUG stands for VMware User Group. Basically, you will find an international community of people where they share their experiences and discuss things related to VMware and other technologies.</description>
+    </item>
+    
+  </channel>
+</rss>

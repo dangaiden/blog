@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>backup on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/backup/</link>
+    <description>Recent content in backup on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Aug 2019 19:00:54 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/backup/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Veeam – Backup VMs in remote sites</title>
+      <link>https://dangaiden.github.io/?p=1018/</link>
+      <pubDate>Sat, 31 Aug 2019 19:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=1018/</guid>
+      <description>I was wondering why I haven’t talked about Veeam when I use it almost every day in my job, not only administering backups but doing new implementations.
+Recently, I had to implement a design where I need to backup VMs in remote sites but not back up them in a centralized storage, they will be backed up on each remote site storage.
+So, by deploying a VM with the Backup proxy service and also use it as the backup repository we can accomplish the goal.</description>
+    </item>
+    
+    <item>
+      <title>Cohesity Build Day Live</title>
+      <link>https://dangaiden.github.io/?p=861/</link>
+      <pubDate>Thu, 09 May 2019 12:00:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=861/</guid>
+      <description>I am going to share some thoughts and opinions about a recent video from the Cohesity Build Day Live recorded recently with the Build Day Live! team.
+Disclosure: This post is sponsored by Cohesity.
+First, just let me introduce briefly you what is Cohesity:
+Cohesity is a platform focused on managing and consolidating secondaryapplications and the data. It provides a unified view and access to converge that secondary data, such as system backups and analytics in a simpler way to an IT administrator.</description>
+    </item>
+    
+  </channel>
+</rss>

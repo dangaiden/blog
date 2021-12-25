@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VCAP6.5-DCV Design on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/vcap6.5-dcv-design/</link>
+    <description>Recent content in VCAP6.5-DCV Design on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Oct 2019 22:47:39 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/vcap6.5-dcv-design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCAP-DCV Design exam notes</title>
+      <link>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</link>
+      <pubDate>Thu, 31 Oct 2019 22:47:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</guid>
+      <description>As the VCAP-DCV Design 2020 certification is going to be released (but the 3V0-624 exam is not scheduled to be retired yet) on Jan 1, 2020.
+Recently I made another post about my experience with this exam where I failed, check it here.
+For your information, at the moment the 3V0-624 is the current exam code for the VCAP-DCV 6.5 Design certification (Also named VCAP-DCV Design 2019), always check the code for the exam no matter which is the certification name.</description>
+    </item>
+    
+    <item>
+      <title>VCAP6.5-DCV Design failed exam experience</title>
+      <link>https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/</link>
+      <pubDate>Fri, 25 Oct 2019 21:44:50 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/</guid>
+      <description>Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).
+I took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.
+I recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>event on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/event/</link>
+    <description>Recent content in event on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Mar 2019 10:26:47 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/event/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experience at a local VMUG – Barcelona VMUG</title>
+      <link>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</link>
+      <pubDate>Fri, 29 Mar 2019 10:26:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</guid>
+      <description>I am going to talk about my experience at a local VMUG, in my case the VMUG from Barcelona (BCN). It was my first time at a local VMUG event and this is why I decided to share my thoughts about it.
+
+VMUG – What is? As you probably know VMUG stands for VMware User Group. Basically, you will find an international community of people where they share their experiences and discuss things related to VMware and other technologies.</description>
+    </item>
+    
+    <item>
+      <title>Pre-VMworld 2018 Europe – Expectations and information</title>
+      <link>https://dangaiden.github.io/2018-10-29-pre-vmworld-2018-europe-expectations-and-information/</link>
+      <pubDate>Mon, 29 Oct 2018 17:29:22 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-29-pre-vmworld-2018-europe-expectations-and-information/</guid>
+      <description>VMworld 2018 Europe is only a week away! And I wanted to explain you share expectations and information I found about. It will be my 1st time!
+VMworld Location As you may know, VMworld Europe is located in Fira Barcelona between 5-8th of November. As it’s in Barcelona, I am able to assist without paying any trip (I live close to the city).
+
+Main information  When: 5-8 November 2018</description>
+    </item>
+    
+  </channel>
+</rss>

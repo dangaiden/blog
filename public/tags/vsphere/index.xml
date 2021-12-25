@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vSphere on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/vsphere/</link>
+    <description>Recent content in vSphere on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Apr 2019 10:25:55 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/vsphere/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 3: Linked Clones</title>
+      <link>https://dangaiden.github.io/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones/</link>
+      <pubDate>Tue, 16 Apr 2019 10:25:55 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones/</guid>
+      <description>Let’s start with part 3 in the cloning virtual machines in vSphere series, I am going to talk about another type of clones, linked clones!
+
+ All articles regarding cloning virtual machines in vSphere series:
+Part 1: Types of clone
+Part 2: Full Clone
+Part 4: Instant Clones (not published yet) As said in previous articles, this series is only focused on VMware vSphere hence, VMware Horizon View is not contemplated (Linked clones are commonly used in that product).</description>
+    </item>
+    
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 2: Full clone</title>
+      <link>https://dangaiden.github.io/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone/</link>
+      <pubDate>Wed, 06 Mar 2019 11:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone/</guid>
+      <description>Continuing with the cloning virtual machines in vSphere series, today I am going to write about the full clone, how it works and some useful information about it.
+
+So, let’s talk about clones… but just full clones.
+How does it work? As you probably know a full clone is an exact copy of a source VM, meaning that, everything from the parent VM is copied (VM settings, disks, files, etc.</description>
+    </item>
+    
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 1: Types of clone</title>
+      <link>https://dangaiden.github.io/2019-02-25-cloning-vms-in-vsphere-part-1/</link>
+      <pubDate>Mon, 25 Feb 2019 10:22:37 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-02-25-cloning-vms-in-vsphere-part-1/</guid>
+      <description>Most of you already know how to clone virtual machines within vSphere, and I mean cloning from the vSphere Web client within vCenter but, beyond that, there are other types of clones you can use in vCenter like, Linked Clones or Instant Clones (aka Project Fargo/VMfork)
+
+Due to the large content that can be discussed about each clone’s type, I decided to make a short series of posts talking about cloning VMs!</description>
+    </item>
+    
+  </channel>
+</rss>

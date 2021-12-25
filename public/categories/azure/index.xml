@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Azure on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/azure/</link>
+    <description>Recent content in Azure on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jun 2021 13:37:03 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AZ-400 exam notes</title>
+      <link>https://dangaiden.github.io/2021-06-08-az-400-exam-notes/</link>
+      <pubDate>Tue, 08 Jun 2021 13:37:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2021-06-08-az-400-exam-notes/</guid>
+      <description>Some months missing between my last update!
+I must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!
+Therefore, let&amp;rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.
+Certification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:</description>
+    </item>
+    
+    <item>
+      <title>Azure – Backup and restore SQL DB using SSMS</title>
+      <link>https://dangaiden.github.io/2018-09-14-azure-backup-and-restore-sql-db-using-ssms/</link>
+      <pubDate>Fri, 14 Sep 2018 08:23:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-09-14-azure-backup-and-restore-sql-db-using-ssms/</guid>
+      <description>A quick post talking about how to backup and restore a SQL database on Azure using SQL Server Management Studio (SSMS).
+First, you will need to install SSMS. You can download it here: https://go.microsoft.com/fwlink/?linkid=875802
+Once installed, in order to access the database, you will need the server name where is installed. So, you will have to check the Server name in Azure Portal (you can also do it by Powershell of course):</description>
+    </item>
+    
+    <item>
+      <title>Azure – Error when adding new rule on NSG</title>
+      <link>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg/</link>
+      <pubDate>Sun, 31 Dec 2017 15:50:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg/</guid>
+      <description>Hello everyone!
+It’s been a while since I wrote something, but I was so busy with other things (University) and I wasn’t able to allocate time to write anything.
+Today I’m going to talk about an issue I found on Azure when trying to add new rules to some NSGs.
+To create rules in Azure I used this script from TechNet Gallery: https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332
+Problem I was trying to add some rules in an NSG with the address 193.</description>
+    </item>
+    
+    <item>
+      <title>Azure – Error when adding new rule on NSG</title>
+      <link>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg_backup/</link>
+      <pubDate>Sun, 31 Dec 2017 15:50:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg_backup/</guid>
+      <description>Hello everyone!
+It’s been a while since I wrote something, but I was so busy with other things (University) and I wasn’t able to allocate time to write anything.
+Today I’m going to talk about an issue I found on Azure when trying to add new rules to some NSGs.
+To create rules in Azure I used this script from TechNet Gallery: https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332
+Problem I was trying to add some rules in an NSG with the address 193.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>WSFC on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/wsfc/</link>
+    <description>Recent content in WSFC on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Jun 2020 09:30:08 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/wsfc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSFC – Validate Configuration wizard error</title>
+      <link>https://dangaiden.github.io/2020-06-29-wsfc-validate-configuration-wizard-error/</link>
+      <pubDate>Mon, 29 Jun 2020 09:30:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-06-29-wsfc-validate-configuration-wizard-error/</guid>
+      <description>This is a short post talking about Windows Server Failover Clustering (WSFC) and a problem I found when adding the nodes from your cluster using the «Validate a Configuration» wizard.
+This wizard is recommended to run after configuring your nodes and before creating the cluster in order to spot any misconfigurations.
+So now, let’s go into the problem.
+ The issue In the wizard when trying to add (in my example) the second node shows an error:</description>
+    </item>
+    
+  </channel>
+</rss>

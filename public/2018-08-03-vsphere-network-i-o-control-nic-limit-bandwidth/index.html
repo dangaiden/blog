@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>vSphere Network I/O Control: NIC Limit bandwidth | Dan Belmonte</title>
+<meta name="keywords" content="networking, NIOC, VMware" />
+<meta name="description" content="Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.
+Prerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="vSphere Network I/O Control: NIC Limit bandwidth" />
+<meta property="og:description" content="Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.
+Prerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2018-08-02T23:39:01&#43;00:00" />
+<meta property="article:modified_time" content="2018-08-02T23:39:01&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="vSphere Network I/O Control: NIC Limit bandwidth"/>
+<meta name="twitter:description" content="Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.
+Prerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "vSphere Network I/O Control: NIC Limit bandwidth",
+      "item": "https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "vSphere Network I/O Control: NIC Limit bandwidth",
+  "name": "vSphere Network I\/O Control: NIC Limit bandwidth",
+  "description": "Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.\nPrerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:",
+  "keywords": [
+    "networking", "NIOC", "VMware"
+  ],
+  "articleBody": "Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.\nPrerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:\n2 VMs within 2 Networks (Portgroups in dvSwitch)\n\nKenshiroVM is a VM with Ubuntu that simulates traffic with iperf as a client.\nWin10Pro is a VM with iperf application configured as a server:\nObjective: We will look in how Network I/O control (NIOC) let us limit the bandwidth granularly from a Virtual Machine (KenshiroVM), so, we will limit the bandwidth for a single NIC and see if it really works.\nTesting: Lab time! I enabled NIOC in the dvSwitch that I have created for OS traffic (Data Network), dvSwitch is called “DSwitch_DataNW”. The other dvSwitch is “DSwitchMGMT” and NIOC is not enabled (no NIOC = no restrictions).\nAs I said before we have 2 networks:\n Data Network: 10.10.6.0/24 Management Network: 192.168.1.0/24  Main steps: 1. Verify that the client (KenshiroVM) has no restrictions within the network. 2. Then, we will limit the Data Network adapter from KenshiroVM, launch iperf to simulate traffic and review the limitation configured. 3. Finally we will test iperf again but in the Management Network and review that we have no restrictions.  1. Currently, KenshiroVM has no restrictions configured (notice that in the blue rectangle there are no options for NIOC because that portgroup (Management) it’s located in another dvSwitch where we didn’t enable NIOC):\n\nIf we launch iperf command with 200Mbps on port 9999 from KenshiroVM:\nWe can see the traffic on the destination (Win10Pro) on the Data Network Adapter (you can see the subnet in the screenshot):\nAlso, we can review it in vSphere Web Client (25 MBps = 200 Mbps):\n2. Now we are going to set a limit on KenshiroVM Data Network adapter to 88 Mbits:\nNow, we perform the same command with iperf on the client (KenshiroVM):\nEven pushing 200 Mbits through the Data Netowork Adapter using iperf, NIOC will limit the traffic to 88 Mbits as set before. Here is the traffic seen by Win10Pro Data Network adapter:\n\nIn KenshiroVM, iperfperformed the transfer in 88 Mbps approximately:\n3. Now, if we do the same experiment (150 Mbps) but in the adapter where NIOC is not enabled:\n\nKenshiroVM confirmed that it performed at 150 Mbps approximately:\n  Conclusion    As a result of using vSphere NIOC, we can granularly set limits in the bandwidth in a VM network adapter and it will obey the settings configured. It only works for outbound traffic, if you set a limit in a destination VM adapter, then, NIOC will not make any restrictions regarding the inbound traffic.\n",
+  "wordCount" : "482",
+  "inLanguage": "en",
+  "datePublished": "2018-08-02T23:39:01Z",
+  "dateModified": "2018-08-02T23:39:01Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      vSphere Network I/O Control: NIC Limit bandwidth
+    </h1>
+    <div class="post-meta">August 2, 2018&nbsp;·&nbsp;3 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#span-stylefont-size-24px-font-family-didact-gothicstrongprerequisitesstrongspan" aria-label="Prerequisites:"><span style="font-size: 24px; font-family: Didact Gothic;"><strong>Prerequisites:</strong></span></a></li>
+                <li>
+                    <a href="#span-stylefont-size-24px-font-family-didact-gothicstrongobjectivestrongspan" aria-label="Objective:"><span style="font-size: 24px; font-family: Didact Gothic;"><strong>Objective:</strong></span></a></li>
+                <li>
+                    <a href="#span-stylefont-size-24px-font-family-didact-gothicstrongtestingstrongspan" aria-label="Testing:"><span style="font-size: 24px; font-family: Didact Gothic;"><strong>Testing:</strong></span></a><ul>
+                        
+                <li>
+                    <a href="#span-stylefont-family-didact-gothic-font-size-20pxmain-stepsspan" aria-label="Main steps:"><strong><span style="font-family: Didact Gothic; font-size: 20px;">Main steps:</span></strong></a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><span style="">Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus <span style="text-decoration: underline;">only in the network adapter bandwidth limit</span> for VMs.</span></p>
+<h3 id="span-stylefont-size-24px-font-family-didact-gothicstrongprerequisitesstrongspan"><span style="font-size: 24px; font-family: Didact Gothic;"><strong>Prerequisites:</strong></span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-size-24px-font-family-didact-gothicstrongprerequisitesstrongspan">#</a></h3>
+<p><span style="font-family: Didact Gothic;"><span style="font-size: 12pt;">Enable the feature in the dvSwitch (in our case the one with Data Network):</span><span style="font-size: 10pt;"><img loading="lazy" class="alignnone size-full wp-image-163" src="/wp-content/uploads/2018/08/1st_dswitchenable.png" alt="" width="954" height="242" srcset="/wp-content/uploads/2018/08/1st_dswitchenable.png 954w, /wp-content/uploads/2018/08/1st_dswitchenable-300x76.png 300w, /wp-content/uploads/2018/08/1st_dswitchenable-768x195.png 768w" sizes="(max-width: 954px) 100vw, 954px" /></span><span style="font-size: 24px;"><strong>Scenario:</strong></span></span></p>
+<p><span style="font-size: 12pt; font-family: Didact Gothic;">2 VMs within 2 Networks (Portgroups in dvSwitch)</span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><img loading="lazy" class="alignnone size-full wp-image-175" src="/wp-content/uploads/2018/08/LogicalNW_NIOC.png" alt="" width="1314" height="676" srcset="/wp-content/uploads/2018/08/LogicalNW_NIOC.png 1314w, /wp-content/uploads/2018/08/LogicalNW_NIOC-300x154.png 300w, /wp-content/uploads/2018/08/LogicalNW_NIOC-1024x527.png 1024w, /wp-content/uploads/2018/08/LogicalNW_NIOC-768x395.png 768w" sizes="(max-width: 1314px) 100vw, 1314px" /></span></p>
+<p><span style="font-size: 12pt; font-family: Didact Gothic;"><strong>KenshiroVM</strong> is a VM with Ubuntu that simulates traffic with iperf as a client.</span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><span style="font-size: 12pt;"><strong>Win10Pro</strong> is a VM with <a href="https://iperf.fr/">iperf</a> application configured as a server:</span><img loading="lazy" class="alignnone wp-image-166" src="/wp-content/uploads/2018/08/4th_win10proiperf.png" alt="" width="551" height="431" srcset="/wp-content/uploads/2018/08/4th_win10proiperf.png 947w, /wp-content/uploads/2018/08/4th_win10proiperf-300x235.png 300w, /wp-content/uploads/2018/08/4th_win10proiperf-768x601.png 768w" sizes="(max-width: 551px) 100vw, 551px" /></span></p>
+<h3 id="span-stylefont-size-24px-font-family-didact-gothicstrongobjectivestrongspan"><span style="font-size: 24px; font-family: Didact Gothic;"><strong>Objective:</strong></span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-size-24px-font-family-didact-gothicstrongobjectivestrongspan">#</a></h3>
+<p><span style="font-size: 12pt; font-family: Didact Gothic;">We will look in how Network I/O control (NIOC) let us limit the bandwidth granularly from a Virtual Machine (KenshiroVM), so, we will limit the bandwidth for a single NIC and see if it really works.</span></p>
+<h3 id="span-stylefont-size-24px-font-family-didact-gothicstrongtestingstrongspan"><span style="font-size: 24px; font-family: Didact Gothic;"><strong>Testing:</strong></span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-size-24px-font-family-didact-gothicstrongtestingstrongspan">#</a></h3>
+<p><span style="font-size: 12pt; font-family: Didact Gothic;">Lab time! I enabled NIOC in the dvSwitch that I have created for OS traffic (Data Network), dvSwitch is called “DSwitch_DataNW”. The other dvSwitch is “DSwitchMGMT” and NIOC is not enabled (no NIOC = no restrictions).</span></p>
+<p><span style="font-size: 12pt; font-family: Didact Gothic;">As I said before we have 2 networks:</span></p>
+<ul>
+<li><span style="font-size: 12pt; font-family: Didact Gothic;">Data Network: 10.10.6.0/24</span></li>
+<li><span style="font-size: 12pt; font-family: Didact Gothic;">Management Network: 192.168.1.0/24</span></li>
+</ul>
+<h4 id="span-stylefont-family-didact-gothic-font-size-20pxmain-stepsspan"><strong><span style="font-family: Didact Gothic; font-size: 20px;">Main steps:</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-family-didact-gothic-font-size-20pxmain-stepsspan">#</a></h4>
+<p style="padding-left: 30px;">
+  <span style="font-size: 12pt; font-family: Didact Gothic;"><strong>1.</strong> Verify that the client (<strong>KenshiroVM</strong>) has no restrictions within the network.</span>
+</p>
+<p style="padding-left: 30px;">
+  <span style="font-size: 12pt; font-family: Didact Gothic;"><strong>2. </strong>Then, we will limit the Data Network adapter from <strong>KenshiroVM</strong>, launch iperf to simulate traffic and review the limitation configured.</span>
+</p>
+<p style="padding-left: 30px;">
+  <span style="font-size: 12pt; font-family: Didact Gothic;"><strong>3.</strong> Finally we will test iperf again but in the Management Network and review that we have no restrictions.</span>
+</p>
+<hr>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><span style="font-size: 12pt;"><strong>1.</strong></span> <span style="font-size: 16px;">Currently, KenshiroVM has no restrictions configured (notice that in the blue rectangle there are no options for NIOC because that portgroup (Management) it’s located in another dvSwitch where we didn’t enable NIOC):</span></span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><img loading="lazy" class="aligncenter wp-image-167" src="/wp-content/uploads/2018/08/5th_KenshiroVM.png" alt="" width="427" height="492" srcset="/wp-content/uploads/2018/08/5th_KenshiroVM.png 521w, /wp-content/uploads/2018/08/5th_KenshiroVM-261x300.png 261w" sizes="(max-width: 427px) 100vw, 427px" /></span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><span style="font-size: 14px;"><span style="font-size: 16px;">If we launch iperf command with 200Mbps on port 9999 from KenshiroVM:</span></span><img loading="lazy" class="alignnone size-full wp-image-168" src="/wp-content/uploads/2018/08/6th_kenvm_iperf.png" alt="" width="710" height="123" srcset="/wp-content/uploads/2018/08/6th_kenvm_iperf.png 710w, /wp-content/uploads/2018/08/6th_kenvm_iperf-300x52.png 300w" sizes="(max-width: 710px) 100vw, 710px" /></span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><span style="font-size: 16px;">We can see the traffic &gt;on the destination</span> (<strong>Win10Pro</strong>) on the Data Network Adapter (you can see the subnet in the screenshot):</span><img loading="lazy" class="alignnone wp-image-169" src="/wp-content/uploads/2018/08/7th_win10proiperflimit.png" alt="" width="616" height="655" srcset="/wp-content/uploads/2018/08/7th_win10proiperflimit.png 699w, /wp-content/uploads/2018/08/7th_win10proiperflimit-282x300.png 282w" sizes="(max-width: 616px) 100vw, 616px" /></span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><span style="font-size: 16px;">Also, we can review it in vSphere Web Client (25 MBps = 200 Mbps):</span><img loading="lazy" class="alignnone size-full wp-image-170" src="/wp-content/uploads/2018/08/8th_win10pro_monitor.png" alt="" width="888" height="558" srcset="/wp-content/uploads/2018/08/8th_win10pro_monitor.png 888w, /wp-content/uploads/2018/08/8th_win10pro_monitor-300x189.png 300w, /wp-content/uploads/2018/08/8th_win10pro_monitor-768x483.png 768w" sizes="(max-width: 888px) 100vw, 888px" /></span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><span style="font-size: 12pt;"><strong>2.</strong> Now we are going to <strong>set a limit</strong> on KenshiroVM Data Network adapter to 88 Mbits:</span><img loading="lazy" class="wp-image-171 aligncenter" src="/wp-content/uploads/2018/08/9th_kenvm_limit.png" alt="" width="477" height="420" srcset="/wp-content/uploads/2018/08/9th_kenvm_limit.png 518w, /wp-content/uploads/2018/08/9th_kenvm_limit-300x264.png 300w" sizes="(max-width: 477px) 100vw, 477px" /></span></p>
+<p><span style="font-size: 12pt; font-family: Didact Gothic;">Now, we perform the same command with iperf on the client (KenshiroVM):<img loading="lazy" class="alignnone size-full wp-image-158" src="/wp-content/uploads/2018/08/10th_kenvm200MB.png" alt="" width="699" height="108" srcset="/wp-content/uploads/2018/08/10th_kenvm200MB.png 699w, /wp-content/uploads/2018/08/10th_kenvm200MB-300x46.png 300w" sizes="(max-width: 699px) 100vw, 699px" /></span></p>
+<p><span style=""><strong>Even pushing 200 Mbits</strong> through the Data Netowork Adapter using iperf, NIOC will limit the traffic to 88 Mbits as set before. Here is the traffic seen by Win10Pro Data Network adapter:</span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><img loading="lazy" class="alignnone size-full wp-image-159" src="/wp-content/uploads/2018/08/11st_ethernet915mbps.png" alt="" width="432" height="420" srcset="/wp-content/uploads/2018/08/11st_ethernet915mbps.png 432w, /wp-content/uploads/2018/08/11st_ethernet915mbps-300x292.png 300w" sizes="(max-width: 432px) 100vw, 432px" /></span></p>
+<p><span style="font-size: 12pt; font-family: Didact Gothic;"><span style="font-size: 16px;">In KenshiroVM, </span>iperf<span style="font-size: 16px;"> performed the transfer in 88 Mbps approximately:</span><img loading="lazy" class="alignnone size-full wp-image-160" src="/wp-content/uploads/2018/08/12nd_kenvm_iperf_report.png" alt="" width="706" height="167" srcset="/wp-content/uploads/2018/08/12nd_kenvm_iperf_report.png 706w, /wp-content/uploads/2018/08/12nd_kenvm_iperf_report-300x71.png 300w" sizes="(max-width: 706px) 100vw, 706px" /></span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><span style="font-size: 12pt;"><strong>3.</strong> Now, if we do the same experiment (150 Mbps) but in the adapter where NIOC is not enabled:</span></span></p>
+<p><span style="font-size: 10pt; font-family: Didact Gothic;"><img loading="lazy" class="size-full wp-image-161 alignnone" src="/wp-content/uploads/2018/08/13rd_win10pro_nolimitnic.png" alt="" width="541" height="535" srcset="/wp-content/uploads/2018/08/13rd_win10pro_nolimitnic.png 664w, /wp-content/uploads/2018/08/13rd_win10pro_nolimitnic-300x297.png 300w" sizes="(max-width: 541px) 100vw, 541px" /></span></p>
+<p><span style="font-size: 12pt; font-family: Didact Gothic;">KenshiroVM confirmed that it performed at 150 Mbps approximately:<img loading="lazy" class="alignnone size-full wp-image-162" src="/wp-content/uploads/2018/08/14th_kenvm_iperf_nolimit150mbps.png" alt="" width="709" height="164" srcset="/wp-content/uploads/2018/08/14th_kenvm_iperf_nolimit150mbps.png 709w, /wp-content/uploads/2018/08/14th_kenvm_iperf_nolimit150mbps-300x69.png 300w" sizes="(max-width: 709px) 100vw, 709px" /></span></p>
+<ul style="list-style-type: square;">
+  <li>
+    <h3>
+      <span style="font-size: 24px; font-family: Didact Gothic;"><strong>Conclusion</strong></span>
+    </h3>
+  </li>
+</ul>
+<p><span style="">As a result of using vSphere NIOC,  we can granularly set limits in the bandwidth in a VM network adapter and it will obey the settings configured. <strong>It only works for outbound traffic</strong>, if you set a limit in a destination VM adapter, then, NIOC will not make any restrictions regarding the inbound traffic.</span></p>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/networking/">networking</a></li>
+      <li><a href="https://dangaiden.github.io/tags/nioc/">NIOC</a></li>
+      <li><a href="https://dangaiden.github.io/tags/vmware/">VMware</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

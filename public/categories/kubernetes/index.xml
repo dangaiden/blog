@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>kubernetes on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/kubernetes/</link>
+    <description>Recent content in kubernetes on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Aug 2021 11:47:51 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes the hard way but on-prem - part 1 (Discontinued)</title>
+      <link>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part-1/</link>
+      <pubDate>Thu, 12 Aug 2021 11:47:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part-1/</guid>
+      <description>DISCLAIMER  I decided to not continue with this due to the huge implications that will be to redo everything not in the cloud. Basically, a lot of time should be invested and I miscalculated it by too much. Therefore, this will be probably the first and only post about these series.
+ Context In order to practice for the CKA exam, it is recommended to perform the famous Kubernetes The Hard Way by Kelsey Hightower.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes the hard way but on-prem - part 2</title>
+      <link>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part2/</guid>
+      <description>Context Let&amp;rsquo;s continue with the guide, in this part 2.
+This is based in: https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/03-compute-resources.md
+Kubernetes Controllers We will be using the following CIDR 192.168.1.0/24 for node within the cluster:
+ Somred1: 192.168.1.50/24 Somred2: 192.168.1.51/24 Somred3: 192.168.1.52/24  Kubernetes Workers This nodes will act as the Kubernetes workers nodes which will host the pods, we need to have 2 NICs for each node.
+One NIC will be the one used before to communicate with the other nodes: 192.</description>
+    </item>
+    
+  </channel>
+</rss>

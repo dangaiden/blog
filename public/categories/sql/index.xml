@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SQL on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/sql/</link>
+    <description>Recent content in SQL on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Sep 2018 08:23:47 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Azure – Backup and restore SQL DB using SSMS</title>
+      <link>https://dangaiden.github.io/2018-09-14-azure-backup-and-restore-sql-db-using-ssms/</link>
+      <pubDate>Fri, 14 Sep 2018 08:23:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-09-14-azure-backup-and-restore-sql-db-using-ssms/</guid>
+      <description>A quick post talking about how to backup and restore a SQL database on Azure using SQL Server Management Studio (SSMS).
+First, you will need to install SSMS. You can download it here: https://go.microsoft.com/fwlink/?linkid=875802
+Once installed, in order to access the database, you will need the server name where is installed. So, you will have to check the Server name in Azure Portal (you can also do it by Powershell of course):</description>
+    </item>
+    
+  </channel>
+</rss>

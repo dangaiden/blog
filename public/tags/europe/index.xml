@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>europe on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/europe/</link>
+    <description>Recent content in europe on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Dec 2018 09:00:49 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/europe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experience at VMworld 2018 Europe – Day 3 and Day 4</title>
+      <link>https://dangaiden.github.io/2018-12-31-vmworld-18-eu-day3-and-day4/</link>
+      <pubDate>Mon, 31 Dec 2018 09:00:49 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-12-31-vmworld-18-eu-day3-and-day4/</guid>
+      <description>To finish these posts about VMworld 2018 Europe, I am going to summarize day 3 and day 4 together as day 4 is usually the less busy of all of them (people usually leave in the morning).
+On day 3 (Wednesday), I rest like 5-6 hours (pretty normal to me) after spending some part of the night at the Veeam Party. I made it to be at the enclosure at 8:30 AM because at 9:00 it will start the second general session.</description>
+    </item>
+    
+  </channel>
+</rss>

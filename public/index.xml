@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dan Belmonte</title>
+    <link>https://dangaiden.github.io/</link>
+    <description>Recent content on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Dec 2021 11:47:51 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New adventure ahead</title>
+      <link>https://dangaiden.github.io/new-adventure-ahead/</link>
+      <pubDate>Fri, 24 Dec 2021 11:47:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/new-adventure-ahead/</guid>
+      <description>New adventure ahead! Yes, it happened, in the past week&amp;hellip; I have moved to a new company!
+After 2 months of challenges, interviews and so (that&amp;rsquo;s one of the main reasons that I haven&amp;rsquo;t published anything), I started in a new place which is completely different of where I&amp;rsquo;ve been in the past.
+Instead of a consultancy, I am working in an end company, meaning, no working for different customers but for the same one, the company it self!</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes the hard way but on-prem - part 1 (Discontinued)</title>
+      <link>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part-1/</link>
+      <pubDate>Thu, 12 Aug 2021 11:47:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part-1/</guid>
+      <description>DISCLAIMER  I decided to not continue with this due to the huge implications that will be to redo everything not in the cloud. Basically, a lot of time should be invested and I miscalculated it by too much. Therefore, this will be probably the first and only post about these series.
+ Context In order to practice for the CKA exam, it is recommended to perform the famous Kubernetes The Hard Way by Kelsey Hightower.</description>
+    </item>
+    
+    <item>
+      <title>OSS monitoring series</title>
+      <link>https://dangaiden.github.io/oss-monitoring-series/</link>
+      <pubDate>Tue, 27 Jul 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/oss-monitoring-series/</guid>
+      <description>OSS monitoring series Context If you work with micro-services (maybe not) and in the cloud (or not), you have probably heard about the many products for monitoring (or monitoring stacks), the most &amp;ldquo;modern&amp;rdquo; and famous OSS are:
+ ELK stack (Elasticsearch, Logstash, and Kibana) Grafana stack (Grafana, Loki and Prometheus)  All these products are open-source projects which have become the go-to for many companies and I can deny that they work well (at least in my experience) especially for services built in the cloud or micro-services.</description>
+    </item>
+    
+    <item>
+      <title>Simple-guide-install-and-configure-RHEL-in-VM</title>
+      <link>https://dangaiden.github.io/Simple-guide-install-and-configure-RHEL-in-VM/</link>
+      <pubDate>Tue, 27 Jul 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/Simple-guide-install-and-configure-RHEL-in-VM/</guid>
+      <description>Quick How-to with RHEL  Create an account (it&amp;rsquo;s free) and download RHEL ISO from the official repository here Create a VM in VirtualBox with the resources you want. I created mine with 2GB of RAM, 2 vCPU and 40 GB of disk space . Follow the wizard and install the way you prefer: Minimal server, Keyboard, network, etc. Recommended to partition your disk with LVM and partition it as recommended by the provider Once is installed proceed to log as root to the OS (I used &amp;ldquo;Somred1&amp;rdquo; as hostname) and add another user (dangaiden as example) with a password: $ useradd dangaiden &amp;amp; passwd dangaiden   4.</description>
+    </item>
+    
+    <item>
+      <title>AZ-400 exam notes</title>
+      <link>https://dangaiden.github.io/2021-06-08-az-400-exam-notes/</link>
+      <pubDate>Tue, 08 Jun 2021 13:37:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2021-06-08-az-400-exam-notes/</guid>
+      <description>Some months missing between my last update!
+I must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!
+Therefore, let&amp;rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.
+Certification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:</description>
+    </item>
+    
+    <item>
+      <title>New role, moving to the cloud!</title>
+      <link>https://dangaiden.github.io/2021-03-22-new-role-moving-to-the-cloud/</link>
+      <pubDate>Mon, 22 Mar 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2021-03-22-new-role-moving-to-the-cloud/</guid>
+      <description>Finally, after some time&amp;hellip; I am writing something here.
+It&amp;rsquo;s being almost 5 months since I wrote my last blog post and it happened so fast but my final project kept me quite busy between November &amp;lsquo;20 and January &amp;lsquo;21.
+After finishing my bachelor&amp;rsquo;s degree final project in January, I&amp;rsquo;ve been enjoying some free time for myself and with that, I «forgot» about writing (a.k.a. procrastination) but not anymore as I plan to start again writing as I did in the past.</description>
+    </item>
+    
+    <item>
+      <title>Is the applications’ future «containe(r)d»?</title>
+      <link>https://dangaiden.github.io/2020-10-31-applications-future-containerd/</link>
+      <pubDate>Sat, 31 Oct 2020 20:32:17 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-10-31-applications-future-containerd/</guid>
+      <description>Well, I’ll be lying if I haven’t heard of containers in the past years although I used them barely at my job (solutions engineer) shouldn’t I consider them more every time to replace the applications where my customers have their servers?
+Like many people that work as sysadmin these days, they are used to work with virtualization, in particular Virtual Machines (VMs), customers still using them (and it will continue) to deploy their applications in an OS which delivers great benefits against the legacy approach of the Baremetal (Mainframe) era.</description>
+    </item>
+    
+    <item>
+      <title>Finishing a Computer Engineering degree with DevOps stuff</title>
+      <link>https://dangaiden.github.io/2020-10-19-finishing-a-computer-engineering-degree-with-devops-stuff/</link>
+      <pubDate>Mon, 19 Oct 2020 12:55:26 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-10-19-finishing-a-computer-engineering-degree-with-devops-stuff/</guid>
+      <description>It&amp;rsquo;s been more than one month since I published something here but I&amp;rsquo;ve been changing quite a lot my focus learning and I changed now from CCNA to DevOps things.
+ TL;DR I will be building an automated CI/CD pipeline for my final assignment focusing on tools installed and configured on-premise although there will be cloud services like the front-end.
+ Also, I forgot to mention that last month I started the last semester of my Computer Engineering degree that I started back in 2014 (oh my!</description>
+    </item>
+    
+    <item>
+      <title>Increasing the heap memory on vCSA 6.7 services</title>
+      <link>https://dangaiden.github.io/2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services/</link>
+      <pubDate>Mon, 31 Aug 2020 09:00:11 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services/</guid>
+      <description>For some reason, our monitoring alerted that the service “vsphere-ui” from the vCSA it was having some problems randomly. From the user perspective only we noticed some slowness when navigating within the HTML5 client.
+I took a quick view of the VAMI I saw this message from the VMware vSphere Client service:
+The server is running low on heap memory (&amp;gt;90% utilized.)
+So it was time to solve those random alerts about memory utilization.</description>
+    </item>
+    
+    <item>
+      <title>WSFC – Validate Configuration wizard error</title>
+      <link>https://dangaiden.github.io/2020-06-29-wsfc-validate-configuration-wizard-error/</link>
+      <pubDate>Mon, 29 Jun 2020 09:30:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-06-29-wsfc-validate-configuration-wizard-error/</guid>
+      <description>This is a short post talking about Windows Server Failover Clustering (WSFC) and a problem I found when adding the nodes from your cluster using the «Validate a Configuration» wizard.
+This wizard is recommended to run after configuring your nodes and before creating the cluster in order to spot any misconfigurations.
+So now, let’s go into the problem.
+ The issue In the wizard when trying to add (in my example) the second node shows an error:</description>
+    </item>
+    
+    <item>
+      <title>Upgrade vROps from 6.7.0 to 8.0.1</title>
+      <link>https://dangaiden.github.io/2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1/</link>
+      <pubDate>Thu, 21 May 2020 20:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1/</guid>
+      <description>In this blog post, we will see how to upgrade vRealize Operations (vROps) from version 6.7.0 to 8.0.1. The whole process takes about 30 minutes.
+Bear in mind that, you will need new license keys after updating to the later version (after 8.0 version).
+
+ Note: You will see a version mismatch in some screenshots.
+Download the required files  Download the Upgrade Assessment Tool available at VMware Downloads.</description>
+    </item>
+    
+    <item>
+      <title>vCenter Server 7.0 – Fresh install</title>
+      <link>https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/</link>
+      <pubDate>Tue, 28 Apr 2020 11:19:58 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/</guid>
+      <description>Prologue With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.
+Which are the new features? Check this post from my friend Graham Barker to find out!
+
+ Let’s move on!
+ Proceed to download the «VMware vCenter Server 7.0.0» ISO file from my.vmware.com   Mount the ISO file and execute the installer.</description>
+    </item>
+    
+    <item>
+      <title>vForum Online Spring 2020</title>
+      <link>https://dangaiden.github.io/2020-04-21-vforum-online-spring-2020/</link>
+      <pubDate>Tue, 21 Apr 2020 12:26:33 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-04-21-vforum-online-spring-2020/</guid>
+      <description>A few days ago VMware announced that VMworld will be online due to the current situation with COVID-19. Review the VMworld FAQs.
+ Therefore, as there will be only one big online event during the week of September 28, 2020.
+ So, why not attend a free mini-VMworld in less than a month?
+That’s vForum Online!
+
+vForum Online is a LIVE virtual event where you can access it directly from any device.</description>
+    </item>
+    
+    <item>
+      <title>vExpert PRO announcement</title>
+      <link>https://dangaiden.github.io/2020-04-08-vexpert-pro-announcement/</link>
+      <pubDate>Wed, 08 Apr 2020 12:39:16 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-04-08-vexpert-pro-announcement/</guid>
+      <description>Just a quick post about the vExpert sub-programs that have been announced recently.
+
+In my case, yesterday I received this message:
+This means that I’ve been selected to be a vExpert PRO!
+ Becoming a representative of your country/region and willingness to help others become aware of the vExpert program are the main functions of a vExpert PRO.
+ So, if you want to become a vExpert, start now and you can probably become one!</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting tips for beginners in Windows Server</title>
+      <link>https://dangaiden.github.io/2020-02-29-troubleshooting-tips-for-beginners-in-windows-server/</link>
+      <pubDate>Sat, 29 Feb 2020 22:58:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-02-29-troubleshooting-tips-for-beginners-in-windows-server/</guid>
+      <description>I was thinking these days what I wish I have known when I started working with Windows servers, some basic (and some not) commands that can help me to troubleshoot servers without requiring additional software.
+
+ That’s why this is a post dedicated to people who just started administering servers with Windows Server 20xx-2019 (I expect at least 2008 although it is going end of support the next month) or maybe you’re curious and want to know more about Windows Server administration.</description>
+    </item>
+    
+    <item>
+      <title>Post VMworld Europe 2019: Days 1 and 2</title>
+      <link>https://dangaiden.github.io/2020-01-31-post-vmworld-europe-2019-days-1-and-2/</link>
+      <pubDate>Fri, 31 Jan 2020 22:51:46 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-01-31-post-vmworld-europe-2019-days-1-and-2/</guid>
+      <description>Here I will explain a summary of days 1 and 2 (November 4th and 5th) of VMworld Europe 2019 from my perspective.
+So, the first official day is on Monday (November 4th) where there aren’t many people like the next day (the second day, Tuesday 5th) but anyway there are many activities to do!
+
+This time I was awarded a blogger pass, hence, I will have the honor to be with other bloggers at VMworld while enjoying some privileges like having a reserved seat in the general session, stay with other bloggers or join some special events.</description>
+    </item>
+    
+    <item>
+      <title>2019 review</title>
+      <link>https://dangaiden.github.io/2019-12-31-2019-review/</link>
+      <pubDate>Tue, 31 Dec 2019 14:44:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-12-31-2019-review/</guid>
+      <description>I haven’t thought of doing this kind of review but reading some of them through the internet, it motivated me to do it.
+Also by submitting to programs like vExpert from VMware, made me realize that I did many things this year that I forgot and were amazing.
+2019 Timeline  January: Going to the gym to get healthier knees and finished exams from the university with good scores. Semester ends.</description>
+    </item>
+    
+    <item>
+      <title>Want to be a vExpert?</title>
+      <link>https://dangaiden.github.io/2019-12-09-being-a-vexpert/</link>
+      <pubDate>Mon, 09 Dec 2019 11:00:36 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-12-09-being-a-vexpert/</guid>
+      <description>vExpert 2020 applications are open!
+From November 25th to January 10th, you can apply to be a vExpert 2020 through many different paths and you must do it if you think you contributed to the VMware community.
+What is a vExpert? It’s an award that VMware gives to individuals who have contributed (a lot) to the VMware community.
+Only the contributions over the past year are evaluated, therefore, it is a program that requires constant dedication every year by being an evangelist and advocacy of VMware products.</description>
+    </item>
+    
+    <item>
+      <title>VCAP-DCV Design exam notes</title>
+      <link>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</link>
+      <pubDate>Thu, 31 Oct 2019 22:47:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</guid>
+      <description>As the VCAP-DCV Design 2020 certification is going to be released (but the 3V0-624 exam is not scheduled to be retired yet) on Jan 1, 2020.
+Recently I made another post about my experience with this exam where I failed, check it here.
+For your information, at the moment the 3V0-624 is the current exam code for the VCAP-DCV 6.5 Design certification (Also named VCAP-DCV Design 2019), always check the code for the exam no matter which is the certification name.</description>
+    </item>
+    
+    <item>
+      <title>Runecast Analyzer: Deploy, configure and quick review</title>
+      <link>https://dangaiden.github.io/2019-10-30-runecast-analyzer-deploy-configure-and-quick-review/</link>
+      <pubDate>Wed, 30 Oct 2019 21:14:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-30-runecast-analyzer-deploy-configure-and-quick-review/</guid>
+      <description>Today, I’ll show you how easy is to install, configure Runecast Analyzer (v 3.1.1.0) in your environment and we will review quickly what can we offer this solution.
+Runecast? Runecast is a company founded in 2014 more recognizable because the CEO is Stanimir Markov which is VCDX #74 but in his team has other virtualization veterans who help them to create this solution.
+It’s a solution made by and for IT Admins which will scan your VMware environment (vSphere, vSAN, and NSX-T and V) and inform you about issues, best practices, hardware compatibility and apply security hardening in your VMware environment.</description>
+    </item>
+    
+    <item>
+      <title>VCAP6.5-DCV Design failed exam experience</title>
+      <link>https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/</link>
+      <pubDate>Fri, 25 Oct 2019 21:44:50 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/</guid>
+      <description>Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).
+I took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.
+I recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not).</description>
+    </item>
+    
+    <item>
+      <title>VMworld 2019 Europe local guide</title>
+      <link>https://dangaiden.github.io/2019-10-14-vmworld-2019-europe-local-guide/</link>
+      <pubDate>Mon, 14 Oct 2019 09:54:53 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-14-vmworld-2019-europe-local-guide/</guid>
+      <description>VMworld 2019 Europe is almost here! And I made a local guide with tips about transport, restaurants, places to go, etc. to ensure you can enjoy more your experience in VMworld.
+General information This event will take place from the 4th (Monday) to 7th (Thursday) of November at Fira Gran Via in Barcelona, Spain.
+VMworld is always an amazing opportunity to learn from all the events that will happen there like the Hands-on Lab, Breakout sessions, General sessions, etc.</description>
+    </item>
+    
+    <item>
+      <title>vFit at VMworld 2019 Europe</title>
+      <link>https://dangaiden.github.io/2019-10-04-vfit-at-vmworld-2019-europe/</link>
+      <pubDate>Fri, 04 Oct 2019 11:35:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-04-vfit-at-vmworld-2019-europe/</guid>
+      <description>Yes! I am happy to announce that the vFit event will happen also at VMworld Europe this year!
+Eric Wright (@discoposse) is the creator of this event and you can check how it went at VMworld US here! I love his idea of engaging folks who attend tech events to do some exercise at tech events and why not at VMworld Europe? 
+Enjoy a run with our great community outside VMworld.</description>
+    </item>
+    
+    <item>
+      <title>Veeam – Backup VMs in remote sites</title>
+      <link>https://dangaiden.github.io/?p=1018/</link>
+      <pubDate>Sat, 31 Aug 2019 19:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=1018/</guid>
+      <description>I was wondering why I haven’t talked about Veeam when I use it almost every day in my job, not only administering backups but doing new implementations.
+Recently, I had to implement a design where I need to backup VMs in remote sites but not back up them in a centralized storage, they will be backed up on each remote site storage.
+So, by deploying a VM with the Backup proxy service and also use it as the backup repository we can accomplish the goal.</description>
+    </item>
+    
+    <item>
+      <title>Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)</title>
+      <link>https://dangaiden.github.io/2019-07-31-migrating-adfs-from-2012-r2-to-2016/</link>
+      <pubDate>Wed, 31 Jul 2019 21:12:50 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-07-31-migrating-adfs-from-2012-r2-to-2016/</guid>
+      <description>I will explain today how to migrate ADFS from 2012 R2 (3.0 v) to 2016 (4.0) without almost no downtime. The overall process consists in adding the new ADFS server to the farm, assign the primary role to the new ADFS, make some changes and then we’re done.
+
+ The current environment is:
+ 1 x WAP Server (W2012 R2) 1 x ADFS Server (W2012 R2)  No applications published, just an Office 365 Relying party trust.</description>
+    </item>
+    
+    <item>
+      <title>Exam 70-743, Upgrading MCSA Windows Server 2016 experience</title>
+      <link>https://dangaiden.github.io/?p=704/</link>
+      <pubDate>Fri, 21 Jun 2019 11:02:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=704/</guid>
+      <description>I will explain quickly my experience regarding the Exam 70-743, Upgrading Your Skills to MCSA: Windows Server 2016 exam from Microsoft I took last April.
+It’s been a while since I took an exam from Microsoft (the latestwas in 2013 I think) where you probably know that these kind of exams are multiple-choice or single-choice.
+Through my career, I saw a lot of people cheating with these exams by memorizing the questions you can find on the internet and finishing it in just 20 minutes.</description>
+    </item>
+    
+    <item>
+      <title>Cohesity Build Day Live</title>
+      <link>https://dangaiden.github.io/?p=861/</link>
+      <pubDate>Thu, 09 May 2019 12:00:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=861/</guid>
+      <description>I am going to share some thoughts and opinions about a recent video from the Cohesity Build Day Live recorded recently with the Build Day Live! team.
+Disclosure: This post is sponsored by Cohesity.
+First, just let me introduce briefly you what is Cohesity:
+Cohesity is a platform focused on managing and consolidating secondaryapplications and the data. It provides a unified view and access to converge that secondary data, such as system backups and analytics in a simpler way to an IT administrator.</description>
+    </item>
+    
+    <item>
+      <title>vCSA 6.x installer error: “No networks on the host. Cannot proceed with the installation.»</title>
+      <link>https://dangaiden.github.io/2019-04-30-vcsa-6-x-installer-error/</link>
+      <pubDate>Tue, 30 Apr 2019 08:00:57 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-04-30-vcsa-6-x-installer-error/</guid>
+      <description>This is a quick post of an error I found sometimeswhile deploying a new vCenter server appliance with an embedded PSC on the vCSA 6.x installer.
+The problem In my case, I was trying to install vCSA 6.5 without DNS (this is why the system name has an IP address and the DNS is itself). Also, notice that the network section is empty:
+
+If you try to continue with the installation, it will show you an error:</description>
+    </item>
+    
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 3: Linked Clones</title>
+      <link>https://dangaiden.github.io/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones/</link>
+      <pubDate>Tue, 16 Apr 2019 10:25:55 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones/</guid>
+      <description>Let’s start with part 3 in the cloning virtual machines in vSphere series, I am going to talk about another type of clones, linked clones!
+
+ All articles regarding cloning virtual machines in vSphere series:
+Part 1: Types of clone
+Part 2: Full Clone
+Part 4: Instant Clones (not published yet) As said in previous articles, this series is only focused on VMware vSphere hence, VMware Horizon View is not contemplated (Linked clones are commonly used in that product).</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://dangaiden.github.io/about-me/</link>
+      <pubDate>Sun, 07 Apr 2019 08:22:33 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/about-me/</guid>
+      <description>Hey! I am Dan Belmonte and now I am working as a Cloud SRE (weird name I know) at NTT.
+My daily work is associated with Cloud, container, and IaC technologies. Here you will see a variety of topics from VMware and Microsoft to Linux, Cloud, and containerization stuff.
+You can find me at:
+ Twitter: @DanGaiden VMTN: https://communities.vmware.com/people/dbalcaraz  I do like videogames and sports (mainly cycling and padel). For gamers, there is a Discord page http://vgamers.</description>
+    </item>
+    
+    <item>
+      <title>Experience at a local VMUG – Barcelona VMUG</title>
+      <link>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</link>
+      <pubDate>Fri, 29 Mar 2019 10:26:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</guid>
+      <description>I am going to talk about my experience at a local VMUG, in my case the VMUG from Barcelona (BCN). It was my first time at a local VMUG event and this is why I decided to share my thoughts about it.
+
+VMUG – What is? As you probably know VMUG stands for VMware User Group. Basically, you will find an international community of people where they share their experiences and discuss things related to VMware and other technologies.</description>
+    </item>
+    
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 2: Full clone</title>
+      <link>https://dangaiden.github.io/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone/</link>
+      <pubDate>Wed, 06 Mar 2019 11:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone/</guid>
+      <description>Continuing with the cloning virtual machines in vSphere series, today I am going to write about the full clone, how it works and some useful information about it.
+
+So, let’s talk about clones… but just full clones.
+How does it work? As you probably know a full clone is an exact copy of a source VM, meaning that, everything from the parent VM is copied (VM settings, disks, files, etc.</description>
+    </item>
+    
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 1: Types of clone</title>
+      <link>https://dangaiden.github.io/2019-02-25-cloning-vms-in-vsphere-part-1/</link>
+      <pubDate>Mon, 25 Feb 2019 10:22:37 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-02-25-cloning-vms-in-vsphere-part-1/</guid>
+      <description>Most of you already know how to clone virtual machines within vSphere, and I mean cloning from the vSphere Web client within vCenter but, beyond that, there are other types of clones you can use in vCenter like, Linked Clones or Instant Clones (aka Project Fargo/VMfork)
+
+Due to the large content that can be discussed about each clone’s type, I decided to make a short series of posts talking about cloning VMs!</description>
+    </item>
+    
+    <item>
+      <title>IT skills: Which gap to fill?</title>
+      <link>https://dangaiden.github.io/2019-01-31-it-skills-which-gap-to-fill/</link>
+      <pubDate>Thu, 31 Jan 2019 09:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-01-31-it-skills-which-gap-to-fill/</guid>
+      <description>Regarding this nice article, I read while ago from Eric Shanks: https://theithollow.com/2018/03/26/fill-skills-tank/.
+I decided to write about it as it’s always in my mind since he published it. In particular, I will talk about what we should learn in order to fill a gap for a position/job in any technology and my experience.
+
+Which path to choose? I started learning Microsoft (MS) products and then I learned other technologies like Virtualization, Cloud, Storage, etc.</description>
+    </item>
+    
+    <item>
+      <title>Experience at VMworld 2018 Europe – Day 3 and Day 4</title>
+      <link>https://dangaiden.github.io/2018-12-31-vmworld-18-eu-day3-and-day4/</link>
+      <pubDate>Mon, 31 Dec 2018 09:00:49 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-12-31-vmworld-18-eu-day3-and-day4/</guid>
+      <description>To finish these posts about VMworld 2018 Europe, I am going to summarize day 3 and day 4 together as day 4 is usually the less busy of all of them (people usually leave in the morning).
+On day 3 (Wednesday), I rest like 5-6 hours (pretty normal to me) after spending some part of the night at the Veeam Party. I made it to be at the enclosure at 8:30 AM because at 9:00 it will start the second general session.</description>
+    </item>
+    
+    <item>
+      <title>Experience at VMworld 2018 Europe – Day 2</title>
+      <link>https://dangaiden.github.io/2018-12-13-vmworld-18-eu-day2/</link>
+      <pubDate>Thu, 13 Dec 2018 09:30:22 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-12-13-vmworld-18-eu-day2/</guid>
+      <description>Today I am going to explain from my personal experience, the Day 2 at VMworld 2018 Europe, lots of networking, some technical sessions, events and the Solutions Exchange.
+
+Before moving forward, I forgot to mention that I met in my first day a nice guy, Daniel Paluszek @dpaluszek, we had a great conversation and he should be known as the vCloud Director guy ;).
+vBreakfast If you don’t what is, check it here: http://www.</description>
+    </item>
+    
+    <item>
+      <title>Pre-VMworld 2018 Europe – Expectations and information</title>
+      <link>https://dangaiden.github.io/2018-10-29-pre-vmworld-2018-europe-expectations-and-information/</link>
+      <pubDate>Mon, 29 Oct 2018 17:29:22 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-29-pre-vmworld-2018-europe-expectations-and-information/</guid>
+      <description>VMworld 2018 Europe is only a week away! And I wanted to explain you share expectations and information I found about. It will be my 1st time!
+VMworld Location As you may know, VMworld Europe is located in Fira Barcelona between 5-8th of November. As it’s in Barcelona, I am able to assist without paying any trip (I live close to the city).
+
+Main information  When: 5-8 November 2018</description>
+    </item>
+    
+    <item>
+      <title>VCAP6-DCV Deploy exam experience</title>
+      <link>https://dangaiden.github.io/2018-10-19-vcap6-dcv-deploy-exam-experience/</link>
+      <pubDate>Fri, 19 Oct 2018 07:45:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-19-vcap6-dcv-deploy-exam-experience/</guid>
+      <description>Hi! I am going to talk about my VCAP6-DCV Deploy exam experience.
+I thought about making a huge post about the VCAP6-DCV experience (resources, notes, etc.) but, I don’t want to overwhelm you know. Hence, I am going to make another post for that, hence this post will be shorter and more readable.
+1st attempt (Java error at the beginning) At September, 21st I sat down to take my first attempt in a VCAP exam.</description>
+    </item>
+    
+    <item>
+      <title>VM showing disk size is 0 MB</title>
+      <link>https://dangaiden.github.io/2018-10-03-vm-showing-disk-size-is-0-mb/</link>
+      <pubDate>Wed, 03 Oct 2018 11:15:37 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-03-vm-showing-disk-size-is-0-mb/</guid>
+      <description>Some time ago, I was doing some clean up on VMs that have attached an image file, when I found a particular VM with strange behavior, each disk from the VM (local and RDM disks) was showing 0 MB of disk size:
+So, what I did? 
+First of all, I checked the guest OS and verified that it was up and running. So I was wondering how the guest OS seems correct but vSphere Web Client (I refreshed several times the browser) was showing no space in all disks and I verified in the Datastores that the .</description>
+    </item>
+    
+    <item>
+      <title>Azure – Backup and restore SQL DB using SSMS</title>
+      <link>https://dangaiden.github.io/2018-09-14-azure-backup-and-restore-sql-db-using-ssms/</link>
+      <pubDate>Fri, 14 Sep 2018 08:23:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-09-14-azure-backup-and-restore-sql-db-using-ssms/</guid>
+      <description>A quick post talking about how to backup and restore a SQL database on Azure using SQL Server Management Studio (SSMS).
+First, you will need to install SSMS. You can download it here: https://go.microsoft.com/fwlink/?linkid=875802
+Once installed, in order to access the database, you will need the server name where is installed. So, you will have to check the Server name in Azure Portal (you can also do it by Powershell of course):</description>
+    </item>
+    
+    <item>
+      <title>vSphere 6.0: New external PSC within existing SSO Domain</title>
+      <link>https://dangaiden.github.io/2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain/</link>
+      <pubDate>Mon, 20 Aug 2018 14:30:12 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain/</guid>
+      <description>Hello there!
+A quick post talking about a new external PSC in vSphere 6.0 environments.
+As you may now the vCenter product is composed by the PSC (Platform Services Controller) and the vCenter component.
+Services provided by each component: Platform Services Controller  &amp;lt;td style=&amp;quot;width: 50%; height: 10px; text-align: center;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-family: Didact Gothic;&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;span style=&amp;quot;background-color: #ffffff; color: #000000; font-size: 12pt;&amp;quot;&amp;gt;vCenter&amp;lt;/span&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/td&amp;gt;   vCenter Single Sign-On  &amp;lt;td style=&amp;quot;width: 50%; height: 27px; text-align: center;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-size: 10pt; font-family: Didact Gothic;&amp;quot;&amp;gt;PostgreSQL or SQL Express (in 6.</description>
+    </item>
+    
+    <item>
+      <title>vSphere Network I/O Control: NIC Limit bandwidth</title>
+      <link>https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/</link>
+      <pubDate>Thu, 02 Aug 2018 23:39:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/</guid>
+      <description>Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.
+Prerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:</description>
+    </item>
+    
+    <item>
+      <title>VMkernel: vMotion and Provisioning in dedicated TCP/IP stacks</title>
+      <link>https://dangaiden.github.io/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks/</link>
+      <pubDate>Mon, 23 Jul 2018 18:19:09 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks/</guid>
+      <description>It’s been a while since I posted something, but I was busy with university duties and to be honest I couldn’t spend time on publishing things but, here we are!
+First, I am currently studying for the VCAP6 – DCV Deployment Exam (3V0-623) and I am learning a lot with it, so maybe I will post more topics related with.
+Today I am going to talk about TCP/IP stacks in VMkernels (for vSphere 6).</description>
+    </item>
+    
+    <item>
+      <title>Azure – Error when adding new rule on NSG</title>
+      <link>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg/</link>
+      <pubDate>Sun, 31 Dec 2017 15:50:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg/</guid>
+      <description>Hello everyone!
+It’s been a while since I wrote something, but I was so busy with other things (University) and I wasn’t able to allocate time to write anything.
+Today I’m going to talk about an issue I found on Azure when trying to add new rules to some NSGs.
+To create rules in Azure I used this script from TechNet Gallery: https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332
+Problem I was trying to add some rules in an NSG with the address 193.</description>
+    </item>
+    
+    <item>
+      <title>Azure – Error when adding new rule on NSG</title>
+      <link>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg_backup/</link>
+      <pubDate>Sun, 31 Dec 2017 15:50:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-12-31-azure-error-adding-new-rule-nsg_backup/</guid>
+      <description>Hello everyone!
+It’s been a while since I wrote something, but I was so busy with other things (University) and I wasn’t able to allocate time to write anything.
+Today I’m going to talk about an issue I found on Azure when trying to add new rules to some NSGs.
+To create rules in Azure I used this script from TechNet Gallery: https://gallery.technet.microsoft.com/scriptcenter/Create-Azure-Network-5f5c5332
+Problem I was trying to add some rules in an NSG with the address 193.</description>
+    </item>
+    
+    <item>
+      <title>VCP6-DCV achieved!</title>
+      <link>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</link>
+      <pubDate>Sun, 03 Sep 2017 16:20:45 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</guid>
+      <description>I am going to start talking about the exam VCP6-DCV from VMware. The main resource you should use is the VMware site: http://bit.ly/1PLshWR
+There you can check a path to achieve VCP6-DCV (there is a newer version VCP6.5-DCV). I took path 1, as I wasn’t certified.
+
+Later, I took one official training course, VMware vSphere: Install, Configure, Manage [V6].
+Next, I passed the vSphere 6 Foundations Exam (2V0-620) months ago and finally I did VMware Certified Professional 6 – Data Center Virtualization Exam (2V0-621).</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dangaiden.github.io/post/2021/k8s-etcd_restore/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/post/2021/k8s-etcd_restore/</guid>
+      <description>Backup and restore etcd data. Look up the value for the key cluster.name in the etcd cluster:
+ETCDCTL_API=3 etcdctl get cluster.name
+&amp;ndash;endpoints=https://10.0.1.101:2379
+&amp;ndash;cacert=/home/cloud_user/etcd-certs/etcd-ca.pem
+&amp;ndash;cert=/home/cloud_user/etcd-certs/etcd-server.crt
+&amp;ndash;key=/home/cloud_user/etcd-certs/etcd-server.key
+The returned value should be beebox.  Back up etcd using etcdctl and the provided etcd certificates: ETCDCTL_API=3 etcdctl snapshot save /home/cloud_user/etcd_backup.db
+&amp;ndash;endpoints=https://10.0.1.101:2379
+&amp;ndash;cacert=/home/cloud_user/etcd-certs/etcd-ca.pem
+&amp;ndash;cert=/home/cloud_user/etcd-certs/etcd-server.crt
+&amp;ndash;key=/home/cloud_user/etcd-certs/etcd-server.key
+Reset etcd by removing all existing etcd data: sudo systemctl stop etcd sudo rm -rf /var/lib/etcd  Restore the etcd Data from the Backup Restore the etcd data from the backup (this command spins up a temporary etcd cluster, saving the data from the backup file to a new data directory in the same location where the previous data directory was): sudo ETCDCTL_API=3 etcdctl snapshot restore /home/cloud_user/etcd_backup.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dangaiden.github.io/post/2021/k8scluster-upgrade_version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/post/2021/k8scluster-upgrade_version/</guid>
+      <description>Upgrade the Control Plane  Upgrade kubeadm:  [cloud_user@k8s-control]$ sudo apt-get update &amp;amp;&amp;amp;
+sudo apt-get install -y &amp;ndash;allow-change-held-packages kubeadm=1.21.1-00
+ Make sure it upgraded correctly:  [cloud_user@k8s-control]$ kubeadm version
+ Drain the control plane node:  [cloud_user@k8s-control]$ kubectl drain k8s-control &amp;ndash;ignore-daemonsets
+ Plan the upgrade:  [cloud_user@k8s-control]$ sudo kubeadm upgrade plan v1.21.1
+ Upgrade the control plane components:  [cloud_user@k8s-control]$ sudo kubeadm upgrade apply v1.21.1
+ Upgrade kubelet and kubectl on the control plane node:  [cloud_user@k8s-control]$ sudo apt-get update &amp;amp;&amp;amp;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dangaiden.github.io/post/2021/kubernetes-cluster-installation-config/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/post/2021/kubernetes-cluster-installation-config/</guid>
+      <description>Install Packages in all nodes Log into the Control Plane Node (Note: The following steps must be performed on all three nodes.). Create configuration file for containerd: cat &amp;lt;&amp;lt;EOF | sudo tee /etc/modules-load.d/containerd.conf overlay br_netfilter EOF Load modules: sudo modprobe overlay sudo modprobe br_netfilter Set system configurations for Kubernetes networking: cat &amp;lt;&amp;lt;EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf net.bridge.bridge-nf-call-iptables = 1 net.ipv4.ip_forward = 1 net.bridge.bridge-nf-call-ip6tables = 1 EOF Apply new settings: sudo sysctl --system Install containerd: sudo apt-get update &amp;amp;&amp;amp; sudo apt-get install -y containerd Create default configuration file for containerd: sudo mkdir -p /etc/containerd Generate default containerd configuration and save to the newly created default file: sudo containerd config default | sudo tee /etc/containerd/config.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://dangaiden.github.io/post/2021/note-about-k8s-part1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/post/2021/note-about-k8s-part1/</guid>
+      <description>Quick guide to install OS within VMs  3 Virtual machines configured and ready  Here is a quick &amp;ldquo;guide&amp;rdquo; I made for myself to create a VM, configure RHEL and have ready 3 VMs with the OS configured to start playing with Kubernetes.
+Link to Insta</description>
+    </item>
+    
+    
+    <item>
+      <title>Experience at VMworld 2018 Europe – Day 1</title>
+      <link>https://dangaiden.github.io/2018-11-19-vmworld-18-eu-day1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-11-19-vmworld-18-eu-day1/</guid>
+      <description>Let me talk to you about my experience on my first VMworld! This is a personal experience I want to share about Day 1 at VMworld 2018 Europe.
+Introduction I live in Barcelona so, I am fortunate that I don’t need to travel to go to the VMworld Europe. The only thing is to commute by train between home and Fira Barcelona (where VMworld is established). 
+It was Monday, November 5th, 2018.</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes the hard way but on-prem - part 2</title>
+      <link>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/kubernetes-the-hard-way-but-on-prem-part2/</guid>
+      <description>Context Let&amp;rsquo;s continue with the guide, in this part 2.
+This is based in: https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/03-compute-resources.md
+Kubernetes Controllers We will be using the following CIDR 192.168.1.0/24 for node within the cluster:
+ Somred1: 192.168.1.50/24 Somred2: 192.168.1.51/24 Somred3: 192.168.1.52/24  Kubernetes Workers This nodes will act as the Kubernetes workers nodes which will host the pods, we need to have 2 NICs for each node.
+One NIC will be the one used before to communicate with the other nodes: 192.</description>
+    </item>
+    
+    
+  </channel>
+</rss>

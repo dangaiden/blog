@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Cohesity Build Day Live | Dan Belmonte</title>
+<meta name="keywords" content="backup, Build Day Live, cohesity, vBrownbag" />
+<meta name="description" content="I am going to share some thoughts and opinions about a recent video from the Cohesity Build Day Live recorded recently with the Build Day Live! team.
+Disclosure: This post is sponsored by Cohesity.
+First, just let me introduce briefly you what is Cohesity:
+Cohesity is a platform focused on managing and consolidating secondaryapplications and the data. It provides a unified view and access to converge that secondary data, such as system backups and analytics in a simpler way to an IT administrator.">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/?p=861/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="Cohesity Build Day Live" />
+<meta property="og:description" content="I am going to share some thoughts and opinions about a recent video from the Cohesity Build Day Live recorded recently with the Build Day Live! team.
+Disclosure: This post is sponsored by Cohesity.
+First, just let me introduce briefly you what is Cohesity:
+Cohesity is a platform focused on managing and consolidating secondaryapplications and the data. It provides a unified view and access to converge that secondary data, such as system backups and analytics in a simpler way to an IT administrator." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/?p=861/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-05-09T12:00:08&#43;00:00" />
+<meta property="article:modified_time" content="2019-05-09T12:00:08&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="Cohesity Build Day Live"/>
+<meta name="twitter:description" content="I am going to share some thoughts and opinions about a recent video from the Cohesity Build Day Live recorded recently with the Build Day Live! team.
+Disclosure: This post is sponsored by Cohesity.
+First, just let me introduce briefly you what is Cohesity:
+Cohesity is a platform focused on managing and consolidating secondaryapplications and the data. It provides a unified view and access to converge that secondary data, such as system backups and analytics in a simpler way to an IT administrator."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Cohesity Build Day Live",
+      "item": "https://dangaiden.github.io/?p=861/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Cohesity Build Day Live",
+  "name": "Cohesity Build Day Live",
+  "description": "I am going to share some thoughts and opinions about a recent video from the Cohesity Build Day Live recorded recently with the Build Day Live! team.\nDisclosure: This post is sponsored by Cohesity.\nFirst, just let me introduce briefly you what is Cohesity:\nCohesity is a platform focused on managing and consolidating secondaryapplications and the data. It provides a unified view and access to converge that secondary data, such as system backups and analytics in a simpler way to an IT administrator.",
+  "keywords": [
+    "backup", "Build Day Live", "cohesity", "vBrownbag"
+  ],
+  "articleBody": "I am going to share some thoughts and opinions about a recent video from the Cohesity Build Day Live recorded recently with the Build Day Live! team.\nDisclosure: This post is sponsored by Cohesity.\nFirst, just let me introduce briefly you what is Cohesity:\nCohesity is a platform focused on managing and consolidating secondaryapplications and the data. It provides a unified view and access to converge that secondary data, such as system backups and analytics in a simpler way to an IT administrator.\n Now, let’s deep intothe topic.\nIn the video, you will see how Alastair Cooke and Bharath Nagaraj building a Cohesity cluster from the scratch, configuring jobs, updating the physical appliance, restoring some data and showing some other cool stuff.\nI really like this kind of videos because, you can see how they install a cluster, configure it or resolve any problems that can happen in real time without cuts.\nAlso, you can notice how much time it can take to deploy and configure a Cohesity cluster in some minutes, or even upgrading the whole cluster (node by node) while running some protection jobs (backup jobs).\nHardware In this case, they use a physicalunit for deploying their solution, so it’s a 2U enclosure with 4 servers/nodes inside (blade server type). \nIt comes,like most other solutions, with 1GB ports for Management purposes and 10GB ports for Production Data.\nAs this is an HCI solution, it comes with the storage and computesresources necessary to process and store all data (PCIe Flash card and hard drives in each node).\n Cluster configuration and UI To configure the cluster you won’t need a lot of data to fill or knowledge to do it, they configure the cluster easier than I thought and straightforward. \nIn a real scenario, a Cohesity engineer will do it for you thus, this is just to let you know of the simplicity of it.\nThe UI is simple and clean, the home dashboard looks nice with some graphics regarding your Storage Reduction, Health, Throughput, Protection Runs, etc.\nBackup As you probably guess, it backups your vSphere/Hyper-V/Nutanix environment like other products do, so you can configure a Backup Policy with a schedule, time retention, etc. to back upyour data and then you configure a Protection job which will be the backup job that is associated to a policy.\nJust register the hypervisor of your choice and basically, you’re ready to back up your virtual servers (VMs). \nOne option I really liked when registering a hypervisor was, the option of selecting «Auto Cancel Backup if Datastore is running low on space», so the DataPlatform solution is aware of the datastore’s space and can avoid you a big problem there…\n About granularity, there is a lot of options to select when you create a protection job (DB, Virtual/Physical Servers, but regarding what you can see in the video they protected only VMs and Office 365 mailboxes in different backup policies.\nIt’s great that when you are creating a protection job (a.k.a. backup job). you can select an object like a cluster or a folder with some particular VMs and then check the «Autoprotect» option to ensure that new VMs that are added to that object (folder, cluster, etc.) will be automatically protected.\n Regarding long term retentions, you can choose to add an external target like a NAS or any cloud (AWS, Azure, GCP, etc.) to store your archive backups there.\nThis is an option that adds great value to your strategy because when storing great amounts of data for several years, you usually don’t want to store it locally or even in a NAS.\nIn my opinion, having a flexible option to store it in any cloud can save you a lot of headaches despite the money that you must pay for the cloud service (which nowadays almost every company does).\nSo, within a Backup policy select the Archival option and then you add as many external targets to store your long term backups.\n Restore Your backup strategy is useless unless you can restore from it…\nIdo like some points about this section that makes so simple to restore, from a single file (even download it) to restore tons of virtual machines to your virtual environment.\n– Single file restore If you want to recover a file, you don’t have to search for the date, where it was, etc. As simple as searching for the name of the file (or the portion you remember) and it will be searched in the entire cluster for you:\nAnd then, when you found that file, look at the options that we have:\nFirst, search for the date and then, you can choose the usual option (Recover to Server) or … download it at the moment (a cool option there).\nIt looks like a painless and simpleway to restore files that probably a non-tech person could do.\n– Instant mass restore Now, going bigger, let’s talk about the Cohesity instant mass restore of virtual machines. As the Cohesity platform is designed in a distributed architecture where there isn’t a centralized bottleneck, they can restore tons of VMs quite faster than other products.\nWhen recovering a lot of VMs, in the background (you could look at your vSphere environment) it will mount an NFS datastore and bring up all you requested VMs (quite fast to be honest).\n– Office 365 Finally, the last thing to show you is the option to backup your Office 365 environment. You can integrate Cohesity with your Office 365 and perform protection jobs that will be associated with a policy and consolidate all the data within the same platform.\nUpgrading The process is straightforward, selecting a package from your local computer or getting it from the Internet, this makes it so easy to do it for yourself.\nOne thing that stuckin my mind was that, while there were running some protection jobs you are able to upgrade the whole cluster (node by node) non-disruptively.\nAs the entire solution is designed to tolerate one node failure (N+1 redundancy) thus, you can upgrade one node without disruption in the service.\nAs we said before, the Cohesity platform is based in a distributed architecture so, in case a reboot is required after upgrading one of the nodes, you will only lose the bandwidthcoming from that node and not impacting the rest of the environment.\nHelios Cohesity Helios is the console that lets you manage and view all your clusters from one console. As it’s in the cloud, you only have to register your Cohesity appliance and at the end, it will show up in the Helios console.\nHelios Dashboard is similar to a Cohesity management dashboard but with the ability to manage all your clusters from that single pane of glass.\nAnd it’s just not that… Helios lets you install applications!\nYes, you can choose to install applications in one of your clusters without anything else. What Helios will do is to deploy an app within a container (using Kubernetes) in that cluster without having to worry about the underlying infrastructure.\nJust install, configure and run your app (as it sounds).\nFor example, running Splunk to gather data analytics in your clusters without having to worry about to deploy it is really a nice feature to look at it. \nI’ve never seen a feature like that and it really surprised me when I saw it. A nice additional value that you can consider when using Helios with your Cohesity platform.\nOther use cases As the Cohesity platform is cloud and hypervisor agnostic, you can protect objects on any cloud Azure/GCP/AWS or any hypervisor Hyper-V/VMware/Nutanix but, do you imagine what else can you do?\nWell, you can use it to migrate VMs between different environments! It’s a great use case where you can choose to backup all your vSphere environment and move it to Nutanix for example or moving it to Azure. \nObviously, there is work to do after it but, the amount of simplicity that gives you with that, for me, it’s massive.\nThat’s all… We saw a lot of things from the Cohesity platform, how can help your company to achieve that data consolidation by: backing up from different clouds and environments (cloud and hypervisor agnostic) , establishing an SLA in your services (configuring policies), recovering tons of VMs and other features like Helios, a cloud console that brings you a unified view for your Cohesity environment, analytics for all your data and even the ability to deploy applications without needing any kind of resources.\nIf you are interested in more content, check the Cohesity Build Day Live web page or the official web page from Cohesity.\n\n ",
+  "wordCount" : "1443",
+  "inLanguage": "en",
+  "datePublished": "2019-05-09T12:00:08Z",
+  "dateModified": "2019-05-09T12:00:08Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/?p=861/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Cohesity Build Day Live
+    </h1>
+    <div class="post-meta">May 9, 2019&nbsp;·&nbsp;7 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#span-hardwarespan" aria-label="Hardware"><strong><span >Hardware</span></strong></a></li>
+                <li>
+                    <a href="#span-cluster-configuration-and-uispan" aria-label="Cluster configuration and UI"><strong><span >Cluster configuration and UI</span></strong></a></li>
+                <li>
+                    <a href="#span-backupspan" aria-label="Backup"><strong><span >Backup</span></strong></a></li>
+                <li>
+                    <a href="#span-restorespan" aria-label="Restore"><strong><span >Restore</span></strong></a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#span-8211-single-file-restorespan" aria-label="– Single file restore"><strong><span >– Single file restore</span></strong></a></li>
+                <li>
+                    <a href="#span-8211-instant-mass-restorespan" aria-label="– Instant mass restore"><strong><span >– Instant mass restore</span></strong></a></li>
+                <li>
+                    <a href="#span-8211-office-365span" aria-label="– Office 365"><strong><span >– Office 365</span></strong></a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#span-upgradingspan" aria-label="Upgrading"><strong><span >Upgrading</span></strong></a></li>
+                <li>
+                    <a href="#span-heliosspan" aria-label="Helios"><strong><span >Helios</span></strong></a></li>
+                <li>
+                    <a href="#span-other-use-casesspan" aria-label="Other use cases"><strong><span >Other use cases</span></strong></a></li>
+                <li>
+                    <a href="#span-that8217s-all8230span" aria-label="That’s all…"><strong><span >That’s all…</span></strong></a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><span >I am going to share some thoughts and opinions about a recent <a href="https://www.youtube.com/watch?v=pcoSPrS9doU">video</a> from the <strong>Cohesity Build Day Live</strong> recorded recently with the Build Day Live! team.</span></p>
+<p><span style="font-size: 16px;"><strong>Disclosure:</strong> This post is sponsored by Cohesity.</span></p>
+<p><span >First, just let me introduce briefly you what is Cohesity:</span></p>
+<p><span style="font-size: 16px;"><span >Cohesity is a platform focused on managing and </span>consolidating secondary<span > applications and the data. It provides a unified view and access to converge that secondary data, such as system backups and analytics in a simpler way to an IT administrator.</span></span></p>
+<p> </p>
+<p><span style="font-size: 16px;"><span >Now, let’s <span style="font-size: 16px;">deep </span></span>into<span ><span style="font-size: 16px;"> the top</span>ic.</span></span></p>
+<p><span >In the <a href="https://www.youtube.com/watch?v=pcoSPrS9doU">video</a>, you will see how Alastair Cooke and Bharath Nagaraj building a Cohesity cluster from the scratch, configuring jobs, updating the physical appliance, restoring some data and showing some other cool stuff.</span></p>
+<p><span >I really like this kind of videos because, you can see how they install a cluster, configure it or resolve any problems that can happen in real time without cuts.</span></p>
+<p><span >Also, you can notice how much time it can take to deploy and configure a Cohesity cluster in some minutes, or even upgrading the whole cluster (node by node) while running some protection jobs (backup jobs).</span></p>
+<h2 id="span-hardwarespan"><strong><span >Hardware</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-hardwarespan">#</a></h2>
+<p><span style="font-size: 16px;"><span >In this case, they use a  </span>physical<span > unit for deploying their solution, so it’s a 2U enclosure with 4 servers/nodes inside (blade server type). </span></span></p>
+<p><span style="font-size: 16px;"><span >It </span>comes,<span > like most other solutions, with 1GB ports for Management purposes and 10GB ports for Production Data.</span></span></p>
+<p><span style="font-size: 16px;"><span >As this is an HCI solution, it comes with the storage and </span>computes<span > resources necessary to process and store all data (PCIe Flash card and hard drives in each node).</span></span></p>
+<p> </p>
+<h2 id="span-cluster-configuration-and-uispan"><strong><span >Cluster configuration and UI</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-cluster-configuration-and-uispan">#</a></h2>
+<p><span style="font-size: 16px;">To configure the cluster you won’t need a lot of data to fill or knowledge to do it, they configure the cluster easier than I thought and straightforward. </span></p>
+<p><span style="font-size: 16px;">In a real scenario, a Cohesity engineer will do it for you thus, this is just to let you know of the simplicity of it.</span></p>
+<p><span style="font-size: 16px;">The UI is simple and clean, the home dashboard looks nice with some graphics regarding your Storage Reduction, Health, Throughput, Protection Runs, etc.</span></p>
+<p><img loading="lazy" class="alignnone wp-image-884 size-large" src="/wp-content/uploads/2019/05/Cohesity-–-Dashboard-1024x507.png" alt="" width="656" height="325" srcset="/wp-content/uploads/2019/05/Cohesity-–-Dashboard-1024x507.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-Dashboard-300x148.png 300w, /wp-content/uploads/2019/05/Cohesity-–-Dashboard-768x380.png 768w, /wp-content/uploads/2019/05/Cohesity-–-Dashboard-1536x760.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-Dashboard-2048x1013.png 2048w, /wp-content/uploads/2019/05/Cohesity-–-Dashboard-1568x776.png 1568w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<h2 id="span-backupspan"><strong><span >Backup</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-backupspan">#</a></h2>
+<p><span style="font-size: 16px;"><span >As you probably guess, it backups your vSphere/Hyper-V/Nutanix environment like other products do, so you can configure a Backup Policy with a schedule, time retention, etc. to </span>back up<span > your data and then you configure a Protection job which will be the backup job that is associated to a policy.</span></span></p>
+<p><span >Just register the hypervisor of your choice and basically, you’re ready to back up your virtual servers (VMs). </span></p>
+<p><span >One option I really liked when registering a hypervisor was, the option of selecting «Auto Cancel Backup if Datastore is running low on space», so the DataPlatform solution is aware of the datastore’s space and can avoid you a big problem there…</span></p>
+<p><img loading="lazy" class="alignnone wp-image-882 size-large" src="/wp-content/uploads/2019/05/Cohesity-–-Auto-Cancel-Backups-1024x598.png" alt="" width="656" height="383" srcset="/wp-content/uploads/2019/05/Cohesity-–-Auto-Cancel-Backups-1024x598.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-Auto-Cancel-Backups-300x175.png 300w, /wp-content/uploads/2019/05/Cohesity-–-Auto-Cancel-Backups-768x448.png 768w, /wp-content/uploads/2019/05/Cohesity-–-Auto-Cancel-Backups-1536x897.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-Auto-Cancel-Backups-1568x915.png 1568w, /wp-content/uploads/2019/05/Cohesity-–-Auto-Cancel-Backups.png 1994w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p> </p>
+<p><span >About <strong>granularity</strong>, there is a lot of options to select when you create a protection job (DB, Virtual/Physical Servers,  but regarding what you can see in the video they protected only VMs and Office 365 mailboxes in different backup policies.</span></p>
+<p><span style="font-size: 16px;">It’s great that when you are creating a protection job (a.k.a. backup job). you can select an object like a cluster or a folder with some particular VMs and then check the «Autoprotect» option to ensure that new VMs that are added to that object (folder, cluster, etc.) will be automatically protected.</span></p>
+<p><img loading="lazy" class="alignnone wp-image-883 size-large" src="/wp-content/uploads/2019/05/Cohesity-–-Autoprotect-1024x460.png" alt="" width="656" height="295" srcset="/wp-content/uploads/2019/05/Cohesity-–-Autoprotect-1024x460.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-Autoprotect-300x135.png 300w, /wp-content/uploads/2019/05/Cohesity-–-Autoprotect-768x345.png 768w, /wp-content/uploads/2019/05/Cohesity-–-Autoprotect-1536x690.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-Autoprotect-2048x920.png 2048w, /wp-content/uploads/2019/05/Cohesity-–-Autoprotect-1568x704.png 1568w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p> </p>
+<p><span style="font-size: 16px;">Regarding <strong>long term retentions</strong>, you can choose to add an external target like a NAS or any cloud (AWS, Azure, GCP, etc.) to store your archive backups there.</span></p>
+<p><span style="font-size: 16px;">This is an option that adds great value to your strategy because when storing great amounts of data for several years, you usually don’t want to store it locally or even in a NAS.</span></p>
+<p><span style="font-size: 16px;">In my opinion, having a flexible option to store it in any cloud can save you a lot of headaches despite the money that you must pay for the cloud service (which nowadays almost every company does).</span></p>
+<p><span style="font-size: 16px;">So, within a Backup policy select the Archival option and then you add as many external targets to store your long term backups.</span></p>
+<p> </p>
+<h2 id="span-restorespan"><strong><span >Restore</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-restorespan">#</a></h2>
+<p><span style="font-size: 16px;">Your backup strategy is useless unless you can restore from it…</span></p>
+<p><span style="font-size: 16px;">I<span > do like some points about this section that makes so simple to restore, from a single file (even download it) to restore tons of virtual machines to your virtual environment.</span></span></p>
+<h4 id="span-8211-single-file-restorespan"><strong><span >– Single file restore</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-8211-single-file-restorespan">#</a></h4>
+<p><span style="">If you want to <strong>recover a file</strong>, you don’t have to search for the date, where it was, etc. As simple as searching for the name of the file (or the portion you remember) and it will be searched in the entire cluster for you:<img loading="lazy" class="alignnone size-large wp-image-889" src="/wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore-1024x324.png" alt="" width="656" height="208" srcset="/wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore-1024x324.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore-300x95.png 300w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore-768x243.png 768w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore-1536x486.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore-2048x648.png 2048w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore-1568x496.png 1568w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p><span style="">And then, when you found that file, look at the options that we have:<img loading="lazy" class="alignnone size-large wp-image-890" src="/wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore_download-1024x424.png" alt="" width="656" height="272" srcset="/wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore_download-1024x424.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore_download-300x124.png 300w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore_download-768x318.png 768w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore_download-1536x635.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore_download-1568x649.png 1568w, /wp-content/uploads/2019/05/Cohesity-–-Single-File-Restore_download.png 1888w" sizes="(max-width: 656px) 100vw, 656px" /></span></p>
+<p>First<span style="">, search for the date and then,</span> you <span style="">can choose the usual </span>option <span style="">(Recover to Server) or … download it at the moment (a cool option there).</span></p>
+<p><span ><span style="font-size: 16px;">It looks like a painless and </span>simple<span style="font-size: 16px;"> way to restore files that probably a non-tech person could do.</span></span></p>
+<h4 id="span-8211-instant-mass-restorespan"><strong><span >– Instant mass restore</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-8211-instant-mass-restorespan">#</a></h4>
+<p><span style="">Now, going bigger, let’s talk about the <strong><a href="https://www.cohesity.com/blog/cohesity-instant-mass-restore-better-solution-to-an-old-problem/">Cohesity instant mass restore</a></strong> of virtual machines. As the Cohesity platform is designed in a <strong>distributed architecture</strong> where there isn’t a centralized bottleneck, they can restore tons of VMs quite faster than other products.</span></p>
+<p><span style=""><img loading="lazy" class="alignnone size-large wp-image-891" src="/wp-content/uploads/2019/05/Cohesity-–-IMR-1024x454.png" alt="" width="656" height="291" srcset="/wp-content/uploads/2019/05/Cohesity-–-IMR-1024x454.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-IMR-300x133.png 300w, /wp-content/uploads/2019/05/Cohesity-–-IMR-768x340.png 768w, /wp-content/uploads/2019/05/Cohesity-–-IMR-1536x680.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-IMR-2048x907.png 2048w, /wp-content/uploads/2019/05/Cohesity-–-IMR-1568x695.png 1568w" sizes="(max-width: 656px) 100vw, 656px" />When recovering a lot of VMs, in the background (you could look at your vSphere environment) it will mount </span><span style="font-size: 16px;">an NFS</span> <span style="">datastore and bring up all you requested VMs (quite fast to be honest).</span></p>
+<h4 id="span-8211-office-365span"><strong><span >– Office 365</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-8211-office-365span">#</a></h4>
+<p><span style="font-size: 16px;"><span >Finally, the last thing to show you is the</span> option to <strong>backup your Office 365</strong> environment. You can integrate Cohesity with your Office 365 and perform protection jobs that will be associated with a policy and consolidate all the data within the same platform.</span></p>
+<p><img loading="lazy" class="alignnone size-large wp-image-892" src="/wp-content/uploads/2019/05/Cohesity-–-0365-1024x431.png" alt="" width="656" height="276" srcset="/wp-content/uploads/2019/05/Cohesity-–-0365-1024x431.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-0365-300x126.png 300w, /wp-content/uploads/2019/05/Cohesity-–-0365-768x323.png 768w, /wp-content/uploads/2019/05/Cohesity-–-0365-1536x646.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-0365-2048x861.png 2048w, /wp-content/uploads/2019/05/Cohesity-–-0365-1568x659.png 1568w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<h2 id="span-upgradingspan"><strong><span >Upgrading</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-upgradingspan">#</a></h2>
+<p><span style="font-size: 16px;">The process is straightforward, selecting a package from your local computer or getting it from the Internet, this makes it so easy to do it for yourself.</span></p>
+<p><span style="font-size: 16px;"><span >One thing that </span>stuck<span > in my mind was that, while there were running some protection jobs you are able to upgrade the whole cluster (node by node) </span>non-disruptively.<span ><br /> </span></span></p>
+<p><span >As the entire solution is designed to tolerate one node failure (N+1 redundancy) thus, you can upgrade one node without disruption in the service.</span></p>
+<p><span style="font-size: 16px;">As we said before, the Cohesity platform i<span >s based in a <strong>distributed architecture</strong> so, in case a reboot is required after upgrading one of the nodes, you will only lose the </span>bandwidth<span > coming from that node and not impacting the rest of the environment.</span></span></p>
+<h2 id="span-heliosspan"><strong><span >Helios</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-heliosspan">#</a></h2>
+<p><span style="font-size: 16px;"><span ><strong>Cohesity Helios</strong> is the console that lets you manage and view all your clusters from one console. As it’s in the cloud, you only have to register your Cohesity appliance and at the </span>end<span >, it will show up in the Helios console.</span></span></p>
+<p><span style="font-size: 16px;">Helios Dashboard is similar to a Cohesity management dashboard but with the ability to manage all your clusters from that single pane of glass.</span></p>
+<p><img loading="lazy" class="alignnone wp-image-887 size-large" src="/wp-content/uploads/2019/05/Cohesity-–-Helios-Dashboard-1024x489.png" alt="" width="656" height="313" srcset="/wp-content/uploads/2019/05/Cohesity-–-Helios-Dashboard-1024x489.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-Helios-Dashboard-300x143.png 300w, /wp-content/uploads/2019/05/Cohesity-–-Helios-Dashboard-768x367.png 768w, /wp-content/uploads/2019/05/Cohesity-–-Helios-Dashboard-1536x734.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-Helios-Dashboard-2048x979.png 2048w, /wp-content/uploads/2019/05/Cohesity-–-Helios-Dashboard-1568x749.png 1568w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p><span style="font-size: 16px;">And it’s just not that… Helios lets you install applications!</span></p>
+<p><img loading="lazy" class="alignnone wp-image-886 size-large" src="/wp-content/uploads/2019/05/Cohesity-–-Apps-1024x422.png" alt="" width="656" height="270" srcset="/wp-content/uploads/2019/05/Cohesity-–-Apps-1024x422.png 1024w, /wp-content/uploads/2019/05/Cohesity-–-Apps-300x124.png 300w, /wp-content/uploads/2019/05/Cohesity-–-Apps-768x316.png 768w, /wp-content/uploads/2019/05/Cohesity-–-Apps-1536x633.png 1536w, /wp-content/uploads/2019/05/Cohesity-–-Apps-2048x844.png 2048w, /wp-content/uploads/2019/05/Cohesity-–-Apps-1568x646.png 1568w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p><span style="font-size: 16px;">Yes, you can choose to install applications in one of your clusters without anything else. What Helios will do is to deploy an app within a container (using Kubernetes) in that cluster without having to worry about the underlying infrastructure.</span></p>
+<p><span style="font-size: 16px;">Just install, configure and run your app (as it sounds).</span></p>
+<p><span style="font-size: 16px;">For example, running Splunk to gather data analytics in your clusters without having to worry about to deploy it is really a nice feature to look at it. </span></p>
+<p><span style="font-size: 16px;">I’ve never seen a </span>feature <span style="font-size: 16px;">like that and it really surprised me when I saw it. A nice additional value that you can consider when using Helios with your Cohesity platform.</span></p>
+<h2 id="span-other-use-casesspan"><strong><span >Other use cases</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-other-use-casesspan">#</a></h2>
+<p><span style="font-size: 16px;">As the Cohesity platform is cloud and hypervisor agnostic, you can protect objects on any cloud Azure/GCP/AWS or any hypervisor Hyper-V/VMware/Nutanix but, do you imagine what else can <span >you do?</span></span></p>
+<p><span style="">Well, you can use it to migrate VMs between different environments! It’s a great use case where you can choose to backup all your vSphere environment and move it to Nutanix for example or moving it to Azure. </span></p>
+<p><span style="">Obviously, there is work to do after it but, the amount of simplicity that gives you with that, for me, it’s massive.</span></p>
+<h2 id="span-that8217s-all8230span"><strong><span >That’s all…</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-that8217s-all8230span">#</a></h2>
+<p><span style="font-size: 16px;">We saw a lot of things from the Cohesity platform, how can help your company to achieve that data consolidation by:</span><span style="font-size: 16px;"><strong> backing up</strong> from different clouds and environments (cloud and hypervisor agnostic) , <strong>establishing an SLA</strong> in your services (configuring policies),<strong> recovering tons of VMs</strong> and other features like <strong>Helios</strong>, a cloud console that brings you a <strong>unified view for your Cohesity environment</strong>, analytics for all your data and even the ability to deploy applications without needing any kind of resources.</span></p>
+<p><span style="font-size: 16px;">If you are interested in more content, check the Cohesity Build Day Live <a href="https://builddaylive.com/cohesity/">web page</a> or the official web page from <a href="https://www.cohesity.com/">Cohesity</a>.<br /> </span></p>
+<p> </p>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/backup/">backup</a></li>
+      <li><a href="https://dangaiden.github.io/tags/build-day-live/">Build Day Live</a></li>
+      <li><a href="https://dangaiden.github.io/tags/cohesity/">cohesity</a></li>
+      <li><a href="https://dangaiden.github.io/tags/vbrownbag/">vBrownbag</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

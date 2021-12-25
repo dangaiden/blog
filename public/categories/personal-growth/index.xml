@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Personal growth on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/personal-growth/</link>
+    <description>Recent content in Personal growth on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Dec 2019 14:44:39 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/personal-growth/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2019 review</title>
+      <link>https://dangaiden.github.io/2019-12-31-2019-review/</link>
+      <pubDate>Tue, 31 Dec 2019 14:44:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-12-31-2019-review/</guid>
+      <description>I haven’t thought of doing this kind of review but reading some of them through the internet, it motivated me to do it.
+Also by submitting to programs like vExpert from VMware, made me realize that I did many things this year that I forgot and were amazing.
+2019 Timeline  January: Going to the gym to get healthier knees and finished exams from the university with good scores. Semester ends.</description>
+    </item>
+    
+    <item>
+      <title>Experience at a local VMUG – Barcelona VMUG</title>
+      <link>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</link>
+      <pubDate>Fri, 29 Mar 2019 10:26:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</guid>
+      <description>I am going to talk about my experience at a local VMUG, in my case the VMUG from Barcelona (BCN). It was my first time at a local VMUG event and this is why I decided to share my thoughts about it.
+
+VMUG – What is? As you probably know VMUG stands for VMware User Group. Basically, you will find an international community of people where they share their experiences and discuss things related to VMware and other technologies.</description>
+    </item>
+    
+    <item>
+      <title>IT skills: Which gap to fill?</title>
+      <link>https://dangaiden.github.io/2019-01-31-it-skills-which-gap-to-fill/</link>
+      <pubDate>Thu, 31 Jan 2019 09:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-01-31-it-skills-which-gap-to-fill/</guid>
+      <description>Regarding this nice article, I read while ago from Eric Shanks: https://theithollow.com/2018/03/26/fill-skills-tank/.
+I decided to write about it as it’s always in my mind since he published it. In particular, I will talk about what we should learn in order to fill a gap for a position/job in any technology and my experience.
+
+Which path to choose? I started learning Microsoft (MS) products and then I learned other technologies like Virtualization, Cloud, Storage, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>VMware on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/vmware/</link>
+    <description>Recent content in VMware on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 31 Oct 2020 20:32:17 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/vmware/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Is the applications’ future «containe(r)d»?</title>
+      <link>https://dangaiden.github.io/2020-10-31-applications-future-containerd/</link>
+      <pubDate>Sat, 31 Oct 2020 20:32:17 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-10-31-applications-future-containerd/</guid>
+      <description>Well, I’ll be lying if I haven’t heard of containers in the past years although I used them barely at my job (solutions engineer) shouldn’t I consider them more every time to replace the applications where my customers have their servers?
+Like many people that work as sysadmin these days, they are used to work with virtualization, in particular Virtual Machines (VMs), customers still using them (and it will continue) to deploy their applications in an OS which delivers great benefits against the legacy approach of the Baremetal (Mainframe) era.</description>
+    </item>
+    
+    <item>
+      <title>Increasing the heap memory on vCSA 6.7 services</title>
+      <link>https://dangaiden.github.io/2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services/</link>
+      <pubDate>Mon, 31 Aug 2020 09:00:11 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-08-31-increasing-the-heap-memory-on-vcsa-6-7-services/</guid>
+      <description>For some reason, our monitoring alerted that the service “vsphere-ui” from the vCSA it was having some problems randomly. From the user perspective only we noticed some slowness when navigating within the HTML5 client.
+I took a quick view of the VAMI I saw this message from the VMware vSphere Client service:
+The server is running low on heap memory (&amp;gt;90% utilized.)
+So it was time to solve those random alerts about memory utilization.</description>
+    </item>
+    
+    <item>
+      <title>Upgrade vROps from 6.7.0 to 8.0.1</title>
+      <link>https://dangaiden.github.io/2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1/</link>
+      <pubDate>Thu, 21 May 2020 20:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-05-21-upgrade-vrops-from-6-7-0-to-8-0-1/</guid>
+      <description>In this blog post, we will see how to upgrade vRealize Operations (vROps) from version 6.7.0 to 8.0.1. The whole process takes about 30 minutes.
+Bear in mind that, you will need new license keys after updating to the later version (after 8.0 version).
+
+ Note: You will see a version mismatch in some screenshots.
+Download the required files  Download the Upgrade Assessment Tool available at VMware Downloads.</description>
+    </item>
+    
+    <item>
+      <title>vCenter Server 7.0 – Fresh install</title>
+      <link>https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/</link>
+      <pubDate>Tue, 28 Apr 2020 11:19:58 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/</guid>
+      <description>Prologue With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.
+Which are the new features? Check this post from my friend Graham Barker to find out!
+
+ Let’s move on!
+ Proceed to download the «VMware vCenter Server 7.0.0» ISO file from my.vmware.com   Mount the ISO file and execute the installer.</description>
+    </item>
+    
+    <item>
+      <title>Post VMworld Europe 2019: Days 1 and 2</title>
+      <link>https://dangaiden.github.io/2020-01-31-post-vmworld-europe-2019-days-1-and-2/</link>
+      <pubDate>Fri, 31 Jan 2020 22:51:46 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-01-31-post-vmworld-europe-2019-days-1-and-2/</guid>
+      <description>Here I will explain a summary of days 1 and 2 (November 4th and 5th) of VMworld Europe 2019 from my perspective.
+So, the first official day is on Monday (November 4th) where there aren’t many people like the next day (the second day, Tuesday 5th) but anyway there are many activities to do!
+
+This time I was awarded a blogger pass, hence, I will have the honor to be with other bloggers at VMworld while enjoying some privileges like having a reserved seat in the general session, stay with other bloggers or join some special events.</description>
+    </item>
+    
+    <item>
+      <title>Want to be a vExpert?</title>
+      <link>https://dangaiden.github.io/2019-12-09-being-a-vexpert/</link>
+      <pubDate>Mon, 09 Dec 2019 11:00:36 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-12-09-being-a-vexpert/</guid>
+      <description>vExpert 2020 applications are open!
+From November 25th to January 10th, you can apply to be a vExpert 2020 through many different paths and you must do it if you think you contributed to the VMware community.
+What is a vExpert? It’s an award that VMware gives to individuals who have contributed (a lot) to the VMware community.
+Only the contributions over the past year are evaluated, therefore, it is a program that requires constant dedication every year by being an evangelist and advocacy of VMware products.</description>
+    </item>
+    
+    <item>
+      <title>VCAP-DCV Design exam notes</title>
+      <link>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</link>
+      <pubDate>Thu, 31 Oct 2019 22:47:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</guid>
+      <description>As the VCAP-DCV Design 2020 certification is going to be released (but the 3V0-624 exam is not scheduled to be retired yet) on Jan 1, 2020.
+Recently I made another post about my experience with this exam where I failed, check it here.
+For your information, at the moment the 3V0-624 is the current exam code for the VCAP-DCV 6.5 Design certification (Also named VCAP-DCV Design 2019), always check the code for the exam no matter which is the certification name.</description>
+    </item>
+    
+    <item>
+      <title>VCAP6.5-DCV Design failed exam experience</title>
+      <link>https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/</link>
+      <pubDate>Fri, 25 Oct 2019 21:44:50 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/</guid>
+      <description>Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).
+I took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.
+I recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not).</description>
+    </item>
+    
+    <item>
+      <title>VMworld 2019 Europe local guide</title>
+      <link>https://dangaiden.github.io/2019-10-14-vmworld-2019-europe-local-guide/</link>
+      <pubDate>Mon, 14 Oct 2019 09:54:53 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-14-vmworld-2019-europe-local-guide/</guid>
+      <description>VMworld 2019 Europe is almost here! And I made a local guide with tips about transport, restaurants, places to go, etc. to ensure you can enjoy more your experience in VMworld.
+General information This event will take place from the 4th (Monday) to 7th (Thursday) of November at Fira Gran Via in Barcelona, Spain.
+VMworld is always an amazing opportunity to learn from all the events that will happen there like the Hands-on Lab, Breakout sessions, General sessions, etc.</description>
+    </item>
+    
+    <item>
+      <title>vCSA 6.x installer error: “No networks on the host. Cannot proceed with the installation.»</title>
+      <link>https://dangaiden.github.io/2019-04-30-vcsa-6-x-installer-error/</link>
+      <pubDate>Tue, 30 Apr 2019 08:00:57 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-04-30-vcsa-6-x-installer-error/</guid>
+      <description>This is a quick post of an error I found sometimeswhile deploying a new vCenter server appliance with an embedded PSC on the vCSA 6.x installer.
+The problem In my case, I was trying to install vCSA 6.5 without DNS (this is why the system name has an IP address and the DNS is itself). Also, notice that the network section is empty:
+
+If you try to continue with the installation, it will show you an error:</description>
+    </item>
+    
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 3: Linked Clones</title>
+      <link>https://dangaiden.github.io/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones/</link>
+      <pubDate>Tue, 16 Apr 2019 10:25:55 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-04-16-cloning-virtual-machines-in-vsphere-series-part-3-linked-clones/</guid>
+      <description>Let’s start with part 3 in the cloning virtual machines in vSphere series, I am going to talk about another type of clones, linked clones!
+
+ All articles regarding cloning virtual machines in vSphere series:
+Part 1: Types of clone
+Part 2: Full Clone
+Part 4: Instant Clones (not published yet) As said in previous articles, this series is only focused on VMware vSphere hence, VMware Horizon View is not contemplated (Linked clones are commonly used in that product).</description>
+    </item>
+    
+    <item>
+      <title>Experience at a local VMUG – Barcelona VMUG</title>
+      <link>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</link>
+      <pubDate>Fri, 29 Mar 2019 10:26:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-03-29-experience-at-a-local-vmug-barcelona-vmug/</guid>
+      <description>I am going to talk about my experience at a local VMUG, in my case the VMUG from Barcelona (BCN). It was my first time at a local VMUG event and this is why I decided to share my thoughts about it.
+
+VMUG – What is? As you probably know VMUG stands for VMware User Group. Basically, you will find an international community of people where they share their experiences and discuss things related to VMware and other technologies.</description>
+    </item>
+    
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 2: Full clone</title>
+      <link>https://dangaiden.github.io/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone/</link>
+      <pubDate>Wed, 06 Mar 2019 11:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-03-06-cloning-virtual-machines-in-vsphere-part-2-full-clone/</guid>
+      <description>Continuing with the cloning virtual machines in vSphere series, today I am going to write about the full clone, how it works and some useful information about it.
+
+So, let’s talk about clones… but just full clones.
+How does it work? As you probably know a full clone is an exact copy of a source VM, meaning that, everything from the parent VM is copied (VM settings, disks, files, etc.</description>
+    </item>
+    
+    <item>
+      <title>Cloning virtual machines in vSphere series – Part 1: Types of clone</title>
+      <link>https://dangaiden.github.io/2019-02-25-cloning-vms-in-vsphere-part-1/</link>
+      <pubDate>Mon, 25 Feb 2019 10:22:37 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-02-25-cloning-vms-in-vsphere-part-1/</guid>
+      <description>Most of you already know how to clone virtual machines within vSphere, and I mean cloning from the vSphere Web client within vCenter but, beyond that, there are other types of clones you can use in vCenter like, Linked Clones or Instant Clones (aka Project Fargo/VMfork)
+
+Due to the large content that can be discussed about each clone’s type, I decided to make a short series of posts talking about cloning VMs!</description>
+    </item>
+    
+    <item>
+      <title>Pre-VMworld 2018 Europe – Expectations and information</title>
+      <link>https://dangaiden.github.io/2018-10-29-pre-vmworld-2018-europe-expectations-and-information/</link>
+      <pubDate>Mon, 29 Oct 2018 17:29:22 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-29-pre-vmworld-2018-europe-expectations-and-information/</guid>
+      <description>VMworld 2018 Europe is only a week away! And I wanted to explain you share expectations and information I found about. It will be my 1st time!
+VMworld Location As you may know, VMworld Europe is located in Fira Barcelona between 5-8th of November. As it’s in Barcelona, I am able to assist without paying any trip (I live close to the city).
+
+Main information  When: 5-8 November 2018</description>
+    </item>
+    
+    <item>
+      <title>VCAP6-DCV Deploy exam experience</title>
+      <link>https://dangaiden.github.io/2018-10-19-vcap6-dcv-deploy-exam-experience/</link>
+      <pubDate>Fri, 19 Oct 2018 07:45:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-19-vcap6-dcv-deploy-exam-experience/</guid>
+      <description>Hi! I am going to talk about my VCAP6-DCV Deploy exam experience.
+I thought about making a huge post about the VCAP6-DCV experience (resources, notes, etc.) but, I don’t want to overwhelm you know. Hence, I am going to make another post for that, hence this post will be shorter and more readable.
+1st attempt (Java error at the beginning) At September, 21st I sat down to take my first attempt in a VCAP exam.</description>
+    </item>
+    
+    <item>
+      <title>VM showing disk size is 0 MB</title>
+      <link>https://dangaiden.github.io/2018-10-03-vm-showing-disk-size-is-0-mb/</link>
+      <pubDate>Wed, 03 Oct 2018 11:15:37 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-03-vm-showing-disk-size-is-0-mb/</guid>
+      <description>Some time ago, I was doing some clean up on VMs that have attached an image file, when I found a particular VM with strange behavior, each disk from the VM (local and RDM disks) was showing 0 MB of disk size:
+So, what I did? 
+First of all, I checked the guest OS and verified that it was up and running. So I was wondering how the guest OS seems correct but vSphere Web Client (I refreshed several times the browser) was showing no space in all disks and I verified in the Datastores that the .</description>
+    </item>
+    
+    <item>
+      <title>vSphere 6.0: New external PSC within existing SSO Domain</title>
+      <link>https://dangaiden.github.io/2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain/</link>
+      <pubDate>Mon, 20 Aug 2018 14:30:12 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain/</guid>
+      <description>Hello there!
+A quick post talking about a new external PSC in vSphere 6.0 environments.
+As you may now the vCenter product is composed by the PSC (Platform Services Controller) and the vCenter component.
+Services provided by each component: Platform Services Controller  &amp;lt;td style=&amp;quot;width: 50%; height: 10px; text-align: center;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-family: Didact Gothic;&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;span style=&amp;quot;background-color: #ffffff; color: #000000; font-size: 12pt;&amp;quot;&amp;gt;vCenter&amp;lt;/span&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/td&amp;gt;   vCenter Single Sign-On  &amp;lt;td style=&amp;quot;width: 50%; height: 27px; text-align: center;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-size: 10pt; font-family: Didact Gothic;&amp;quot;&amp;gt;PostgreSQL or SQL Express (in 6.</description>
+    </item>
+    
+    <item>
+      <title>vSphere Network I/O Control: NIC Limit bandwidth</title>
+      <link>https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/</link>
+      <pubDate>Thu, 02 Aug 2018 23:39:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/</guid>
+      <description>Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.
+Prerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:</description>
+    </item>
+    
+    <item>
+      <title>VMkernel: vMotion and Provisioning in dedicated TCP/IP stacks</title>
+      <link>https://dangaiden.github.io/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks/</link>
+      <pubDate>Mon, 23 Jul 2018 18:19:09 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks/</guid>
+      <description>It’s been a while since I posted something, but I was busy with university duties and to be honest I couldn’t spend time on publishing things but, here we are!
+First, I am currently studying for the VCAP6 – DCV Deployment Exam (3V0-623) and I am learning a lot with it, so maybe I will post more topics related with.
+Today I am going to talk about TCP/IP stacks in VMkernels (for vSphere 6).</description>
+    </item>
+    
+    <item>
+      <title>VCP6-DCV achieved!</title>
+      <link>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</link>
+      <pubDate>Sun, 03 Sep 2017 16:20:45 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</guid>
+      <description>I am going to start talking about the exam VCP6-DCV from VMware. The main resource you should use is the VMware site: http://bit.ly/1PLshWR
+There you can check a path to achieve VCP6-DCV (there is a newer version VCP6.5-DCV). I took path 1, as I wasn’t certified.
+
+Later, I took one official training course, VMware vSphere: Install, Configure, Manage [V6].
+Next, I passed the vSphere 6 Foundations Exam (2V0-620) months ago and finally I did VMware Certified Professional 6 – Data Center Virtualization Exam (2V0-621).</description>
+    </item>
+    
+  </channel>
+</rss>

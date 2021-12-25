@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>vCenter Server 7.0 – Fresh install | Dan Belmonte</title>
+<meta name="keywords" content="vCenter, VMware, vSphere7" />
+<meta name="description" content="Prologue With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.
+Which are the new features? Check this post from my friend Graham Barker to find out!
+
+ Let’s move on!
+ Proceed to download the «VMware vCenter Server 7.0.0» ISO file from my.vmware.com   Mount the ISO file and execute the installer.">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="vCenter Server 7.0 – Fresh install" />
+<meta property="og:description" content="Prologue With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.
+Which are the new features? Check this post from my friend Graham Barker to find out!
+
+ Let’s move on!
+ Proceed to download the «VMware vCenter Server 7.0.0» ISO file from my.vmware.com   Mount the ISO file and execute the installer." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-04-28T11:19:58&#43;00:00" />
+<meta property="article:modified_time" content="2020-04-28T11:19:58&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="vCenter Server 7.0 – Fresh install"/>
+<meta name="twitter:description" content="Prologue With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.
+Which are the new features? Check this post from my friend Graham Barker to find out!
+
+ Let’s move on!
+ Proceed to download the «VMware vCenter Server 7.0.0» ISO file from my.vmware.com   Mount the ISO file and execute the installer."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "vCenter Server 7.0 – Fresh install",
+      "item": "https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "vCenter Server 7.0 – Fresh install",
+  "name": "vCenter Server 7.0 – Fresh install",
+  "description": "Prologue With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.\nWhich are the new features? Check this post from my friend Graham Barker to find out!\n\n Let’s move on!\n Proceed to download the «VMware vCenter Server 7.0.0» ISO file from my.vmware.com   Mount the ISO file and execute the installer.",
+  "keywords": [
+    "vCenter", "VMware", "vSphere7"
+  ],
+  "articleBody": "Prologue With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.\nWhich are the new features? Check this post from my friend Graham Barker to find out!\n\n Let’s move on!\n Proceed to download the «VMware vCenter Server 7.0.0» ISO file from my.vmware.com   Mount the ISO file and execute the installer.exe file :    \nPrerequisite: We need DNS if we want to deploy vCenter with an FQDN but if you don’t have it or you can’t for any reason, you can trick the installer and put the IP address as the hostname and it will work.\nAnother prerequisite will be to have an ESXi host where we’re going to install our vCenter\nStage 1 – New deployment 1. We will proceed to select install as we are going to perform a fresh install from the scratch of vCenter Server 7.0.\n2. I like that it tells you that External PSC is deprecated! Continue with NEXT.\n3. Just put the details of a vCenter (if you have one) or an ESXi host where you want to deploy this new vCenter. In my case (and probably the most if you’re doing everything from the scratch) I am using a host called «johto.pokemon.jp» to deploy the vCSA.\n Once you press next, accept the certificate warning if you know the fingerprint of the certificate.\n 4. Put the name of the VM and set the root password for the vCSA and continue.\n5. I am going for the Tiny deployment as it is more than enough for my lab environment. In a production environment usually, you will deploy a small one that fits in many small companies (or in your lab if you’re testing it).\n6. Continue by selecting a Datastore and check » Enable Thin Disk Mode» which is usually the best deployment as it doesn’t allocate all the space and is also enabled by default. (Look even my VMFS-5 datastores work well).\n7. Now, let’s configure the network settings. Here my Network you can see a portgroup «Std_mgmt» from my ESXi host. If you have an ESXi host with default portgroups, yours probably is called «VM Network«.\nAbout the FQDN, as I said before (check the Prerequisite section in the beginning) you need to create an A record in your DNS in order to be able to deploy a vCenter with a name.\n If you don’t have DNS because you’re installing vCenter and you don’t have it, you can use the IP address as FQDN and it will work.\n 8. And that’s all for stage 1, here we have a summary saying what is going to do. Be sure to review it:Once you’re ready, press FINISH.\n It will start with Stage 1, which is the deployment of the VM where the vCenter Server resides:\nAfter some minutes, STAGE 1 is completed, which means that the VM where the vCSA resides is deployed but not configured yet.\nStage 2 – Configuration Let’s go to STAGE 2 where the vCSA will be configured. 1. Set an NTP server or let the ESXi host also enable SSH if you want to have access to the vCSA.\n2. Configure the SSO, the default is the «vsphere.local» domain, in my case I created a custom one.\n3. And the last summary after we finish Stage 2 when the vCenter will be fully configured.\n4. After a while (15-20 min.), Stage 2 finished without errors!\n5. Now I access the GUI from the URL provided in the previous screenshot and I see that is working flawlessly!\n\n6. Enjoy your new vCenter Server with the only HTML5 interface and lots of new features that were mentioned at the beginning of this post.\n\n We conclude this article where you can see how simple and easy is to install and deploy vCenter Server version 7.0.\n   ",
+  "wordCount" : "651",
+  "inLanguage": "en",
+  "datePublished": "2020-04-28T11:19:58Z",
+  "dateModified": "2020-04-28T11:19:58Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      vCenter Server 7.0 – Fresh install
+    </h1>
+    <div class="post-meta">April 28, 2020&nbsp;·&nbsp;4 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#span-style-font-size-28pxstrongspan-stylefont-family-nunitoprologuespanstrongspan" aria-label="Prologue"><span style=" font-size: 28px;"><strong><span style="font-family: Nunito;">Prologue</span></strong></span></a></li>
+                <li>
+                    <a href="#span-stylefont-size-28pxstrongspan-stylefont-family-nunito-stage-1-8211-new-deploymentspanstrongspan" aria-label="Stage 1 – New deployment"><span style="font-size: 28px;"><strong><span style="font-family: Nunito; ">Stage 1 – New deployment</span></strong></span></a></li>
+                <li>
+                    <a href="#span-style-font-size-28pxstrongspan-stylefont-family-nunitostage-2-8211-configurationspanstrongspan" aria-label="Stage 2 – Configuration"><span style=" font-size: 28px;"><strong><span style="font-family: Nunito;">Stage 2 – Configuration</span></strong></span></a><ul>
+                        
+                <li>
+                    <a href="#span-let8217s-go-to-stage-2-where-the-vcsa-will-be-configuredspanimg-loadinglazy-classalignnone-wp-image-1703-srcwp-contentuploads20200411_stage2_start-1png-alt-width611-height419-srcsetwp-contentuploads20200411_stage2_start-1png-938w-wp-contentuploads20200411_stage2_start-1-300x206png-300w-wp-contentuploads20200411_stage2_start-1-768x527png-768w-sizesmax-width-611px-100vw-611px-" aria-label="Let’s go to STAGE 2 where the vCSA will be configured."><strong><span >Let’s go to STAGE 2 where the vCSA will be configured.</span></strong><img loading="lazy" class="alignnone wp-image-1703" src="/wp-content/uploads/2020/04/11_Stage2_start-1.png" alt="" width="611" height="419" srcset="/wp-content/uploads/2020/04/11_Stage2_start-1.png 938w, /wp-content/uploads/2020/04/11_Stage2_start-1-300x206.png 300w, /wp-content/uploads/2020/04/11_Stage2_start-1-768x527.png 768w" sizes="(max-width: 611px) 100vw, 611px" /></a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="span-style-font-size-28pxstrongspan-stylefont-family-nunitoprologuespanstrongspan"><span style=" font-size: 28px;"><strong><span style="font-family: Nunito;">Prologue</span></strong></span><a hidden class="anchor" aria-hidden="true" href="#span-style-font-size-28pxstrongspan-stylefont-family-nunitoprologuespanstrongspan">#</a></h1>
+<p><span >With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.</span></p>
+<p><span ><strong>Which are the new features? </strong></span><span >Check this <span style="text-decoration: underline;"><a href="https://virtualg.uk/vmware-vsphere-7-0-top-5-features/"><strong>post</strong></a></span> from my friend Graham Barker to find out!<br /> </span></p>
+<p> </p>
+<p><span style="font-family: Nunito;">Let’s move on!</span></p>
+<ul style="list-style-type: square;">
+  <li>
+    <span >Proceed to download the «VMware vCenter Server 7.0.0» ISO file from <a href="https://my.vmware.com/en/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/7_0">my.vmware.com</a></span>
+  </li>
+  <li>
+    <span >Mount the ISO file and execute the <strong>installer.exe</strong> file : </span>
+  </li>
+</ul>
+<p><span ><img loading="lazy" class="alignnone wp-image-1692 " src="/wp-content/uploads/2020/04/0_mountISO_installer_exe-1.png" alt="" width="586" height="372" srcset="/wp-content/uploads/2020/04/0_mountISO_installer_exe-1.png 878w, /wp-content/uploads/2020/04/0_mountISO_installer_exe-1-300x191.png 300w, /wp-content/uploads/2020/04/0_mountISO_installer_exe-1-768x488.png 768w" sizes="(max-width: 586px) 100vw, 586px" /></span></p>
+<p><span ><strong>Prerequisite:</strong> We <strong>need DNS</strong> if we want to deploy vCenter with an FQDN but if you don’t have it or you can’t for any reason, you can trick the installer and put the IP address as the hostname and it will work.</span></p>
+<p><span >Another prerequisite will be to <strong>have an ESXi host</strong> where we’re going to install our vCenter</span></p>
+<h1 id="span-stylefont-size-28pxstrongspan-stylefont-family-nunito-stage-1-8211-new-deploymentspanstrongspan"><span style="font-size: 28px;"><strong><span style="font-family: Nunito; ">Stage 1 – New deployment</span></strong></span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-size-28pxstrongspan-stylefont-family-nunito-stage-1-8211-new-deploymentspanstrongspan">#</a></h1>
+<p><span ><strong>1.</strong> We will proceed to select <strong>install</strong> as we are going to perform a fresh install from the scratch of vCenter Server 7.0.</span><span ><img loading="lazy" class="alignnone wp-image-1693 size-full" style="border-style: solid; border-width: 2px;" src="/wp-content/uploads/2020/04/1_Install-1.png" alt="" width="1949" height="1183" srcset="/wp-content/uploads/2020/04/1_Install-1.png 1949w, /wp-content/uploads/2020/04/1_Install-1-300x182.png 300w, /wp-content/uploads/2020/04/1_Install-1-1024x622.png 1024w, /wp-content/uploads/2020/04/1_Install-1-768x466.png 768w, /wp-content/uploads/2020/04/1_Install-1-1536x932.png 1536w, /wp-content/uploads/2020/04/1_Install-1-1568x952.png 1568w" sizes="(max-width: 1949px) 100vw, 1949px" /></span></p>
+<p><span ><strong>2.</strong> I like that it tells you that External PSC is deprecated! Continue with <strong>NEXT.</strong></span><span ><img loading="lazy" class="alignnone wp-image-1694 size-full" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/2_extPSCdeprecated-1.png" alt="" width="1950" height="1182" srcset="/wp-content/uploads/2020/04/2_extPSCdeprecated-1.png 1950w, /wp-content/uploads/2020/04/2_extPSCdeprecated-1-300x182.png 300w, /wp-content/uploads/2020/04/2_extPSCdeprecated-1-1024x621.png 1024w, /wp-content/uploads/2020/04/2_extPSCdeprecated-1-768x466.png 768w, /wp-content/uploads/2020/04/2_extPSCdeprecated-1-1536x931.png 1536w, /wp-content/uploads/2020/04/2_extPSCdeprecated-1-1568x950.png 1568w" sizes="(max-width: 1950px) 100vw, 1950px" /></span></p>
+<p><span ><strong>3.</strong> Just put the details of a vCenter (if you have one) or an ESXi host where you want to deploy this new vCenter. In my case (and probably the most if you’re doing everything from the scratch) I am using a host called «johto.pokemon.jp» to deploy the vCSA.</span><span ><img loading="lazy" class="alignnone wp-image-1695 size-full" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/3_vCenterDeployment_target-1.png" alt="" width="1948" height="1179" srcset="/wp-content/uploads/2020/04/3_vCenterDeployment_target-1.png 1948w, /wp-content/uploads/2020/04/3_vCenterDeployment_target-1-300x182.png 300w, /wp-content/uploads/2020/04/3_vCenterDeployment_target-1-1024x620.png 1024w, /wp-content/uploads/2020/04/3_vCenterDeployment_target-1-768x465.png 768w, /wp-content/uploads/2020/04/3_vCenterDeployment_target-1-1536x930.png 1536w, /wp-content/uploads/2020/04/3_vCenterDeployment_target-1-1568x949.png 1568w" sizes="(max-width: 1948px) 100vw, 1948px" /></span></p>
+<blockquote>
+<p><span style="font-family: Nunito; font-size: 16px; ">Once you press next, accept the certificate warning if you know the fingerprint of the certificate.</span></p>
+</blockquote>
+<p><span ><strong>4.</strong> Put the name of the VM and set the root password for the vCSA and continue.</span><span ><img loading="lazy" class="alignnone wp-image-1696 size-full" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/4_vCenterVMName-1.png" alt="" width="1947" height="775" srcset="/wp-content/uploads/2020/04/4_vCenterVMName-1.png 1947w, /wp-content/uploads/2020/04/4_vCenterVMName-1-300x119.png 300w, /wp-content/uploads/2020/04/4_vCenterVMName-1-1024x408.png 1024w, /wp-content/uploads/2020/04/4_vCenterVMName-1-768x306.png 768w, /wp-content/uploads/2020/04/4_vCenterVMName-1-1536x611.png 1536w, /wp-content/uploads/2020/04/4_vCenterVMName-1-1568x624.png 1568w" sizes="(max-width: 1947px) 100vw, 1947px" /></span></p>
+<p><span ><strong>5.</strong> I am going for the <strong>Tiny</strong> deployment as it is more than enough for my lab environment. In a production environment usually, you will deploy a small one that fits in many small companies (or in your lab if you’re testing it).</span><span ><img loading="lazy" class="alignnone size-full wp-image-1697" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/5_deploymentSize-1.png" alt="" width="1950" height="1183" srcset="/wp-content/uploads/2020/04/5_deploymentSize-1.png 1950w, /wp-content/uploads/2020/04/5_deploymentSize-1-300x182.png 300w, /wp-content/uploads/2020/04/5_deploymentSize-1-1024x621.png 1024w, /wp-content/uploads/2020/04/5_deploymentSize-1-768x466.png 768w, /wp-content/uploads/2020/04/5_deploymentSize-1-1536x932.png 1536w, /wp-content/uploads/2020/04/5_deploymentSize-1-1568x951.png 1568w" sizes="(max-width: 1950px) 100vw, 1950px" /></span></p>
+<p><span ><strong>6.</strong> Continue by selecting a Datastore and check » Enable Thin Disk Mode» which is usually the best deployment as it doesn’t allocate all the space and is also enabled by default. (Look even my VMFS-5 datastores work well).</span><span ><img loading="lazy" class="alignnone wp-image-1698 size-full" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/6_SelectDatastore-1.png" alt="" width="1948" height="863" srcset="/wp-content/uploads/2020/04/6_SelectDatastore-1.png 1948w, /wp-content/uploads/2020/04/6_SelectDatastore-1-300x133.png 300w, /wp-content/uploads/2020/04/6_SelectDatastore-1-1024x454.png 1024w, /wp-content/uploads/2020/04/6_SelectDatastore-1-768x340.png 768w, /wp-content/uploads/2020/04/6_SelectDatastore-1-1536x680.png 1536w, /wp-content/uploads/2020/04/6_SelectDatastore-1-1568x695.png 1568w" sizes="(max-width: 1948px) 100vw, 1948px" /></span></p>
+<p><span ><strong>7.</strong> Now, let’s configure the network settings. Here my Network you can see a portgroup «Std_mgmt» from my ESXi host. If you have an ESXi host with default portgroups, yours probably is called «<strong>VM Network</strong>«.</span><span ><img loading="lazy" class="alignnone size-full wp-image-1699" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/7_NW_settings-1.png" alt="" width="1949" height="1171" srcset="/wp-content/uploads/2020/04/7_NW_settings-1.png 1949w, /wp-content/uploads/2020/04/7_NW_settings-1-300x180.png 300w, /wp-content/uploads/2020/04/7_NW_settings-1-1024x615.png 1024w, /wp-content/uploads/2020/04/7_NW_settings-1-768x461.png 768w, /wp-content/uploads/2020/04/7_NW_settings-1-1536x923.png 1536w, /wp-content/uploads/2020/04/7_NW_settings-1-1568x942.png 1568w" sizes="(max-width: 1949px) 100vw, 1949px" /></span></p>
+<p><span >About the FQDN, as I said before (check the Prerequisite section in the beginning) you need to create an A record in your DNS in order to be able to deploy a vCenter with a name.</span></p>
+<blockquote>
+<p><span style="font-family: Nunito; font-size: 16px; ">If you don’t have DNS because you’re installing vCenter and you don’t have it, <strong>you can use the IP address as FQDN and it will work</strong>.</span></p>
+</blockquote>
+<p><span ><strong>8.</strong> And that’s all for stage 1, here we have a summary saying what is going to do. Be sure to review it:</span><span ><img loading="lazy" class="alignnone size-full wp-image-1700" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/8_Summary-1.png" alt="" width="1946" height="1416" srcset="/wp-content/uploads/2020/04/8_Summary-1.png 1946w, /wp-content/uploads/2020/04/8_Summary-1-300x218.png 300w, /wp-content/uploads/2020/04/8_Summary-1-1024x745.png 1024w, /wp-content/uploads/2020/04/8_Summary-1-768x559.png 768w, /wp-content/uploads/2020/04/8_Summary-1-1536x1118.png 1536w, /wp-content/uploads/2020/04/8_Summary-1-1568x1141.png 1568w" sizes="(max-width: 1946px) 100vw, 1946px" /> Once you’re ready, press <strong>FINISH.</strong></span></p>
+<p> </p>
+<p><span >It will start with Stage 1, which is the deployment of the VM where the vCenter Server resides:<img loading="lazy" class="alignnone size-full wp-image-1701" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/9_Stage1_DeployvCenter-1.png" alt="" width="1956" height="1428" srcset="/wp-content/uploads/2020/04/9_Stage1_DeployvCenter-1.png 1956w, /wp-content/uploads/2020/04/9_Stage1_DeployvCenter-1-300x219.png 300w, /wp-content/uploads/2020/04/9_Stage1_DeployvCenter-1-1024x748.png 1024w, /wp-content/uploads/2020/04/9_Stage1_DeployvCenter-1-768x561.png 768w, /wp-content/uploads/2020/04/9_Stage1_DeployvCenter-1-1536x1121.png 1536w, /wp-content/uploads/2020/04/9_Stage1_DeployvCenter-1-1568x1145.png 1568w" sizes="(max-width: 1956px) 100vw, 1956px" /></span></p>
+<p><span >After some minutes, <strong>STAGE 1 is completed</strong>, which means that the VM where the vCSA resides is deployed but not configured yet.</span><span ><img loading="lazy" class="alignnone size-full wp-image-1702" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/10_Stage1Completed-1.png" alt="" width="978" height="323" srcset="/wp-content/uploads/2020/04/10_Stage1Completed-1.png 978w, /wp-content/uploads/2020/04/10_Stage1Completed-1-300x99.png 300w, /wp-content/uploads/2020/04/10_Stage1Completed-1-768x254.png 768w" sizes="(max-width: 978px) 100vw, 978px" /></span></p>
+<h1 id="span-style-font-size-28pxstrongspan-stylefont-family-nunitostage-2-8211-configurationspanstrongspan"><span style=" font-size: 28px;"><strong><span style="font-family: Nunito;">Stage 2 – Configuration</span></strong></span><a hidden class="anchor" aria-hidden="true" href="#span-style-font-size-28pxstrongspan-stylefont-family-nunitostage-2-8211-configurationspanstrongspan">#</a></h1>
+<h2 id="span-let8217s-go-to-stage-2-where-the-vcsa-will-be-configuredspanimg-loadinglazy-classalignnone-wp-image-1703-srcwp-contentuploads20200411_stage2_start-1png-alt-width611-height419-srcsetwp-contentuploads20200411_stage2_start-1png-938w-wp-contentuploads20200411_stage2_start-1-300x206png-300w-wp-contentuploads20200411_stage2_start-1-768x527png-768w-sizesmax-width-611px-100vw-611px-"><strong><span >Let’s go to STAGE 2 where the vCSA will be configured.</span></strong><img loading="lazy" class="alignnone wp-image-1703" src="/wp-content/uploads/2020/04/11_Stage2_start-1.png" alt="" width="611" height="419" srcset="/wp-content/uploads/2020/04/11_Stage2_start-1.png 938w, /wp-content/uploads/2020/04/11_Stage2_start-1-300x206.png 300w, /wp-content/uploads/2020/04/11_Stage2_start-1-768x527.png 768w" sizes="(max-width: 611px) 100vw, 611px" /><a hidden class="anchor" aria-hidden="true" href="#span-let8217s-go-to-stage-2-where-the-vcsa-will-be-configuredspanimg-loadinglazy-classalignnone-wp-image-1703-srcwp-contentuploads20200411_stage2_start-1png-alt-width611-height419-srcsetwp-contentuploads20200411_stage2_start-1png-938w-wp-contentuploads20200411_stage2_start-1-300x206png-300w-wp-contentuploads20200411_stage2_start-1-768x527png-768w-sizesmax-width-611px-100vw-611px-">#</a></h2>
+<p><span ><strong>1.</strong> Set an NTP server or let the ESXi host also enable SSH if you want to have access to the vCSA.</span><span ><img loading="lazy" class="alignnone size-full wp-image-1704" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/12_vCenterConfig_NTP_SSH-1.png" alt="" width="1406" height="576" srcset="/wp-content/uploads/2020/04/12_vCenterConfig_NTP_SSH-1.png 1406w, /wp-content/uploads/2020/04/12_vCenterConfig_NTP_SSH-1-300x123.png 300w, /wp-content/uploads/2020/04/12_vCenterConfig_NTP_SSH-1-1024x420.png 1024w, /wp-content/uploads/2020/04/12_vCenterConfig_NTP_SSH-1-768x315.png 768w" sizes="(max-width: 1406px) 100vw, 1406px" /></span></p>
+<p><span ><strong>2.</strong> Configure the SSO, the default is the «vsphere.local» domain, in my case I created a custom one.</span><span ><img loading="lazy" class="alignnone size-full wp-image-1705" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/13_SSO_config-1.png" alt="" width="1405" height="962" srcset="/wp-content/uploads/2020/04/13_SSO_config-1.png 1405w, /wp-content/uploads/2020/04/13_SSO_config-1-300x205.png 300w, /wp-content/uploads/2020/04/13_SSO_config-1-1024x701.png 1024w, /wp-content/uploads/2020/04/13_SSO_config-1-768x526.png 768w" sizes="(max-width: 1405px) 100vw, 1405px" /></span></p>
+<p><span ><strong>3.</strong> And the last summary after we finish Stage 2 when the vCenter will be fully configured.</span><span ><img loading="lazy" class="alignnone size-full wp-image-1706" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/14_Summary_stage2-1.png" alt="" width="1403" height="973" srcset="/wp-content/uploads/2020/04/14_Summary_stage2-1.png 1403w, /wp-content/uploads/2020/04/14_Summary_stage2-1-300x208.png 300w, /wp-content/uploads/2020/04/14_Summary_stage2-1-1024x710.png 1024w, /wp-content/uploads/2020/04/14_Summary_stage2-1-768x533.png 768w" sizes="(max-width: 1403px) 100vw, 1403px" /></span></p>
+<p><span ><strong>4.</strong> After a while (15-20 min.), Stage 2 finished without errors!</span><span ><img loading="lazy" class="alignnone size-full wp-image-1707" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/15_Stage2_complete-1.png" alt="" width="1420" height="836" srcset="/wp-content/uploads/2020/04/15_Stage2_complete-1.png 1420w, /wp-content/uploads/2020/04/15_Stage2_complete-1-300x177.png 300w, /wp-content/uploads/2020/04/15_Stage2_complete-1-1024x603.png 1024w, /wp-content/uploads/2020/04/15_Stage2_complete-1-768x452.png 768w" sizes="(max-width: 1420px) 100vw, 1420px" /></span></p>
+<p><span ><strong>5.</strong> Now I access the GUI from the URL provided in the previous screenshot and I see that is working flawlessly!<br /> </span><span style="font-family: Nunito;"><img loading="lazy" class="alignnone size-full wp-image-1708" style="border-width: 2px; border-style: solid;" src="/wp-content/uploads/2020/04/16_vCenterGUI-1.png" alt="" width="2809" height="1288" srcset="/wp-content/uploads/2020/04/16_vCenterGUI-1.png 2809w, /wp-content/uploads/2020/04/16_vCenterGUI-1-300x138.png 300w, /wp-content/uploads/2020/04/16_vCenterGUI-1-1024x470.png 1024w, /wp-content/uploads/2020/04/16_vCenterGUI-1-768x352.png 768w, /wp-content/uploads/2020/04/16_vCenterGUI-1-1536x704.png 1536w, /wp-content/uploads/2020/04/16_vCenterGUI-1-2048x939.png 2048w, /wp-content/uploads/2020/04/16_vCenterGUI-1-1568x719.png 1568w" sizes="(max-width: 2809px) 100vw, 2809px" /></span></p>
+<p><span style="font-size: 16px; font-family: Nunito;"><strong>6</strong>. Enjoy your new vCenter Server with the only HTML5 interface and lots of new features that were mentioned at the beginning of this post.<br /> </span></p>
+<p> </p>
+<p><span style="font-family: Nunito; font-size: 16px; ">We conclude this article where you can see how simple and easy is to install and deploy vCenter Server version 7.0.</span></p>
+<p> </p>
+<h2 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h2>
+<p> </p>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/vcenter/">vCenter</a></li>
+      <li><a href="https://dangaiden.github.io/tags/vmware/">VMware</a></li>
+      <li><a href="https://dangaiden.github.io/tags/vsphere7/">vSphere7</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

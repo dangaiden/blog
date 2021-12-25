@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>education on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/education/</link>
+    <description>Recent content in education on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 31 Oct 2019 22:47:39 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VCAP-DCV Design exam notes</title>
+      <link>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</link>
+      <pubDate>Thu, 31 Oct 2019 22:47:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-31-vcap-dcv-design-exam-notes/</guid>
+      <description>As the VCAP-DCV Design 2020 certification is going to be released (but the 3V0-624 exam is not scheduled to be retired yet) on Jan 1, 2020.
+Recently I made another post about my experience with this exam where I failed, check it here.
+For your information, at the moment the 3V0-624 is the current exam code for the VCAP-DCV 6.5 Design certification (Also named VCAP-DCV Design 2019), always check the code for the exam no matter which is the certification name.</description>
+    </item>
+    
+    <item>
+      <title>Exam 70-743, Upgrading MCSA Windows Server 2016 experience</title>
+      <link>https://dangaiden.github.io/?p=704/</link>
+      <pubDate>Fri, 21 Jun 2019 11:02:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=704/</guid>
+      <description>I will explain quickly my experience regarding the Exam 70-743, Upgrading Your Skills to MCSA: Windows Server 2016 exam from Microsoft I took last April.
+It’s been a while since I took an exam from Microsoft (the latestwas in 2013 I think) where you probably know that these kind of exams are multiple-choice or single-choice.
+Through my career, I saw a lot of people cheating with these exams by memorizing the questions you can find on the internet and finishing it in just 20 minutes.</description>
+    </item>
+    
+    <item>
+      <title>IT skills: Which gap to fill?</title>
+      <link>https://dangaiden.github.io/2019-01-31-it-skills-which-gap-to-fill/</link>
+      <pubDate>Thu, 31 Jan 2019 09:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-01-31-it-skills-which-gap-to-fill/</guid>
+      <description>Regarding this nice article, I read while ago from Eric Shanks: https://theithollow.com/2018/03/26/fill-skills-tank/.
+I decided to write about it as it’s always in my mind since he published it. In particular, I will talk about what we should learn in order to fill a gap for a position/job in any technology and my experience.
+
+Which path to choose? I started learning Microsoft (MS) products and then I learned other technologies like Virtualization, Cloud, Storage, etc.</description>
+    </item>
+    
+    <item>
+      <title>VCAP6-DCV Deploy exam experience</title>
+      <link>https://dangaiden.github.io/2018-10-19-vcap6-dcv-deploy-exam-experience/</link>
+      <pubDate>Fri, 19 Oct 2018 07:45:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-10-19-vcap6-dcv-deploy-exam-experience/</guid>
+      <description>Hi! I am going to talk about my VCAP6-DCV Deploy exam experience.
+I thought about making a huge post about the VCAP6-DCV experience (resources, notes, etc.) but, I don’t want to overwhelm you know. Hence, I am going to make another post for that, hence this post will be shorter and more readable.
+1st attempt (Java error at the beginning) At September, 21st I sat down to take my first attempt in a VCAP exam.</description>
+    </item>
+    
+    <item>
+      <title>VCP6-DCV achieved!</title>
+      <link>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</link>
+      <pubDate>Sun, 03 Sep 2017 16:20:45 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2017-09-03-vcp6-dcv-achieved/</guid>
+      <description>I am going to start talking about the exam VCP6-DCV from VMware. The main resource you should use is the VMware site: http://bit.ly/1PLshWR
+There you can check a path to achieve VCP6-DCV (there is a newer version VCP6.5-DCV). I took path 1, as I wasn’t certified.
+
+Later, I took one official training course, VMware vSphere: Install, Configure, Manage [V6].
+Next, I passed the vSphere 6 Foundations Exam (2V0-620) months ago and finally I did VMware Certified Professional 6 – Data Center Virtualization Exam (2V0-621).</description>
+    </item>
+    
+  </channel>
+</rss>

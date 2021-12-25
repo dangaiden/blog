@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Microsoft on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/microsoft/</link>
+    <description>Recent content in Microsoft on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 29 Jun 2020 09:30:08 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSFC – Validate Configuration wizard error</title>
+      <link>https://dangaiden.github.io/2020-06-29-wsfc-validate-configuration-wizard-error/</link>
+      <pubDate>Mon, 29 Jun 2020 09:30:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-06-29-wsfc-validate-configuration-wizard-error/</guid>
+      <description>This is a short post talking about Windows Server Failover Clustering (WSFC) and a problem I found when adding the nodes from your cluster using the «Validate a Configuration» wizard.
+This wizard is recommended to run after configuring your nodes and before creating the cluster in order to spot any misconfigurations.
+So now, let’s go into the problem.
+ The issue In the wizard when trying to add (in my example) the second node shows an error:</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting tips for beginners in Windows Server</title>
+      <link>https://dangaiden.github.io/2020-02-29-troubleshooting-tips-for-beginners-in-windows-server/</link>
+      <pubDate>Sat, 29 Feb 2020 22:58:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-02-29-troubleshooting-tips-for-beginners-in-windows-server/</guid>
+      <description>I was thinking these days what I wish I have known when I started working with Windows servers, some basic (and some not) commands that can help me to troubleshoot servers without requiring additional software.
+
+ That’s why this is a post dedicated to people who just started administering servers with Windows Server 20xx-2019 (I expect at least 2008 although it is going end of support the next month) or maybe you’re curious and want to know more about Windows Server administration.</description>
+    </item>
+    
+    <item>
+      <title>Migrating ADFS from 2012 R2 (3.0 v) to 2016 (4.0 v.)</title>
+      <link>https://dangaiden.github.io/2019-07-31-migrating-adfs-from-2012-r2-to-2016/</link>
+      <pubDate>Wed, 31 Jul 2019 21:12:50 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-07-31-migrating-adfs-from-2012-r2-to-2016/</guid>
+      <description>I will explain today how to migrate ADFS from 2012 R2 (3.0 v) to 2016 (4.0) without almost no downtime. The overall process consists in adding the new ADFS server to the farm, assign the primary role to the new ADFS, make some changes and then we’re done.
+
+ The current environment is:
+ 1 x WAP Server (W2012 R2) 1 x ADFS Server (W2012 R2)  No applications published, just an Office 365 Relying party trust.</description>
+    </item>
+    
+    <item>
+      <title>Exam 70-743, Upgrading MCSA Windows Server 2016 experience</title>
+      <link>https://dangaiden.github.io/?p=704/</link>
+      <pubDate>Fri, 21 Jun 2019 11:02:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/?p=704/</guid>
+      <description>I will explain quickly my experience regarding the Exam 70-743, Upgrading Your Skills to MCSA: Windows Server 2016 exam from Microsoft I took last April.
+It’s been a while since I took an exam from Microsoft (the latestwas in 2013 I think) where you probably know that these kind of exams are multiple-choice or single-choice.
+Through my career, I saw a lot of people cheating with these exams by memorizing the questions you can find on the internet and finishing it in just 20 minutes.</description>
+    </item>
+    
+  </channel>
+</rss>

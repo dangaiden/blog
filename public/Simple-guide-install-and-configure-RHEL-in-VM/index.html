@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Simple-guide-install-and-configure-RHEL-in-VM | Dan Belmonte</title>
+<meta name="keywords" content="rhel, vm" />
+<meta name="description" content="Quick How-to with RHEL  Create an account (it&rsquo;s free) and download RHEL ISO from the official repository here Create a VM in VirtualBox with the resources you want. I created mine with 2GB of RAM, 2 vCPU and 40 GB of disk space . Follow the wizard and install the way you prefer: Minimal server, Keyboard, network, etc. Recommended to partition your disk with LVM and partition it as recommended by the provider Once is installed proceed to log as root to the OS (I used &ldquo;Somred1&rdquo; as hostname) and add another user (dangaiden as example) with a password: $ useradd dangaiden &amp; passwd dangaiden   4.">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/Simple-guide-install-and-configure-RHEL-in-VM/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="Simple-guide-install-and-configure-RHEL-in-VM" />
+<meta property="og:description" content="Quick How-to with RHEL  Create an account (it&rsquo;s free) and download RHEL ISO from the official repository here Create a VM in VirtualBox with the resources you want. I created mine with 2GB of RAM, 2 vCPU and 40 GB of disk space . Follow the wizard and install the way you prefer: Minimal server, Keyboard, network, etc. Recommended to partition your disk with LVM and partition it as recommended by the provider Once is installed proceed to log as root to the OS (I used &ldquo;Somred1&rdquo; as hostname) and add another user (dangaiden as example) with a password: $ useradd dangaiden &amp; passwd dangaiden   4." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/Simple-guide-install-and-configure-RHEL-in-VM/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-07-27T11:27:51&#43;00:00" />
+<meta property="article:modified_time" content="2021-07-27T11:27:51&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="Simple-guide-install-and-configure-RHEL-in-VM"/>
+<meta name="twitter:description" content="Quick How-to with RHEL  Create an account (it&rsquo;s free) and download RHEL ISO from the official repository here Create a VM in VirtualBox with the resources you want. I created mine with 2GB of RAM, 2 vCPU and 40 GB of disk space . Follow the wizard and install the way you prefer: Minimal server, Keyboard, network, etc. Recommended to partition your disk with LVM and partition it as recommended by the provider Once is installed proceed to log as root to the OS (I used &ldquo;Somred1&rdquo; as hostname) and add another user (dangaiden as example) with a password: $ useradd dangaiden &amp; passwd dangaiden   4."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Simple-guide-install-and-configure-RHEL-in-VM",
+      "item": "https://dangaiden.github.io/Simple-guide-install-and-configure-RHEL-in-VM/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Simple-guide-install-and-configure-RHEL-in-VM",
+  "name": "Simple-guide-install-and-configure-RHEL-in-VM",
+  "description": "Quick How-to with RHEL  Create an account (it\u0026rsquo;s free) and download RHEL ISO from the official repository here Create a VM in VirtualBox with the resources you want. I created mine with 2GB of RAM, 2 vCPU and 40 GB of disk space . Follow the wizard and install the way you prefer: Minimal server, Keyboard, network, etc. Recommended to partition your disk with LVM and partition it as recommended by the provider Once is installed proceed to log as root to the OS (I used \u0026ldquo;Somred1\u0026rdquo; as hostname) and add another user (dangaiden as example) with a password: $ useradd dangaiden \u0026amp; passwd dangaiden   4.",
+  "keywords": [
+    "rhel", "vm"
+  ],
+  "articleBody": "Quick How-to with RHEL  Create an account (it’s free) and download RHEL ISO from the official repository here Create a VM in VirtualBox with the resources you want. I created mine with 2GB of RAM, 2 vCPU and 40 GB of disk space . Follow the wizard and install the way you prefer: Minimal server, Keyboard, network, etc. Recommended to partition your disk with LVM and partition it as recommended by the provider Once is installed proceed to log as root to the OS (I used “Somred1” as hostname) and add another user (dangaiden as example) with a password: $ useradd dangaiden \u0026 passwd dangaiden   4.1 Add the user to the wheel group or to the sudoers file (as you prefer):  Use visudo or usermod -aG wheel dangaiden     Register the new system to RHEL portal:\n$ subscription-manager register --username= --password=\n  You are attempting to run \"subscription-manager\" which requires administrative privileges, but more information is needed in order to do so. Authenticating as \"root\" Password: Registering to: subscription.rhsm.redhat.com:443/subscription The system has been registered with ID: 5512e476-8ecd-4e44-a986-e4340424aa6d The registered system name is: Somred1   5.1 Attach a license from our newly created account in the RHEL portal.\n$ subscription-manager attach --auto\n  You are attempting to run \"subscription-manager\" which requires administrative privileges, but more information is needed in order to do so. Authenticating as \"root\" Password: Installed Product Current Status: Product Name: Red Hat Enterprise Linux for x86_64 Status: Subscribed   5.2 Verify the status:\n$ subscription-manager status\n  You are attempting to run \"subscription-manager\" which requires administrative privileges, but more information is needed in order to do so. Authenticating as \"root\" Password: +-------------------------------------------+ System Status Details +-------------------------------------------+ Overall Status: Current System Purpose Status: Not Specified   5.3 Verify the repositories list\n$ sudo yum repolist\n  [sudo] password for dangaiden: Updating Subscription Management repositories. repo id repo name rhel-8-for-x86_64-appstream-rpms Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs) rhel-8-for-x86_64-baseos-rpms Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)   You’re good to go, we can install for example tree!\n$ sudo yum install tree\n  [sudo] password for dangaiden: Updating Subscription Management repositories. Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs) 6.4 MB/s | 34 MB 00:05 Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs) 5.4 MB/s | 31 MB 00:05 Dependencies resolved. . . (Ommited some output) . Installed products updated. Installed: tree-1.7.0-15.el8.x86_64 Complete!  Copy your ssh key to the server: ssh-copyid\n  Shutdown and clone the newly created VM (Create a full clone and remember to change MAC address for the NICs).\n  Once it’s cloned, power on the new one and proceed to:\n   Change the hostname:    # vi /etc/hostname\n  Change the ip address:     # vi /etc/sysconfig/network-scripts/ifcfg-enp0s3\n  Reboot it and done!      ",
+  "wordCount" : "448",
+  "inLanguage": "en",
+  "datePublished": "2021-07-27T11:27:51Z",
+  "dateModified": "2021-07-27T11:27:51Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/Simple-guide-install-and-configure-RHEL-in-VM/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Simple-guide-install-and-configure-RHEL-in-VM
+    </h1>
+    <div class="post-meta">July 27, 2021&nbsp;·&nbsp;3 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#quick-how-to-with-rhel" aria-label="Quick How-to with RHEL">Quick How-to with RHEL</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h2 id="quick-how-to-with-rhel">Quick How-to with RHEL<a hidden class="anchor" aria-hidden="true" href="#quick-how-to-with-rhel">#</a></h2>
+<ol>
+<li>Create an account (it&rsquo;s free) and download RHEL ISO from the official repository <a href="https://developers.redhat.com/content-gateway/file/rhel-8.4-x86_64-dvd.iso">here</a></li>
+<li>Create a VM in VirtualBox with the resources you want.
+I created mine with 2GB of RAM, 2 vCPU and 40 GB of disk space .</li>
+<li>Follow the wizard and install the way you prefer: Minimal server, Keyboard, network, etc.
+<strong>Recommended</strong> to partition your disk with LVM and partition it as recommended by the <a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/installation_guide/s2-diskpartrecommend-x86">provider</a></li>
+<li>Once is installed proceed to log as root to the OS (I used &ldquo;Somred1&rdquo; as hostname) and add another user (<em>dangaiden</em> as example) with a password:
+<code>$ useradd dangaiden &amp; passwd dangaiden</code></li>
+</ol>
+<ul>
+<li>4.1 Add the user to the wheel group or to the sudoers file (as you prefer):
+<ul>
+<li>Use visudo or <code>usermod -aG wheel dangaiden</code></li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li>
+<p>Register the new system to RHEL portal:</p>
+<p><code>$ subscription-manager register --username=&lt;username&gt; --password=&lt;password&gt;</code></p>
+</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">You are attempting to run &#34;subscription-manager&#34; which requires administrative
+privileges, but more information is needed in order to do so.
+Authenticating as &#34;root&#34;
+Password:
+Registering to: subscription.rhsm.redhat.com:443/subscription
+The system has been registered with ID: 5512e476-8ecd-4e44-a986-e4340424aa6d
+The registered system name is: Somred1 
+</code></pre></div><ul>
+<li>
+<p>5.1 Attach a license from our newly created account in the RHEL portal.</p>
+<p><code>$ subscription-manager attach --auto</code></p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">You are attempting to run &#34;subscription-manager&#34; which requires administrative
+privileges, but more information is needed in order to do so.
+Authenticating as &#34;root&#34;
+Password:
+Installed Product Current Status:
+Product Name: Red Hat Enterprise Linux for x86_64
+Status:       Subscribed
+</code></pre></div><ul>
+<li>
+<p>5.2 Verify the status:</p>
+<p><code>$ subscription-manager status</code></p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">You are attempting to run &#34;subscription-manager&#34; which requires administrative
+privileges, but more information is needed in order to do so.
+Authenticating as &#34;root&#34;
+Password:
++-------------------------------------------+
+   System Status Details
++-------------------------------------------+
+Overall Status: Current
+
+System Purpose Status: Not Specified
+</code></pre></div><ul>
+<li>
+<p>5.3 Verify the repositories list</p>
+<p><code>$ sudo yum repolist</code></p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[sudo] password for dangaiden:
+Updating Subscription Management repositories.
+repo id                                                  repo name
+rhel-8-for-x86_64-appstream-rpms                         Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)
+rhel-8-for-x86_64-baseos-rpms                            Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)
+</code></pre></div><hr>
+<ol start="6">
+<li>
+<p>You&rsquo;re good to go, we can install for example <strong>tree</strong>!</p>
+<p><code>$ sudo yum install tree</code></p>
+</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">[sudo] password for dangaiden:
+Updating Subscription Management repositories.
+Red Hat Enterprise Linux 8 for x86_64 - BaseOS (RPMs)                                                     6.4 MB/s |  34 MB     00:05
+Red Hat Enterprise Linux 8 for x86_64 - AppStream (RPMs)                                                  5.4 MB/s |  31 MB     00:05
+Dependencies resolved.
+.
+. (Ommited some output)
+.
+Installed products updated.
+
+Installed:
+  tree-1.7.0-15.el8.x86_64
+
+Complete!
+
+</code></pre></div><ol start="7">
+<li>
+<p>Copy your ssh key to the server: <code>ssh-copyid</code></p>
+</li>
+<li>
+<p>Shutdown and clone the newly created VM (Create a full clone and remember to change MAC address for the NICs).</p>
+</li>
+<li>
+<p>Once it&rsquo;s cloned, power on the new one and proceed to:</p>
+<ul>
+<li>
+<ol>
+<li>Change the hostname:</li>
+</ol>
+</li>
+</ul>
+<p><code># vi /etc/hostname</code></p>
+<ul>
+<li>
+<ol start="2">
+<li>Change the ip address:</li>
+</ol>
+</li>
+</ul>
+<p><code> # vi /etc/sysconfig/network-scripts/ifcfg-enp0s3</code></p>
+<ul>
+<li>
+<ol start="3">
+<li>Reboot it and <strong>done</strong>!</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/rhel/">rhel</a></li>
+      <li><a href="https://dangaiden.github.io/tags/vm/">vm</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

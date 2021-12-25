@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/</link>
+    <description>Recent content in Tags on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Dec 2021 11:47:51 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>personal</title>
+      <link>https://dangaiden.github.io/tags/personal/</link>
+      <pubDate>Fri, 24 Dec 2021 11:47:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>certification</title>
+      <link>https://dangaiden.github.io/tags/certification/</link>
+      <pubDate>Thu, 12 Aug 2021 11:47:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/certification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cka</title>
+      <link>https://dangaiden.github.io/tags/cka/</link>
+      <pubDate>Thu, 12 Aug 2021 11:47:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/cka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://dangaiden.github.io/tags/kubernetes/</link>
+      <pubDate>Thu, 12 Aug 2021 11:47:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>monitoring</title>
+      <link>https://dangaiden.github.io/tags/monitoring/</link>
+      <pubDate>Tue, 27 Jul 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/monitoring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rhel</title>
+      <link>https://dangaiden.github.io/tags/rhel/</link>
+      <pubDate>Tue, 27 Jul 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/rhel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vm</title>
+      <link>https://dangaiden.github.io/tags/vm/</link>
+      <pubDate>Tue, 27 Jul 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>azure</title>
+      <link>https://dangaiden.github.io/tags/azure/</link>
+      <pubDate>Tue, 08 Jun 2021 13:37:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://dangaiden.github.io/tags/devops/</link>
+      <pubDate>Tue, 08 Jun 2021 13:37:03 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>moving</title>
+      <link>https://dangaiden.github.io/tags/moving/</link>
+      <pubDate>Mon, 22 Mar 2021 11:27:51 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/moving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>containers</title>
+      <link>https://dangaiden.github.io/tags/containers/</link>
+      <pubDate>Sat, 31 Oct 2020 20:32:17 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/containers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>virtualization</title>
+      <link>https://dangaiden.github.io/tags/virtualization/</link>
+      <pubDate>Sat, 31 Oct 2020 20:32:17 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/virtualization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://dangaiden.github.io/tags/docker/</link>
+      <pubDate>Mon, 19 Oct 2020 12:55:26 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vcsa</title>
+      <link>https://dangaiden.github.io/tags/vcsa/</link>
+      <pubDate>Mon, 31 Aug 2020 09:00:11 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vcsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows Server</title>
+      <link>https://dangaiden.github.io/tags/windows-server/</link>
+      <pubDate>Mon, 29 Jun 2020 09:30:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/windows-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WSFC</title>
+      <link>https://dangaiden.github.io/tags/wsfc/</link>
+      <pubDate>Mon, 29 Jun 2020 09:30:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/wsfc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>upgrade</title>
+      <link>https://dangaiden.github.io/tags/upgrade/</link>
+      <pubDate>Thu, 21 May 2020 20:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/upgrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VMware</title>
+      <link>https://dangaiden.github.io/tags/vmware/</link>
+      <pubDate>Thu, 21 May 2020 20:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vmware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vROps</title>
+      <link>https://dangaiden.github.io/tags/vrops/</link>
+      <pubDate>Thu, 21 May 2020 20:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vrops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vCenter</title>
+      <link>https://dangaiden.github.io/tags/vcenter/</link>
+      <pubDate>Tue, 28 Apr 2020 11:19:58 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vcenter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vSphere7</title>
+      <link>https://dangaiden.github.io/tags/vsphere7/</link>
+      <pubDate>Tue, 28 Apr 2020 11:19:58 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vsphere7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>online</title>
+      <link>https://dangaiden.github.io/tags/online/</link>
+      <pubDate>Tue, 21 Apr 2020 12:26:33 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/online/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vforum</title>
+      <link>https://dangaiden.github.io/tags/vforum/</link>
+      <pubDate>Tue, 21 Apr 2020 12:26:33 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vforum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vExpert</title>
+      <link>https://dangaiden.github.io/tags/vexpert/</link>
+      <pubDate>Wed, 08 Apr 2020 12:39:16 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vexpert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vexpertPRO</title>
+      <link>https://dangaiden.github.io/tags/vexpertpro/</link>
+      <pubDate>Wed, 08 Apr 2020 12:39:16 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vexpertpro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>microsoft</title>
+      <link>https://dangaiden.github.io/tags/microsoft/</link>
+      <pubDate>Sat, 29 Feb 2020 22:58:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tips</title>
+      <link>https://dangaiden.github.io/tags/tips/</link>
+      <pubDate>Sat, 29 Feb 2020 22:58:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/tips/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vCommunity</title>
+      <link>https://dangaiden.github.io/tags/vcommunity/</link>
+      <pubDate>Fri, 31 Jan 2020 22:51:46 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vcommunity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmworld</title>
+      <link>https://dangaiden.github.io/tags/vmworld/</link>
+      <pubDate>Fri, 31 Jan 2020 22:51:46 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vmworld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>review</title>
+      <link>https://dangaiden.github.io/tags/review/</link>
+      <pubDate>Tue, 31 Dec 2019 14:44:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmug</title>
+      <link>https://dangaiden.github.io/tags/vmug/</link>
+      <pubDate>Mon, 09 Dec 2019 11:00:36 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vmug/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>education</title>
+      <link>https://dangaiden.github.io/tags/education/</link>
+      <pubDate>Thu, 31 Oct 2019 22:47:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vcap</title>
+      <link>https://dangaiden.github.io/tags/vcap/</link>
+      <pubDate>Thu, 31 Oct 2019 22:47:39 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vcap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hcl</title>
+      <link>https://dangaiden.github.io/tags/hcl/</link>
+      <pubDate>Wed, 30 Oct 2019 21:14:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/hcl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>it admin</title>
+      <link>https://dangaiden.github.io/tags/it-admin/</link>
+      <pubDate>Wed, 30 Oct 2019 21:14:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/it-admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>runecast</title>
+      <link>https://dangaiden.github.io/tags/runecast/</link>
+      <pubDate>Wed, 30 Oct 2019 21:14:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/runecast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>security guideline</title>
+      <link>https://dangaiden.github.io/tags/security-guideline/</link>
+      <pubDate>Wed, 30 Oct 2019 21:14:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/security-guideline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>barcelona</title>
+      <link>https://dangaiden.github.io/tags/barcelona/</link>
+      <pubDate>Mon, 14 Oct 2019 09:54:53 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/barcelona/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vFit</title>
+      <link>https://dangaiden.github.io/tags/vfit/</link>
+      <pubDate>Fri, 04 Oct 2019 11:35:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vfit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backup</title>
+      <link>https://dangaiden.github.io/tags/backup/</link>
+      <pubDate>Sat, 31 Aug 2019 19:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>refs</title>
+      <link>https://dangaiden.github.io/tags/refs/</link>
+      <pubDate>Sat, 31 Aug 2019 19:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/refs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>veeam</title>
+      <link>https://dangaiden.github.io/tags/veeam/</link>
+      <pubDate>Sat, 31 Aug 2019 19:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/veeam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>veeam proxy</title>
+      <link>https://dangaiden.github.io/tags/veeam-proxy/</link>
+      <pubDate>Sat, 31 Aug 2019 19:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/veeam-proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ADFS</title>
+      <link>https://dangaiden.github.io/tags/adfs/</link>
+      <pubDate>Wed, 31 Jul 2019 21:12:50 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/adfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mcsa</title>
+      <link>https://dangaiden.github.io/tags/mcsa/</link>
+      <pubDate>Fri, 21 Jun 2019 11:02:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/mcsa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build Day Live</title>
+      <link>https://dangaiden.github.io/tags/build-day-live/</link>
+      <pubDate>Thu, 09 May 2019 12:00:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/build-day-live/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cohesity</title>
+      <link>https://dangaiden.github.io/tags/cohesity/</link>
+      <pubDate>Thu, 09 May 2019 12:00:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/cohesity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vBrownbag</title>
+      <link>https://dangaiden.github.io/tags/vbrownbag/</link>
+      <pubDate>Thu, 09 May 2019 12:00:08 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vbrownbag/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>port group</title>
+      <link>https://dangaiden.github.io/tags/port-group/</link>
+      <pubDate>Tue, 30 Apr 2019 08:00:57 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/port-group/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clones</title>
+      <link>https://dangaiden.github.io/tags/clones/</link>
+      <pubDate>Tue, 16 Apr 2019 10:25:55 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/clones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cloning</title>
+      <link>https://dangaiden.github.io/tags/cloning/</link>
+      <pubDate>Tue, 16 Apr 2019 10:25:55 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/cloning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linked clone</title>
+      <link>https://dangaiden.github.io/tags/linked-clone/</link>
+      <pubDate>Tue, 16 Apr 2019 10:25:55 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/linked-clone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PowerCLI</title>
+      <link>https://dangaiden.github.io/tags/powercli/</link>
+      <pubDate>Tue, 16 Apr 2019 10:25:55 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/powercli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vSphere</title>
+      <link>https://dangaiden.github.io/tags/vsphere/</link>
+      <pubDate>Tue, 16 Apr 2019 10:25:55 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vsphere/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>event</title>
+      <link>https://dangaiden.github.io/tags/event/</link>
+      <pubDate>Fri, 29 Mar 2019 10:26:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/event/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>presentation</title>
+      <link>https://dangaiden.github.io/tags/presentation/</link>
+      <pubDate>Fri, 29 Mar 2019 10:26:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/presentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>full clone</title>
+      <link>https://dangaiden.github.io/tags/full-clone/</link>
+      <pubDate>Wed, 06 Mar 2019 11:00:54 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/full-clone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>personal growth</title>
+      <link>https://dangaiden.github.io/tags/personal-growth/</link>
+      <pubDate>Thu, 31 Jan 2019 09:00:52 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/personal-growth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>europe</title>
+      <link>https://dangaiden.github.io/tags/europe/</link>
+      <pubDate>Mon, 31 Dec 2018 09:00:49 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/europe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmworld europe</title>
+      <link>https://dangaiden.github.io/tags/vmworld-europe/</link>
+      <pubDate>Thu, 13 Dec 2018 09:30:22 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vmworld-europe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>disk error</title>
+      <link>https://dangaiden.github.io/tags/disk-error/</link>
+      <pubDate>Wed, 03 Oct 2018 11:15:37 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/disk-error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sql</title>
+      <link>https://dangaiden.github.io/tags/sql/</link>
+      <pubDate>Fri, 14 Sep 2018 08:23:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssms</title>
+      <link>https://dangaiden.github.io/tags/ssms/</link>
+      <pubDate>Fri, 14 Sep 2018 08:23:47 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/ssms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PSC</title>
+      <link>https://dangaiden.github.io/tags/psc/</link>
+      <pubDate>Mon, 20 Aug 2018 14:30:12 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/psc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>networking</title>
+      <link>https://dangaiden.github.io/tags/networking/</link>
+      <pubDate>Thu, 02 Aug 2018 23:39:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/networking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NIOC</title>
+      <link>https://dangaiden.github.io/tags/nioc/</link>
+      <pubDate>Thu, 02 Aug 2018 23:39:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/nioc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vswitch</title>
+      <link>https://dangaiden.github.io/tags/vswitch/</link>
+      <pubDate>Mon, 23 Jul 2018 18:19:09 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vswitch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CIDR</title>
+      <link>https://dangaiden.github.io/tags/cidr/</link>
+      <pubDate>Sun, 31 Dec 2017 15:50:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/cidr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nsg</title>
+      <link>https://dangaiden.github.io/tags/nsg/</link>
+      <pubDate>Sun, 31 Dec 2017 15:50:35 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/nsg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VCP</title>
+      <link>https://dangaiden.github.io/tags/vcp/</link>
+      <pubDate>Sun, 03 Sep 2017 16:20:45 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/tags/vcp/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

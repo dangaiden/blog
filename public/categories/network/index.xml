@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Network on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/categories/network/</link>
+    <description>Recent content in Network on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Aug 2018 23:39:01 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vSphere Network I/O Control: NIC Limit bandwidth</title>
+      <link>https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/</link>
+      <pubDate>Thu, 02 Aug 2018 23:39:01 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-08-03-vsphere-network-i-o-control-nic-limit-bandwidth/</guid>
+      <description>Today let’s talk about vSphere Network I/O Control (NIOC) version 3 (vSphere 6.0), it’s a feature in the vSphere Distributed Switch that allows you to control granularly the output/egress bandwidth from a VM network adapter level. Besides there are other useful options within NIOC capabilities, today, I will focus only in the network adapter bandwidth limit for VMs.
+Prerequisites: Enable the feature in the dvSwitch (in our case the one with Data Network):Scenario:</description>
+    </item>
+    
+    <item>
+      <title>VMkernel: vMotion and Provisioning in dedicated TCP/IP stacks</title>
+      <link>https://dangaiden.github.io/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks/</link>
+      <pubDate>Mon, 23 Jul 2018 18:19:09 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-07-23-vmkernel-vmotion-and-provisioning-dedicated-tcp-ip-stacks/</guid>
+      <description>It’s been a while since I posted something, but I was busy with university duties and to be honest I couldn’t spend time on publishing things but, here we are!
+First, I am currently studying for the VCAP6 – DCV Deployment Exam (3V0-623) and I am learning a lot with it, so maybe I will post more topics related with.
+Today I am going to talk about TCP/IP stacks in VMkernels (for vSphere 6).</description>
+    </item>
+    
+  </channel>
+</rss>

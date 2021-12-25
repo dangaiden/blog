@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vmworld europe on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/vmworld-europe/</link>
+    <description>Recent content in vmworld europe on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 13 Dec 2018 09:30:22 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/vmworld-europe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Experience at VMworld 2018 Europe – Day 2</title>
+      <link>https://dangaiden.github.io/2018-12-13-vmworld-18-eu-day2/</link>
+      <pubDate>Thu, 13 Dec 2018 09:30:22 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-12-13-vmworld-18-eu-day2/</guid>
+      <description>Today I am going to explain from my personal experience, the Day 2 at VMworld 2018 Europe, lots of networking, some technical sessions, events and the Solutions Exchange.
+
+Before moving forward, I forgot to mention that I met in my first day a nice guy, Daniel Paluszek @dpaluszek, we had a great conversation and he should be known as the vCloud Director guy ;).
+vBreakfast If you don’t what is, check it here: http://www.</description>
+    </item>
+    
+    <item>
+      <title>Experience at VMworld 2018 Europe – Day 1</title>
+      <link>https://dangaiden.github.io/2018-11-19-vmworld-18-eu-day1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-11-19-vmworld-18-eu-day1/</guid>
+      <description>Let me talk to you about my experience on my first VMworld! This is a personal experience I want to share about Day 1 at VMworld 2018 Europe.
+Introduction I live in Barcelona so, I am fortunate that I don’t need to travel to go to the VMworld Europe. The only thing is to commute by train between home and Fira Barcelona (where VMworld is established). 
+It was Monday, November 5th, 2018.</description>
+    </item>
+    
+  </channel>
+</rss>

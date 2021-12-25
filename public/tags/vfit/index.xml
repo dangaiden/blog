@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vFit on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/vfit/</link>
+    <description>Recent content in vFit on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Oct 2019 11:35:14 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/vfit/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vFit at VMworld 2019 Europe</title>
+      <link>https://dangaiden.github.io/2019-10-04-vfit-at-vmworld-2019-europe/</link>
+      <pubDate>Fri, 04 Oct 2019 11:35:14 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-10-04-vfit-at-vmworld-2019-europe/</guid>
+      <description>Yes! I am happy to announce that the vFit event will happen also at VMworld Europe this year!
+Eric Wright (@discoposse) is the creator of this event and you can check how it went at VMworld US here! I love his idea of engaging folks who attend tech events to do some exercise at tech events and why not at VMworld Europe? 
+Enjoy a run with our great community outside VMworld.</description>
+    </item>
+    
+  </channel>
+</rss>

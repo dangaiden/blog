@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>VCAP6.5-DCV Design failed exam experience | Dan Belmonte</title>
+<meta name="keywords" content="certification, vcap, VMware" />
+<meta name="description" content="Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).
+I took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.
+I recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not).">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="VCAP6.5-DCV Design failed exam experience" />
+<meta property="og:description" content="Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).
+I took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.
+I recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2019-10-25T21:44:50&#43;00:00" />
+<meta property="article:modified_time" content="2019-10-25T21:44:50&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="VCAP6.5-DCV Design failed exam experience"/>
+<meta name="twitter:description" content="Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).
+I took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.
+I recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not)."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "VCAP6.5-DCV Design failed exam experience",
+      "item": "https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "VCAP6.5-DCV Design failed exam experience",
+  "name": "VCAP6.5-DCV Design failed exam experience",
+  "description": "Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).\nI took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.\nI recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not).",
+  "keywords": [
+    "certification", "vcap", "VMware"
+  ],
+  "articleBody": "Recently I took the 3V0-624 exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).\nI took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.\nI recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not). In my case, this rush was influenced due to leaving on vacation for more than 2 weeks. Then, I decided to give it a try before leaving but, the outcome wasn’t what someone would like!\nLet me share my experience in the exam, some thoughts, resources, and notes that maybe can help you.\nKnow yourself What I want to say in this section is knowing your limitations and experience against the exam. I am not going to do a comparison against the blueprint right now but, check the blueprint and be honest to yourself.\nThis exam is called «Design» and that means having a broad knowledge on many areas (like networking, storage, computing, hardware, etc.), a different mindset than an engineer (the famous «holistic» view that architects have).\nSo, basically, check all the sections in the blueprint and match them against your knowledge. Are there too many gaps? Then, you probably need more experience and a lot of time to study (or both) but definitely, the experience becomes very handy for this exam.\n(I recommend you to check the blueprint from the VCAP6-DCV Design which is quite better than the 6.5 version (in fact, it has the resources split into sections instead of giving you a list of 50+ resources like in the 6.5 version).\nI am not an architect but I did some projects from the scratch (small ones) and participated in others that were normal (I don’t want to say big because it is subjective) as a technical reference so, I had some of the knowledge regarding how to approach a project\nExpect to gather the requirements, find «RRAC» (Requirements, Risks, Assumptions and Constraints) and also I had knowledge in DC architecture, vSphere (obviously) and other products from VMware (this is a VMware exam so don’t expect another thing!).\nStudy Resources There are many resources that you can find on the internet:\n vBrownbag VCAP6-DCD videos: https://www.youtube.com/playlist?list=PL2rC-8e38bUXAB-VaBem953POgFDrk-Iw   Blog posts:\n https://thecloudxpert.net/2019/02/vcap6-5-dcv-design-exam-experience/   https://davidstamen.com/2017/12/21/vcap6.5-dcv-design-experience/   http://www.vhersey.com/2017/09/25/some-vcap-6-5-dcv-design-exam-study-notes/   https://www.paluszek.com/wp/2018/06/18/achievement-unlocked-vmware-vcap-6-5-dcv-3v0-624-exam-summary-and-tips/   https://vmninja.wordpress.com/2018/11/09/3v0-624-vcap-6-5-datacenter-virtualization-design-my-exam-experience/   https://www.jeffreykusters.nl/2018/05/22/passed-vcap65-dcv-design-finally-vcdx6/ https://www.jeffreykusters.nl/2017/08/02/preparing-vcap65-dcv-design/     The books I read:\n VCAP5-DCD guide IT Architect: Foundation in the Art of Infrastructure Design: A Practical Guide for IT Architects VMware vSphere Design 2nd Edition  Obviously I reviewed all the technical papers from the blueprint and you should too (at least check if you understand the main concept).\nThe exam As theofficial webpage states, there are 60 questions and you have 135 minutes (2 hours and 15 minutes) to complete the exam. This is plenty of time for anyone I think.\nI read other experiences and almost anyone had a lot of time left in the clock before finishing the exam. When I took it, I reviewed the questions and there were almost 30 minutes.\nQuestions can be large so, maybe you want to read it a couple of times or even when you’re answering it.\n   The format of the exam is multiple-choice, matching and drag and drop. That means that all questions won’t have a single choice solution.   Even I had time to finish the exam without looking at the clock too much, I failed with a score of 266 (passing score is 300 like many other VMware exams). That means that I need to review which were my weakest points, resolve my doubts and catch up with all I studied a couple of months ago.          Notes\n As far as I know, this exam goes until ESXi 6.5 U1 (which is the latest release before the blueprint came out).\nReview dependencies between all products and features within vSphere (especially the ones related to the RAMPS concept).\nThe conceptual, logical and physical design concepts must be mastered.\nReview limitations on each feature (HA, DRS, FT, etc.) or product (vSAN, SRM, etc.).\nThe vBrownbag videos and books like the «VCAP5-DCD guide» can be very helpful even though are «older». About books. the «vSphere Design 2nd edition» along with the «IT Architect series: Foundation in the art of infrastructure design» will give you a general vision of all concepts that an architect must know.\nCheck the blueprint from the VCAP6-DCV Design as the objectives are the same as the 6.5 version but better explained and with references on each section.\n So, that’s all I wanted to say and I hope that even I didn’t pass in this first attempt, it can help other people willing to take it in the future.\nSometimes you have to fail better before succeed.\n",
+  "wordCount" : "832",
+  "inLanguage": "en",
+  "datePublished": "2019-10-25T21:44:50Z",
+  "dateModified": "2019-10-25T21:44:50Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/2019-10-25-vcap6-5-dcv-design-failed-exam-experience/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      VCAP6.5-DCV Design failed exam experience
+    </h1>
+    <div class="post-meta">October 25, 2019&nbsp;·&nbsp;4 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#span-stylefont-family-nunito-font-size-32px-color-000000know-yourselfspan" aria-label="Know yourself"><span style="font-family: Nunito; font-size: 32px; color: #000000;">Know yourself</span></a></li>
+                <li>
+                    <a href="#span-stylefont-family-nunito-font-size-32px-color-000000study-resourcesspan" aria-label="Study Resources"><span style="font-family: Nunito; font-size: 32px; color: #000000;">Study Resources</span></a></li>
+                <li>
+                    <a href="#span-stylefont-family-nunito-font-size-32px-color-000000the-examspan" aria-label="The exam"><span style="font-family: Nunito; font-size: 32px; color: #000000;">The exam</span></a></li>
+                <li>
+                    <a href="#spanspan-stylecolor-000000-font-size-32pxnotesspanbr--span" aria-label="Notes
+"><span><span style="color: #000000; font-size: 32px;">Notes</span><br /> </span></a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><span style="font-family: Nunito; font-size: 16px;">Recently I took the <a href="https://www.vmware.com/education-services/certification/vcap6-5-dcv-design-exam.html"><span class="st">3V0-624</span></a> exam (a.k.a. VMware Certified Advanced Professional 6.5 – Data Center Virtualization Design Exam) and I failed (266/500).</span></p>
+<p><img loading="lazy" class="alignnone wp-image-1225 size-full" src="/wp-content/uploads/2019/10/ever-tried-ever-failed-no-matter-try-again-fail-again-fail-better-samuel-backett-e1572039644157.jpg" alt="fail-better" width="500" height="424" srcset="/wp-content/uploads/2019/10/ever-tried-ever-failed-no-matter-try-again-fail-again-fail-better-samuel-backett-e1572039644157.jpg 500w, /wp-content/uploads/2019/10/ever-tried-ever-failed-no-matter-try-again-fail-again-fail-better-samuel-backett-e1572039644157-300x254.jpg 300w" sizes="(max-width: 500px) 100vw, 500px" /></p>
+<p><span style="font-family: Nunito; font-size: 16px;">I took it on September, 4th (a month and a half ago) and as I was on holiday and now preparing things for VMworld Europe I won’t be able to study after the event.</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">I recognize, I study a bit in a rush. In just one month for someone who is daily tasks aren’t about architecture, it can be hard (or not). In my case, this rush was influenced due to leaving on vacation for more than 2 weeks. Then, I decided to give it a try before leaving but, the outcome wasn’t what someone would like!</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">Let me share my experience in the exam, some thoughts, resources, and notes that maybe can help you.</span></p>
+<h1 id="span-stylefont-family-nunito-font-size-32px-color-000000know-yourselfspan"><span style="font-family: Nunito; font-size: 32px; color: #000000;">Know yourself</span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-family-nunito-font-size-32px-color-000000know-yourselfspan">#</a></h1>
+<p><span style="font-family: Nunito; font-size: 16px;">What I want to say in this section is knowing your limitations and experience against the exam. I am not going to do a comparison against the blueprint right now but, check the blueprint and be honest to yourself.</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">This exam is called «Design» and that means having a broad knowledge on many areas (like networking, storage, computing, hardware, etc.), a different mindset than an engineer (the famous «holistic» view that architects have).</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">So, basically, check all the sections in the blueprint and match them against your knowledge. Are there too many gaps? Then, you probably need more experience and a lot of time to study (or both) but definitely, the experience becomes very handy for this exam.</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">(I recommend you to check the blueprint from the <a href="https://www.vmware.com/education-services/certification/vcap6-dcv-design-exam.html">VCAP6-DCV Design</a> which is quite better than the 6.5 version (in fact, it has the resources split into sections instead of giving you a list of 50+ resources like in the 6.5 version).</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">I am not an architect but I did some projects from the scratch (small ones) and participated in others that were normal (I don’t want to say big because it is subjective) as a technical reference so, I had some of the knowledge regarding how to approach a project</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">Expect to gather the requirements, find «RRAC» (Requirements, Risks, Assumptions and Constraints) and also I had knowledge in DC architecture, vSphere (obviously) and other products from VMware (this is a VMware exam so don’t expect another thing!).</span></p>
+<h1 id="span-stylefont-family-nunito-font-size-32px-color-000000study-resourcesspan"><span style="font-family: Nunito; font-size: 32px; color: #000000;">Study Resources</span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-family-nunito-font-size-32px-color-000000study-resourcesspan">#</a></h1>
+<p>T<span style="font-size: 16px;">here are many resources that you can find on the internet:</span></p>
+<ul style="list-style-type: square;">
+  <li>
+    <span style="font-family: Nunito; font-size: 16px;"><strong>vBrownbag VCAP6-DCD videos:</strong> <a href="https://www.youtube.com/playlist?list=PL2rC-8e38bUXAB-VaBem953POgFDrk-Iw">https://www.youtube.com/playlist?list=PL2rC-8e38bUXAB-VaBem953POgFDrk-Iw</a></span>
+  </li>
+</ul>
+<p><span style="font-family: Nunito; font-size: 16px;">Blog posts:</span></p>
+<ul style="list-style-type: square;">
+  <li>
+    <span style="font-family: Nunito; font-size: 16px;"><a href="https://thecloudxpert.net/2019/02/vcap6-5-dcv-design-exam-experience/">https://thecloudxpert.net/2019/02/vcap6-5-dcv-design-exam-experience/</a></span>
+  </li>
+  <li>
+    <span style="font-family: Nunito; font-size: 16px;"><a href="https://davidstamen.com/2017/12/21/vcap6.5-dcv-design-experience/">https://davidstamen.com/2017/12/21/vcap6.5-dcv-design-experience/</a></span>
+  </li>
+  <li>
+    <span style="font-family: Nunito; font-size: 16px;"><a href="http://www.vhersey.com/2017/09/25/some-vcap-6-5-dcv-design-exam-study-notes/">http://www.vhersey.com/2017/09/25/some-vcap-6-5-dcv-design-exam-study-notes/</a></span>
+  </li>
+  <li>
+    <span style="font-family: Nunito; font-size: 16px;"><a href="https://www.paluszek.com/wp/2018/06/18/achievement-unlocked-vmware-vcap-6-5-dcv-3v0-624-exam-summary-and-tips/">https://www.paluszek.com/wp/2018/06/18/achievement-unlocked-vmware-vcap-6-5-dcv-3v0-624-exam-summary-and-tips/</a></span>
+  </li>
+  <li>
+    <span style="font-family: Nunito; font-size: 16px;"><a href="https://vmninja.wordpress.com/2018/11/09/3v0-624-vcap-6-5-datacenter-virtualization-design-my-exam-experience/">https://vmninja.wordpress.com/2018/11/09/3v0-624-vcap-6-5-datacenter-virtualization-design-my-exam-experience/</a></span>
+  </li>
+  <li>
+    <p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">
+      <span style="font-family: Nunito; font-size: 16px;"><a href="https://www.jeffreykusters.nl/2018/05/22/passed-vcap65-dcv-design-finally-vcdx6/">https://www.jeffreykusters.nl/2018/05/22/passed-vcap65-dcv-design-finally-vcdx6/</a></span>
+    </p>
+<pre><code>&lt;p style=&quot;margin: 0in; font-family: Calibri; font-size: 11.0pt;&quot;&gt;
+  &lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;a href=&quot;https://www.jeffreykusters.nl/2017/08/02/preparing-vcap65-dcv-design/&quot;&gt;&lt;span&gt;https://www.jeffreykusters.nl/2017/08/02/preparing-vcap65-dcv-design/&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;
+&lt;/p&gt;
+</code></pre>
+  </li>
+</ul>
+<p> </p>
+<p><span style="font-family: Nunito; font-size: 16px;">The books I read:</span></p>
+<ul>
+<li><span style="font-family: Nunito; font-size: 16px;">VCAP5-DCD guide</span></li>
+<li><span style="font-family: Nunito; font-size: 16px;">IT Architect: Foundation in the Art of Infrastructure Design: A Practical Guide for IT Architects</span></li>
+<li><span style="font-family: Nunito; font-size: 16px;">VMware vSphere Design 2nd Edition</span></li>
+</ul>
+<p><span style="font-family: Nunito; font-size: 16px;">Obviously I reviewed all the technical papers from the <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/certification/vmw-vcap65-dcv-design-3v0-624-guide.pdf">blueprint</a> and you should too (at least check if you understand the main concept).</span></p>
+<h1 id="span-stylefont-family-nunito-font-size-32px-color-000000the-examspan"><span style="font-family: Nunito; font-size: 32px; color: #000000;">The exam</span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-family-nunito-font-size-32px-color-000000the-examspan">#</a></h1>
+<p><span style="font-family: Nunito; font-size: 16px;">As the<a href="https://www.vmware.com/education-services/certification/vcap6-5-dcv-design-exam.html"> official webpage</a> states, there are <strong>60 questions and you have 135 minutes</strong> (2 hours and 15 minutes) to complete the exam. This is plenty of time for anyone I think.</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">I read other experiences and almost anyone had a lot of time left in the clock before finishing the exam. When I took it, I reviewed the questions and there were almost 30 minutes.</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">Questions can be large so, maybe you want to read it a couple of times or even when you’re answering it.</span></p>
+<div class="col-md-12">
+  <div class="row">
+    <div class="col-md-4 -2">
+      <div>
+        <div class="columncontainer2 parsys">
+          <div class="examscheduledetails section">
+            <div>
+              <div class="prep-exam-container">
+                <p>
+                  <span style="font-family: Nunito; font-size: 16px;">The format of the exam is multiple-choice, matching and drag and drop. That means that all questions won&#8217;t have a single choice solution.</span>
+                </p>
+<pre><code>            &lt;p&gt;
+              &lt;span style=&quot;font-family: Nunito; font-size: 16px;&quot;&gt;Even I had time to finish the exam without looking at the clock too much, I failed with a score of 266 (passing score is 300 like many other VMware exams). That means that I need to review which were my weakest points, resolve my doubts and catch up with all I studied a couple of months ago.&lt;/span&gt;
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </div>
+</div>
+<h1 id="spanspan-stylecolor-000000-font-size-32pxnotesspanbr--span"><span><span style="color: #000000; font-size: 32px;">Notes</span><br /> </span><a hidden class="anchor" aria-hidden="true" href="#spanspan-stylecolor-000000-font-size-32pxnotesspanbr--span">#</a></h1>
+<p><span style="font-family: Nunito; font-size: 16px;">As far as I know, this exam goes until <strong>ESXi 6.5 U1</strong> (which is the latest release before the blueprint came out).</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">Review dependencies between all products and features within vSphere (especially the ones related to the RAMPS concept).</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">The conceptual, logical and physical design concepts must be mastered.</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">Review limitations on each feature (HA, DRS, FT, etc.) or product (vSAN, SRM, etc.).</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">The vBrownbag videos and books like the «VCAP5-DCD guide» can be very helpful even though are «older». About books. the «vSphere Design 2nd edition» along with the «IT Architect series: Foundation in the art of infrastructure design» will give you a general vision of all concepts that an architect must know.</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;"><strong>Check the blueprint from the VCAP6-DCV Design</strong> as the objectives are the same as the 6.5 version but better explained and with references on each section.</span></p>
+<p> </p>
+<p><span style="font-family: Nunito; font-size: 16px;">So, that’s all I wanted to say and I hope that even I didn’t pass in this first attempt, it can help other people willing to take it in the future.</span></p>
+<p><span style="font-family: Nunito; font-size: 16px;">Sometimes you have to fail better before succeed.</span></p>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/certification/">certification</a></li>
+      <li><a href="https://dangaiden.github.io/tags/vcap/">vcap</a></li>
+      <li><a href="https://dangaiden.github.io/tags/vmware/">VMware</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

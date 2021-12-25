@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Troubleshooting tips for beginners in Windows Server | Dan Belmonte</title>
+<meta name="keywords" content="microsoft, tips, Windows Server" />
+<meta name="description" content="I was thinking these days what I wish I have known when I started working with Windows servers, some basic (and some not) commands that can help me to troubleshoot servers without requiring additional software.
+
+ That’s why this is a post dedicated to people who just started administering servers with Windows Server 20xx-2019 (I expect at least 2008 although it is going end of support the next month) or maybe you’re curious and want to know more about Windows Server administration.">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/2020-02-29-troubleshooting-tips-for-beginners-in-windows-server/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="Troubleshooting tips for beginners in Windows Server" />
+<meta property="og:description" content="I was thinking these days what I wish I have known when I started working with Windows servers, some basic (and some not) commands that can help me to troubleshoot servers without requiring additional software.
+
+ That’s why this is a post dedicated to people who just started administering servers with Windows Server 20xx-2019 (I expect at least 2008 although it is going end of support the next month) or maybe you’re curious and want to know more about Windows Server administration." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/2020-02-29-troubleshooting-tips-for-beginners-in-windows-server/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-02-29T22:58:35&#43;00:00" />
+<meta property="article:modified_time" content="2020-02-29T22:58:35&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="Troubleshooting tips for beginners in Windows Server"/>
+<meta name="twitter:description" content="I was thinking these days what I wish I have known when I started working with Windows servers, some basic (and some not) commands that can help me to troubleshoot servers without requiring additional software.
+
+ That’s why this is a post dedicated to people who just started administering servers with Windows Server 20xx-2019 (I expect at least 2008 although it is going end of support the next month) or maybe you’re curious and want to know more about Windows Server administration."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Troubleshooting tips for beginners in Windows Server",
+      "item": "https://dangaiden.github.io/2020-02-29-troubleshooting-tips-for-beginners-in-windows-server/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Troubleshooting tips for beginners in Windows Server",
+  "name": "Troubleshooting tips for beginners in Windows Server",
+  "description": "I was thinking these days what I wish I have known when I started working with Windows servers, some basic (and some not) commands that can help me to troubleshoot servers without requiring additional software.\n\n That’s why this is a post dedicated to people who just started administering servers with Windows Server 20xx-2019 (I expect at least 2008 although it is going end of support the next month) or maybe you’re curious and want to know more about Windows Server administration.",
+  "keywords": [
+    "microsoft", "tips", "Windows Server"
+  ],
+  "articleBody": "I was thinking these days what I wish I have known when I started working with Windows servers, some basic (and some not) commands that can help me to troubleshoot servers without requiring additional software.\n\n That’s why this is a post dedicated to people who just started administering servers with Windows Server 20xx-2019 (I expect at least 2008 although it is going end of support the next month) or maybe you’re curious and want to know more about Windows Server administration.\nWe will exclude networking problems as that is another huge topic so, we assume that the server is reachable by using ping (ICMP protocol).\n\n RDP isn’t everything\n First thing I notice when someone tells me: «I can’t access the server via RDP, it must be overloaded, unresponsive, etc. because I can ping it».\nAs you may know (or not) RDP is the Remote Desktop protocol which usually runs in port 3389, there can be tons of reasons why you can’t access a server via RDP at the moment an alert raises (port blocked, server out of resources, user not allowed to RDP, etc.)\nTherefore, I will list some points about how to troubleshoot a server when you can’t access using RDP. In this way, you’ll be able to manage a server (Windows) without accessing it.\n\n MMC (Microsoft Management Console) MMC is everywhere, when you open the Event Viewer it is indeed an MMC that has the Snap-in «Event Viewer». Here is how would you do it manually instead of opening the Event Viewer «console»:\n\nYou should try to master the MMC as it provides you the best way to manage different aspects and features from a Windows server (remote or local).\n By typing «mmc» in Run and pressing Enter», an empty console (MMC) will be open.And then, you can add a «snap-in» about any particular feature, service, etc. from Windows. Meaning that with the MMC you have at your disposal a tool to troubleshoot a remote or local server.\nJust go to File  Add/Remove snap-in and here choose what do you want! For this example, I will add the Certificates snap-in in order to check which certificates are installed in my server:\n\nOnce you press Add, it will ask you which account, usually you want to use the computer account because services and features related to the computer nor a user account.\nChoose if you want to manage a local or remote server:\nAnd finally, here is the final screenshot after adding the Certificates snap-in from my computer: Now, imagine if you do the same with the Services snap-in and select Another Computer, you will be able to manage the services from a remote computer by just doing that and without connecting to the server using RDP!\n Check memory resources (RAM) CMD (command prompt)\n Our «old» friend CMD or command prompt interpreter which works on all versions of Windows Server, no matter which problem you have on your server that you can always run it and it is available on any Windows installation without any requirement.\nThere are some useful commands to manage a remote Windows server. The first command I want to show you is the «tasklist» command, which is the equivalent of the «Task Manager» that you probably know.\nIt can become very handy to check which processes are consuming more memory resources:\n[powershell]tasklist /s  | sort /R /+58[/powershell]\nThe previous command is just for Memory usage (RAM) but it won’t work for CPU so, how can I check which process is consuming more CPU resources? \nCheck the next section!\n\n Check CPU resources (CPU) WMIC (Windows Management Interface Console)\n In order to check the CPU remotely, there isn’t a simple command like «tasklist» with parameters as it is harder to get the stats from the CPU perspective.\nAnyway, this is another command that can be used within CMD, the command is wmic, here you have some examples:\nTo get the CPU usage of the server:\n\n[powershell] wmic cpu get loadpercentage [/powershell]\nOr the processes that are consuming a particular percentage (70% in this example):\n[powershell] wmic path win32_perfformatteddata_perfproc_process where (PercentProcessorTime ^ 70) get Name, Caption, PercentProcessorTime, IDProcess /format:list [/powershell]\nAs you can see in this output, it says «PercentProcessorTime=100», which means that a process (mcshield) consumed 100% of his time when we asked for the processes above 50% of the server.\nSo in this case, the process «mcshield» (which is related to McAfee) is consuming more than 50% of the CPU.\nObviously de «_Total» process mustn’t take into account and it’s in the output because I didn’t want to make it larger (although is a bit large).\nThere is another command (typeperf) which although it can be more powerful (it uses performance counters), the output is a mess (lots of data). I won’t show it here but I wanted to let you know.\n Alternate access to RDP\n A server can be physical or virtual then, you can probably access the virtual machine using Hyper-V Manager (if you use Hyper-V) or the vSphere Web Client (vSphere) tools in order to gain access to the virtual server.\n\nIf the server is physical, you have probably access to some remote console (iLO, iDRAC, etc.) to access the server and finally be able to log if you need to.\n  I hope these tips helped you or at least make you remember how to do it, see you next time.\n",
+  "wordCount" : "899",
+  "inLanguage": "en",
+  "datePublished": "2020-02-29T22:58:35Z",
+  "dateModified": "2020-02-29T22:58:35Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/2020-02-29-troubleshooting-tips-for-beginners-in-windows-server/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Troubleshooting tips for beginners in Windows Server
+    </h1>
+    <div class="post-meta">February 29, 2020&nbsp;·&nbsp;5 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#span-stylespan-stylefont-size-32pxstrongrdp-isn8217t-everythingstrongspanbr--span" aria-label="RDP isn’t everything
+"><span style=""><span style="font-size: 32px;"><strong>RDP isn’t everything</strong></span><br /> </span></a><ul>
+                        
+                <li>
+                    <a href="#span-stylemmc-microsoft-management-consolespan" aria-label="MMC (Microsoft Management Console)"><strong><span style="">MMC (Microsoft Management Console)</span></strong></a></li>
+                <li>
+                    <a href="#strongspan-stylefont-family-nunitocheck-memory-resources-ramspanstrongspan" aria-label="&amp;gt;Check memory resources (RAM)">&gt;<strong><span style="font-family: Nunito;">Check memory resources (RAM)</span></strong></span></a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#span-stylespan-stylecolor-808080cmd-command-promptspanbr--span" aria-label="CMD (command prompt)
+"><strong><span style=""><span style="color: #808080;">CMD (command prompt)</span><br /> </span></strong></a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#span-stylecheck-cpu-resources-cpuspan" aria-label="Check CPU resources (CPU)"><strong><span style="">Check CPU resources (CPU)</span></strong></a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#span-stylefont-family-nunitostrongspan-stylecolor-808080wmic-windows-management-interface-consolespanbr--strongspan" aria-label="WMIC (Windows Management Interface Console)
+"><span style="font-family: Nunito;"><strong><span style="color: #808080;">WMIC (Windows Management Interface Console)</span><br /> </strong></span></a></li></ul>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#span-stylefont-family-nunitostrongalternate-access-to-rdpspanstrongbr--span" aria-label="&amp;gt;Alternate access to RDP
+"><span style="font-family: Nunito;"><strong>&gt;Alternate access to RDP</span></strong><br /> </span></a>
+                </li>
+            </ul>
+            </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><span >I was thinking these days what I wish I have known when I started working with Windows servers, some basic (and some not) commands that can help me to troubleshoot servers without requiring additional software.<br /> </span></p>
+<p> </p>
+<p><span >That’s why this is a post dedicated to people who just started administering servers with Windows Server 20xx-2019 (I expect at least 2008 although it is going end of support the next month) or maybe you’re curious and want to know more about Windows Server administration.</span></p>
+<p><span style="font-size: 16px;"><strong><span style="font-family: Nunito;">We will exclude networking problems as that is another huge topic so, we assume that the server is reachable by using ping (ICMP protocol).<br /> </span></strong></span></p>
+<p> </p>
+<h1 id="span-stylespan-stylefont-size-32pxstrongrdp-isn8217t-everythingstrongspanbr--span"><span style=""><span style="font-size: 32px;"><strong>RDP isn’t everything</strong></span><br /> </span><a hidden class="anchor" aria-hidden="true" href="#span-stylespan-stylefont-size-32pxstrongrdp-isn8217t-everythingstrongspanbr--span">#</a></h1>
+<p><span >First thing I notice when someone tells me: «I can’t access the server via RDP, it must be overloaded, unresponsive, etc. because I can ping it».</span></p>
+<p><span >As you may know (or not) RDP is the Remote Desktop protocol which usually runs in port 3389, there can be tons of reasons why you can’t access a server via RDP at the moment an alert raises (port blocked, server out of resources, user not allowed to RDP, etc.)</span></p>
+<p><span >Therefore, I will list some points about how to <strong>troubleshoot a server when you can’t access using RDP</strong>. In this way, you’ll be able to manage a server (Windows) without accessing it.<br /> </span></p>
+<p> </p>
+<h2 id="span-stylemmc-microsoft-management-consolespan"><strong><span style="">MMC (Microsoft Management Console)</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-stylemmc-microsoft-management-consolespan">#</a></h2>
+<p><span >MMC is everywhere, when you open the Event Viewer it is indeed an MMC that has the Snap-in «Event Viewer». Here is how would you do it manually instead of opening the Event Viewer «console»:<br /> </span></p>
+<p><img loading="lazy" class="alignnone wp-image-1475 size-large" src="/wp-content/uploads/2020/02/evntvwr-1024x721.png" alt="event viewer" width="656" height="462" srcset="/wp-content/uploads/2020/02/evntvwr-1024x721.png 1024w, /wp-content/uploads/2020/02/evntvwr-300x211.png 300w, /wp-content/uploads/2020/02/evntvwr-768x541.png 768w, /wp-content/uploads/2020/02/evntvwr.png 1197w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p><span >You should try to master the MMC as it provides you the best way to manage different aspects and features from a Windows server (remote or local).</span></p>
+<p> </p>
+<p><span >By typing «<span style="font-family: courier new, courier;">mmc</span>» in Run and pressing Enter», an empty console (MMC) will be open.</span><img loading="lazy" class="alignnone wp-image-1507 " src="/wp-content/uploads/2020/02/mmc_console_empty.png" alt="mmc_console_empty" width="590" height="288" srcset="/wp-content/uploads/2020/02/mmc_console_empty.png 877w, /wp-content/uploads/2020/02/mmc_console_empty-300x146.png 300w, /wp-content/uploads/2020/02/mmc_console_empty-768x375.png 768w" sizes="(max-width: 590px) 100vw, 590px" /></p>
+<p><span >And then, you can add a «snap-in» about any particular feature, service, etc. from Windows. Meaning that with the MMC you have at your disposal a tool to troubleshoot a remote or local server.</span></p>
+<p><span >Just go to <em>File</em> &gt; <em>Add/Remove</em> snap-in and here choose what do you want! For this example,  I will add the <em>Certificates</em> snap-in in order to check which certificates are installed in my server:</span></p>
+<p><span ><img loading="lazy" class="alignnone wp-image-1533 size-full" src="/wp-content/uploads/2020/03/add_snapin.png" alt="" width="1301" height="849" srcset="/wp-content/uploads/2020/03/add_snapin.png 1301w, /wp-content/uploads/2020/03/add_snapin-300x196.png 300w, /wp-content/uploads/2020/03/add_snapin-1024x668.png 1024w, /wp-content/uploads/2020/03/add_snapin-768x501.png 768w" sizes="(max-width: 1301px) 100vw, 1301px" /></span></p>
+<p><span >Once you press <em>Add</em>, it will ask you which account, usually you want to use the computer account because services and features related to the computer nor a user account.</span><span ><img loading="lazy" class="alignnone wp-image-1530 " src="/wp-content/uploads/2020/03/Certificates-snap-in_computeraccount.png" alt="" width="334" height="192" srcset="/wp-content/uploads/2020/03/Certificates-snap-in_computeraccount.png 414w, /wp-content/uploads/2020/03/Certificates-snap-in_computeraccount-300x172.png 300w" sizes="(max-width: 334px) 100vw, 334px" /></span></p>
+<p><span >Choose if you want to manage a local or remote server:</span><span ><img loading="lazy" class="alignnone wp-image-1531 " src="/wp-content/uploads/2020/03/snapin_Select-Computer.png" alt="" width="534" height="240" srcset="/wp-content/uploads/2020/03/snapin_Select-Computer.png 777w, /wp-content/uploads/2020/03/snapin_Select-Computer-300x135.png 300w, /wp-content/uploads/2020/03/snapin_Select-Computer-768x345.png 768w" sizes="(max-width: 534px) 100vw, 534px" /></span></p>
+<p><span >And finally, here is the final screenshot after adding the<em> Certificates</em> snap-in from my computer:</span><img loading="lazy" class="alignnone wp-image-1532 size-medium_large" src="/wp-content/uploads/2020/03/Console-Root_Certificates-Local-Computer-768x223.png" alt="" width="656" height="190" srcset="/wp-content/uploads/2020/03/Console-Root_Certificates-Local-Computer-768x223.png 768w, /wp-content/uploads/2020/03/Console-Root_Certificates-Local-Computer-300x87.png 300w, /wp-content/uploads/2020/03/Console-Root_Certificates-Local-Computer-1024x297.png 1024w, /wp-content/uploads/2020/03/Console-Root_Certificates-Local-Computer.png 1300w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p> </p>
+<p><strong><span style="font-size: 16px;"><span style="font-family: Nunito;">Now, imagine if you do the same with the <em>Services</em> snap-in and select <em>Another Computer</em>, you will be able to manage the services from a remote computer by just doing that and without connecting to the server using RDP!</span></span></strong></p>
+<p><img loading="lazy" class="alignnone wp-image-1523" src="/wp-content/uploads/2020/02/fallout-hacking-300x300.jpg" alt="" width="335" height="335" srcset="/wp-content/uploads/2020/02/fallout-hacking-300x300.jpg 300w, /wp-content/uploads/2020/02/fallout-hacking-150x150.jpg 150w, /wp-content/uploads/2020/02/fallout-hacking.jpg 620w" sizes="(max-width: 335px) 100vw, 335px" /></p>
+<p> </p>
+<h2 id="strongspan-stylefont-family-nunitocheck-memory-resources-ramspanstrongspan">&gt;<strong><span style="font-family: Nunito;">Check memory resources (RAM)</span></strong></span><a hidden class="anchor" aria-hidden="true" href="#strongspan-stylefont-family-nunitocheck-memory-resources-ramspanstrongspan">#</a></h2>
+<h4 id="span-stylespan-stylecolor-808080cmd-command-promptspanbr--span"><strong><span style=""><span style="color: #808080;">CMD (command prompt)</span><br /> </span></strong><a hidden class="anchor" aria-hidden="true" href="#span-stylespan-stylecolor-808080cmd-command-promptspanbr--span">#</a></h4>
+<p><span style="font-size: 16px; font-family: Nunito;">Our «old» friend <strong>CMD</strong> or command prompt interpreter which works on all versions of Windows Server, no matter which problem you have on your server that you can always run it and <strong>it is available on any Windows installation without any requirement</strong>.</span></p>
+<p><span style="font-size: 16px; font-family: Nunito;">There are some useful commands to manage a remote Windows server. The first command I want to show you is the «<strong><em>tasklist</em></strong>» command, which is the equivalent of the «Task Manager» that you probably know.</span></p>
+<p><span style="font-size: 16px; font-family: Nunito;">It can become very handy to check which processes are consuming more <strong>memory resources</strong>:</span></p>
+<p>[powershell]tasklist /s <server> | sort /R /+58[/powershell]</p>
+<p><img loading="lazy" class="alignnone wp-image-1476 size-full" src="/wp-content/uploads/2020/02/tasklist_sort.png" alt="tasklist command" width="850" height="521" srcset="/wp-content/uploads/2020/02/tasklist_sort.png 850w, /wp-content/uploads/2020/02/tasklist_sort-300x184.png 300w, /wp-content/uploads/2020/02/tasklist_sort-768x471.png 768w" sizes="(max-width: 850px) 100vw, 850px" /></p>
+<p><span >The previous command is just for Memory usage (RAM) but it won’t work for CPU so, how can I check which process is <strong>consuming more CPU resources</strong>? </span></p>
+<p><span ><span style="text-decoration: underline;">Check the next section!</span><br /> </span></p>
+<p> </p>
+<h2 id="span-stylecheck-cpu-resources-cpuspan"><strong><span style="">Check CPU resources (CPU)</span></strong><a hidden class="anchor" aria-hidden="true" href="#span-stylecheck-cpu-resources-cpuspan">#</a></h2>
+<h4 id="span-stylefont-family-nunitostrongspan-stylecolor-808080wmic-windows-management-interface-consolespanbr--strongspan"><span style="font-family: Nunito;"><strong><span style="color: #808080;">WMIC (Windows Management Interface Console)</span><br /> </strong></span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-family-nunitostrongspan-stylecolor-808080wmic-windows-management-interface-consolespanbr--strongspan">#</a></h4>
+<p><span >In order to check the CPU remotely, there isn’t a simple command like «tasklist» with parameters as it is harder to get the stats from the CPU perspective.</span></p>
+<p><span >Anyway,  this is another command that can be used within CMD, the command is <strong>wmic</strong>, here you have some examples:</span></p>
+<p><span >To get the CPU usage of the server:<br /> </span></p>
+<p>[powershell] wmic cpu get loadpercentage [/powershell]</p>
+<p><img loading="lazy" class="alignnone wp-image-1521 size-full" src="/wp-content/uploads/2020/02/wmic_cpugetloadpercentage.png" alt="" width="382" height="101" srcset="/wp-content/uploads/2020/02/wmic_cpugetloadpercentage.png 382w, /wp-content/uploads/2020/02/wmic_cpugetloadpercentage-300x79.png 300w" sizes="(max-width: 382px) 100vw, 382px" /></p>
+<p><span >Or the processes that are consuming a particular percentage (70% in this example):</span></p>
+<p>[powershell] wmic path win32_perfformatteddata_perfproc_process where (PercentProcessorTime ^&gt; 70) get Name, Caption, PercentProcessorTime, IDProcess /format:list [/powershell]</p>
+<p><img loading="lazy" class="alignnone wp-image-1522 size-full" src="/wp-content/uploads/2020/02/wmic_get70percent.png" alt="" width="861" height="280" srcset="/wp-content/uploads/2020/02/wmic_get70percent.png 861w, /wp-content/uploads/2020/02/wmic_get70percent-300x98.png 300w, /wp-content/uploads/2020/02/wmic_get70percent-768x250.png 768w" sizes="(max-width: 861px) 100vw, 861px" /></p>
+<p><span >As you can see in this output, it says «PercentProcessorTime=100», which means that a process (mcshield) consumed 100% of his time when we asked for the processes above 50% of the server.</span></p>
+<p><span ><strong>So in this case, the process «mcshield» (which is related to McAfee) is consuming more than 50% of the CPU.</strong></span></p>
+<p><span >Obviously de «_Total» process mustn’t take into account and it’s in the output because I didn’t want to make it larger (although is a bit large).</span></p>
+<p><span >There is another command (typeperf) which although it can be more powerful (it uses performance counters), the output is a mess (lots of data). I won’t show it here but  I wanted to let you know.</span></p>
+<h2 id="heading"><a hidden class="anchor" aria-hidden="true" href="#heading">#</a></h2>
+<h2 id="span-stylefont-family-nunitostrongalternate-access-to-rdpspanstrongbr--span"><span style="font-family: Nunito;"><strong>&gt;Alternate access to RDP</span></strong><br /> </span><a hidden class="anchor" aria-hidden="true" href="#span-stylefont-family-nunitostrongalternate-access-to-rdpspanstrongbr--span">#</a></h2>
+<p><span >A server can be physical or virtual then, you can probably access the virtual machine using Hyper-V Manager (if you use Hyper-V) or the vSphere Web Client (vSphere) tools in order to gain access to the virtual server.<br /> </span></p>
+<p><span >If the server is physical, you have probably access to some remote console (iLO, iDRAC, etc.) to access the server and finally be able to log if you need to.</span></p>
+<p> </p>
+<p> </p>
+<p><span >I hope these tips helped you or at least make you remember how to do it, see you next time.</span></p>
+<p><img loading="lazy" class="alignnone wp-image-1471 size-medium" src="/wp-content/uploads/2020/02/vault_boy_approval-204x300.png" alt="" width="204" height="300" srcset="/wp-content/uploads/2020/02/vault_boy_approval-204x300.png 204w, /wp-content/uploads/2020/02/vault_boy_approval-697x1024.png 697w, /wp-content/uploads/2020/02/vault_boy_approval-768x1128.png 768w, /wp-content/uploads/2020/02/vault_boy_approval-1046x1536.png 1046w, /wp-content/uploads/2020/02/vault_boy_approval-1394x2048.png 1394w, /wp-content/uploads/2020/02/vault_boy_approval-1568x2303.png 1568w, /wp-content/uploads/2020/02/vault_boy_approval.png 1600w" sizes="(max-width: 204px) 100vw, 204px" /></p>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/microsoft/">microsoft</a></li>
+      <li><a href="https://dangaiden.github.io/tags/tips/">tips</a></li>
+      <li><a href="https://dangaiden.github.io/tags/windows-server/">Windows Server</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

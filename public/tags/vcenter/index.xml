@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vCenter on Dan Belmonte</title>
+    <link>https://dangaiden.github.io/tags/vcenter/</link>
+    <description>Recent content in vCenter on Dan Belmonte</description>
+    <image>
+      <url>https://dangaiden.github.io/47</url>
+      <link>https://dangaiden.github.io/47</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Apr 2020 11:19:58 +0000</lastBuildDate><atom:link href="https://dangaiden.github.io/tags/vcenter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vCenter Server 7.0 – Fresh install</title>
+      <link>https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/</link>
+      <pubDate>Tue, 28 Apr 2020 11:19:58 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2020-04-28-vcenter-server-7-0-fresh-install/</guid>
+      <description>Prologue With the release of vSphere 7 at the beginning of this month, I decided to make a post about how to install vCenter Server Appliance (vCSA) which is quite simple.
+Which are the new features? Check this post from my friend Graham Barker to find out!
+
+ Let’s move on!
+ Proceed to download the «VMware vCenter Server 7.0.0» ISO file from my.vmware.com   Mount the ISO file and execute the installer.</description>
+    </item>
+    
+    <item>
+      <title>vCSA 6.x installer error: “No networks on the host. Cannot proceed with the installation.»</title>
+      <link>https://dangaiden.github.io/2019-04-30-vcsa-6-x-installer-error/</link>
+      <pubDate>Tue, 30 Apr 2019 08:00:57 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2019-04-30-vcsa-6-x-installer-error/</guid>
+      <description>This is a quick post of an error I found sometimeswhile deploying a new vCenter server appliance with an embedded PSC on the vCSA 6.x installer.
+The problem In my case, I was trying to install vCSA 6.5 without DNS (this is why the system name has an IP address and the DNS is itself). Also, notice that the network section is empty:
+
+If you try to continue with the installation, it will show you an error:</description>
+    </item>
+    
+    <item>
+      <title>vSphere 6.0: New external PSC within existing SSO Domain</title>
+      <link>https://dangaiden.github.io/2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain/</link>
+      <pubDate>Mon, 20 Aug 2018 14:30:12 +0000</pubDate>
+      
+      <guid>https://dangaiden.github.io/2018-08-20-vsphere-6-0-new-external-psc-within-existing-sso-domain/</guid>
+      <description>Hello there!
+A quick post talking about a new external PSC in vSphere 6.0 environments.
+As you may now the vCenter product is composed by the PSC (Platform Services Controller) and the vCenter component.
+Services provided by each component: Platform Services Controller  &amp;lt;td style=&amp;quot;width: 50%; height: 10px; text-align: center;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-family: Didact Gothic;&amp;quot;&amp;gt;&amp;lt;strong&amp;gt;&amp;lt;span style=&amp;quot;background-color: #ffffff; color: #000000; font-size: 12pt;&amp;quot;&amp;gt;vCenter&amp;lt;/span&amp;gt;&amp;lt;/strong&amp;gt;&amp;lt;/span&amp;gt; &amp;lt;/td&amp;gt;   vCenter Single Sign-On  &amp;lt;td style=&amp;quot;width: 50%; height: 27px; text-align: center;&amp;quot;&amp;gt; &amp;lt;span style=&amp;quot;font-size: 10pt; font-family: Didact Gothic;&amp;quot;&amp;gt;PostgreSQL or SQL Express (in 6.</description>
+    </item>
+    
+  </channel>
+</rss>

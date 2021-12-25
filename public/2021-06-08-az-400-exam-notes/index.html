@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>AZ-400 exam notes | Dan Belmonte</title>
+<meta name="keywords" content="azure, certification, devops" />
+<meta name="description" content="Some months missing between my last update!
+I must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!
+Therefore, let&rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.
+Certification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:">
+<meta name="author" content="itgaiden">
+<link rel="canonical" href="https://dangaiden.github.io/2021-06-08-az-400-exam-notes/" />
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css" integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js" integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5&#43;kdJvBz5iKbt6B5PJI="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://dangaiden.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://dangaiden.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://dangaiden.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://dangaiden.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://dangaiden.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<meta name="generator" content="Hugo 0.85.0" />
+<meta property="og:title" content="AZ-400 exam notes" />
+<meta property="og:description" content="Some months missing between my last update!
+I must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!
+Therefore, let&rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.
+Certification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dangaiden.github.io/2021-06-08-az-400-exam-notes/" /><meta property="og:image" content="https://dangaiden.github.io/47"/><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-06-08T13:37:03&#43;00:00" />
+<meta property="article:modified_time" content="2021-06-08T13:37:03&#43;00:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://dangaiden.github.io/47"/>
+
+<meta name="twitter:title" content="AZ-400 exam notes"/>
+<meta name="twitter:description" content="Some months missing between my last update!
+I must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!
+Therefore, let&rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.
+Certification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:"/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "https://dangaiden.github.io/post/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "AZ-400 exam notes",
+      "item": "https://dangaiden.github.io/2021-06-08-az-400-exam-notes/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "AZ-400 exam notes",
+  "name": "AZ-400 exam notes",
+  "description": "Some months missing between my last update!\nI must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!\nTherefore, let\u0026rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.\nCertification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:",
+  "keywords": [
+    "azure", "certification", "devops"
+  ],
+  "articleBody": "Some months missing between my last update!\nI must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!\nTherefore, let’s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.\nCertification details This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:\n\nLast month I passed the Azure Administrator Associate exam (AZ-104) so I had the prerequisite already.\nYou can check the objectives measured in detail for the exam here but as a summary, this is what the official documentation states:\nDevelop an instrumentation strategy (5-10%)  Develop a Site Reliability Engineering (SRE) strategy (5-10%)  Develop a security and compliance plan (10-15%)  Manage source control (10-15%)  Facilitate communication and collaboration (10-15%)  Define and implement continuous integration (20-25%)  Define and implement a continuous delivery and release management strategy (10-15%)   Notes and resources for the exam  Be sure to try Azure DevOps lab where you'll be able to use Azure DevOps for free and with many guided Hands-on labs (https://github.com/microsoft/azuredevopslabs) → MUST\n   Study the majority of the Azure Products that can be related to any process within a pipeline, therefore, applications, web apps, secrets, repositories, VMs, etc.   Of course, I suggest you read and try Azure DevOps and the many of the integrations that can have with Github (remember that it's owned by MS) within a pipeline.   This includes things like Azure boards, App Configuration, Azure feeds, Key Vault, Artifacts Credential Provider, etc.     Monitoring tools within Azure…you know, the ones that you already know if you have taken the AZ-104, things like Application Map (within App Insights), Security Center, Data Explorer, App Configuration, Hosted agents, etc.   Knowledge about 3rd party products like Helm, Sonarqube, Terraform, Yeoman, and many other tools that analyze code or vulnerabilities will be helpful.   Git basics is a must, knowing things like (init, Pull, push, commit, add, clone. etc.) but more «advanced» things like (prune, gc, pull –rebase, stash).   Branching with Git (Main, Develop, Feature, etc) and deployment (Rolling, A/B, canary, blue/green, etc.) strategies will be key to understand as one of the main things used in pipelines.   Software testing as well: Smoke, flaky, unit, acceptance, etc.   Container basics with Docker (Dockerfiles, build/scan images process, etc.), AKS (Install, RBAC, configure), Azure Container instances, etc.    There can be more of course but I think you can get an idea of what can I think it can be useful and probably I missed many things I already know that I haven’t studied.\n\n Exam and opinion As for now, there aren’t simulations in the exam but be prepared to answer multi-choice, single, hot-area, and drag \u0026 drop questions plus case studies.\nThere are about 60 questions in the exam and 150 minutes for non-native speakers (if I am not wrong) so plenty of time to answer each question.\nSome questions are quite specific and not very related to general knowledge or even outdated which I don’t like it but that’s how certifications work in many cases.\nMost of them are related to Azure, DevOps, and the integration with 3rd party applications so be sure to check them and don’t hesitate to make a list of third-party applications and the usage of them within different languages.\nI studied for a month or so but I do have a certain experience with Azure and I think a great knowledge of many of the processes, 3rd party tools (Jenkins, Sonarqube, Helm), and strategies used in pipelines within CI/CD. \nBe sure to test and experiment with Azure DevOps as it is obvious that it will appear in the exam 🙂\nConclusion I found it fair but not easy for someone who just got introduced to Azure Dev and has a general knowledge of the «DevOps world» (I hate to say it like this).\nIt requires a bit of experience with many of the Azure products, how are they correlated/integrated within a pipeline and many other tools.\nI hope this can be useful to anyone willing to take this but in my case, I did it so can you!\n\n   ",
+  "wordCount" : "709",
+  "inLanguage": "en",
+  "datePublished": "2021-06-08T13:37:03Z",
+  "dateModified": "2021-06-08T13:37:03Z",
+  "author":{
+    "@type": "Person",
+    "name": "itgaiden"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://dangaiden.github.io/2021-06-08-az-400-exam-notes/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Dan Belmonte",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://dangaiden.github.io/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://dangaiden.github.io" accesskey="h" title="Dan Belmonte (Alt + H)">Dan Belmonte</a>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://dangaiden.github.io/archives/" title="Archive">
+                    <span>Archive</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/categories/" title="Categories">
+                    <span>Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dangaiden.github.io/about-me/" title="About me">
+                    <span>About me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      AZ-400 exam notes
+    </h1>
+    <div class="post-meta">June 8, 2021&nbsp;·&nbsp;4 min&nbsp;·&nbsp;itgaiden
+</div>
+  </header> <div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <div class="details">Table of Contents</div>
+        </summary>
+        <div class="inner"><ul>
+                <li>
+                    <a href="#certification-details" aria-label="Certification details">Certification details</a></li>
+                <li>
+                    <a href="#notes-and-resources-for-the-exam" aria-label="Notes and resources for the exam">Notes and resources for the exam</a></li>
+                <li>
+                    <a href="#exam-and-opinion" aria-label="Exam and opinion">Exam and opinion</a></li>
+                <li>
+                    <a href="#conclusion" aria-label="Conclusion">Conclusion</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><p><span >Some months missing between my last update!</span></p>
+<p><span >I must say I have been quite busy with the new position and the massive change that has impacted my previous knowledge but overall, I am pretty happy with it!</span></p>
+<p><span >Therefore, let&rsquo;s move to the point! So I just want to share some notes of the AZ-400 exam which I recently passed and I hope that can be useful to someone.</span></p>
+<h1 id="certification-details">Certification details<a hidden class="anchor" aria-hidden="true" href="#certification-details">#</a></h1>
+<p><span >This exam (AZ-400) is the second one of the path to the specific «Microsoft Certified: DevOps Engineer Expert» certification:</span></p>
+<p><span ><img loading="lazy" class="alignnone wp-image-1911 size-full" src="/wp-content/uploads/2021/06/Paths.png" alt="" width="1014" height="305" srcset="/wp-content/uploads/2021/06/Paths.png 1014w, /wp-content/uploads/2021/06/Paths-300x90.png 300w, /wp-content/uploads/2021/06/Paths-768x231.png 768w" sizes="(max-width: 1014px) 100vw, 1014px" /></span></p>
+<p><span >Last month I passed the Azure Administrator Associate exam (AZ-104) so I had the prerequisite already.</span></p>
+<p><span >You can<strong> check the objectives measured in detail</strong> for the exam <a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3VP8d">here</a> but as a summary, this is what the official documentation states:</span></p>
+<li class="font-size-s">
+  <span >Develop an instrumentation strategy (5-10%)</span>
+</li>
+<li class="font-size-s">
+  <span >Develop a Site Reliability Engineering (SRE) strategy (5-10%)</span>
+</li>
+<li class="font-size-s">
+  <span >Develop a security and compliance plan (10-15%)</span>
+</li>
+<li class="font-size-s">
+  <span >Manage source control (10-15%)</span>
+</li>
+<li class="font-size-s">
+  <span >Facilitate communication and collaboration (10-15%)</span>
+</li>
+<li class="font-size-s">
+  <span >Define and implement continuous integration (20-25%)</span>
+</li>
+<li class="font-size-s">
+  <span >Define and implement a continuous delivery and release management strategy (10-15%)</span>
+</li>
+<p> </p>
+<h1 id="notes-and-resources-for-the-exam">Notes and resources for the exam<a hidden class="anchor" aria-hidden="true" href="#notes-and-resources-for-the-exam">#</a></h1>
+<ul style="list-style-type: square;">
+  <li>
+    <span >Be sure to try <a href="https://azuredevopslabs.com">Azure DevOps lab</a> where you'll be able to use Azure DevOps for free and with many guided Hands-on labs (https://github.com/microsoft/azuredevopslabs) → <strong>MUST<br /> </strong></span>
+  </li>
+  <li>
+    <span ><span >Study the majority of the Azure Products that can be related to any process within a pipeline, therefore, applications, web apps, secrets, repositories, VMs, etc.</span></span>
+  </li>
+  <li>
+    <span >Of course, I suggest you read and <strong>try Azure DevOps and the many of the integrations that can have with Github</strong> (remember that it's owned by MS) within a pipeline.</span> <ul>
+      <li>
+        <span ><span >This includes things like Azure boards, App Configuration, Azure feeds, Key Vault, Artifacts Credential Provider, etc.</span></span>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <span ><span ><strong>Monitoring tools within Azure</strong>&#8230;you know, the ones that you already know if you have taken the AZ-104, things like Application Map (within App Insights), Security Center, Data Explorer, App Configuration, Hosted agents, etc.</span></span>
+  </li>
+  <li>
+    <span ><span >Knowledge about 3rd party products like Helm, Sonarqube, Terraform, Yeoman, and many other tools that analyze code or vulnerabilities will be helpful.</span></span>
+  </li>
+  <li>
+    <span ><span ><strong>Git <a href="https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository">basics</a> is a must</strong>, knowing things like (init, Pull, push, commit, add, clone. etc.) but more «advanced» things like (prune, gc, pull &#8211;rebase, stash).</span></span>
+  </li>
+  <li>
+    <span ><span >Branching with Git (Main, Develop, Feature, etc) and deployment (Rolling, A/B, canary, blue/green, etc.) strategies will be key to understand as one of the main things used in pipelines.</span></span>
+  </li>
+  <li>
+    <span ><span >Software testing as well: Smoke, flaky, unit, acceptance, etc.</span></span>
+  </li>
+  <li>
+    <span ><strong>Container basics with <a href="https://docs.docker.com/develop/">Docker</a></strong> (Dockerfiles, build/scan images process, etc.), AKS (Install, RBAC, configure), Azure Container instances, etc.</span>
+  </li>
+</ul>
+<p> </p>
+<p><span >There can be more of course but I think you can get an idea of what can I think it can be useful and probably I missed many things I already know that I haven&rsquo;t studied.</span></p>
+<p><span style="font-family: Nunito;"><img src="https://media.giphy.com/media/UQVSeEmqW2lChnm4OQ/giphy.gif" /></span></p>
+<p> </p>
+<h1 id="exam-and-opinion">Exam and opinion<a hidden class="anchor" aria-hidden="true" href="#exam-and-opinion">#</a></h1>
+<p><span >As for now, there aren&rsquo;t simulations in the exam but be prepared to answer multi-choice, single, hot-area, and drag &amp; drop questions plus case studies.</span></p>
+<p><span >There are about 60 questions in the exam and 150 minutes for non-native speakers (if I am not wrong) so plenty of time to answer each question.</span></p>
+<p><span >Some questions are quite specific and not very related to general knowledge or even outdated which I don&rsquo;t like it but that&rsquo;s how certifications work in many cases.</span></p>
+<p><span >Most of them are related to Azure, DevOps, and the integration with 3rd party applications so be sure to check them and don&rsquo;t hesitate to make a list of <strong>third-party applications and the usage of them within different language</strong>s.</span></p>
+<p><span >I studied for a month or so but I do have a certain experience with Azure and I think a great knowledge of many of the processes, 3rd party tools (Jenkins, Sonarqube, Helm), and strategies used in pipelines within CI/CD. </span></p>
+<p><span >Be sure to test and experiment with Azure DevOps as it is obvious that it will appear in the exam 🙂</span></p>
+<h1 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h1>
+<p><span ><strong>I found it fair but not easy</strong> for someone who just got introduced to Azure Dev and has a general knowledge of the «DevOps world» (I hate to say it like this).</span></p>
+<p><span >It requires a bit of experience with many of the Azure products, how are they correlated/integrated within a pipeline and many other tools.</span></p>
+<p><span >I hope this can be useful to anyone willing to take this but in my case, <strong>I did it so can you!</strong></span></p>
+<p><span style="font-family: Nunito;"><img loading="lazy" class="" src="https://media1.tenor.com/images/eb3860d824952e2b3b95367ac8b3d957/tenor.gif?itemid=5217520" alt="We're Survivors GIF - Survivors Wearesurvivors HouseOfCards GIFs" width="708" height="349" /></span></p>
+<p> </p>
+<p> </p>
+<p> </p>
+
+
+  </div>
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://dangaiden.github.io/tags/azure/">azure</a></li>
+      <li><a href="https://dangaiden.github.io/tags/certification/">certification</a></li>
+      <li><a href="https://dangaiden.github.io/tags/devops/">devops</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    <footer class="footer">
+    <span>&copy; 2021 <a href="https://dangaiden.github.io">Dan Belmonte</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://git.io/hugopapermod" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)">
+    <button class="top-link" id="top-link" type="button" accesskey="g">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+            <path d="M12 6H0l6-6z" />
+        </svg>
+    </button>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+    menu.onscroll = function () {
+        localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
