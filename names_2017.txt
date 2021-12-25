@@ -1,2 +1,0 @@
-2017-09-03-vcp6-dcv-achieved
-2017-12-31-azure-error-adding-new-rule-nsg
