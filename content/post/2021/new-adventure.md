@@ -3,7 +3,7 @@ title: New adventure ahead
 author: itgaiden
 type: post
 date: 2021-12-24T11:47:51+00:00
-url: new-adventure
+url: new-adventure-ahead
 categories:
   - Personal
 tags:
@@ -11,7 +11,7 @@ tags:
   
 ---
 
-#  New adventure ahead!
+# New adventure ahead!
 
 Yes, it happened, in the past week... **I have moved to a new company**!
 
