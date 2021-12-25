@@ -2,7 +2,7 @@
 title: New adventure ahead
 author: itgaiden
 type: post
-date: 2021-12-24T00:00:00
+date: 2021-12-24T11:47:51+00:00
 url: new-adventure
 categories:
   - Personal
