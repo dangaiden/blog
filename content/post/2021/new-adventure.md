@@ -11,7 +11,7 @@ tags:
   
 ---
 
-# New adventure ahead!
+# Let's start!
 
 Yes, it happened, in the past week... **I have moved to a new company**!
 
