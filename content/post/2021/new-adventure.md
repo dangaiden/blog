@@ -42,6 +42,8 @@ From a technologies perspective I'll be using many already known technologies:
 
 So you know, technical stuff : )
 
+
+
 ## Why this movement?
 
 It was time for me to move on from NTT, I already felt stuck in the same place with not much movement and a bit limited in terms of growth (I know I moved this year to a new role but it was almost the same). 
@@ -52,7 +54,7 @@ Or sometimes, you just feel it!
 
 ## To conclude
  
- I am embracing this new change and I already like the welcome I have received, not only the people but the provided material which exceeded my expectations. In fact, I am now a Mac user (M1 Pro 2021) thanks to them.
+ I am embracing this new change and I already like the welcome I have received, not only the people but the provided material which exceeded my expectations. In fact, I am now a Mac user (M1 Pro 2021).
  
  Can be scary sometimes to move from a huge place to a smaller one but time will say, for now, I expect to know more about the company itself, how to provide value on it, and help in the growth and maintenance of it!
 
