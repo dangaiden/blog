@@ -95,7 +95,7 @@ Check if it's managed by SystemD under the folder: ```/etc/systemd/system```
 
 - Stop control-plane components.
 
-Proceed to move manifests file from (default) location: ```/etc/kubernetes/manifests``` or stop the appropiate service within the master node (in case is installed as service).
+Proceed to move manifests files from (default) location: ```/etc/kubernetes/manifests``` or stop the appropriate service within the master node (in the case is installed as a service).
 
 ---
 
@@ -103,7 +103,7 @@ Proceed to move manifests file from (default) location: ```/etc/kubernetes/manif
 
 If you have other clusters (like in the exam), check the manifests from other master nodes to see if you're missing something.
 
-Usually, the main issues are related to paths, ports or some other sort of mispelling within the */etc/kubernetes/manifests* folder.
+Usually, the main issues are related to paths, ports or some other sort of misspelling within the */etc/kubernetes/manifests* folder.
 
 Others can be as simple as checking and starting the kubelet service in the worker nodes:
 
@@ -112,7 +112,7 @@ Others can be as simple as checking and starting the kubelet service in the work
 > service status service_name
 ```
 
-Also you can check if process is running on the worker node: ```ps aux | grep kubelet```
+Also, you can check if the process is running on the worker node: ```ps aux | grep kubelet```
 
 ---
 
@@ -143,7 +143,7 @@ root@master-node:/etc/kubernetes/manifests# mv * ..
 ```
 5. Check no pods are running within the master-node: ```crictl ps```
 6. Create directory before restoring snapshot: mkdir...
-7. Restore snapshot (in new empty directory created): 
+7. Restore snapshot (in the new empty directory created): 
 ``` shell
 ETCDCTL_API=3 etcdctl --data-dir /var/lib/etcd/restore snapshot restore /tmp/etcd-backup.db
 ```
