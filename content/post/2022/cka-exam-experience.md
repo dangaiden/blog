@@ -16,7 +16,7 @@ tags:
 
 # My CKA experience
 
-TL;DR Last week I've taken the CKA exam and I have passed it!
+> TL;DR Last week I've taken the CKA exam last week and I have passed it!
 
 
 I have been studying for 2-3 weeks but I wanted to share what I have used to study although I already have experience with Kubernetes so your millage may vary.
