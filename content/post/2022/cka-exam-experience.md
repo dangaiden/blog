@@ -14,9 +14,10 @@ tags:
   - devops
 ---
 
-# My CKA experience
+# It was about time...
 
-> TL;DR Last week I've taken the CKA exam last week and I have passed it!
+>TL;DR Last week I've taken the CKA exam last week and I have passed it!
+>You can read the rest of the post for more insights and resources.
 
 
 I have been studying for 2-3 weeks but I wanted to share what I have used to study although I already have experience with Kubernetes so your millage may vary.
@@ -49,7 +50,7 @@ Therefore, once you understand all questions from the tests, feel fluent using t
 
 ## Useful things I have learnt but aren't mandatory for the exam
 
-### Useful "shortcuts" to use
+- Useful "shortcuts" to use (use them as exported variables or aliases)
 
 ```
 export k=kubectl                        # already configured
@@ -57,8 +58,8 @@ export do="--dry-run=client -o yaml"    # k get pod x $do
 export now="--force --grace-period 0"   # k delete pod x $now
 ````
 
-
-### Check expiration of certificates without kubeadm (using openssl):
+---
+- Check expiration of certificates (using openssl and kubeadm):
 
 ```
 > openssl x509 -noout -text -in /var/lib/minikube/certs/apiserver.crt | grep -i valid -A2
@@ -67,9 +68,11 @@ export now="--force --grace-period 0"   # k delete pod x $now
             Not After : May 14 22:33:43 2022 GMT
 ```
 
-- With kubeadm -> ```kubeadm certs check-expiration```
+- With kubeadm:  ```kubeadm certs check-expiration```
 
-### Quick check of versions of kubelet, kubeadm and kubectl (for upgrading):
+---
+
+- Quick check of versions of kubelet, kubeadm and kubectl (for upgrading):
 
 ```
 > ssh <kubernetes-node>
@@ -78,19 +81,25 @@ export now="--force --grace-period 0"   # k delete pod x $now
 > kubelet --version
 ```
 
-### Check where and which control-plane components are installed:
+---
 
-- Default CNI location:  ```/etc/cni/net.d/```
+- Check where and which control-plane components are installed:
 
-- Kubelet, DNS, scheduler, etcd, and API server (as pods): ```/etc/kubernetes/manifests``` 
+Default CNI location:  ```/etc/cni/net.d/```
+
+Kubelet, DNS, scheduler, etcd, and API server (as pods): ```/etc/kubernetes/manifests``` 
 
 Check if it's managed by SystemD under the folder: ```/etc/systemd/system```
 
-### Stop control-plane components.
+---
+
+- Stop control-plane components.
 
 Proceed to move manifests file from (default) location: ```/etc/kubernetes/manifests``` or stop the appropiate service within the master node (in case is installed as service).
 
-### Troubleshooting nodes
+---
+
+- Troubleshooting nodes
 
 If you have other clusters (like in the exam), check the manifests from other master nodes to see if you're missing something.
 
@@ -105,51 +114,57 @@ Others can be as simple as checking and starting the kubelet service in the work
 
 Also you can check if process is running on the worker node: ```ps aux | grep kubelet```
 
-### Commands to test within the pods
+---
 
-- Review if port is opened from a particular pod (using a shell)
+-  Commands to test within the pods
+
+Review if port is opened from a particular pod (using a shell)
 ``` shell
 > k exec -it <pod-name> -- bin/sh -c "nc -vz 10.36.0.18 80"
 ```
-
-### Check how a resource manifest is structured (aka how to put fields within the YAML)
+---
+- Check how a resource manifest is structured (aka how to put fields within the YAML)
 
 ``` bash
 > k explain --recursive <api-resource> 
 ```
 
-## ETCD backup and restore summary
+---
+- ETCD backup and restore summary
 
-- Gather the data from the etcd pod: k describe <etcd-pod>
-- Review the IP and port provided by "listen clients"
-- Use the snapshot save command
-- Stop all control plane components (by moving the YAML files where the static pods are defined to another folder):
+1. Gather the data from the etcd pod: k describe <etcd-pod>
+2. Review the IP and port provided by "listen clients"
+3. Use the snapshot save command
+4. Stop all control plane components (by moving the YAML files where the static pods are defined to another folder):
 
 ```
 root@master-node:~# cd /etc/kubernetes/manifests/
 root@master-node:/etc/kubernetes/manifests# mv * ..
 ```
-- Check no pods are running within the master-node: ```crictl ps```
-- Create directory before restoring snapshot: mkdir...
-- Restore snapshot (in new empty directory created): 
+5. Check no pods are running within the master-node: ```crictl ps```
+6. Create directory before restoring snapshot: mkdir...
+7. Restore snapshot (in new empty directory created): 
 ``` shell
 ETCDCTL_API=3 etcdctl --data-dir /var/lib/etcd/restore snapshot restore /tmp/etcd-backup.db
 ```
-- Change manifest from etcd to point to new directory: vim /etc/kubernetes/manifests/etcd.yaml
+8. Change manifest from etcd to point to new directory: vim /etc/kubernetes/manifests/etcd.yaml
 
 > NOTE: Don't use ```snapshot status``` because it can alter the snapshot file and render it invalid
 
+---
 
-## Test if an SA or user can perform an action
+- Test if an SA or user can perform an action
 
-- For user:
+For a user:
 ``` shell
 k auth can-i create configmap --as <user> -n <namespace>
 ```
-- For SA:
+For a SA:
 ``` shell
 k auth can-i list pod  --as system:serviceaccount:<namespace>:<role>
 ```
+
+---
 
 ## Wrap up 
 
@@ -161,4 +176,4 @@ That's all, next one is the CKAD which should be "easier" as per other reviews I
 
 More in the next post!
 
-![].(https://media.giphy.com/media/BoHCeLmEKytt7oFxyR/giphy.gif)
+![](https://media.giphy.com/media/BoHCeLmEKytt7oFxyR/giphy.gif)
