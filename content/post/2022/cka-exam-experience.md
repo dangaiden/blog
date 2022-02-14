@@ -20,9 +20,9 @@ tags:
 >You can read the rest of the post for more insights and resources.
 
 
-I have been studying for 2-3 weeks but I wanted to share what I have used to study although I already have experience with Kubernetes so your millage may vary.
+I have been studying for 2-3 weeks but I wanted to share what I have used to study although I already have experience with Kubernetes so your mileage may vary.
 
-Anyway, I really like the practice exams as they really test you but practicing and understaing things instead of memorizing questions from a test.
+Anyway, I really like the practice exams as they really test you but practice and understand things instead of memorizing questions from a test.
 
 In my opinion, the exam wasn't hard, by doing the **killer.sh** test (provided when you order the exam) you have great questions which will be harder than the real exam.
 
@@ -32,11 +32,11 @@ Therefore, once you understand all questions from the tests, feel fluent using t
 
 ## Day of the exam
 
-- It's a 2 hour exam, so any extra time you can save, the better, maybe you should go to the toilet before taking the exam (although you can request a break if needed).
-- Use the cheatsheet provided by the [Kubernetes documentation](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) at the beginning of the exam (search for it) as it will help you to remember some commands if you don't remember them correctly
+- It's a 2-hour exam, so any extra time you can save, the better, maybe you should go to the toilet before taking the exam (although you can request a break if needed).
+- Use the cheat sheet provided by the [Kubernetes documentation](https://kubernetes.io/docs/reference/kubectl/cheatsheet/) at the beginning of the exam (search for it) as it will help you to remember some commands if you don't remember them correctly
 - You can have opened another tab to read through the documentation but *only one tab*. In my case I had the official Kubernetes documentation opened in my other screen to read/search as fast as I can.
-- Don't worry too much about alias, the "alias k=kubectl" is already provided, maybe you want to remember the one for **--dry-run=client -o yaml**. *Bash completion* is provided as well.
-- If you get stuck in one question more than 10 min, probably you should flag it and go with the the next one!
+- Don't worry too much about the alias, the "alias k=kubectl" is already provided, maybe you want to remember the one for **--dry-run=client -o yaml**. *Bash completion* is provided as well.
+- If you get stuck in one question for more than 10 min, probably you should flag it and go with the next one!
 
 ![](https://media.giphy.com/media/3o6fJb3wLZeWqHu5os/giphy.gif)
 
@@ -45,7 +45,7 @@ Therefore, once you understand all questions from the tests, feel fluent using t
 - The famous CKA [Udemy course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/15271428?start=1#notes) by Mumshad Mannambeth was great to know about some other resources I haven't used nor known and for reviewing many others.
 - The amazing collection of resources from Walid is a *must*: https://github.com/walidshaari/Kubernetes-Certified-Administrator
 - CKA/CKAD exercises from https://github.com/dgkanatsios/CKAD-exercises
-- More exercieses: https://github.com/StenlyTU/K8s-training-official
+- More exercises: https://github.com/StenlyTU/K8s-training-official
 - The Killer.sh test provided by the Linux training foundation is extremely helpful.
 
 ## Useful things I have learnt but aren't mandatory for the exam
