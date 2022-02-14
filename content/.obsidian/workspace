@@ -1,14 +1,17 @@
 {
   "main": {
-    "id": "07f86270d8391e1b",
+    "id": "ec01210b3ac566fa",
     "type": "split",
     "children": [
       {
-        "id": "309e0040b22033fd",
+        "id": "9fdef79354f97d81",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "post/2022/cka-exam-experience.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "post/2022/cka-exam-experience.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,14 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "309e0040b22033fd",
+  "active": "9fdef79354f97d81",
   "lastOpenFiles": [
-    "post/2021/Installing RHEL 8.4.md",
+    "post/2022/cka-exam-experience.md",
+    "post/2020/2020-02-09-.md",
     "post/2021/2021-06-08-az-400-exam-notes.md",
+    "post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
+    "post/2021/k8s-etcd_restore.md",
+    "post/2021/kubernetes-cluster-installation-config.md",
+    "post/2021/Installing RHEL 8.4.md",
     "post/2021/Kubernetes-the-hard-way-but-on-prem.md",
     "post/2021/OSS-monitoring-series.md",
-    "post/2021/Untitled.md",
-    "post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
-    "Untitled.md"
+    "post/2021/Untitled.md"
   ]
 }
