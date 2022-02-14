@@ -48,7 +48,7 @@ Therefore, once you understand all questions from the tests, feel fluent using t
 - More exercises: https://github.com/StenlyTU/K8s-training-official
 - The Killer.sh test provided by the Linux training foundation is extremely helpful.
 
-## Useful things I have learnt but aren't mandatory for the exam
+## Useful things I have learnt but NOT ALL are mandatory for the exam
 
 - Useful "shortcuts" to use (use them as exported variables or aliases)
 
