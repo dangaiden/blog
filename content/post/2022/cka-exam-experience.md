@@ -14,7 +14,7 @@ tags:
   - devops
 ---
 
-# It was about time...
+## It was about time...
 
 >TL;DR Last week I've taken the CKA exam last week and I have passed it!
 >You can read the rest of the post for more insights and resources.
