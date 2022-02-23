@@ -1,9 +1,9 @@
 ---
 title: Github Actions Concurrency
 author: itgaiden
-type: post
+type: draft
 date: 2022-02-14T11:37:03+00:00
-url: cka-exam-experience
+url: ghactions-concurrency
 categories:
   - Kubernetes
   - DevOps
