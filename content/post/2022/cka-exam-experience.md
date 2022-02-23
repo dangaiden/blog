@@ -38,6 +38,8 @@ Therefore, once you understand all questions from the tests, feel fluent using t
 - Don't worry too much about the alias, the "alias k=kubectl" is already provided, maybe you want to remember the one for **--dry-run=client -o yaml**. *Bash completion* is provided as well.
 - If you get stuck in one question for more than 10 min, probably you should flag it and go with the next one!
 
+> Note: The exam taken was based in Kubernetes v1.22
+
 ![](https://media.giphy.com/media/3o6fJb3wLZeWqHu5os/giphy.gif)
 
 ## Resources

@@ -90,14 +90,14 @@
   "active": "1f4c7dc31cd4ff12",
   "lastOpenFiles": [
     "content/post/2022/cka-exam-experience.md",
+    "content/post/2022/github-concurrency.md",
+    "archetypes/default.md",
     "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
     "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
-    "archetypes/default.md",
     "themes/papermod/README.md",
     "content/post/2021/note about k8s part1.md",
     "content/post/2021/2021-06-08-az-400-exam-notes.md",
     "content/post/2021/kubernetes-the-hard-way-but-on-prem-part1.md",
-    "content/post/2021/Simple-guide-install-and-configure-RHEL-in-VM.md",
-    "content/post/2021/OSS-monitoring-series.md"
+    "content/post/2021/Simple-guide-install-and-configure-RHEL-in-VM.md"
   ]
 }
