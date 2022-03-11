@@ -14,9 +14,9 @@ tags:
   - devops
 ---
 
-# CKAD exam
+# Another Kubernetes exam: CKAD
 
-As I already expected, it was easier than the CKA. 
+> TL;DR I passed the CKAD exam a couple of weeks ago. As I already expected, it was easier than the CKA. Most of the resources to be used are the same than the CKA.
 
 How much do I study for this one? Well, I already have experience with Kubernetes, took the CKA 3 weeks ago so I just took twice the *killer.sh test* and It was enough but your mileage may vary.
 
