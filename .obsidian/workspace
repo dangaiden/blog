@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "content/post/2022/github-concurrency.md",
+            "file": "content/post/2022/ckad-exam-experience.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 240
+    "width": 240,
+    "collapsed": true
   },
   "right": {
     "id": "c2936bd4181d260e",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/2022/github-concurrency.md",
+                "file": "content/post/2022/ckad-exam-experience.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +90,15 @@
   },
   "active": "1f4c7dc31cd4ff12",
   "lastOpenFiles": [
-    "content/post/2022/github-concurrency.md",
+    "content/post/2022/ckad-exam-experience.md",
     "content/post/2022/cka-exam-experience.md",
+    "content/post/2022/github-concurrency.md",
     "archetypes/default.md",
     "content/post/2021/2021-03-22-new-role-moving-to-the-cloud.md",
     "content/post/2021/kubernetes-the-hard-way-but-on-prem-part-1.md",
     "themes/papermod/README.md",
     "content/post/2021/note about k8s part1.md",
     "content/post/2021/2021-06-08-az-400-exam-notes.md",
-    "content/post/2021/kubernetes-the-hard-way-but-on-prem-part1.md",
-    "content/post/2021/Simple-guide-install-and-configure-RHEL-in-VM.md"
+    "content/post/2021/kubernetes-the-hard-way-but-on-prem-part1.md"
   ]
 }

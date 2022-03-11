@@ -9,9 +9,9 @@ categories:
   - DevOps
   - Education
 tags:
-  - kubernetes
-  - certification
-  - devops
+  - GitHub
+  - pipeline
+  - cicd
 ---
 
 # GitHub Actions concurrency
