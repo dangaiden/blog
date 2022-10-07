@@ -1,7 +1,7 @@
 ---
 title: New role
 author: itgaiden
-type: post
+type: draft
 date: 2022-09-20T00:00:00
 url: a-new-journey
 categories:
