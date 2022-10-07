@@ -2,7 +2,7 @@
 title: VMware Explore 2022 local guide 
 author: itgaiden
 type: post
-date: 2022-10-07T17:50:50+00:00
+date: 2022-10-07T16:50:50+00:00
 url: vmwareexplore-europe-local-guide
 categories:
   - Events

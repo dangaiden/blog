@@ -17,10 +17,10 @@
 # [params]
 #   header_image = "/static/itgaiden.jpeg"
 #   title = "IT Gaiden"
-#   slogan = "Tips. stories and more about the IT"
+#   slogan = "Tips, stories and more about IT"
 #   #env = production    
 #   SEOTitle = "IT Gaiden"
-#   keyword = "VMware, Windows, Kubernetes, Docker, SRE, DevOps, devops, Dan, Belmonte"
+#   keyword = "Kubernetes, Docker, SRE, DevOps, VMware, devops, Dan, Belmonte"
  
 #   # Sidebar settings
 #   sidebar_about_description = "I like road bikes (cyclist), playing videogames (gamer) and, anything related to tech!"
