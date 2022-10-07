@@ -4,11 +4,6 @@ author: itgaiden
 type: post
 date: 2022-10-07T17:50:50+00:00
 url: vmwareexplore-europe-local-guide
-rank_math_description:
-  - This is a local guide with general tips about transport, restaurants, places to go, etc in Barcelona.
-rank_math_focus_keyword:
-  - vmworld
-  - vmwareexplore
 categories:
   - Events
   - VMware
@@ -20,6 +15,7 @@ tags:
   - vmwareexplore
 
 ---
+
 >This is a "remake" from my previous guide and maybe I have missed something which is not properly updated.
 
 VMworld 2022 Europe is one month away and I am excited because that means the first event that I am going to attend this year (after not being able to attend Kubecon in Valencia...)
