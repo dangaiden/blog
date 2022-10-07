@@ -96,7 +96,7 @@ Complete!
 
 ```
 
-7. Copy your ssh key to the server: ```ssh-copyid```
+7. Copy your ssh key to the server: ```ssh-copy-id```
 8. Shutdown and clone the newly created VM (Create a full clone and remember to change MAC address for the NICs).
 9. Once it's cloned, power on the new one and proceed to:
 	* 1. Change the hostname: 
