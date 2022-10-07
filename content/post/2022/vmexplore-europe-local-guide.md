@@ -121,19 +121,15 @@ Here is a summary of the places that you could visit if you come to Barcelona:
 
 ![Something title]()
 <img loading="lazy" class="alignnone size-medium_large wp-image-1158" src="/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg" alt="" width="656" height="369" srcset="/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg 768w, /wp-content/uploads/2019/10/sagrada-familia-300x169.jpg 300w, /wp-content/uploads/2019/10/sagrada-familia-1024x576.jpg 1024w, /wp-content/uploads/2019/10/sagrada-familia-1536x864.jpg 1536w, /wp-content/uploads/2019/10/sagrada-familia-1568x882.jpg 1568w, /wp-content/uploads/2019/10/sagrada-familia.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
-      
-      
+
+
  La Sagrada Familia
-      
-      
-      
+
 Probably the most iconic building in Barcelona. It is an unfinished church designed by "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD">Gaudí, an architect who made many iconic buildings here in Barcelona.
-      
-      
-      
+
 Location: "https://cutt.ly/5eoPoBU">https://cutt.ly/5eoPoBU  
-        
- ![Something title]()
+
+![Something title]()
 <img loading="lazy" class="alignnone size-medium_large wp-image-1157" src="/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg" alt="" width="656" height="435" srcset="/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg 768w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona-300x199.jpg 300w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona-1024x679.jpg 1024w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona.jpg 1500w" sizes="(max-width: 656px) 100vw, 656px" /> 
             
             
