@@ -36,9 +36,9 @@ People are really friendly so, don't be shy (you can try first on Twitter) and t
 
 Besides, be sure to meet the vBrownbag crew (which I am part of) in the Tech talks area, so feel free to go there and say **"Hi!" :)**
 
-#### Events
+### Events
 
-My friend [Fred Hofer] (https://twitter.com/Fred_vBrain) has an amazing [resource](https://www.vbrain.info/2022/09/23/vmware-explore-2022-europe-parties-and-gatherings) where you can find all sort of parties and gatherings!
+My friend [Fred Hofer](https://twitter.com/Fred_vBrain) has an amazing [resource](https://www.vbrain.info/2022/09/23/vmware-explore-2022-europe-parties-and-gatherings) where you can find all sort of parties and gatherings!
 
 This year I am not organizing any #vFit run but **I am planning to attend** this fantastic breakfast for the community called [#vBreakfast](https://www.vbrain.info/2022/10/12/vmware-explore-2022-europe-vbreakfast-2022-edition/)
 
