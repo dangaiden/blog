@@ -169,45 +169,34 @@ Another famous building designed by Gaudí. It has unique balconies and a courty
 
 Location: "https://cutt.ly/reoPjYM">https://cutt.ly/reoPjYM
 
-<img loading="lazy" class="alignnone size-medium_large wp-image-1160" src="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg" alt="port-olimpic" width="656" height="437" srcset="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg 768w, /wp-content/uploads/2019/10/port-olimpic-300x200.jpg 300w, /wp-content/uploads/2019/10/port-olimpic-1024x683.jpg 1024w, /wp-content/uploads/2019/10/port-olimpic.jpg 1200w" sizes="(max-width: 656px) 100vw, 656px" /> 
-![Something title]()
+<img loading="lazy" class="alignnone size-medium_large wp-image-1160" src="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg" alt="port-olimpic" width="656" height="437" srcset="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg 768w, /wp-content/uploads/2019/10/port-olimpic-300x200.jpg 300w, /wp-content/uploads/2019/10/port-olimpic-1024x683.jpg 1024w, /wp-content/uploads/2019/10/port-olimpic.jpg 1200w" sizes="(max-width: 656px) 100vw, 656px" />
 
 #### The Olympic port of Barcelona
 
 It is one of the most exciting leisure and touristic spots throughout Barcelona, with a wide offering of shops, clubs, and restaurants. It's the gateway to the Barcelona beaches.
 
-Location: "https://cutt.ly/seoPx1J">https://cutt.ly/seoPx1J 
-                 
-                 
+[Location](https://cutt.ly/seoPx1J )
+
+---
 In general, avoid going alone in the night, especially in «Las Ramblas», «El Raval»
 
 Also, avoid the neighborhood known as «La Mina» which is farther from Barcelona but it still accessible by Metro.
-                 
-                 
+
 ### Restaurants
 
-The food in Barcelona is nice and some of you probably know it.
+The food in Barcelona is...very nice (compared to other countries ;) ) and some of you probably know it.
 
-Let me suggest a couple of restaurants near Fira Gran Via (VMware Explore):
-"https://bit.ly/35tkurS">Gran Varela: A restaurant with great food (especially octopus). Also, the wines are great!
-
-In Gran Via 2 (a shopping center pretty close to Fira Gran via) I can suggest you: 
+In *Gran Via 2* (a shopping center pretty close to Fira Gran via) I can suggest you: 
  
-A great Japanese (Udon)
-                       
-                       
-A good Italian (La Tagliatella) 
-                       
-                       
-Beers and tapas (Cañas y tapa)
+- A great Japanese (Udon)
+- A good Italian  (La Tagliatella) 
+- Great overall local food (Casa Carmen)
 
-"https://cutt.ly/dep2q9r">Restaurant La Vid: A nice restaurant where you can try local food like the bread with spread tomato, the Spanish omelet, or the ham! This is also the restaurant that will be hosting the vBreakfast event on Tuesday morning.
-
-
-The best places aren't near Fira Gran Via but if you want to try better food, here are a couple of restaurants that are really nice:
+The best places aren't near *Fira Gran Via* but if you want to try better food, here are a couple of restaurants that are really nice:
 
 [Bacoa Burger](https://www.bacoaburger.com/en/)
-Amazing and customized burgers, also hand-made fries and sauces, it's a franchise but one of those which are extremely worth it..
+Amazing and customized burgers, also hand-made fries and sauces. 
+It's a franchise but one of those which are extremely worth it.
 
 [König](https://www.konig.cat/en/)
 Great restaurant where you can try almost everything: tapas, amazing beer, flatbread, and many other options.
