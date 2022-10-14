@@ -34,15 +34,13 @@ Also, it is a great way to connect with a lot of people from the community, vend
 
 People are really friendly so, don't be shy (you can try first on Twitter) and try speaking to members from the vCommunity (if you don't know what it is just search for #vCommunity on Twitter!) for example.
 
-Besides, be sure to meet the vBrownbag crew (which I am part of) in the Tech talks area, so feel free to say **"Hi!" :)**
+Besides, be sure to meet the vBrownbag crew (which I am part of) in the Tech talks area, so feel free to go there and say **"Hi!" :)**
 
 ## Some notes
 
 In Spain, **tipping is entirely optional** and its not very common so, it's up to you if you want to leave a tip in case the service was exceptional or you think it deserves it. 
 
 In restaurants, shops, etc. the VAT tax is included. Therefore, you don't have to worry to calculate an extra amount of money. 
-
-Also, once you pay with credit card (VISA branded cards are the most used here) they will make you enter the PIN code of your credit card (a bit different than the US).
 
 The official language in Barcelona is Spanish but *most of the population speaks Catalan*. Be ready to don't understand some signboards from the street or public places.
 
@@ -85,7 +83,7 @@ The least recommended option as it will be crowded but it depends on your prefer
 
 The *Aerobus* service will take you to *«Plaça Catalunya»* (Catalunya Plaza) but it costs a bit more than other services (still 5,90 € in 2022), you can review more information [here](https://www.aeropuertobarcelona-elprat.com/ingl/accesos_aeropuerto_taxi_bus4030.htm#aerobus-A1-A2).
 
-### Moving inside of Barcelona
+### Inside Barcelona
 
 The Metro (subway/underground) is your best choice wherever you stay in Barcelona. If you want a cheap, frequent and "reliable" service within the whole city.
 
@@ -205,42 +203,46 @@ Beers and tapas (Cañas y tapa)
 
 "https://cutt.ly/dep2q9r">Restaurant La Vid: A nice restaurant where you can try local food like the bread with spread tomato, the Spanish omelet, or the ham! This is also the restaurant that will be hosting the vBreakfast event on Tuesday morning.
 
-**** The best places aren't near Fira Gran Via but if you want to try better food, here are a couple of restaurants that are really nice:
 
+The best places aren't near Fira Gran Via but if you want to try better food, here are a couple of restaurants that are really nice:
 
- "https://www.bacoaburger.com/en/">Bacoa Burger: Amazing and customized burgers, also hand-made fries and sauces.
+[Bacoa Burger](https://www.bacoaburger.com/en/)
+Amazing and customized burgers, also hand-made fries and sauces, it's a franchise but one of those which are extremely worth it..
 
- "https://www.konig.cat/en/">König: Amazing restaurant where you can try almost everything: tapas, amazing beer, flatbread, and many other options!
+[König](https://www.konig.cat/en/)
+Great restaurant where you can try almost everything: tapas, amazing beer, flatbread, and many other options.
 
+[La Bella Napoli](http://www.bellanapoli.es/en/) 
+Not too many choices on the menu in this Italian restaurant but the food quality is amazing.
 
- "http://www.bellanapoli.es/en/">La Bella Napoli: Not many choices on the menu in this Italian restaurant but the food quality is amazing.
-
- "http://bairesbcn.com/">Buenos Aires Grill Restaurant: Steak, ribs, Argentinian Beef, special cuts?
+[Buenos Aires Grill Restaurant](http://bairesbcn.com/)
+You want meat? Steak, ribs, Argentinian Beef, special cuts, etc.
  
- "https://www.facebook.com/RamenYaHiro">Ramen-Ya Hiro: Best ramen in Barcelona without a doubt! The queue won't be short to get the Ramen&#8230;  
+[Takumi Ramen](https://takumibarcelona.es/)
+For me, one of the best ramen you can find, there are a couple in Barcelona, be sure to check them as they have different dishes depending on which one are you going.  
 
 ### Local food
 
-Let me put a short section about local food here. The food you must try while staying here would be: Paella, Spanish omelet, Bread with (spread) tomato and of course Ham (Jamón)!
+Let me put a short section about local food here.
+
+The food you must try while staying here would be: Paella, Spanish omelet, Bread with (spread) tomato and of course Ham (Jamón)!
 
 Despite there many restaurants that they prepare all these dishes, I will avoid the ones in Las Ramblas because they're usually not the best option&#8230;
 
-Bread with (spread) tomato can be found in almost any bar or restaurant so, just ask for it. They are also served at breakfast!<img loading="lazy" class="alignnone wp-image-1236 " src="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg" alt="pa_amb_tomaquet" width="558" height="318" srcset="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg 700w, /wp-content/uploads/2019/10/pa_amb_tomaquet2-300x171.jpg 300w" sizes="(max-width: 558px) 100vw, 558px" />
+Bread with (spread) tomato and olive oil can be found in almost any bar or restaurant so, just ask for it. They are also served at breakfast!<img loading="lazy" class="alignnone wp-image-1236 " src="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg" alt="pa_amb_tomaquet" width="558" height="318" srcset="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg 700w, /wp-content/uploads/2019/10/pa_amb_tomaquet2-300x171.jpg 300w" sizes="(max-width: 558px) 100vw, 558px" />
 
-If you don't want to lose a lot of time by going far from VMware Explore to taste many of these dishes, I would suggest you go "https://cutt.ly/dep2q9r">Restaurant La Vid, which I talked in the previous section.
+If you don't want to lose a lot of time by going far from VMware Explore to taste many of these dishes, I would suggest you go [Restaurant La Vid](https://cutt.ly/dep2q9r), which I talked in the previous section.
 
- Also, on these dates, it is common for street vendors to sell hot toasted chestnuts wrapped in newspaper, give it a try!
-
-![Something title]()
+Also, on these dates, it is common for street vendors to sell hot toasted chestnuts wrapped in newspaper, give it a try!
 
 ![Chestnuts](https://www.recetasderechupete.com/wp-content/uploads/2018/11/casta%C3%B1as-asadas.jpg?width=1200&enable=upscale)
 
-Finally, within this season, you should try a sweety called «panellets» (special almond balls covered in pine nuts), you can find them in bakeries:
 
+Finally, within this season, you should try a sweety called «panellets» (special almond balls covered in pine nuts), you can find them in bakeries:
 
 ![Panellets](https://www.cocinaabuenashoras.com/files/panellets-de-pinones-2-1024x575.jpg)
 
-There are many other places and foods not included here. If you want something specific just let me know in the comments or via DM on "https://twitter.com/DanGaiden">Twitter.
+There are many other places and foods not included here. If you want something specific just let me know in the comments or DM on [Twitter](https://twitter.com/DanGaiden).
 
 ## Conclusion
 
