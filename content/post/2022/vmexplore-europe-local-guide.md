@@ -137,7 +137,7 @@ Note: Keep an eye on your belongings if you are watching an exhibition as pickpo
 
 This fountain is stunning at night. You should check the exhibitions scheduled with lights, music and water streams creating shapes. 
 
-https://media.timeout.com/images/100563793/image.jpg             
+![Font Montjuic](https://media.timeout.com/images/100563793/image.jpg )
 
 [Location](https://bit.ly/2VBo9zc) 
 
@@ -162,7 +162,7 @@ It is also a museum where you can visit (ticket is needed) the building insights
 [Location](https://cutt.ly/ieoPssI) 
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1161" src="/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg" alt="la-pedrera" width="656" height="437" srcset="/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg 768w, /wp-content/uploads/2019/10/la-pedrera-300x200.jpeg 300w, /wp-content/uploads/2019/10/la-pedrera-1024x683.jpeg 1024w, /wp-content/uploads/2019/10/la-pedrera-1536x1024.jpeg 1536w, /wp-content/uploads/2019/10/la-pedrera-1568x1045.jpeg 1568w, /wp-content/uploads/2019/10/la-pedrera.jpeg 1920w" sizes="(max-width: 656px) 100vw, 656px" /> 
-![Something title]()
+
 
 #### Casa Milà; La Pedrera (The stone quarry)
 
@@ -221,7 +221,7 @@ Despite there many restaurants that they prepare all these dishes, I will avoid 
 
 Bread with (spread) tomato and olive oil can be found in almost any bar or restaurant so, just ask for it. They are also served at breakfast!<img loading="lazy" class="alignnone wp-image-1236 " src="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg" alt="pa_amb_tomaquet" width="558" height="318" srcset="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg 700w, /wp-content/uploads/2019/10/pa_amb_tomaquet2-300x171.jpg 300w" sizes="(max-width: 558px) 100vw, 558px" />
 
-If you don't want to lose a lot of time by going far from VMware Explore to taste many of these dishes, I would suggest you go [Restaurant La Vid](https://cutt.ly/dep2q9r), which I talked in the previous section.
+==If you don't want to lose a lot of time by going far from VMware Explore to taste many of these dishes, I would suggest you go [Restaurant La Vid](https://cutt.ly/dep2q9r), which I talked in the previous section.==
 
 Also, on these dates, it is common for street vendors to sell hot toasted chestnuts wrapped in newspaper, give it a try!
 
