@@ -28,47 +28,47 @@ As mentioned before, this is a "remake" of my previous guide with tips about tra
 
 ## General information
 
-The event will take place from the 7th (Monday) to 10th (Thursday) of November at "https://cutt.ly/4eoPvEw">Fira Gran Via in Barcelona, Spain.
+The event will take place from the 7th (Monday) to the 10th (Thursday) of November at [Fira Gran Via](https://cutt.ly/4eoPvEw) in Barcelona, Spain.
 
-Also, it is a great way to connect with a lot of people from the community, vendors or other persons that you could be interested (try not to be aggresive when approaching they).
+Also, it is a great way to connect with a lot of people from the community, vendors, or other persons that you could be interested in (try not to be aggressive when approaching them).
 
-People are really friendly so, don't be shy (you can try first on Twitter) and try speaking to members from the vCommunity (if you you don't know what it is just search for #vCommunity on Twitter!) for example. 
+People are really friendly so, don't be shy (you can try first on Twitter) and try speaking to members from the vCommunity (if you don't know what it is just search for #vCommunity on Twitter!) for example.
 
-Besides, **be sure to meet the vBrownbag crew** (which I am part of) in the Tech talks area, so feel free to say **"Hi!" :)**
+Besides, be sure to meet the vBrownbag crew (which I am part of) in the Tech talks area, so feel free to say **"Hi!" :)**
 
 ## Some notes
 
-In Spain, *tipping is entirely optional* and its not very common so, it's up to you if you want to leave a tip in case the service was exceptional or you think it deserves it. 
+In Spain, **tipping is entirely optional** and its not very common so, it's up to you if you want to leave a tip in case the service was exceptional or you think it deserves it. 
 
 In restaurants, shops, etc. the VAT tax is included. Therefore, you don't have to worry to calculate an extra amount of money. 
 
 Also, once you pay with credit card (VISA branded cards are the most used here) they will make you enter the PIN code of your credit card (a bit different than the US).
 
-I know it's late but, hotels near Fira are nice and a bit expensive. The best zone I think it is near Sants where there are cheaper hotels, nice transport connections, and great ambient.
-
-The official language in Barcelona is Spanish but *most of the population speak in Catalan*. Saying that, don't worry if you don't understand some signboards from the street or public places.
+The official language in Barcelona is Spanish but *most of the population speaks Catalan*. Be ready to don't understand some signboards from the street or public places.
 
 ## Transportation
 
 There are 3 different train services: Renfe (Local Train), TMB (metro/subway/underground) and FGC (Regional Train).
 
-*Renfe* and *TMB* are the most used because they have more combinations than the FGC and also better schedules. So, basically, you will see in this guide mentioning train for Renfe and metro/subway/underground for TMB.
+*Renfe* and *TMB* are the most used because they have more combinations than the FGC and also better schedules. 
+
+Then, you will see in this guide mentioning "train" for *Renfe* (the company) and metro/subway/underground for *TMB*.
 
 > Masks are mandatory when using any public transport.
 
 ### Coming from the airport
 
-Once you land at El Prat airport, there are a few ways to go to the city of Barcelona:
+Once you have landed at "El Prat" airport, there are a few ways to go to the city of Barcelona:
 
-  * *Taxi* (expensive but more convenient for people with less time or when the hotel is located in an isolated area). It will costs between 30-40 € from the Barcelona Airport to *Sants* (always depending on the traffic). 
+  * *Taxi* (expensive but more convenient for people with less time or when the hotel is located in an isolated area). It will cost between 30-50 € from the *Barcelona Airport* to *Sants* (always depending on the traffic). 
   
-Putting the hand luggage on the taxi trunk costs an additional euro. One of the services available is *FreeNow* or *Cabify* as *Uber* and Cabifiy are not available in Barcelona.
+Putting the hand luggage on the taxi trunk costs an additional euro. One of the services available is *FreeNow* or *Cabify* as *Uber* is not available in Barcelona.
 
   - *By train, service called [Renfe](https://www.renfe.com/content/dam/renfe/es/Viajeros/Secciones/Cercanias/Mapas/barcelona.png)
 
 You can go to the *Aeroport* (airport) stop on the *R2 Nord* line (you must go to Terminal 2 to take the train). This line will take you to Sants-Estacio and will be great for people staying near Sants. 
 
-This line is less frequent than the next option but it takes less time. Pricing is subjected to zones. In that case, From Aeroport to Sants-Estacio the price for a single ticket will be 4.60 €.
+This line is less frequent than the next option but it takes less time. Pricing is subject to zones. In that case, From Aeroport to Sants-Estacio the price for a single ticket will be 4.60 €.
 
 
   - By metro/subway, *TMB*:
@@ -77,11 +77,11 @@ Whole [map](https://www.tmb.cat/documents/20182/96078/Pl%C3%A0nol+xarxa+de+Metro
 
 Use the *L9 Sud* line, this is the Metro (subway/underground) service and can be combined with other lines (like L5 at *Collblanc* stop for example) within the same ticket.
 
-This  service is more frequent than the train service. This can be the best option for most people because you can use the same single ticket to go to other places by combining lines.
+This service is more frequent than the train service. This can be the best option for most people because you can use the same single ticket to go to other places by combining lines.
 
 - By bus (*Aerobus* service): 
 
-The least recommended option as it will be crowded but it depends on your preferences and where do you want to go. 
+The least recommended option as it will be crowded but it depends on your preferences and where you want to go. 
 
 The *Aerobus* service will take you to *«Plaça Catalunya»* (Catalunya Plaza) but it costs a bit more than other services (still 5,90 € in 2022), you can review more information [here](https://www.aeropuertobarcelona-elprat.com/ingl/accesos_aeropuerto_taxi_bus4030.htm#aerobus-A1-A2).
 
@@ -91,8 +91,8 @@ The Metro (subway/underground) is your best choice wherever you stay in Barcelon
 
 > Before, there was a ticket (with 10 single rides) that could be used for more than one person, nowadays that ticket (called *T-casual*) is completely individual and can't be shared with other people. More [information](https://www.tmb.cat/en/barcelona-fares-metro-bus/single-and-integrated/t-casual) 
 
-With the metro you can travel through lines at the same cost. 
-The main stops to consider will be Fira in L9 Sud, Plaça Espanya in L1/L3 and Sants-Estacio in L5/L3.
+With the metro, you can travel through lines at the same cost. 
+The main stops to consider will be *Fira* in **L9 Sud**, *Plaça Espanya* in **L1/L3** and, *Sants-Estacio* in **L5/L3**.
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1135" src="/wp-content/uploads/2019/10/post-metro_map-768x411.png" alt="" width="656" height="351" srcset="/wp-content/uploads/2019/10/post-metro_map-768x411.png 768w, /wp-content/uploads/2019/10/post-metro_map-300x161.png 300w, /wp-content/uploads/2019/10/post-metro_map-1024x549.png 1024w, /wp-content/uploads/2019/10/post-metro_map.png 1150w" sizes="(max-width: 656px) 100vw, 656px" />
 
@@ -103,31 +103,25 @@ The main stops to consider will be Fira in L9 Sud, Plaça Espanya in L1/L3 and S
 
 The closest stop to the VMware Explore event is *Fira* in *L9 Sud* or the *Europa-Fira* stop which is another stop from the L9-Sud line that also combines with another [train service](https://www.fgc.cat/wp-content/uploads/2018/12/planol_2019.pdf) which is a different transport service than the metro and it has different stops.
 
->If you stay near *Sants*, the *Sants-Estacio* stop in *L5* will be your choice. Then, in Sants-Estacio station take the *L5* to *Collblanc* stop and after that, change the line to *L9 Sud* until you arrive at Fira stop.
+>If you stay near the *Sants* area, the *Sants-Estacio* stop in *L5* will be your choice. Then, at *Sants-Estacio* station take the *L5* to *Collblanc* stop and after that, change the line to *L9 Sud* until you arrive at the *Fira* stop.
 
-You can see in the following map the VMware Explore precinct highlighted in yellow and the closest stops (marked in: Europa-Fira stop which combines FGC and Metro services and, Fira stop at L9 Sud.
+You can see in the following map the *VMware Explore* precinct highlighted in yellow and the closest stops (marked in **Europa-Fira** stop which combines *FGC* and *Metro* services and, *Fira* stop at *L9 Sud*.
 
 <img loading="lazy" class="alignnone size-full wp-image-1138" src="/wp-content/uploads/2019/10/FiraGranVia_highlight.png" alt="FiraGranVia-map" width="939" height="725" srcset="/wp-content/uploads/2019/10/FiraGranVia_highlight.png 939w, /wp-content/uploads/2019/10/FiraGranVia_highlight-300x232.png 300w, /wp-content/uploads/2019/10/FiraGranVia_highlight-768x593.png 768w" sizes="(max-width: 939px) 100vw, 939px" /> 
-![Something title]()
 
 ## Outside VMware Explore (Sightseeing)
 
 Here is a summary of famous places you could visit if you're planning to visit Barcelona:
 
-![Something title]()
 <img loading="lazy" class="alignnone size-medium_large wp-image-1158" src="/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg" alt="" width="656" height="369" srcset="/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg 768w, /wp-content/uploads/2019/10/sagrada-familia-300x169.jpg 300w, /wp-content/uploads/2019/10/sagrada-familia-1024x576.jpg 1024w, /wp-content/uploads/2019/10/sagrada-familia-1536x864.jpg 1536w, /wp-content/uploads/2019/10/sagrada-familia-1568x882.jpg 1568w, /wp-content/uploads/2019/10/sagrada-familia.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 
 #### La Sagrada Familia
 
-Probably the most iconic building in Barcelona. It is an unfinished church designed by "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD">Gaudí, an architect who made many iconic buildings here in Barcelona.
+Probably the most iconic building in Barcelona. It is an unfinished church designed by [Gaudí](https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD), an architect who built many iconic buildings here in Barcelona.
 
-Location: "https://cutt.ly/5eoPoBU">https://cutt.ly/5eoPoBU  
-
-![Something title]()
+[Location](https://cutt.ly/5eoPoBU)
 <img loading="lazy" class="alignnone size-medium_large wp-image-1157" src="/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg" alt="" width="656" height="435" srcset="/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg 768w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona-300x199.jpg 300w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona-1024x679.jpg 1024w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona.jpg 1500w" sizes="(max-width: 656px) 100vw, 656px" /> 
-
-
 #### Las Ramblas
 
 The most famous pedestrian street of Barcelona, you will see many kiosks and artists there while walking in the middle of the city. 
@@ -136,19 +130,16 @@ Note: Keep an eye on your belongings if you are watching an exhibition as pickpo
 
 Location: "https://bit.ly/35zkqXQ">https://bit.ly/35zkqXQ 
 
-
 <img loading="lazy" class="alignnone size-medium_large wp-image-1165" src="/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg" alt="font-montjuic" width="656" height="328" srcset="/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg 768w, /wp-content/uploads/2019/10/FontMontjuic-300x150.jpg 300w, /wp-content/uploads/2019/10/FontMontjuic-1024x512.jpg 1024w, /wp-content/uploads/2019/10/FontMontjuic-1536x768.jpg 1536w, /wp-content/uploads/2019/10/FontMontjuic-2048x1024.jpg 2048w, /wp-content/uploads/2019/10/FontMontjuic-1568x784.jpg 1568w" sizes="(max-width: 656px) 100vw, 656px" /> 
-![Something title]()             
-               
+
 #### La Font Màgica de Montjuïc (Magic fountain of Montjuïc)
-                  
-This fountain is amazing at night. You should check the exhibitions scheduled with lights and streams creating shapes. It is located near the Veeam party that will be on Tuesday so, maybe you can go earlier and check it out!
 
-https://media.timeout.com/images/100563793/image.jpg
-![Something title]()                 
+This fountain is stunning at night. You should check the exhibitions scheduled with lights, music and water streams creating shapes. 
 
-Location (https://bit.ly/2VBo9zc">https://bit.ly/2VBo9zc  
-    
+https://media.timeout.com/images/100563793/image.jpg             
+
+[Location] (https://bit.ly/2VBo9zc) 
+
 <img loading="lazy" class="alignnone size-medium_large wp-image-1156" src="/wp-content/uploads/2019/10/Park-guell-768x418.jpg" alt="Park-guell" width="656" height="357" srcset="/wp-content/uploads/2019/10/Park-guell-768x418.jpg 768w, /wp-content/uploads/2019/10/Park-guell-300x163.jpg 300w, /wp-content/uploads/2019/10/Park-guell-1024x557.jpg 1024w, /wp-content/uploads/2019/10/Park-guell-1536x835.jpg 1536w, /wp-content/uploads/2019/10/Park-guell-1568x853.jpg 1568w, /wp-content/uploads/2019/10/Park-guell.jpg 1920w" sizes="(max-width: 656px) 100vw, 656px" /> 
 ![Something title]()                       
 
