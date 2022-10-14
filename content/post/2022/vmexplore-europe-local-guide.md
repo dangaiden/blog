@@ -18,12 +18,11 @@ tags:
 
 >This is a "remake" from my previous guide and maybe I have missed something which is not properly updated.
 
-VMware Explore 2022 Europe is just a few weeks away and **I am extremely excited** because it means the first event that I am going to attend this year! (after not being able to attend Kubecon in Valencia...).
+**VMware Explore 2022 Europe** is just a few weeks away and **I am extremely excited** because it means the first event that I am going to attend this year! (after not being able to attend Kubecon in Valencia...).
 
 This event is a bit special for me because it's where I started to meet many people I know nowadays, so I am looking forward to meet most of them there!
 
 <iframe src="https://giphy.com/embed/4IZJ0llj5bserpgq2o" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/RTLNL-happy-excited-excitement-4IZJ0llj5bserpgq2o"></a></p>
-
 As mentioned before, this is a "remake" of my previous guide with tips about transport, restaurants, places to go, etc. I am trying to update as much as I can but also I won't extend as much as I did in my 2019 guide.
 
 ## General information
@@ -38,7 +37,7 @@ Besides, be sure to meet the vBrownbag crew (which I am part of) in the Tech tal
 
 ### Events
 
-My friend [Fred Hofer](https://twitter.com/Fred_vBrain) has an amazing [resource](https://www.vbrain.info/2022/09/23/vmware-explore-2022-europe-parties-and-gatherings) where you can find all sort of parties and gatherings!
+My friend [Fred Hofer](https://twitter.com/Fred_vBrain) has this handy [resource](https://www.vbrain.info/2022/09/23/vmware-explore-2022-europe-parties-and-gatherings) where you can find all sort of parties and gatherings!
 
 This year I am not organizing any #vFit run but **I am planning to attend** this fantastic breakfast for the community called [#vBreakfast](https://www.vbrain.info/2022/10/12/vmware-explore-2022-europe-vbreakfast-2022-edition/)
 
@@ -73,7 +72,6 @@ Putting the hand luggage on the taxi trunk costs an additional euro. One of the 
 You can go to the *Aeroport* (airport) stop on the *R2 Nord* line (you must go to Terminal 2 to take the train). This line will take you to Sants-Estacio and will be great for people staying near Sants. 
 
 This line is less frequent than the next option but it takes less time. Pricing is subject to zones. In that case, From Aeroport to Sants-Estacio the price for a single ticket will be 4.60 €.
-
 
   - By metro/subway, *TMB*:
 
@@ -219,9 +217,7 @@ The food you must try while staying here would be: Paella, Spanish omelet, Bread
 
 Despite there many restaurants that they prepare all these dishes, I will avoid the ones in Las Ramblas because they're usually not the best option&#8230;
 
-Bread with (spread) tomato and olive oil can be found in almost any bar or restaurant so, just ask for it. They are also served at breakfast!<img loading="lazy" class="alignnone wp-image-1236 " src="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg" alt="pa_amb_tomaquet" width="558" height="318" srcset="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg 700w, /wp-content/uploads/2019/10/pa_amb_tomaquet2-300x171.jpg 300w" sizes="(max-width: 558px) 100vw, 558px" />
-
-==If you don't want to lose a lot of time by going far from VMware Explore to taste many of these dishes, I would suggest you go [Restaurant La Vid](https://cutt.ly/dep2q9r), which I talked in the previous section.==
+Bread with (spread) tomato and olive oil can be found in almost any bar or restaurant so, just ask for it. They are also served at breakfast! <img loading="lazy" class="alignnone wp-image-1236 " src="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg" alt="pa_amb_tomaquet" width="558" height="318" srcset="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg 700w, /wp-content/uploads/2019/10/pa_amb_tomaquet2-300x171.jpg 300w" sizes="(max-width: 558px) 100vw, 558px" />
 
 Also, on these dates, it is common for street vendors to sell hot toasted chestnuts wrapped in newspaper, give it a try!
 
