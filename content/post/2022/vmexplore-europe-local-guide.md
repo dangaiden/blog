@@ -1,5 +1,5 @@
 ---
-title: VMware Explore 2022 local guide 
+title: VMware Explore 2022 local guide (remake)
 author: itgaiden
 type: post
 date: 2022-10-07T12:50:50+00:00
@@ -35,6 +35,12 @@ Also, it is a great way to connect with a lot of people from the community, vend
 People are really friendly so, don't be shy (you can try first on Twitter) and try speaking to members from the vCommunity (if you don't know what it is just search for #vCommunity on Twitter!) for example.
 
 Besides, be sure to meet the vBrownbag crew (which I am part of) in the Tech talks area, so feel free to go there and say **"Hi!" :)**
+
+#### Events
+
+My friend [Fred Hofer] (https://twitter.com/Fred_vBrain) has an amazing [resource](https://www.vbrain.info/2022/09/23/vmware-explore-2022-europe-parties-and-gatherings) where you can find all sort of parties and gatherings!
+
+This year I am not organizing any #vFit run but **I am planning to attend** this fantastic breakfast for the community called [#vBreakfast](https://www.vbrain.info/2022/10/12/vmware-explore-2022-europe-vbreakfast-2022-edition/)
 
 ## Some notes
 
@@ -94,9 +100,6 @@ The main stops to consider will be *Fira* in **L9 Sud**, *Plaça Espanya* in **L
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1135" src="/wp-content/uploads/2019/10/post-metro_map-768x411.png" alt="" width="656" height="351" srcset="/wp-content/uploads/2019/10/post-metro_map-768x411.png 768w, /wp-content/uploads/2019/10/post-metro_map-300x161.png 300w, /wp-content/uploads/2019/10/post-metro_map-1024x549.png 1024w, /wp-content/uploads/2019/10/post-metro_map.png 1150w" sizes="(max-width: 656px) 100vw, 656px" />
 
-<Github\blog\static\wp-content\uploads\2019\10>
-![Something title]() 
-
 ### The fastest way to VMware Explore?
 
 The closest stop to the VMware Explore event is *Fira* in *L9 Sud* or the *Europa-Fira* stop which is another stop from the L9-Sud line that also combines with another [train service](https://www.fgc.cat/wp-content/uploads/2018/12/planol_2019.pdf) which is a different transport service than the metro and it has different stops.
@@ -126,7 +129,7 @@ The most famous pedestrian street of Barcelona, you will see many kiosks and art
 
 Note: Keep an eye on your belongings if you are watching an exhibition as pickpockets are specialists in those areas. Other than that, enjoy this long street.
 
-Location: "https://bit.ly/35zkqXQ">https://bit.ly/35zkqXQ 
+[Location](https://bit.ly/35zkqXQ) 
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1165" src="/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg" alt="font-montjuic" width="656" height="328" srcset="/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg 768w, /wp-content/uploads/2019/10/FontMontjuic-300x150.jpg 300w, /wp-content/uploads/2019/10/FontMontjuic-1024x512.jpg 1024w, /wp-content/uploads/2019/10/FontMontjuic-1536x768.jpg 1536w, /wp-content/uploads/2019/10/FontMontjuic-2048x1024.jpg 2048w, /wp-content/uploads/2019/10/FontMontjuic-1568x784.jpg 1568w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
@@ -136,21 +139,19 @@ This fountain is stunning at night. You should check the exhibitions scheduled w
 
 https://media.timeout.com/images/100563793/image.jpg             
 
-[Location] (https://bit.ly/2VBo9zc) 
+[Location](https://bit.ly/2VBo9zc) 
 
-<img loading="lazy" class="alignnone size-medium_large wp-image-1156" src="/wp-content/uploads/2019/10/Park-guell-768x418.jpg" alt="Park-guell" width="656" height="357" srcset="/wp-content/uploads/2019/10/Park-guell-768x418.jpg 768w, /wp-content/uploads/2019/10/Park-guell-300x163.jpg 300w, /wp-content/uploads/2019/10/Park-guell-1024x557.jpg 1024w, /wp-content/uploads/2019/10/Park-guell-1536x835.jpg 1536w, /wp-content/uploads/2019/10/Park-guell-1568x853.jpg 1568w, /wp-content/uploads/2019/10/Park-guell.jpg 1920w" sizes="(max-width: 656px) 100vw, 656px" /> 
-![Something title]()                       
+<img loading="lazy" class="alignnone size-medium_large wp-image-1156" src="/wp-content/uploads/2019/10/Park-guell-768x418.jpg" alt="Park-guell" width="656" height="357" srcset="/wp-content/uploads/2019/10/Park-guell-768x418.jpg 768w, /wp-content/uploads/2019/10/Park-guell-300x163.jpg 300w, /wp-content/uploads/2019/10/Park-guell-1024x557.jpg 1024w, /wp-content/uploads/2019/10/Park-guell-1536x835.jpg 1536w, /wp-content/uploads/2019/10/Park-guell-1568x853.jpg 1568w, /wp-content/uploads/2019/10/Park-guell.jpg 1920w" sizes="(max-width: 656px) 100vw, 656px" />                    
 
 #### Park Güell
 
 A gorgeous park with some designs from Gaudí and other architects that are interesting. 
 You must buy a ticket in order to gain entrance to the Monumental Area (where you can see some monuments from Gaudí).
 
-Location: https://bit.ly/319oIS3">https://bit.ly/319oIS3  
+[Location](https://bit.ly/319oIS3)  
 
 
 <img loading="lazy" class="alignnone wp-image-1162" src="/wp-content/uploads/2019/10/casa-batllo-768x946.jpg" alt="casa-batllo" width="565" height="696" srcset="/wp-content/uploads/2019/10/casa-batllo-768x946.jpg 768w, /wp-content/uploads/2019/10/casa-batllo-243x300.jpg 243w, /wp-content/uploads/2019/10/casa-batllo-831x1024.jpg 831w, /wp-content/uploads/2019/10/casa-batllo-1247x1536.jpg 1247w, /wp-content/uploads/2019/10/casa-batllo-1662x2048.jpg 1662w, /wp-content/uploads/2019/10/casa-batllo-1568x1932.jpg 1568w" sizes="(max-width: 565px) 100vw, 565px" /> 
- ![Something title]()  
    
 #### Casa Batlló
    
@@ -158,7 +159,7 @@ A famous building designed by Gaudí also named «House of bones». Look at the 
 
 It is also a museum where you can visit (ticket is needed) the building insights
    
-Location: "https://cutt.ly/ieoPssI">https://cutt.ly/ieoPssI     
+[Location](https://cutt.ly/ieoPssI) 
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1161" src="/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg" alt="la-pedrera" width="656" height="437" srcset="/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg 768w, /wp-content/uploads/2019/10/la-pedrera-300x200.jpeg 300w, /wp-content/uploads/2019/10/la-pedrera-1024x683.jpeg 1024w, /wp-content/uploads/2019/10/la-pedrera-1536x1024.jpeg 1536w, /wp-content/uploads/2019/10/la-pedrera-1568x1045.jpeg 1568w, /wp-content/uploads/2019/10/la-pedrera.jpeg 1920w" sizes="(max-width: 656px) 100vw, 656px" /> 
 ![Something title]()
@@ -167,7 +168,7 @@ Location: "https://cutt.ly/ieoPssI">https://cutt.ly/ieoPssI
 
 Another famous building designed by Gaudí. It has unique balconies and a courtyard that defines the style of Gaudí and also his last private residence.
 
-Location: "https://cutt.ly/reoPjYM">https://cutt.ly/reoPjYM
+[Location](https://cutt.ly/reoPjYM)
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1160" src="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg" alt="port-olimpic" width="656" height="437" srcset="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg 768w, /wp-content/uploads/2019/10/port-olimpic-300x200.jpg 300w, /wp-content/uploads/2019/10/port-olimpic-1024x683.jpg 1024w, /wp-content/uploads/2019/10/port-olimpic.jpg 1200w" sizes="(max-width: 656px) 100vw, 656px" />
 
