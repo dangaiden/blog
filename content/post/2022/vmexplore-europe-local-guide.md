@@ -18,21 +18,25 @@ tags:
 
 >This is a "remake" from my previous guide and maybe I have missed something which is not properly updated.
 
-VMworld 2022 Europe is one month away and I am excited because that means the first event that I am going to attend this year (after not being able to attend Kubecon in Valencia...)
+VMware Explore 2022 Europe is just a few weeks away and I am extremely excited because it means the first event that I am going to attend this year! (after not being able to attend Kubecon in Valencia...).
 
-This is a remake of my previous guide with tips about transport, restaurants, places to go, etc. I am trying to update as much as I can but also I won't extend as much as I did in my 2019 guide.
+This event is a bit special for me because it's where I started to meet many people I know nowadays, so I am looking forward to meet most of them there!
+
+<iframe src="https://giphy.com/embed/4IZJ0llj5bserpgq2o" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/RTLNL-happy-excited-excitement-4IZJ0llj5bserpgq2o"></a></p>
+
+As mentioned before, this is a "remake" of my previous guide with tips about transport, restaurants, places to go, etc. I am trying to update as much as I can but also I won't extend as much as I did in my 2019 guide.
 
 ## General information
 
 The event will take place from the 7th (Monday) to 10th (Thursday) of November at "https://cutt.ly/4eoPvEw">Fira Gran Via in Barcelona, Spain.
 
-VMworld is always an amazing opportunity to learn from all the events that will happen there like the Hands-on Lab, Breakout sessions, General sessions, etc.
+VMware Explore is always an amazing opportunity to learn from all the events that will happen there like the Hands-on Lab, Breakout sessions, General sessions, etc.
 
 Also, it is a great way to connect with a lot of people from the community, vendors or other persons that you are interested in.
 
 People are really friendly so, don't be shy (you can try first on Twitter!) and try to speak to members from the vCommunity (if you you don't know what it is just search for #vCommunity on Twitter!). Besides, be sure to meet the vBrownbag crew (which I am part of) in the Tech talks area 🙂
 
-### Some notes
+## Some notes
 
 In Spain, tipping is entirely optional and its not very common so, it's up to you if you want to leave a tip in case the service was exceptional or you think it deserves it. 
 
@@ -49,6 +53,8 @@ The official language in Barcelona is Spanish but most of the population speak i
 There are 3 different train services: Renfe (Local Train), TMB (metro/subway/underground) and FGC (Regional Train).
 
 Renfe and TMB are the most used because they have more combinations than the FGC and also better schedules. So, basically, you will see in this guide mentioning train for Renfe and metro/subway/underground for TMB.
+
+> Masks are mandatory within any public transport.
 
 ### Coming from the airport
 
@@ -81,9 +87,12 @@ The *Aerobus* service will take you to *«Plaça Catalunya»* (Catalunya Plaza) 
 
 ### Moving inside of Barcelona
 
-The Metro (subway/underground) is your best choice whatever you stay in Barcelona if you want a cheaper, frequent and reliable service.
+The Metro (subway/underground) is your best choice wherever you stay in Barcelona. If you want a cheap, frequent and "reliable" service within the whole city.
 
-With the metro (remember the name) you can travel through lines at the same cost. The main stops to consider will be Fira in L9 Sud, Plaça Espanya in L1/L3 and Sants-Estacio in L5/L3.
+> Before, there was a ticket (with 10 single rides) that could be used for more than one person, nowadays that ticket (called *T-casual*) is completely individual and can't be shared with other people. More [information](https://www.tmb.cat/en/barcelona-fares-metro-bus/single-and-integrated/t-casual) 
+
+With the metro you can travel through lines at the same cost. 
+The main stops to consider will be Fira in L9 Sud, Plaça Espanya in L1/L3 and Sants-Estacio in L5/L3.
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1135" src="/wp-content/uploads/2019/10/post-metro_map-768x411.png" alt="" width="656" height="351" srcset="/wp-content/uploads/2019/10/post-metro_map-768x411.png 768w, /wp-content/uploads/2019/10/post-metro_map-300x161.png 300w, /wp-content/uploads/2019/10/post-metro_map-1024x549.png 1024w, /wp-content/uploads/2019/10/post-metro_map.png 1150w" sizes="(max-width: 656px) 100vw, 656px" />
 
@@ -101,25 +110,15 @@ You can see in the following map the VMware Explore precinct highlighted in yel
 <img loading="lazy" class="alignnone size-full wp-image-1138" src="/wp-content/uploads/2019/10/FiraGranVia_highlight.png" alt="FiraGranVia-map" width="939" height="725" srcset="/wp-content/uploads/2019/10/FiraGranVia_highlight.png 939w, /wp-content/uploads/2019/10/FiraGranVia_highlight-300x232.png 300w, /wp-content/uploads/2019/10/FiraGranVia_highlight-768x593.png 768w" sizes="(max-width: 939px) 100vw, 939px" /> 
 ![Something title]()
 
-
-## Events around VMware Explore
-
-"https://twitter.com/Fred_vBrain">Fred Hofer has a magnificent post where it summarizes all the events and parties that will happen on these dates, check it "http://www.vbrain.info/2019/09/17/vmworld-emea-2019-parties-gatherings-events-and-more/">here 
-
-I organized the vFit runs, review my "http://www.itgaiden.com/vfit-at-vmworld-2019-europe/">post for more detailed information
-
-In my case besides the vFit event (Monday and Wednesday morning), I will attend the "https://www.eventbrite.com/e/vsoccer-vmworld-europe-tickets-74556310933">vSoccer event on Monday night and "https://www.eventbrite.com/e/vbreakfast-at-vmworld-2019-europe-tickets-72358753981">vBreakfast on Tuesday.
-
-
 ## Outside VMware Explore (Sightseeing)
 
-Here is a summary of the places that you could visit if you come to Barcelona:
+Here is a summary of famous places you could visit if you're planning to visit Barcelona:
 
 ![Something title]()
 <img loading="lazy" class="alignnone size-medium_large wp-image-1158" src="/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg" alt="" width="656" height="369" srcset="/wp-content/uploads/2019/10/sagrada-familia-768x432.jpg 768w, /wp-content/uploads/2019/10/sagrada-familia-300x169.jpg 300w, /wp-content/uploads/2019/10/sagrada-familia-1024x576.jpg 1024w, /wp-content/uploads/2019/10/sagrada-familia-1536x864.jpg 1536w, /wp-content/uploads/2019/10/sagrada-familia-1568x882.jpg 1568w, /wp-content/uploads/2019/10/sagrada-familia.jpg 1600w" sizes="(max-width: 656px) 100vw, 656px" /> 
 
 
- La Sagrada Familia
+#### La Sagrada Familia
 
 Probably the most iconic building in Barcelona. It is an unfinished church designed by "https://en.wikipedia.org/wiki/Antoni_Gaud%C3%AD">Gaudí, an architect who made many iconic buildings here in Barcelona.
 
@@ -127,23 +126,21 @@ Location: "https://cutt.ly/5eoPoBU">https://cutt.ly/5eoPoBU
 
 ![Something title]()
 <img loading="lazy" class="alignnone size-medium_large wp-image-1157" src="/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg" alt="" width="656" height="435" srcset="/wp-content/uploads/2019/10/Ramblas-de-Barcelona-768x509.jpg 768w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona-300x199.jpg 300w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona-1024x679.jpg 1024w, /wp-content/uploads/2019/10/Ramblas-de-Barcelona.jpg 1500w" sizes="(max-width: 656px) 100vw, 656px" /> 
-            
-            
-Las Ramblas
-            
-            
-            
-The most famous pedestrian street of Barcelona, you will see many kiosks and artists there while walking in the middle of the city. Note: Keep an eye on your belongings if you are watching an exhibition as pickpockets could be near you.
-            
-            
-            
+
+
+#### Las Ramblas
+
+The most famous pedestrian street of Barcelona, you will see many kiosks and artists there while walking in the middle of the city. 
+
+Note: Keep an eye on your belongings if you are watching an exhibition as pickpockets are specialists in those areas. Other than that, enjoy this long street.
+
 Location: "https://bit.ly/35zkqXQ">https://bit.ly/35zkqXQ 
-              
+
 
 <img loading="lazy" class="alignnone size-medium_large wp-image-1165" src="/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg" alt="font-montjuic" width="656" height="328" srcset="/wp-content/uploads/2019/10/FontMontjuic-768x384.jpg 768w, /wp-content/uploads/2019/10/FontMontjuic-300x150.jpg 300w, /wp-content/uploads/2019/10/FontMontjuic-1024x512.jpg 1024w, /wp-content/uploads/2019/10/FontMontjuic-1536x768.jpg 1536w, /wp-content/uploads/2019/10/FontMontjuic-2048x1024.jpg 2048w, /wp-content/uploads/2019/10/FontMontjuic-1568x784.jpg 1568w" sizes="(max-width: 656px) 100vw, 656px" /> 
 ![Something title]()             
                
-La Font Màgica de Montjuïc (Magic fountain of Montjuïc)
+#### La Font Màgica de Montjuïc (Magic fountain of Montjuïc)
                   
 This fountain is amazing at night. You should check the exhibitions scheduled with lights and streams creating shapes. It is located near the Veeam party that will be on Tuesday so, maybe you can go earlier and check it out!
 
@@ -151,79 +148,68 @@ https://media.timeout.com/images/100563793/image.jpg
 ![Something title]()                 
 
 Location (https://bit.ly/2VBo9zc">https://bit.ly/2VBo9zc  
-                    
-                    
-                      
+    
 <img loading="lazy" class="alignnone size-medium_large wp-image-1156" src="/wp-content/uploads/2019/10/Park-guell-768x418.jpg" alt="Park-guell" width="656" height="357" srcset="/wp-content/uploads/2019/10/Park-guell-768x418.jpg 768w, /wp-content/uploads/2019/10/Park-guell-300x163.jpg 300w, /wp-content/uploads/2019/10/Park-guell-1024x557.jpg 1024w, /wp-content/uploads/2019/10/Park-guell-1536x835.jpg 1536w, /wp-content/uploads/2019/10/Park-guell-1568x853.jpg 1568w, /wp-content/uploads/2019/10/Park-guell.jpg 1920w" sizes="(max-width: 656px) 100vw, 656px" /> 
 ![Something title]()                       
-                        
-Park Güell
-                        
-                        
-                        
-A gorgeous park with some designs from Gaudí and other architects that are interesting. You must buy a ticket in order to gain entrance to the Monumental Area (where you can see some monuments from Gaudí).
-                        
-                        
-                        
+
+#### Park Güell
+
+A gorgeous park with some designs from Gaudí and other architects that are interesting. 
+You must buy a ticket in order to gain entrance to the Monumental Area (where you can see some monuments from Gaudí).
+
 Location: https://bit.ly/319oIS3">https://bit.ly/319oIS3  
-                          
-                          
-                            
+
+
 <img loading="lazy" class="alignnone wp-image-1162" src="/wp-content/uploads/2019/10/casa-batllo-768x946.jpg" alt="casa-batllo" width="565" height="696" srcset="/wp-content/uploads/2019/10/casa-batllo-768x946.jpg 768w, /wp-content/uploads/2019/10/casa-batllo-243x300.jpg 243w, /wp-content/uploads/2019/10/casa-batllo-831x1024.jpg 831w, /wp-content/uploads/2019/10/casa-batllo-1247x1536.jpg 1247w, /wp-content/uploads/2019/10/casa-batllo-1662x2048.jpg 1662w, /wp-content/uploads/2019/10/casa-batllo-1568x1932.jpg 1568w" sizes="(max-width: 565px) 100vw, 565px" /> 
- ![Something title]()                             
-                              
-Casa Batlló
-                              
-                              
-                              
-A famous building designed by Gaudí also named «House of bones». Look at the facade which is something that you probably never seen before with the sculpted stonework, the windows or the painting. It is also a museum where you can visit (you need to buy a ticket) the inside of this building.
-                              
-Location: "https://cutt.ly/ieoPssI">https://cutt.ly/ieoPssI  
-                                
-                                
-                                  
+ ![Something title]()  
+   
+#### Casa Batlló
+   
+A famous building designed by Gaudí also named «House of bones». Look at the facade which is something that you probably never seen before with the sculpted stonework, the windows or the painting. 
+
+It is also a museum where you can visit (ticket is needed) the building insights
+   
+Location: "https://cutt.ly/ieoPssI">https://cutt.ly/ieoPssI     
+
 <img loading="lazy" class="alignnone size-medium_large wp-image-1161" src="/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg" alt="la-pedrera" width="656" height="437" srcset="/wp-content/uploads/2019/10/la-pedrera-768x512.jpeg 768w, /wp-content/uploads/2019/10/la-pedrera-300x200.jpeg 300w, /wp-content/uploads/2019/10/la-pedrera-1024x683.jpeg 1024w, /wp-content/uploads/2019/10/la-pedrera-1536x1024.jpeg 1536w, /wp-content/uploads/2019/10/la-pedrera-1568x1045.jpeg 1568w, /wp-content/uploads/2019/10/la-pedrera.jpeg 1920w" sizes="(max-width: 656px) 100vw, 656px" /> 
-![Something title]()                                 
-                                    
-Casa Milà; La Pedrera (The stone quarry)
-                                    
+![Something title]()
+
+#### Casa Milà; La Pedrera (The stone quarry)
+
 Another famous building designed by Gaudí. It has unique balconies and a courtyard that defines the style of Gaudí and also his last private residence.
-                                    
-Location: "https://cutt.ly/reoPjYM">https://cutt.ly/reoPjYM  
-                                      
-                                      
-                                        
+
+Location: "https://cutt.ly/reoPjYM">https://cutt.ly/reoPjYM
+
 <img loading="lazy" class="alignnone size-medium_large wp-image-1160" src="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg" alt="port-olimpic" width="656" height="437" srcset="/wp-content/uploads/2019/10/port-olimpic-768x512.jpg 768w, /wp-content/uploads/2019/10/port-olimpic-300x200.jpg 300w, /wp-content/uploads/2019/10/port-olimpic-1024x683.jpg 1024w, /wp-content/uploads/2019/10/port-olimpic.jpg 1200w" sizes="(max-width: 656px) 100vw, 656px" /> 
 ![Something title]()
-                                          
-                                          
-The Olympic port of Barcelona
-    
+
+#### The Olympic port of Barcelona
+
 It is one of the most exciting leisure and touristic spots throughout Barcelona, with a wide offering of shops, clubs, and restaurants. It's the gateway to the Barcelona beaches.
-                                          
+
 Location: "https://cutt.ly/seoPx1J">https://cutt.ly/seoPx1J 
-                                            
-                                            
+                 
+                 
 In general, avoid going alone in the night, especially in «Las Ramblas», «El Raval»
 
 Also, avoid the neighborhood known as «La Mina» which is farther from Barcelona but it still accessible by Metro.
-                                            
-                                            
+                 
+                 
 ### Restaurants
 
 The food in Barcelona is nice and some of you probably know it.
 
-Let me suggest a couple of restaurants near Fira Gran Via (VMworld):
+Let me suggest a couple of restaurants near Fira Gran Via (VMware Explore):
 "https://bit.ly/35tkurS">Gran Varela: A restaurant with great food (especially octopus). Also, the wines are great!
 
 In Gran Via 2 (a shopping center pretty close to Fira Gran via) I can suggest you: 
  
 A great Japanese (Udon)
-                                                  
-                                                  
+                       
+                       
 A good Italian (La Tagliatella) 
-                                                  
-                                                  
+                       
+                       
 Beers and tapas (Cañas y tapa)
 
 "https://cutt.ly/dep2q9r">Restaurant La Vid: A nice restaurant where you can try local food like the bread with spread tomato, the Spanish omelet, or the ham! This is also the restaurant that will be hosting the vBreakfast event on Tuesday morning.
@@ -250,7 +236,7 @@ Despite there many restaurants that they prepare all these dishes, I will avoid 
 
 Bread with (spread) tomato can be found in almost any bar or restaurant so, just ask for it. They are also served at breakfast!<img loading="lazy" class="alignnone wp-image-1236 " src="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg" alt="pa_amb_tomaquet" width="558" height="318" srcset="/wp-content/uploads/2019/10/pa_amb_tomaquet2.jpg 700w, /wp-content/uploads/2019/10/pa_amb_tomaquet2-300x171.jpg 300w" sizes="(max-width: 558px) 100vw, 558px" />
 
-If you don't want to lose a lot of time by going far from VMworld to taste many of these dishes, I would suggest you go "https://cutt.ly/dep2q9r">Restaurant La Vid, which I talked in the previous section.
+If you don't want to lose a lot of time by going far from VMware Explore to taste many of these dishes, I would suggest you go "https://cutt.ly/dep2q9r">Restaurant La Vid, which I talked in the previous section.
 
  Also, on these dates, it is common for street vendors to sell hot toasted chestnuts wrapped in newspaper, give it a try!
 
@@ -269,7 +255,7 @@ There are many other places and foods not included here. If you want something s
 
 That will be a summary of things to do at VMware Explore and in the city of Barcelona.
 
-Be sure to enjoy VMworld with all the events, parties, people and more things that can give you but overall, have fun!
+Be sure to enjoy VMware Explore with all the events, parties, people and more things that can give you but overall, have fun!
 
 If you think that something is missing, let me know.
 
