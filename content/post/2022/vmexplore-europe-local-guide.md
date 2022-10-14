@@ -18,7 +18,7 @@ tags:
 
 >This is a "remake" from my previous guide and maybe I have missed something which is not properly updated.
 
-VMware Explore 2022 Europe is just a few weeks away and I am extremely excited because it means the first event that I am going to attend this year! (after not being able to attend Kubecon in Valencia...).
+VMware Explore 2022 Europe is just a few weeks away and **I am extremely excited** because it means the first event that I am going to attend this year! (after not being able to attend Kubecon in Valencia...).
 
 This event is a bit special for me because it's where I started to meet many people I know nowadays, so I am looking forward to meet most of them there!
 
@@ -30,15 +30,15 @@ As mentioned before, this is a "remake" of my previous guide with tips about tra
 
 The event will take place from the 7th (Monday) to 10th (Thursday) of November at "https://cutt.ly/4eoPvEw">Fira Gran Via in Barcelona, Spain.
 
-VMware Explore is always an amazing opportunity to learn from all the events that will happen there like the Hands-on Lab, Breakout sessions, General sessions, etc.
+Also, it is a great way to connect with a lot of people from the community, vendors or other persons that you could be interested (try not to be aggresive when approaching they).
 
-Also, it is a great way to connect with a lot of people from the community, vendors or other persons that you are interested in.
+People are really friendly so, don't be shy (you can try first on Twitter) and try speaking to members from the vCommunity (if you you don't know what it is just search for #vCommunity on Twitter!) for example. 
 
-People are really friendly so, don't be shy (you can try first on Twitter!) and try to speak to members from the vCommunity (if you you don't know what it is just search for #vCommunity on Twitter!). Besides, be sure to meet the vBrownbag crew (which I am part of) in the Tech talks area 🙂
+Besides, **be sure to meet the vBrownbag crew** (which I am part of) in the Tech talks area, so feel free to say **"Hi!" :)**
 
 ## Some notes
 
-In Spain, tipping is entirely optional and its not very common so, it's up to you if you want to leave a tip in case the service was exceptional or you think it deserves it. 
+In Spain, *tipping is entirely optional* and its not very common so, it's up to you if you want to leave a tip in case the service was exceptional or you think it deserves it. 
 
 In restaurants, shops, etc. the VAT tax is included. Therefore, you don't have to worry to calculate an extra amount of money. 
 
@@ -46,42 +46,42 @@ Also, once you pay with credit card (VISA branded cards are the most used here) 
 
 I know it's late but, hotels near Fira are nice and a bit expensive. The best zone I think it is near Sants where there are cheaper hotels, nice transport connections, and great ambient.
 
-The official language in Barcelona is Spanish but most of the population speak in Catalan. Saying that, don't worry if you don't understand some signboards from the street or public places.
+The official language in Barcelona is Spanish but *most of the population speak in Catalan*. Saying that, don't worry if you don't understand some signboards from the street or public places.
 
 ## Transportation
 
 There are 3 different train services: Renfe (Local Train), TMB (metro/subway/underground) and FGC (Regional Train).
 
-Renfe and TMB are the most used because they have more combinations than the FGC and also better schedules. So, basically, you will see in this guide mentioning train for Renfe and metro/subway/underground for TMB.
+*Renfe* and *TMB* are the most used because they have more combinations than the FGC and also better schedules. So, basically, you will see in this guide mentioning train for Renfe and metro/subway/underground for TMB.
 
-> Masks are mandatory within any public transport.
+> Masks are mandatory when using any public transport.
 
 ### Coming from the airport
 
 Once you land at El Prat airport, there are a few ways to go to the city of Barcelona:
 
-  * You can take a taxi (expensive but more convenient for people with less time or when the hotel is located in an isolated area). It will costs between 30-40 € from the Barcelona Airport to *Sants* (always depending on the traffic). Put the hand luggage on the taxi trunk costs an additional euro. One of the services available is *FreeNow* as *Uber* and Cabifiy are not available in Barcelona.
+  * *Taxi* (expensive but more convenient for people with less time or when the hotel is located in an isolated area). It will costs between 30-40 € from the Barcelona Airport to *Sants* (always depending on the traffic). 
+  
+Putting the hand luggage on the taxi trunk costs an additional euro. One of the services available is *FreeNow* or *Cabify* as *Uber* and Cabifiy are not available in Barcelona.
 
-  *By train, service called [Renfe](https://www.renfe.com/content/dam/renfe/es/Viajeros/Secciones/Cercanias/Mapas/barcelona.png)
+  - *By train, service called [Renfe](https://www.renfe.com/content/dam/renfe/es/Viajeros/Secciones/Cercanias/Mapas/barcelona.png)
 
-  You can go to the *Aeroport* (airport) stop on the *R2 Nord* line (you must go to Terminal 2 to take the train). This line will take you to Sants-Estacio and will be great for people staying near Sants. 
+You can go to the *Aeroport* (airport) stop on the *R2 Nord* line (you must go to Terminal 2 to take the train). This line will take you to Sants-Estacio and will be great for people staying near Sants. 
 
-  This line is less frequent than the next option but it takes less time. Pricing is subjected to zones. In that case, From Aeroport to Sants-Estacio the price for a single ticket will be 4.60 €.
-
-
-  *By metro/subway ("https://www.tmb.cat/documents/20182/96078/Pl%C3%A0nol+xarxa+de+Metro/f5578f40-5a66-46ba-907c-cf31e0d368c0">TMB):
-
-
-  Use the *L9 Sud* line, this is the Metro (subway/underground) service and can be combined with other lines (like L5 at *Collblanc* stop for example) within the same ticket.
-
-  This  service is more frequent than the train service. This can be the best option for most people because you can use the same single ticket to go to other places by combining lines.
+This line is less frequent than the next option but it takes less time. Pricing is subjected to zones. In that case, From Aeroport to Sants-Estacio the price for a single ticket will be 4.60 €.
 
 
-By bus (*Aerobus* service): 
+  - By metro/subway, *TMB*:
 
+Whole [map](https://www.tmb.cat/documents/20182/96078/Pl%C3%A0nol+xarxa+de+Metro/f5578f40-5a66-46ba-907c-cf31e0d368c0)
+
+Use the *L9 Sud* line, this is the Metro (subway/underground) service and can be combined with other lines (like L5 at *Collblanc* stop for example) within the same ticket.
+
+This  service is more frequent than the train service. This can be the best option for most people because you can use the same single ticket to go to other places by combining lines.
+
+- By bus (*Aerobus* service): 
 
 The least recommended option as it will be crowded but it depends on your preferences and where do you want to go. 
-
 
 The *Aerobus* service will take you to *«Plaça Catalunya»* (Catalunya Plaza) but it costs a bit more than other services (still 5,90 € in 2022), you can review more information [here](https://www.aeropuertobarcelona-elprat.com/ingl/accesos_aeropuerto_taxi_bus4030.htm#aerobus-A1-A2).
 
