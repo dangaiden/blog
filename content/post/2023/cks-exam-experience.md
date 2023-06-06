@@ -66,15 +66,11 @@ Check if it's managed by SystemD under the folder: ```/etc/systemd/system```
 
 ---
 
-- Stop control-plane components.
+- "Restart" control-plane components.
 
 Proceed to move manifests files from (default) location: ```/etc/kubernetes/manifests``` if you want to quickly "restart" a service which runs in an specific container.
 
 Then check there are no containers running and move it back to the previous
-
----
-
-Also, you can check if the process (in this case kubelet) is running on a worker node: ```ps aux | grep kubelet```
 
 ---
 
@@ -102,9 +98,6 @@ For a SA:
 ``` shell
 k auth can-i list pod  --as system:serviceaccount:<namespace>:<role>
 ```
-
----
-
 ## Wrap up 
 
 It wasn't a hard exam even for the limited time you have (2h) and I learnt about other resources I usually don't use but overall it was great to know about them.
