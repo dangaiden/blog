@@ -44,7 +44,7 @@ This one is not like the CKA or CKAD, as already mentioned in the CHECK THE DOC,
 ## Resources
 
 - I used this CKS course which can help you to know some of the topics if you don't know them already: https://www.udemy.com/course/certified-kubernetes-security-specialist/
-- The amazing collection of resources from Walid is a *must*:https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist
+- The amazing collection of resources from Walid is a *must*: https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist
 - The Killer.sh test provided by the Linux training foundation is **extremely helpful**.
 
 ## Some handy things to know (NOT ALL are mandatory for the exam)
