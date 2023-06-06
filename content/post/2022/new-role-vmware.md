@@ -11,7 +11,7 @@ tags:
   
 ---
 
-Wow, seems unbelievable but It's been already 100 days since I joined VMware!
+Wow, seems unbelievable but It's been already a YEAR since I joined VMware!
 
 Yes, in **June 20th I started working in a new company, VMware**, which most of people in IT will know because of the hypervisor revolution about 20 years ago or so ;)
 
@@ -28,7 +28,6 @@ Although **I aimed for this company years ago** and now wasn't my main target, o
 
 My team, Tanzu Platform Labs Service, is dedicated to enable customers with Tanzu and anything related to Kubernetes (or any other cloud-native technology) but we know the buzzword/famous one is K8s.
 
-
 ### Uncertainity
 
 Regarding this uncertainity about the Broadcom acquisition and so, well, I can tell you I decided to join even after knowing it was going to be acquired.
@@ -42,3 +41,7 @@ Meanwhile I am learning a lot from the customers and teammates where I work ever
 ### My experience so far
 
 I am enjoying this role within the Tanzu Plaform Labs services team, a team which not only focuses on everything related Tanzu but enabling the customers with DevOps methodologies, Agile practices, etc to embrace Kubernetes in the best way.
+
+Sounds like a sales-pitch but I like that I am not exclusively tied to teach how a product like Tanzu works.
+
+Besides that I have the opportunity to work deploying other OSS projects (like Harbor, Contour, cert-manager, etc.) plus teaching methodologies to companies which are embracing Kubernetes for their first time or have little experience with it.
