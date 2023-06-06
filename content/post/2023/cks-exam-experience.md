@@ -47,7 +47,7 @@ This one is not like the CKA or CKAD, as already mentioned in the CHECK THE DOC,
 - The amazing collection of resources from Walid is a *must*:https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist
 - The Killer.sh test provided by the Linux training foundation is **extremely helpful**.
 
-## Useful things I have learnt but NOT ALL are mandatory for the exam
+## Some handy things to know (NOT ALL are mandatory for the exam)
 
 - Useful "shortcuts" to use (use them as exported variables or aliases)
 
