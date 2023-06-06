@@ -100,12 +100,8 @@ k auth can-i list pod  --as system:serviceaccount:<namespace>:<role>
 ```
 ## Wrap up 
 
-It wasn't a hard exam even for the limited time you have (2h) and I learnt about other resources I usually don't use but overall it was great to know about them.
+It wasn't a hard exam even for the limited time you have (2h) and I have learnt about other tools which I don't use daily.
 
 Remember you have a **free retake** when you order the exam so don't worry if you don't make it in the first one but make sure to use your time wisely when taking it.
-
-That's all, next one is the CKAD which should be "easier" as per other reviews I have read.
-
-More in the next post!
 
 ![](https://media.giphy.com/media/BoHCeLmEKytt7oFxyR/giphy.gif)
