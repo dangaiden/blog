@@ -43,11 +43,9 @@ This one is not like the CKA or CKAD, as already mentioned in the CHECK THE DOC,
 
 ## Resources
 
-- The famous CKA [Udemy course](https://www.udemy.com/course/certified-kubernetes-administrator-with-practice-tests/learn/lecture/15271428?start=1#notes) by Mumshad Mannambeth was great to know about some other resources I haven't used nor known and for reviewing many others.
-- The amazing collection of resources from Walid is a *must*: https://github.com/walidshaari/Kubernetes-Certified-Administrator
-- CKA/CKAD exercises from https://github.com/dgkanatsios/CKAD-exercises
-- More exercises: https://github.com/StenlyTU/K8s-training-official
-- The Killer.sh test provided by the Linux training foundation is extremely helpful.
+- I used this CKS course which can help you to know some of the topics if you don't know them already: https://www.udemy.com/course/certified-kubernetes-security-specialist/
+- The amazing collection of resources from Walid is a *must*:https://github.com/walidshaari/Certified-Kubernetes-Security-Specialist
+- The Killer.sh test provided by the Linux training foundation is **extremely helpful**.
 
 ## Useful things I have learnt but NOT ALL are mandatory for the exam
 
@@ -92,29 +90,6 @@ Review if port is opened from a particular pod (using a shell)
 ``` bash
 > k explain --recursive <api-resource> 
 ```
-
----
-- ETCD backup and restore summary
-
-1. Gather the data from the etcd pod: k describe <etcd-pod>
-2. Review the IP and port provided by "listen clients"
-3. Use the snapshot save command
-4. Stop all control plane components (by moving the YAML files where the static pods are defined to another folder):
-
-```
-root@master-node:~# cd /etc/kubernetes/manifests/
-root@master-node:/etc/kubernetes/manifests# mv * ..
-```
-5. Check no pods are running within the master-node: ```crictl ps```
-6. Create directory before restoring snapshot: mkdir...
-7. Restore snapshot (in the new empty directory created): 
-``` shell
-ETCDCTL_API=3 etcdctl --data-dir /var/lib/etcd/restore snapshot restore /tmp/etcd-backup.db
-```
-8. Change manifest from etcd to point to new directory: vim /etc/kubernetes/manifests/etcd.yaml
-
-> NOTE: Don't use ```snapshot status``` because it can alter the snapshot file and render it invalid
-
 ---
 
 - Test if an SA or user can perform an action
